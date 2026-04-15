@@ -56,7 +56,7 @@ export default function Process() {
         <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
           <div className="reveal section-label" style={{ justifyContent:'center' }}>How We Work</div>
           <h2 className="reveal reveal-delay-1" style={{
-            fontFamily:   'var(--font-syne)',
+            fontFamily:   'var(--font-inter)',
             fontWeight:   800,
             fontSize:     'clamp(1.9rem, 4vw, 2.8rem)',
             color:        '#eceaf5',
@@ -66,7 +66,7 @@ export default function Process() {
             From Brief to Production.
           </h2>
           <p className="reveal reveal-delay-2" style={{
-            fontFamily: 'var(--font-dm-sans)',
+            fontFamily: 'var(--font-inter)',
             fontWeight: 300,
             fontSize:   '1.05rem',
             color:      '#9d99b8',
@@ -134,7 +134,7 @@ export default function Process() {
                   display:         'flex',
                   alignItems:      'center',
                   justifyContent:  'center',
-                  fontFamily:      'var(--font-syne)',
+                  fontFamily:      'var(--font-inter)',
                   fontWeight:      700,
                   fontSize:        '0.8rem',
                   color:           '#9d99b8',
@@ -146,7 +146,7 @@ export default function Process() {
               </div>
 
               <h3 style={{
-                fontFamily:   'var(--font-syne)',
+                fontFamily:   'var(--font-inter)',
                 fontWeight:   700,
                 fontSize:     '1rem',
                 color:        '#eceaf5',
@@ -156,7 +156,7 @@ export default function Process() {
                 {step.num} — {step.title}
               </h3>
               <p style={{
-                fontFamily: 'var(--font-dm-sans)',
+                fontFamily: 'var(--font-inter)',
                 fontWeight: 300,
                 fontSize:   '0.875rem',
                 color:      '#9d99b8',

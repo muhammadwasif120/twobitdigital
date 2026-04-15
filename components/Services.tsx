@@ -78,7 +78,7 @@ export default function Services() {
         <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
           <div className="reveal section-label" style={{ justifyContent:'center' }}>What We Do</div>
           <h2 className="reveal reveal-delay-1" style={{
-            fontFamily:   'var(--font-syne)',
+            fontFamily:   'var(--font-inter)',
             fontWeight:   800,
             fontSize:     'clamp(1.9rem, 4vw, 2.8rem)',
             color:        '#eceaf5',
@@ -88,7 +88,7 @@ export default function Services() {
             End-to-End Digital Engineering
           </h2>
           <p className="reveal reveal-delay-2" style={{
-            fontFamily: 'var(--font-dm-sans)',
+            fontFamily: 'var(--font-inter)',
             fontWeight: 300,
             fontSize:   '1.05rem',
             color:      '#9d99b8',
@@ -136,7 +136,7 @@ export default function Services() {
               }}
             >
               <h3 style={{
-                fontFamily:   'var(--font-syne)',
+                fontFamily:   'var(--font-inter)',
                 fontWeight:   700,
                 fontSize:     '1.05rem',
                 color:        '#eceaf5',
@@ -146,7 +146,7 @@ export default function Services() {
                 {s.title}
               </h3>
               <p style={{
-                fontFamily: 'var(--font-dm-sans)',
+                fontFamily: 'var(--font-inter)',
                 fontWeight: 300,
                 fontSize:   '0.88rem',
                 color:      '#9d99b8',
@@ -158,10 +158,10 @@ export default function Services() {
               <div style={{ display:'flex', flexWrap:'wrap', gap:'0.4rem' }}>
                 {s.chips.map((chip) => (
                   <span key={chip} style={{
-                    fontFamily:      'var(--font-dm-sans)',
+                    fontFamily:      'var(--font-inter)',
                     fontSize:        '0.7rem',
                     fontWeight:      500,
-                    color:           '#5e5a7a',
+                    color:           '#9d99b8',
                     backgroundColor: 'rgba(255,255,255,0.04)',
                     border:          '1px solid rgba(255,255,255,0.07)',
                     padding:         '0.2rem 0.55rem',

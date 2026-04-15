@@ -54,7 +54,7 @@ export default function Government() {
           <div>
             <div className="reveal section-label">Public Sector</div>
             <h2 className="reveal reveal-delay-1" style={{
-              fontFamily:   'var(--font-syne)',
+              fontFamily:   'var(--font-inter)',
               fontWeight:   800,
               fontSize:     'clamp(1.8rem, 3.5vw, 2.6rem)',
               color:        '#eceaf5',
@@ -64,7 +64,7 @@ export default function Government() {
               Bidding on Public Sector Contracts?
             </h2>
             <p className="reveal reveal-delay-2" style={{
-              fontFamily: 'var(--font-dm-sans)',
+              fontFamily: 'var(--font-inter)',
               fontWeight: 300,
               fontSize:   '1rem',
               color:      '#9d99b8',
@@ -79,7 +79,7 @@ export default function Government() {
             <div className="reveal reveal-delay-3" style={{ display:'flex', flexWrap:'wrap', gap:'0.5rem' }}>
               {badges.map((b) => (
                 <span key={b} style={{
-                  fontFamily:      'var(--font-dm-sans)',
+                  fontFamily:      'var(--font-inter)',
                   fontSize:        '0.78rem',
                   fontWeight:      500,
                   color:           '#f5c518',
@@ -103,15 +103,15 @@ export default function Government() {
               padding:         '1.5rem 1.75rem',
               marginBottom:    '1.25rem',
             }}>
-              <p style={{ fontFamily:'var(--font-syne)', fontWeight:800, fontSize:'2.2rem', color:'#f5c518', margin:0 }}>🇬🇧</p>
-              <p style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'1rem', color:'#eceaf5', margin:'0.5rem 0 0.25rem' }}>UK</p>
-              <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', margin:0 }}>Registered Entity</p>
+              <p style={{ fontFamily:'var(--font-inter)', fontWeight:800, fontSize:'2.2rem', color:'#f5c518', margin:0 }}>🇬🇧</p>
+              <p style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'1rem', color:'#eceaf5', margin:'0.5rem 0 0.25rem' }}>UK</p>
+              <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', margin:0 }}>Registered Entity</p>
             </div>
             <a
               href="#contact"
               style={{
                 display:         'block',
-                fontFamily:      'var(--font-syne)',
+                fontFamily:      'var(--font-inter)',
                 fontWeight:      700,
                 fontSize:        '0.82rem',
                 letterSpacing:   '0.04em',

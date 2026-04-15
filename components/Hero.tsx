@@ -33,14 +33,14 @@ export default function Hero() {
       {/* Glow effects */}
       <div style={{
         position:   'absolute', top: '-10%', right: '-5%',
-        width:      '600px',    height: '600px',
+        width:      'clamp(300px, 50vw, 600px)', height: 'clamp(300px, 50vw, 600px)',
         borderRadius: '50%',   pointerEvents: 'none',
         background: 'radial-gradient(circle, rgba(123,94,167,0.18) 0%, transparent 70%)',
         zIndex:     0,
       }} />
       <div style={{
         position:   'absolute', bottom: '-10%', left: '-5%',
-        width:      '500px',    height: '500px',
+        width:      'clamp(250px, 40vw, 500px)', height: 'clamp(250px, 40vw, 500px)',
         borderRadius: '50%',   pointerEvents: 'none',
         background: 'radial-gradient(circle, rgba(245,197,24,0.1) 0%, transparent 70%)',
         zIndex:     0,
@@ -78,7 +78,7 @@ export default function Hero() {
               animation: 'pulse 2s ease-in-out infinite',
             }} />
             <span style={{
-              fontFamily:   'var(--font-dm-sans)',
+              fontFamily:   'var(--font-inter)',
               fontSize:     '0.78rem',
               fontWeight:   500,
               color:        '#f5c518',
@@ -90,7 +90,7 @@ export default function Hero() {
 
           {/* H1 */}
           <h1 className="reveal reveal-delay-1" style={{
-            fontFamily:  'var(--font-syne)',
+            fontFamily:  'var(--font-inter)',
             fontWeight:  800,
             fontSize:    'clamp(2.6rem, 5.5vw, 4.2rem)',
             lineHeight:  1.08,
@@ -104,7 +104,7 @@ export default function Hero() {
 
           {/* Subheading */}
           <p className="reveal reveal-delay-2" style={{
-            fontFamily:  'var(--font-dm-sans)',
+            fontFamily:  'var(--font-inter)',
             fontWeight:  300,
             fontSize:    '1.1rem',
             lineHeight:  1.75,
@@ -122,7 +122,7 @@ export default function Hero() {
             <a
               href="#services"
               style={{
-                fontFamily:      'var(--font-syne)',
+                fontFamily:      'var(--font-inter)',
                 fontWeight:      700,
                 fontSize:        '0.85rem',
                 letterSpacing:   '0.04em',
@@ -142,7 +142,7 @@ export default function Hero() {
             <a
               href="#portfolio"
               style={{
-                fontFamily:      'var(--font-syne)',
+                fontFamily:      'var(--font-inter)',
                 fontWeight:      700,
                 fontSize:        '0.85rem',
                 letterSpacing:   '0.04em',
@@ -183,19 +183,19 @@ export default function Hero() {
             position:        'relative',
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-              <span style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase' }}>
+              <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase' }}>
                 Active Deployment
               </span>
               <span style={{
-                fontFamily: 'var(--font-dm-sans)', fontSize: '0.65rem', fontWeight: 500,
+                fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 500,
                 color: '#09091a', backgroundColor: '#4ade80',
                 padding: '0.15rem 0.5rem', borderRadius: '999px',
               }}>● Live</span>
             </div>
-            <p style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'1.25rem', color:'#eceaf5', margin:'0 0 0.25rem' }}>
+            <p style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'1.25rem', color:'#eceaf5', margin:'0 0 0.25rem' }}>
               Tikkit X
             </p>
-            <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.82rem', color:'#9d99b8', margin:'0 0 1rem' }}>
+            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.82rem', color:'#9d99b8', margin:'0 0 1rem' }}>
               Event platform · Pakistan · Production
             </p>
             <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap' }}>
@@ -205,7 +205,7 @@ export default function Hero() {
                 { label:'Offline QR',  bg:'rgba(245,197,24,0.12)', color:'#f5c518' },
               ].map((tag) => (
                 <span key={tag.label} style={{
-                  fontFamily:'var(--font-dm-sans)', fontSize:'0.68rem', fontWeight:500,
+                  fontFamily:'var(--font-inter)', fontSize:'0.68rem', fontWeight:500,
                   backgroundColor:tag.bg, color:tag.color,
                   padding:'0.2rem 0.6rem', borderRadius:'999px',
                 }}>
@@ -222,10 +222,10 @@ export default function Hero() {
             borderRadius:    '14px',
             padding:         '1.25rem 1.5rem',
           }}>
-            <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'0.5rem' }}>
+            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'0.5rem' }}>
               Studio Overview
             </p>
-            <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.92rem', color:'#9d99b8', marginBottom:'1.25rem', lineHeight:1.6 }}>
+            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.92rem', color:'#9d99b8', marginBottom:'1.25rem', lineHeight:1.6 }}>
               Three in-house SaaS products. Government bids. One studio.
             </p>
             <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'0.75rem' }}>
@@ -240,10 +240,10 @@ export default function Hero() {
                   padding:         '0.6rem 0.5rem',
                   textAlign:       'center',
                 }}>
-                  <p style={{ fontFamily:'var(--font-syne)', fontWeight:800, fontSize:'1.1rem', color:'#f5c518', margin:0 }}>
+                  <p style={{ fontFamily:'var(--font-inter)', fontWeight:800, fontSize:'1.1rem', color:'#f5c518', margin:0 }}>
                     {item.stat}
                   </p>
-                  <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.65rem', color:'#5e5a7a', margin:0 }}>
+                  <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.65rem', color:'#5e5a7a', margin:0 }}>
                     {item.label}
                   </p>
                 </div>

@@ -22,19 +22,21 @@ export default function Footer() {
         >
           {/* Brand column */}
           <div>
-            <a href="#" style={{
-              fontFamily:     'var(--font-syne)',
-              fontWeight:     800,
+            <a href="#" aria-label="Two Bit Digital — return to top" style={{
+              fontFamily:     'var(--font-inter)',
+              fontWeight:     700,
               fontSize:       '1.1rem',
-              color:          '#eceaf5',
               textDecoration: 'none',
-              display:        'inline-block',
+              display:        'inline-flex',
+              alignItems:     'baseline',
+              gap:            '0.3rem',
               marginBottom:   '1rem',
             }}>
-              Two<span style={{ color:'#f5c518' }}>[</span>Bit<span style={{ color:'#f5c518' }}>]</span>Digital
+              <span style={{ color:'#eceaf5', letterSpacing:'-0.03em' }}>Two Bit</span>
+              <span style={{ color:'#f5c518', letterSpacing:'-0.03em' }}>Digital</span>
             </a>
             <p style={{
-              fontFamily: 'var(--font-dm-sans)',
+              fontFamily: 'var(--font-inter)',
               fontWeight: 300,
               fontSize:   '0.875rem',
               color:      '#5e5a7a',
@@ -44,13 +46,15 @@ export default function Footer() {
             }}>
               A SaaS development and AI solutions studio operating globally.
             </p>
-            <div style={{ display:'flex', gap:'0.75rem' }}>
+            <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap' }}>
               {[
-                { flag: '🇬🇧', label: 'United Kingdom' },
-                { flag: '🇵🇰', label: 'Pakistan' },
+                { flag: '🇬🇧', label: 'UK' },
+                { flag: '🇺🇸', label: 'US' },
+                { flag: '🇦🇺', label: 'AUS' },
+                { flag: '🇵🇰', label: 'PK' },
               ].map((m) => (
                 <span key={m.label} style={{
-                  fontFamily:      'var(--font-dm-sans)',
+                  fontFamily:      'var(--font-inter)',
                   fontSize:        '0.72rem',
                   fontWeight:      500,
                   color:           '#9d99b8',
@@ -68,14 +72,14 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
+            <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
               Services
             </h4>
             <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'0.75rem' }}>
               {['Web & App Development', 'AI Integration', 'SaaS Build', 'Compliance & RegTech', 'Government Tenders'].map((s) => (
                 <li key={s}>
                   <a href="#services" style={{
-                    fontFamily:     'var(--font-dm-sans)',
+                    fontFamily:     'var(--font-inter)',
                     fontSize:       '0.85rem',
                     color:          '#5e5a7a',
                     textDecoration: 'none',
@@ -93,7 +97,7 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h4 style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
+            <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
               Products
             </h4>
             <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'0.75rem' }}>
@@ -107,7 +111,7 @@ export default function Footer() {
                     target={p.href.startsWith('http') ? '_blank' : undefined}
                     rel="noopener noreferrer"
                     style={{
-                      fontFamily:     'var(--font-dm-sans)',
+                      fontFamily:     'var(--font-inter)',
                       fontSize:       '0.85rem',
                       color:          '#5e5a7a',
                       textDecoration: 'none',
@@ -125,7 +129,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
+            <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
               Company
             </h4>
             <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'0.75rem' }}>
@@ -138,7 +142,7 @@ export default function Footer() {
                 <li key={l.label}>
                   <a href={l.href}
                     style={{
-                      fontFamily:     'var(--font-dm-sans)',
+                      fontFamily:     'var(--font-inter)',
                       fontSize:       '0.85rem',
                       color:          '#5e5a7a',
                       textDecoration: 'none',
@@ -166,10 +170,10 @@ export default function Footer() {
           flexWrap:       'wrap',
           gap:            '0.5rem',
         }}>
-          <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
+          <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
             © {year} Two Bit Digital Ltd. All rights reserved.
           </p>
-          <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
+          <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
             Two Bit Digital Ltd · Registered in England &amp; Wales
           </p>
         </div>

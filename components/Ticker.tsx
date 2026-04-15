@@ -32,7 +32,7 @@ export default function Ticker() {
             gap:          '1.5rem',
             paddingRight: '3rem',
             whiteSpace:   'nowrap',
-            fontFamily:   'var(--font-syne)',
+            fontFamily:   'var(--font-inter)',
             fontWeight:   700,
             fontSize:     '0.8rem',
             letterSpacing:'0.1em',

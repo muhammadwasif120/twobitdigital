@@ -16,7 +16,16 @@ export default function Nav() {
   const [menuOpen, setMenuOpen]   = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60)
+    let ticking = false
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 60)
+          ticking = false
+        })
+        ticking = true
+      }
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -51,6 +60,7 @@ export default function Nav() {
         {/* Wordmark */}
         <a
           href="#"
+          aria-label="Two Bit Digital — return to top"
           style={{
             display:        'flex',
             alignItems:     'baseline',
@@ -94,7 +104,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               style={{
-                fontFamily:     'var(--font-dm-sans)',
+                fontFamily:     'var(--font-inter)',
                 fontSize:       '0.875rem',
                 fontWeight:     400,
                 color:          '#9d99b8',
@@ -110,7 +120,7 @@ export default function Nav() {
           <a
             href="#contact"
             style={{
-              fontFamily:      'var(--font-syne)',
+              fontFamily:      'var(--font-inter)',
               fontWeight:      700,
               fontSize:        '0.8rem',
               letterSpacing:   '0.04em',
@@ -133,7 +143,8 @@ export default function Nav() {
         <button
           className="show-mobile"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
           style={{
             background: 'none',
             border:     'none',
@@ -151,25 +162,29 @@ export default function Nav() {
       </div>
 
       {/* Mobile menu */}
-      {menuOpen && (
-        <div
-          style={{
-            backgroundColor: 'rgba(9,9,26,0.98)',
-            borderTop:       '1px solid rgba(255,255,255,0.06)',
-            padding:         '1rem 1.5rem 1.5rem',
-            display:         'flex',
-            flexDirection:   'column',
-            gap:             '0.75rem',
-          }}
-          className="mobile-menu"
-        >
+      <div
+        style={{
+          backgroundColor: 'rgba(9,9,26,0.98)',
+          borderTop:       menuOpen ? '1px solid rgba(255,255,255,0.06)' : 'none',
+          padding:         '1rem 1.5rem 1.5rem',
+          display:         'flex',
+          flexDirection:   'column',
+          gap:             '0.75rem',
+          maxHeight:       menuOpen ? '400px' : '0',
+          overflow:        'hidden',
+          transition:      'max-height 0.3s ease, padding 0.3s ease',
+          paddingTop:      menuOpen ? '1rem' : '0',
+          paddingBottom:   menuOpen ? '1.5rem' : '0',
+        }}
+        className="mobile-menu"
+      >
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
               style={{
-                fontFamily:     'var(--font-dm-sans)',
+                fontFamily:     'var(--font-inter)',
                 fontSize:       '1rem',
                 color:          '#9d99b8',
                 textDecoration: 'none',
@@ -185,7 +200,7 @@ export default function Nav() {
             onClick={() => setMenuOpen(false)}
             style={{
               marginTop:       '0.5rem',
-              fontFamily:      'var(--font-syne)',
+              fontFamily:      'var(--font-inter)',
               fontWeight:      700,
               fontSize:        '0.8rem',
               letterSpacing:   '0.04em',
@@ -201,7 +216,6 @@ export default function Nav() {
             Start a Project
           </a>
         </div>
-      )}
 
       <style>{`
         @media (max-width: 600px) {

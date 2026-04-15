@@ -66,7 +66,7 @@ export default function Portfolio() {
         <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
           <div className="reveal section-label" style={{ justifyContent:'center' }}>In-House Products</div>
           <h2 className="reveal reveal-delay-1" style={{
-            fontFamily:   'var(--font-syne)',
+            fontFamily:   'var(--font-inter)',
             fontWeight:   800,
             fontSize:     'clamp(1.9rem, 4vw, 2.8rem)',
             color:        '#eceaf5',
@@ -77,7 +77,7 @@ export default function Portfolio() {
             <span style={{ color: '#f5c518' }}>Owned By Us.</span>
           </h2>
           <p className="reveal reveal-delay-2" style={{
-            fontFamily: 'var(--font-dm-sans)',
+            fontFamily: 'var(--font-inter)',
             fontWeight: 300,
             fontSize:   '1.05rem',
             color:      '#9d99b8',
@@ -124,7 +124,7 @@ export default function Portfolio() {
                 if (arrow) {
                   arrow.style.borderColor     = '#f5c518'
                   arrow.style.color           = '#f5c518'
-                  arrow.style.transform       = 'rotate(45deg)'
+                  arrow.style.transform       = 'scale(1.15)'
                 }
               }}
               onMouseLeave={(e) => {
@@ -136,7 +136,7 @@ export default function Portfolio() {
                 if (arrow) {
                   arrow.style.borderColor     = 'rgba(255,255,255,0.12)'
                   arrow.style.color           = '#5e5a7a'
-                  arrow.style.transform       = 'rotate(0deg)'
+                  arrow.style.transform       = 'scale(1)'
                 }
               }}
             >
@@ -149,7 +149,7 @@ export default function Portfolio() {
                 display:      'flex',
                 alignItems:   'center',
                 justifyContent:'center',
-                fontFamily:   'var(--font-syne)',
+                fontFamily:   'var(--font-inter)',
                 fontWeight:   800,
                 fontSize:     '1rem',
                 color:        p.initials === 'TC' ? '#9d99b8' : '#09091a',
@@ -162,7 +162,7 @@ export default function Portfolio() {
               <div style={{ flex: 1 }}>
                 <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:'0.4rem' }}>
                   <h3 style={{
-                    fontFamily:   'var(--font-syne)',
+                    fontFamily:   'var(--font-inter)',
                     fontWeight:   700,
                     fontSize:     '1.15rem',
                     color:        '#eceaf5',
@@ -191,12 +191,12 @@ export default function Portfolio() {
                   </span>
                 </div>
 
-                <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#5e5a7a', margin:'0 0 0.75rem' }}>
+                <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#5e5a7a', margin:'0 0 0.75rem' }}>
                   {p.sector}
                 </p>
 
                 <p style={{
-                  fontFamily: 'var(--font-dm-sans)',
+                  fontFamily: 'var(--font-inter)',
                   fontWeight: 300,
                   fontSize:   '0.85rem',
                   color:      '#9d99b8',
@@ -209,7 +209,7 @@ export default function Portfolio() {
 
               <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', borderTop:'1px solid rgba(255,255,255,0.05)', paddingTop:'0.85rem' }}>
                 <span style={{
-                  fontFamily:      'var(--font-dm-sans)',
+                  fontFamily:      'var(--font-inter)',
                   fontSize:        '0.7rem',
                   fontWeight:      500,
                   color:           p.status.color,
@@ -225,7 +225,7 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      fontFamily:     'var(--font-dm-sans)',
+                      fontFamily:     'var(--font-inter)',
                       fontSize:       '0.72rem',
                       color:          '#5e5a7a',
                       textDecoration: 'none',

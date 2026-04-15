@@ -68,7 +68,7 @@ export default function Contact() {
         throw new Error('Server error')
       }
     } catch {
-      setToast({ type: 'error', msg: 'Network error — please email us directly at admin@twobitdigital.com' })
+      setToast({ type: 'error', msg: 'Network error — please email us directly at sales@twobitdigital.com' })
     } finally {
       setSubmitting(false)
     }
@@ -80,7 +80,7 @@ export default function Contact() {
     border:          '1px solid rgba(255,255,255,0.08)',
     borderRadius:    '8px',
     padding:         '0.75rem 1rem',
-    fontFamily:      'var(--font-dm-sans)',
+    fontFamily:      'var(--font-inter)',
     fontSize:        '0.9rem',
     color:           '#eceaf5',
     outline:         'none',
@@ -102,7 +102,10 @@ export default function Contact() {
     >
       {/* Toast */}
       {toast.type && (
-        <div style={{
+        <div
+          role="alert"
+          aria-live="assertive"
+          style={{
           position:        'fixed',
           bottom:          '2rem',
           right:           '2rem',
@@ -112,7 +115,7 @@ export default function Contact() {
           borderRadius:    '10px',
           padding:         '1rem 1.5rem',
           maxWidth:        '380px',
-          fontFamily:      'var(--font-dm-sans)',
+          fontFamily:      'var(--font-inter)',
           fontSize:        '0.875rem',
           color:           toast.type === 'success' ? '#4ade80' : '#f87171',
           backdropFilter:  'blur(12px)',
@@ -126,7 +129,7 @@ export default function Contact() {
         <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
           <div className="reveal section-label" style={{ justifyContent:'center' }}>Get In Touch</div>
           <h2 className="reveal reveal-delay-1" style={{
-            fontFamily:   'var(--font-syne)',
+            fontFamily:   'var(--font-inter)',
             fontWeight:   800,
             fontSize:     'clamp(1.9rem, 4vw, 2.8rem)',
             color:        '#eceaf5',
@@ -137,7 +140,7 @@ export default function Contact() {
             <span style={{ color: '#f5c518' }}>Something Together.</span>
           </h2>
           <p className="reveal reveal-delay-2" style={{
-            fontFamily: 'var(--font-dm-sans)',
+            fontFamily: 'var(--font-inter)',
             fontWeight: 300,
             fontSize:   '1.05rem',
             color:      '#9d99b8',
@@ -160,7 +163,7 @@ export default function Contact() {
         >
           {/* Left — contact info */}
           <div className="reveal">
-            <h3 style={{ fontFamily:'var(--font-syne)', fontWeight:700, fontSize:'1rem', color:'#eceaf5', margin:'0 0 1.5rem', letterSpacing:'-0.01em' }}>
+            <h3 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'1rem', color:'#eceaf5', margin:'0 0 1.5rem', letterSpacing:'-0.01em' }}>
               Contact Details
             </h3>
 
@@ -170,7 +173,7 @@ export default function Contact() {
               { label: 'LinkedIn',     value: 'Two Bit Digital',            href: 'https://linkedin.com/company/twobitdigital' },
             ].map((item) => (
               <div key={item.label} style={{ marginBottom:'1.25rem' }}>
-                <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase', margin:'0 0 0.25rem' }}>
+                <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase', margin:'0 0 0.25rem' }}>
                   {item.label}
                 </p>
                 <a
@@ -178,7 +181,7 @@ export default function Contact() {
                   target={item.href.startsWith('http') ? '_blank' : undefined}
                   rel="noopener noreferrer"
                   style={{
-                    fontFamily:     'var(--font-dm-sans)',
+                    fontFamily:     'var(--font-inter)',
                     fontSize:       '0.9rem',
                     color:          '#9d99b8',
                     textDecoration: 'none',
@@ -278,7 +281,7 @@ export default function Contact() {
 
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem', marginBottom:'1rem' }} className="form-row">
                 <div>
-                  <label style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
+                  <label style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
                     Your Name <span style={{ color:'#f5c518' }}>*</span>
                   </label>
                   <input
@@ -287,6 +290,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     required
+                    aria-required="true"
                     placeholder="Jane Smith"
                     style={inputStyle}
                     onFocus={(e)  => (e.target.style.borderColor = 'rgba(245,197,24,0.4)')}
@@ -294,7 +298,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
+                  <label style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
                     Email <span style={{ color:'#f5c518' }}>*</span>
                   </label>
                   <input
@@ -303,6 +307,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     required
+                    aria-required="true"
                     placeholder="jane@company.com"
                     style={inputStyle}
                     onFocus={(e)  => (e.target.style.borderColor = 'rgba(245,197,24,0.4)')}
@@ -313,7 +318,7 @@ export default function Contact() {
 
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem', marginBottom:'1rem' }} className="form-row">
                 <div>
-                  <label style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
+                  <label style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
                     Company / Organisation
                   </label>
                   <input
@@ -328,7 +333,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
+                  <label style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
                     Project Type
                   </label>
                   <select
@@ -348,7 +353,7 @@ export default function Contact() {
               </div>
 
               <div style={{ marginBottom:'1.5rem' }}>
-                <label style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
+                <label style={{ fontFamily:'var(--font-inter)', fontSize:'0.75rem', color:'#9d99b8', display:'block', marginBottom:'0.4rem' }}>
                   Tell us about your project <span style={{ color:'#f5c518' }}>*</span>
                 </label>
                 <textarea
@@ -356,6 +361,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   required
+                  aria-required="true"
                   rows={5}
                   placeholder="Describe your project, goals, and any relevant constraints or timelines…"
                   style={{ ...inputStyle, resize:'vertical', minHeight:'130px' }}
@@ -369,7 +375,7 @@ export default function Contact() {
                   type="submit"
                   disabled={submitting}
                   style={{
-                    fontFamily:      'var(--font-syne)',
+                    fontFamily:      'var(--font-inter)',
                     fontWeight:      700,
                     fontSize:        '0.85rem',
                     letterSpacing:   '0.04em',
@@ -385,9 +391,21 @@ export default function Contact() {
                   onMouseEnter={(e) => { if (!submitting) (e.target as HTMLElement).style.backgroundColor = '#c9a012' }}
                   onMouseLeave={(e) => { if (!submitting) (e.target as HTMLElement).style.backgroundColor = '#f5c518' }}
                 >
-                  {submitting ? 'Sending…' : 'Send Brief →'}
+                  {submitting ? (
+                    <span style={{ display:'flex', alignItems:'center', gap:'0.5rem' }}>
+                      <span style={{
+                        width:'14px', height:'14px',
+                        border:'2px solid rgba(9,9,26,0.3)',
+                        borderTopColor:'#09091a',
+                        borderRadius:'50%',
+                        display:'inline-block',
+                        animation:'spin 0.7s linear infinite',
+                      }} />
+                      Sending…
+                    </span>
+                  ) : 'Send Brief →'}
                 </button>
-                <p style={{ fontFamily:'var(--font-dm-sans)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
+                <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
                   We typically respond within one business day.
                 </p>
               </div>
@@ -401,6 +419,9 @@ export default function Contact() {
         @media (max-width: 768px) {
           .contact-grid { grid-template-columns: 1fr !important; }
           .form-row      { grid-template-columns: 1fr !important; }
+        }
+        @keyframes spin {
+          to { transform: rotate(360deg); }
         }
       `}</style>
     </section>
