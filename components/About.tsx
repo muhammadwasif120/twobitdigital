@@ -121,9 +121,23 @@ export default function About() {
                   fontSize:       '0.75rem',
                   color:          '#f5c518',
                   textDecoration: 'none',
-                  opacity:        0.85,
+                  display:        'block',
+                  marginBottom:   '0.25rem',
                 }}>
                   mwasif@twobitdigital.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/muhammadwasiftbd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontFamily:     'var(--font-inter)',
+                    fontSize:       '0.72rem',
+                    color:          '#9d99b8',
+                    textDecoration: 'none',
+                  }}
+                >
+                  LinkedIn ↗
                 </a>
               </div>
               <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.68rem', color:'#5e5a7a', whiteSpace:'nowrap' }}>
