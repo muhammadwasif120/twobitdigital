@@ -64,6 +64,16 @@ export default function Contact() {
       if (res.ok) {
         setSubmitted(true)
         setForm({ name: '', email: '', company: '', project_type: '', message: '', honeypot: '' })
+        // Fire GA4 conversion event
+        type GtagFn = (cmd: string, event: string, params: Record<string, unknown>) => void
+        const w = window as Window & { gtag?: GtagFn }
+        if (typeof w.gtag === 'function') {
+          w.gtag('event', 'generate_lead', {
+            event_category: 'contact',
+            event_label:    form.project_type || 'General Enquiry',
+            value:          1,
+          })
+        }
       } else {
         throw new Error('Server error')
       }
