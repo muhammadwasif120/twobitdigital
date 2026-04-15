@@ -25,6 +25,7 @@ export default function Contact() {
     honeypot:     '',
   })
   const [submitting, setSubmitting] = useState(false)
+  const [submitted, setSubmitted]   = useState(false)
   const [toast, setToast]           = useState<{ type: ToastType; msg: string }>({ type: null, msg: '' })
 
   useEffect(() => {
@@ -61,7 +62,7 @@ export default function Contact() {
         body:    JSON.stringify(form),
       })
       if (res.ok) {
-        setToast({ type: 'success', msg: "Message sent! We'll be in touch within one business day." })
+        setSubmitted(true)
         setForm({ name: '', email: '', company: '', project_type: '', message: '', honeypot: '' })
       } else {
         throw new Error('Server error')
@@ -193,8 +194,76 @@ export default function Contact() {
 
           </div>
 
-          {/* Right — form */}
+          {/* Right — form or success */}
           <div className="reveal reveal-delay-1">
+            {submitted ? (
+              <div style={{
+                backgroundColor: '#11112b',
+                border:          '1px solid rgba(245,197,24,0.2)',
+                borderRadius:    '14px',
+                padding:         '3rem 2.5rem',
+                textAlign:       'center',
+                display:         'flex',
+                flexDirection:   'column',
+                alignItems:      'center',
+                gap:             '1.25rem',
+              }}>
+                <div style={{
+                  width:           '56px',
+                  height:          '56px',
+                  borderRadius:    '50%',
+                  backgroundColor: 'rgba(245,197,24,0.1)',
+                  border:          '1px solid rgba(245,197,24,0.25)',
+                  display:         'flex',
+                  alignItems:      'center',
+                  justifyContent:  'center',
+                  fontSize:        '1.5rem',
+                }}>
+                  ✓
+                </div>
+                <div>
+                  <h3 style={{
+                    fontFamily:   'var(--font-inter)',
+                    fontWeight:   700,
+                    fontSize:     '1.25rem',
+                    color:        '#eceaf5',
+                    margin:       '0 0 0.6rem',
+                    letterSpacing:'-0.02em',
+                  }}>
+                    Brief Received
+                  </h3>
+                  <p style={{
+                    fontFamily: 'var(--font-inter)',
+                    fontWeight: 300,
+                    fontSize:   '0.95rem',
+                    color:      '#9d99b8',
+                    lineHeight: 1.75,
+                    margin:     0,
+                    maxWidth:   '360px',
+                  }}>
+                    Thank you for reaching out. Your brief has been submitted and a member of our team
+                    will be in touch with you on a priority basis — typically within one business day.
+                  </p>
+                </div>
+                <div style={{
+                  borderTop:   '1px solid rgba(255,255,255,0.06)',
+                  paddingTop:  '1.25rem',
+                  width:       '100%',
+                }}>
+                  <p style={{
+                    fontFamily: 'var(--font-inter)',
+                    fontSize:   '0.78rem',
+                    color:      '#5e5a7a',
+                    margin:     0,
+                  }}>
+                    In the meantime you can reach us directly at{' '}
+                    <a href="mailto:sales@twobitdigital.com" style={{ color:'#f5c518', textDecoration:'none' }}>
+                      sales@twobitdigital.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} noValidate>
               {/* Honeypot */}
               <input
@@ -323,6 +392,7 @@ export default function Contact() {
                 </p>
               </div>
             </form>
+            )}
           </div>
         </div>
       </div>
