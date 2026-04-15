@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Navy background -->
+  <rect width="32" height="32" rx="7" fill="#0d1b3e"/>
+
+  <!-- Orbital swirl (gold, incomplete circle open at top-right) -->
+  <path d="M 16 5 A 11 11 0 1 0 27 16" stroke="#f5c518" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M 16 7.5 A 8.5 8.5 0 1 0 24.5 16" stroke="#f5c518" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Rocket pointing upper-right -->
+  <!-- Body -->
+  <path d="M 13.5 21.5 L 18 10 L 23 14.5 Z" fill="#f5c518"/>
+  <!-- Fin left -->
+  <path d="M 13.5 21.5 L 11 24 L 14.5 22.5 Z" fill="#f5c518" opacity="0.8"/>
+  <!-- Fin right -->
+  <path d="M 23 14.5 L 26 13 L 23.5 16 Z" fill="#f5c518" opacity="0.8"/>
+  <!-- Shadow/hatching overlay -->
+  <path d="M 13.5 21.5 L 18 10 L 23 14.5 Z" fill="#0d1b3e" opacity="0.25"/>
+  <line x1="15" y1="20" x2="21.5" y2="13" stroke="#0d1b3e" stroke-width="0.7" opacity="0.4"/>
+  <line x1="16.5" y1="21" x2="22.5" y2="14.5" stroke="#0d1b3e" stroke-width="0.5" opacity="0.3"/>
+</svg>
