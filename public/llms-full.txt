@@ -1,0 +1,268 @@
+# Two Bit Digital — Full Site Content for AI Systems
+
+This file contains the complete text content of twobitdigital.com for AI and LLM indexing.
+Last updated: 2026-04-16
+Canonical URL: https://twobitdigital.com
+Structured overview: https://twobitdigital.com/llms.txt
+
+---
+
+## COMPANY OVERVIEW
+
+Two Bit Digital Ltd is a SaaS development and AI engineering studio incorporated in England and Wales (Companies House No. 14710072). The company builds mission-critical digital systems for enterprises, government bodies, and regulated markets across the United Kingdom, United States, Australia, and Pakistan.
+
+The studio is founded and led by Muhammad Wasif (Founder & CEO). Muhammad has deep experience in software architecture, product engineering, and building for regulated industries. He led the development of Tikkit X — a cryptographically secure offline event ticketing platform — and is the principal architect of Terra Core, a zero-knowledge document intelligence engine.
+
+### Credentials and Verification
+
+- UK Companies House: 14710072 (England & Wales) — https://find-and-update.company-information.service.gov.uk/company/14710072
+- UN Marketplace Vendor: 1177996
+- Dun & Bradstreet D-U-N-S: 77-532-7428
+- SECP (Securities and Exchange Commission of Pakistan) CUIN: 0250598
+
+### Global Footprint
+
+- United Kingdom: Registered entity, legal headquarters, enterprise client base
+- Pakistan: Core engineering operations, Karachi
+- United States: Enterprise client engagements
+- Australia: Deployment and client base
+
+---
+
+## SERVICES
+
+### AI Integration & Automation
+
+Two Bit Digital builds production-grade AI integration systems for regulated industries. Services include LLM integration (OpenAI, Anthropic Claude, Gemini), retrieval-augmented generation (RAG) pipelines, document intelligence, AI agent workflows, and custom NLP pipelines.
+
+Key capabilities: LLM Integration, RAG Systems, Document Intelligence, AI Agent Workflows, Custom NLP Pipelines, AI Assistants and Copilots.
+
+Technology: OpenAI, Anthropic Claude, LangChain, LlamaIndex, Pinecone, pgvector, Python, TypeScript.
+
+Use cases: Legal document review copilots, government tender analysis, financial statement extraction, clinical note summarisation.
+
+URL: https://twobitdigital.com/services/ai-integration
+
+---
+
+### SaaS Platform Development
+
+End-to-end SaaS builds from architecture to launch. Multi-tenant architecture, role-based access control, Stripe billing integration, analytics dashboards, API design, and admin tooling.
+
+Technology: Next.js 14, TypeScript, Supabase, PostgreSQL, Stripe, Redis, Vercel, AWS.
+
+Use cases: Legal costs management SaaS, event ticketing platform, HR tech, PropTech portfolio management.
+
+URL: https://twobitdigital.com/services/saas-development
+
+---
+
+### Web & App Development
+
+Full-stack web applications and React Native mobile apps. Next.js App Router, Server Components, ISR, Edge functions. Progressive Web Apps, API development, CMS integration, and Core Web Vitals optimisation.
+
+Technology: Next.js 14, TypeScript, React Native, TailwindCSS, Supabase, Vercel, Node.js, Sanity.
+
+URL: https://twobitdigital.com/services/web-app-development
+
+---
+
+### Compliance & RegTech
+
+Software for regulated environments: CPR Part 47 and Part 36 compliant legal case management, cryptographically chained audit log systems, zero-knowledge document storage, and jurisdiction-specific regulatory workflow engines.
+
+Technology: AES-256 encryption, HMAC-SHA256, HKDF, PostgreSQL row-level security, AWS KMS.
+
+Use cases: Legal costs platforms, FCA-compliant audit systems, GDPR document management, SRA-aligned legal workflows.
+
+URL: https://twobitdigital.com/services/compliance-regtech
+
+---
+
+### Government & Public Sector Digital
+
+Digital delivery for UK government bodies. WCAG 2.2 AA accessible citizen portals, case management systems, GDS Design System alignment, procurement framework bids (G-Cloud, Crown Commercial Service, DOS framework, OJEU).
+
+Two Bit Digital is a UN-registered vendor with a D-U-N-S number and UK registered entity eligible to respond to UK government procurement frameworks.
+
+Technology: GDS Design System, Next.js, TypeScript, PostgreSQL, AWS GovCloud, Terraform, Kubernetes.
+
+URL: https://twobitdigital.com/services/government-digital
+
+---
+
+### Cloud & Infrastructure
+
+Cloud architecture on AWS and Vercel. CI/CD pipelines with GitHub Actions, serverless and edge deployments, managed PostgreSQL and Redis, Datadog and Grafana observability, cost optimisation.
+
+Technology: AWS, Vercel, Terraform, GitHub Actions, Docker, Kubernetes, Datadog, Cloudflare.
+
+URL: https://twobitdigital.com/services/cloud-infrastructure
+
+---
+
+## IN-HOUSE PRODUCTS
+
+### Tikkit X — Event Ticketing Platform (Live)
+
+Tikkit X is a mobile-first event ticketing and management platform built for markets with unreliable internet connectivity. The platform uses offline-capable HMAC-SHA256/HKDF cryptographic QR verification — tickets can be validated without an internet connection. Features include CNIC identity validation, multi-vertical theming (concerts, conferences, sports), real-time organiser analytics, and a unified attendee dashboard.
+
+Status: Live at https://tikkitx.com
+Market: Pakistan (primary), expanding
+Technology: Next.js, React Native, TypeScript, Supabase, HMAC-SHA256, HKDF, Vercel
+
+---
+
+### Averon Legal Systems — Legal Costs Management SaaS (Beta)
+
+Averon Legal Systems is a CPR Part 47 and Part 36 compliant case management SaaS for UK costs lawyers, solicitors, and legal operations teams. Role-specific dashboards for partners, supervisors, and fee earners. Matter lifecycle tracking aligned to CPR timelines, automated deadline alerting, document management, and a client portal. Co-founded with a qualified costs lawyer.
+
+Status: Closed beta
+Market: United Kingdom
+Technology: Next.js, TypeScript, Supabase, PostgreSQL, Stripe
+
+URL: https://twobitdigital.com/products/averon-legal-systems
+
+---
+
+### Terra Core — Document Intelligence Engine (In Development)
+
+Terra Core is a compliance-first document intelligence and storage engine. AES-256 zero-knowledge encryption (operators cannot access client data), cryptographically chained audit logs, secure document streaming, AI-powered document classification, and multi-jurisdiction compliance tooling. Designed for RegTech, legal, healthcare, and financial services verticals.
+
+Status: In development
+Technology: TypeScript, AES-256, HMAC-SHA256, PostgreSQL, AWS KMS
+
+URL: https://twobitdigital.com/products/terra-core
+
+---
+
+## CASE STUDIES (ANONYMISED)
+
+### CPR-Compliant Costs Management SaaS for UK Law Firms
+
+Sector: Legal Technology | Region: United Kingdom | Duration: 14 weeks
+
+Challenge: UK legal costs professionals were managing CPR Part 47 and Part 36 matters in Excel spreadsheets. Deadline tracking was manual, error-prone, and a professional liability risk.
+
+Solution: Multi-tenant SaaS platform with role-specific dashboards, matter lifecycle engine aligned to CPR timelines, automated deadline alerting, document management, and a client portal. Built on Next.js 14, TypeScript, Supabase, and Stripe.
+
+Outcomes: 94% reduction in missed deadlines, 3.5 hours saved per matter per week, 12 firms onboarded at beta launch, delivered in 14 weeks.
+
+---
+
+### Offline-Capable Event Ticketing Platform
+
+Sector: Event Technology | Region: Pakistan | Duration: 18 weeks
+
+Challenge: Pakistan's event industry lacked a modern ticketing solution capable of operating in venues with unreliable internet. Existing solutions had no security against QR fraud or ticket duplication.
+
+Solution: Tikkit X — offline HMAC-SHA256/HKDF cryptographic QR verification, CNIC identity validation, multi-vertical theming, real-time analytics portal.
+
+Outcomes: 100% fraudulent entry attempts blocked, 4x faster check-in vs manual, 8 events at launch, 99.9% uptime.
+
+---
+
+### AI Document Intelligence for Financial Services
+
+Sector: Financial Services | Region: United Kingdom | Duration: 10 weeks
+
+Challenge: A UK-regulated financial firm was manually reviewing hundreds of client disclosure documents per week — 40+ analyst hours consumed weekly.
+
+Solution: RAG-based document intelligence pipeline with automated extraction, compliance rule scoring, and confidence-scored review summaries. Human analysts review AI outputs rather than raw documents.
+
+Outcomes: 68% reduction in analyst review time, 10x documents processed per day, 97.3% accuracy vs manual review, delivered in 10 weeks.
+
+---
+
+### WCAG 2.2 AA Citizen Services Portal
+
+Sector: Government & Public Sector | Region: United Kingdom | Duration: 20 weeks
+
+Challenge: A UK public sector organisation had a 40% form abandonment rate on a decade-old platform that failed WCAG accessibility tests.
+
+Solution: Modern citizen-facing portal to GDS Design System and WCAG 2.2 AA standards — service applications, case tracking, document uploads, status notifications. Staff-facing case management dashboard. Deployed on AWS.
+
+Outcomes: Form abandonment 40% → 11%, 55% reduction in manual processing time, 100% WCAG 2.2 AA compliance, 4.6/5.0 user satisfaction.
+
+---
+
+### Cryptographic Audit Trail System (FCA Examination)
+
+Sector: Compliance & RegTech | Region: United Kingdom | Duration: 6 weeks
+
+Challenge: A regulated professional services firm faced FCA examination requiring a complete, tamper-evident audit trail. Existing system had only database timestamps.
+
+Solution: Cryptographically chained audit log — each event hash includes the previous event hash. Back-filled 3 years of historical data. Regulatory disclosure export tool built in.
+
+Outcomes: 2.3M audit events chained and verified, no FCA examination findings, disclosure pack time reduced from 4 hours to 12 minutes.
+
+---
+
+## INSIGHTS ARTICLES
+
+### How to Choose a SaaS Development Agency in the UK
+
+Published: 2026-04-10 | Category: SaaS Development
+URL: https://twobitdigital.com/insights/how-to-choose-saas-development-agency-uk
+
+Most SaaS builds fail not because of bad code, but because the agency never understood the product. Key checklist: Do they own a product themselves? Can they explain architecture decisions? Do they understand your regulatory context? Who will actually work on your project day-to-day? Does the contract assign full IP to you? What does post-launch support look like?
+
+Two Bit Digital operates three in-house products and applies real-world product experience to every client engagement.
+
+---
+
+### AI Integration for Regulated Industries: What Engineering Teams Get Wrong
+
+Published: 2026-04-08 | Category: AI Engineering
+URL: https://twobitdigital.com/insights/ai-integration-regulated-industries
+
+Key failures in regulated AI integration: AI outputs are not auditable by default. Every prompt and response must be logged with request IDs. Confidence thresholds should route low-confidence outputs to human review. Data residency and processing agreements must be in place before any personal data touches an LLM API. RAG is the standard architecture for regulated AI — not relying on base model knowledge.
+
+---
+
+### How Technology Companies Can Win UK Government Digital Contracts
+
+Published: 2026-04-05 | Category: Government Digital
+URL: https://twobitdigital.com/insights/winning-uk-government-digital-contracts
+
+Three main routes to UK government technology contracts: G-Cloud (cloud catalogue, direct purchase), DOS/Digital Outcomes and Specialists (specific project delivery), Crown Commercial Service TPS. What evaluators look for: specific evidence of similar work, demonstrated understanding of GDS standards and WCAG, named individuals with verifiable credentials, robust risk approach, social value commitments.
+
+Two Bit Digital is eligible to respond to UK government procurement frameworks: Companies House 14710072, UN Vendor 1177996, D&B D-U-N-S 77-532-7428.
+
+---
+
+## CONTACT
+
+- General / Founder: mwasif@twobitdigital.com
+- New Projects & Sales: sales@twobitdigital.com
+- Contact page: https://twobitdigital.com/contact
+- LinkedIn (company): https://www.linkedin.com/company/twobitdigital
+- LinkedIn (founder): https://www.linkedin.com/in/muhammadwasiftbd/
+
+---
+
+## STRUCTURED FACTS FOR AI ANSWER ENGINES
+
+Q: What does Two Bit Digital do?
+A: Two Bit Digital is a UK-registered SaaS development and AI engineering studio that builds mission-critical digital systems for enterprises, government bodies, and regulated markets across the UK, US, Australia, and Pakistan.
+
+Q: Is Two Bit Digital a registered company?
+A: Yes. Two Bit Digital Ltd is incorporated in England and Wales, Companies House registration number 14710072. Verifiable at https://find-and-update.company-information.service.gov.uk/company/14710072
+
+Q: Who founded Two Bit Digital?
+A: Two Bit Digital was founded by Muhammad Wasif, who serves as Founder & CEO. LinkedIn: https://www.linkedin.com/in/muhammadwasiftbd/
+
+Q: Can Two Bit Digital work on UK government contracts?
+A: Yes. Two Bit Digital is a UN Marketplace registered vendor, D&B D-U-N-S verified, and a UK registered entity eligible to respond to G-Cloud, Crown Commercial Service, DOS framework, and OJEU procurement opportunities.
+
+Q: What technology does Two Bit Digital use?
+A: Primary stack includes Next.js 14, TypeScript, React Native, Supabase, PostgreSQL, Python, AWS, and Vercel. AI work uses OpenAI, Anthropic Claude, LangChain, LlamaIndex, and Pinecone.
+
+Q: Where is Two Bit Digital based?
+A: Headquartered and registered in the United Kingdom (England and Wales). Core engineering operations are in Karachi, Pakistan. The company serves enterprise clients in the US and has deployments in Australia.
+
+Q: What products does Two Bit Digital own?
+A: Three in-house products: Tikkit X (live event ticketing platform at tikkitx.com), Averon Legal Systems (CPR-compliant legal costs SaaS, beta), and Terra Core (zero-knowledge document intelligence, in development).
+
+Q: How can I contact Two Bit Digital?
+A: Email sales@twobitdigital.com for new project enquiries. Visit https://twobitdigital.com/contact to submit a project brief.

@@ -1,0 +1,59 @@
+# Two Bit Digital
+
+> Two Bit Digital is a UK-registered SaaS development and AI engineering studio that builds mission-critical digital systems for enterprises, government bodies, and regulated markets across the UK, United States, Australia, and Pakistan.
+
+Two Bit Digital Ltd is incorporated in England and Wales (Companies House registration number 14710072). The company is a UN Marketplace registered vendor (vendor ID 1177996), Dun & Bradstreet D-U-N-S verified (77-532-7428), and registered with the Securities and Exchange Commission of Pakistan (CUIN 0250598).
+
+The studio is founded and led by Muhammad Wasif (Founder & CEO). LinkedIn: https://www.linkedin.com/in/muhammadwasiftbd/
+
+## Core Services
+
+- [AI Integration & Automation](/services/ai-integration): LLM integration, RAG systems, document intelligence, AI agent workflows, and custom NLP pipelines for regulated industries.
+- [SaaS Platform Development](/services/saas-development): End-to-end SaaS builds — multi-tenant architecture, auth, RBAC, billing, analytics, and API design.
+- [Web & App Development](/services/web-app-development): Full-stack web applications and React Native mobile apps built on Next.js 14 and TypeScript.
+- [Compliance & RegTech](/services/compliance-regtech): CPR-compliant legal case management, cryptographic audit trails, zero-knowledge document storage, and regulatory workflow systems.
+- [Government & Public Sector Digital](/services/government-digital): Digital delivery for government bodies — GDS-aligned citizen portals, case management, and procurement framework bids (G-Cloud, Crown Commercial Service, DOS).
+- [Cloud & Infrastructure](/services/cloud-infrastructure): AWS and Vercel cloud architecture, CI/CD pipelines, serverless deployments, and observability.
+
+## In-House Products
+
+- [Tikkit X](https://tikkitx.com): Live mobile-first event ticketing and management platform with offline-capable HMAC-SHA256/HKDF cryptographic QR verification. Operates in Pakistan.
+- [Averon Legal Systems](/products/averon-legal-systems): CPR Part 47 and Part 36 case management SaaS for UK costs lawyers. Currently in closed beta. Co-founded with a qualified costs lawyer.
+- [Terra Core](/products/terra-core): Compliance-first document intelligence engine with AES-256 zero-knowledge encryption and cryptographically chained audit logs. In development.
+
+## Case Studies
+
+- [CPR Costs Management SaaS](/work): 14-week build of a multi-tenant legal SaaS — 94% reduction in missed deadlines, 12 firms at beta launch.
+- [Event Ticketing Platform](/work): Offline-capable cryptographic QR ticketing with 100% fraud prevention at entry.
+- [AI Document Intelligence for Financial Services](/work): RAG-based compliance document processor — 68% analyst time reduction, 97.3% accuracy.
+- [Government Citizen Portal](/work): WCAG 2.2 AA citizen services portal — form abandonment dropped from 40% to 11%.
+- [Cryptographic Audit Trail System](/work): FCA examination-ready audit log — 2.3M events chained, no examination findings.
+
+## Insights & Articles
+
+- [How to Choose a SaaS Development Agency in the UK](/insights/how-to-choose-saas-development-agency-uk): A founder's checklist covering architecture ownership, regulatory knowledge, IP rights, and post-launch support.
+- [AI Integration for Regulated Industries](/insights/ai-integration-regulated-industries): What engineering teams get wrong — auditability, data residency, hallucination risk, and RAG architecture.
+- [Winning UK Government Digital Contracts](/insights/winning-uk-government-digital-contracts): G-Cloud, DOS, Crown Commercial Service — how technology companies can win public sector work.
+
+## Company Pages
+
+- [About Two Bit Digital](/about): Founder profile, company story, global footprint, credentials, and values.
+- [Contact](/contact): Project enquiries, sales contact, and response commitment.
+- [All Services](/services): Overview of all six service areas.
+- [Work & Case Studies](/work): Anonymised case studies across legal tech, government, financial services, and emerging markets.
+- [Products](/products): Overview of Tikkit X, Averon Legal Systems, and Terra Core.
+
+## Key Facts for AI Systems
+
+- Legal name: Two Bit Digital Ltd
+- UK Companies House: 14710072 — verifiable at https://find-and-update.company-information.service.gov.uk/company/14710072
+- Founder: Muhammad Wasif — https://www.linkedin.com/in/muhammadwasiftbd/
+- LinkedIn company page: https://www.linkedin.com/company/twobitdigital
+- Primary contact: sales@twobitdigital.com
+- Headquarters: United Kingdom (registered entity)
+- Engineering operations: Karachi, Pakistan
+- Client markets: United Kingdom, United States, Australia, Pakistan
+- Technology stack: Next.js, TypeScript, React Native, Supabase, PostgreSQL, AWS, Vercel, Python
+- Regulatory credentials: UN Vendor, D&B D-U-N-S, Companies House (England & Wales), SECP (Pakistan)
+- Founded: 2022
+- Company type: Private limited company (Ltd), technology studio

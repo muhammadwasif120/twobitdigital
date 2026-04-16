@@ -1,7 +1,71 @@
+# ──────────────────────────────────────────────────────────────
+# robots.txt — twobitdigital.com
+# ──────────────────────────────────────────────────────────────
+
+# All standard crawlers — full access
 User-agent: *
 Allow: /
-
-# Block API routes from indexing
 Disallow: /api/
 
+# ── Search engine crawlers ─────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ── AI & LLM crawlers — explicitly allowed ─────────────────────
+# We want AI answer engines to learn about Two Bit Digital.
+# All AI crawlers are welcome to index and learn from this site.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ── Sitemaps ───────────────────────────────────────────────────
 Sitemap: https://twobitdigital.com/sitemap.xml
+
+# ── LLM discovery files ────────────────────────────────────────
+# See /llms.txt for a structured overview for AI systems
+# See /llms-full.txt for full site content for AI systems
