@@ -192,14 +192,28 @@ export default function Footer() {
           justifyContent: 'space-between',
           alignItems:     'center',
           flexWrap:       'wrap',
-          gap:            '0.5rem',
+          gap:            '0.75rem',
         }}>
           <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
             © {year} Two Bit Digital Ltd. All rights reserved.
           </p>
-          <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
-            Two Bit Digital Ltd · Registered in England &amp; Wales · Co. 14710072
-          </p>
+          <div style={{ display:'flex', alignItems:'center', gap:'1.25rem', flexWrap:'wrap' }}>
+            <Link href="/privacy" style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', textDecoration:'none' }}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = '#9d99b8')}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = '#5e5a7a')}
+            >
+              Privacy Policy
+            </Link>
+            <Link href="/terms" style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', textDecoration:'none' }}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = '#9d99b8')}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = '#5e5a7a')}
+            >
+              Terms of Service
+            </Link>
+            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#5e5a7a', margin:0 }}>
+              Two Bit Digital Ltd · Registered in England &amp; Wales · Co. 14710072
+            </p>
+          </div>
         </div>
       </div>
 
