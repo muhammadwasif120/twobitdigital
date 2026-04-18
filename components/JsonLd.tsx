@@ -3,6 +3,40 @@
 
 const SITE_URL = 'https://twobitdigital.com'
 
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${SITE_URL}/#founder`,
+  name: 'Muhammad Wasif',
+  jobTitle: 'Founder & CEO',
+  description:
+    'Muhammad Wasif is the Founder & CEO of Two Bit Digital Ltd, a UK-registered SaaS development and AI engineering studio. He leads technical strategy, client engagements, and product development across regulated markets globally.',
+  url: `${SITE_URL}/about`,
+  email: 'mwasif@twobitdigital.com',
+  sameAs: [
+    'https://www.linkedin.com/in/muhammadwasiftbd/',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: 'Two Bit Digital Ltd',
+  },
+  knowsAbout: [
+    'SaaS Development',
+    'AI Engineering',
+    'Cloud Architecture',
+    'RegTech',
+    'Government Digital',
+    'Next.js',
+    'TypeScript',
+    'Supabase',
+  ],
+  nationality: {
+    '@type': 'Country',
+    name: 'United Kingdom',
+  },
+}
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -196,6 +230,46 @@ const servicesSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How Two Bit Digital Delivers a Software Project',
+  description:
+    'Two Bit Digital follows a four-phase delivery process — from initial discovery through to production deployment — ensuring every project is transparent, milestone-driven, and production-grade from day one.',
+  provider: { '@id': `${SITE_URL}/#organization` },
+  totalTime: 'P4W',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Discovery',
+      text: 'We map your requirements, audience, and constraints in full before anything is designed. No assumptions — just a clear problem statement.',
+      url: `${SITE_URL}/#process`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Architecture',
+      text: 'System design, stack selection, and a documented technical roadmap. Every structural decision is made deliberately before a line of code is written.',
+      url: `${SITE_URL}/#process`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Build',
+      text: 'Iterative, milestone-driven delivery. Production-grade from day one — type-safe, tested, and reviewable at every stage of development.',
+      url: `${SITE_URL}/#process`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Deploy & Support',
+      text: "CI/CD pipelines, observability dashboards, and ongoing support. We don't hand over the keys and disappear.",
+      url: `${SITE_URL}/#process`,
+    },
+  ],
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -272,7 +346,15 @@ export default function JsonLd() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <script
         type="application/ld+json"

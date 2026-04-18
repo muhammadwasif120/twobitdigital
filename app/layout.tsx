@@ -47,6 +47,13 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.svg' },
   alternates: {
     canonical: 'https://twobitdigital.com',
+    languages: {
+      'en-GB': 'https://twobitdigital.com',
+      'en-US': 'https://twobitdigital.com',
+      'en-AU': 'https://twobitdigital.com',
+      'en-PK': 'https://twobitdigital.com',
+      'x-default': 'https://twobitdigital.com',
+    },
   },
   openGraph: {
     title: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
