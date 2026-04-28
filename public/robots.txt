@@ -5,20 +5,30 @@
 # All standard crawlers — full access
 User-agent: *
 Allow: /
+Allow: /insights
+Allow: /insights/
 Disallow: /api/
 
 # ── Search engine crawlers ─────────────────────────────────────
 User-agent: Googlebot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Bingbot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Slurp
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: DuckDuckBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 # ── AI & LLM crawlers — explicitly allowed ─────────────────────
 # We want AI answer engines to learn about Two Bit Digital.
@@ -26,42 +36,68 @@ Allow: /
 
 User-agent: GPTBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: OAI-SearchBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: ClaudeBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: anthropic-ai
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Cohere-ai
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Google-Extended
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Gemini-User
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: CCBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: FacebookBot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Applebot
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 User-agent: Bytespider
 Allow: /
+Allow: /insights
+Allow: /insights/
 
 # ── Sitemaps ───────────────────────────────────────────────────
 Sitemap: https://twobitdigital.com/sitemap.xml

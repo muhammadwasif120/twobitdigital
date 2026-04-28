@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     'Technical insights and industry analysis from Two Bit Digital. Covering SaaS architecture, AI integration for regulated industries, and UK government digital procurement.',
   alternates: {
     canonical: 'https://twobitdigital.com/insights',
+    types: {
+      'application/rss+xml': 'https://twobitdigital.com/feed.xml',
+    },
   },
   openGraph: {
     title: 'Insights | SaaS, AI & Government Technology — Two Bit Digital',

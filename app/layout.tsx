@@ -100,6 +100,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Two Bit Digital Insights — RSS Feed"
+          href="https://twobitdigital.com/feed.xml"
+        />
       </head>
       <body className={inter.variable}>
         <JsonLd />

@@ -8,6 +8,8 @@ import CTABanner from '@/components/shared/CTABanner'
 import RelatedArticles from './RelatedArticles'
 import { insights, getInsight } from '@/lib/insights'
 import type { InsightPost } from '@/lib/insights'
+import { howtoData }     from '@/lib/howto-steps'
+import { internalLinks } from '@/lib/internal-links'
 
 // ── Static params ────────────────────────────────────────────────────────────
 
@@ -303,7 +305,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   const post = getInsight(params.slug)
   if (!post) notFound()
 
-  const related = insights.filter((p) => p.slug !== post.slug)
+  const related  = insights.filter((p) => p.slug !== post.slug)
+  const howto    = howtoData[post.slug]
+  const relLinks = internalLinks[post.slug] ?? []
 
   const jsonLd = {
     '@context':   'https://schema.org',
@@ -336,12 +340,33 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     },
   }
 
+  const howtoJsonLd = howto
+    ? {
+        '@context':   'https://schema.org',
+        '@type':      'HowTo',
+        name:         howto.name,
+        description:  howto.description,
+        step:         howto.steps.map((s, i) => ({
+          '@type':   'HowToStep',
+          position:  i + 1,
+          name:      s.name,
+          text:      s.text,
+        })),
+      }
+    : null
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {howtoJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howtoJsonLd) }}
+        />
+      )}
       <Nav />
       <main style={{ backgroundColor: '#09091a', minHeight: '100vh' }}>
 
@@ -375,8 +400,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             zIndex:    1,
           }}>
             <Breadcrumb crumbs={[
-              { label: 'Home',     href: '/' },
-              { label: 'Insights', href: '/insights' },
+              { label: 'Home',          href: '/' },
+              { label: 'Insights',      href: '/insights' },
+              { label: post.category,   href: '/insights' },
               { label: post.title },
             ]} />
 
@@ -470,6 +496,68 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <ArticleContent content={post.content} />
           </div>
         </section>
+
+        {/* ── Related Reading ───────────────────────────────────────── */}
+        {relLinks.length > 0 && (
+          <section style={{
+            backgroundColor: '#09091a',
+            paddingBottom:   '2rem',
+          }}>
+            <div style={{
+              maxWidth: '720px',
+              margin:   '0 auto',
+              padding:  '0 1.5rem',
+            }}>
+              <div style={{
+                background:   'rgba(245,197,24,0.04)',
+                border:       '1px solid rgba(245,197,24,0.18)',
+                borderRadius: '10px',
+                padding:      '1.75rem 2rem',
+              }}>
+                <p style={{
+                  fontFamily:    'var(--font-inter)',
+                  fontWeight:    700,
+                  fontSize:      '0.75rem',
+                  letterSpacing: '0.07em',
+                  textTransform: 'uppercase',
+                  color:         '#f5c518',
+                  margin:        '0 0 1.25rem',
+                }}>
+                  Related Reading
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+                  {relLinks.map((link) => (
+                    <li key={link.href} style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                      <Link
+                        href={link.href}
+                        style={{
+                          fontFamily:    'var(--font-inter)',
+                          fontWeight:    600,
+                          fontSize:      '0.9rem',
+                          color:         '#eceaf5',
+                          textDecoration:'none',
+                          letterSpacing: '-0.01em',
+                        }}
+                      >
+                        {link.label} →
+                      </Link>
+                      {link.note && (
+                        <span style={{
+                          fontFamily: 'var(--font-inter)',
+                          fontSize:   '0.8rem',
+                          color:      '#5e5a7a',
+                          lineHeight: 1.6,
+                        }}>
+                          {link.note}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── Author block ──────────────────────────────────────────── */}
         <section style={{
