@@ -17,9 +17,19 @@ The studio is founded and led by Muhammad Wasif (Founder & CEO). LinkedIn: https
 
 ## In-House Products
 
-- [Tikkit X](https://tikkitx.com): Live mobile-first event ticketing and management platform with offline-capable HMAC-SHA256/HKDF cryptographic QR verification. Operates in Pakistan.
-- [Averon Legal Systems](/products/averon-legal-systems): CPR Part 47 and Part 36 case management SaaS for UK costs lawyers. Currently in closed beta. Co-founded with a qualified costs lawyer.
+- [Tikkit X](https://tikkitx.com): Live mobile-first event ticketing and management platform with offline-capable HMAC-SHA256/HKDF cryptographic QR verification. Operates in Pakistan. Supports JazzCash and EasyPaisa payments. Free to start.
+- [Averon Legal Systems](/products/averon-legal-systems): CPR Part 47 and Part 36 case management SaaS for UK costs lawyers. Role-based dashboards, automated deadline alerting, document management, and client portal. Currently in closed beta.
 - [Terra Core](/products/terra-core): Compliance-first document intelligence engine with AES-256 zero-knowledge encryption and cryptographically chained audit logs. In development.
+
+## Legal Technology Solutions
+
+Two Bit Digital builds end-to-end digital solutions for law firms, covering both client-facing and internal management layers.
+
+Client-facing: Professional law firm websites, client portals with case diary access, secure document sharing, consultation booking, judgements libraries, and online case search.
+
+Internal management: Matter lifecycle tracking, CPR procedural deadline engines, document management with role-based access, case file digitisation, employee and team management, time recording, and tamper-evident audit trails.
+
+Live example: YKC Legal (ykclegal.org) — a 75-year-old Pakistani law firm for whom Two Bit Digital built a complete digital presence including website, client portal, case search, judgements repository, and consultation booking.
 
 ## Case Studies
 
@@ -30,6 +40,40 @@ The studio is founded and led by Muhammad Wasif (Founder & CEO). LinkedIn: https
 - [Cryptographic Audit Trail System](/work): FCA examination-ready audit log — 2.3M events chained, no examination findings.
 
 ## Insights & Articles
+
+### AI & Custom Software
+
+- [AI Workflows Explained: How Businesses Are Automating Operations in 2025](/insights/what-are-ai-workflows): What AI workflows are, the six main types, how they differ from traditional automation, which business processes are best suited, how to build one, and how to measure ROI.
+- [Custom Software vs. Off-the-Shelf: Why Bespoke Solutions Win for Growing Businesses](/insights/custom-software-vs-off-the-shelf): A decision framework comparing custom and packaged software — when each is appropriate, total cost of ownership, and how to make the right call.
+- [How to Build an AI Automation Strategy for Your Business](/insights/how-to-build-an-ai-automation-strategy): Six-step guide to building a coherent AI automation strategy — process auditing, candidate identification, architecture selection, build vs partner, and measurement.
+- [What Is a RAG System? How AI Can Search and Learn From Your Own Documents](/insights/what-is-a-rag-system): Plain-English explanation of Retrieval-Augmented Generation — how it works, why it outperforms standard LLMs for business, and the best use cases.
+- [The Hidden Cost of Manual Business Processes](/insights/hidden-cost-of-manual-business-processes): Full cost breakdown of manual processes beyond salary — error rates, process latency, opportunity cost, compliance risk, and staff retention impact.
+
+### Event Technology / Tikkit X
+
+- [Event Management Software in 2025: What Every Organiser Needs](/insights/event-management-software-guide-2025): Complete buyer's guide — essential features, offline capability, payment method coverage, fraud prevention, what to avoid, and evaluation checklist.
+- [How Offline QR Verification Is Solving Event Fraud Without the Internet](/insights/offline-qr-verification-event-ticketing): Technical explanation of HMAC-SHA256 cryptographic QR verification — how it works, why standard QR systems fail, and its fraud prevention advantages.
+- [Tikkit X: How We Are Reshaping Event Management in Pakistan](/insights/tikkit-x-event-management-pakistan): Origin story, feature walkthrough, JazzCash and EasyPaisa payment integration, supported event types, and what sets Tikkit X apart from other platforms.
+- [From Guest List to Gate: A Complete Guide to Running a Paperless Event](/insights/how-to-run-a-paperless-event-pakistan): Step-by-step guide to fully digital event management — setup, registration, payments, QR check-in, and post-event analytics.
+
+### Legal Technology
+
+- [Digital Transformation for Law Firms: The Complete Guide](/insights/law-firm-digital-transformation-guide): Complete playbook covering the client-facing layer, the internal management layer, compliance requirements, timeline, cost, and how to choose a legal technology partner.
+- [CPR Part 47 Compliance Software: What UK Costs Lawyers Need](/insights/cpr-part-47-compliance-software): Operational challenges of CPR 47 compliance, what purpose-built software must do, and how Averon Legal Systems addresses them.
+- [Why Your Law Firm Needs a Client Portal (And What It Should Include)](/insights/law-firm-client-portal-guide): Client expectations in 2025, what a portal must contain (case diary, document access, hearings calendar), security requirements, and business benefits.
+- [Case File Digitisation for Law Firms: How to Move From Paper to Digital](/insights/law-firm-case-file-digitisation): Seven-step guide to law firm digitisation — audit, prioritisation, scanning, taxonomy, access controls, archive management, and common mistakes to avoid.
+- [Law Firm Employee Management Software: Tracking Time, Tasks, and Performance](/insights/law-firm-employee-management-software): Role-based dashboards, matter-linked time recording, task allocation, document access controls, and what to look for when evaluating legal HR software.
+- [End-to-End Legal Tech: How One Platform Can Run Your Entire Law Firm](/insights/end-to-end-legal-tech-platform): The fragmented law firm problem, what a complete digital stack includes, how client-facing and internal layers connect, and risks of fragmentation.
+
+### Two Bit Digital Brand & Agency
+
+- [What Is a SaaS Development Studio?](/insights/what-is-a-saas-development-studio): How a SaaS studio differs from a digital agency and freelance team, what it delivers, when you need one, and the questions to ask before hiring.
+- [From Idea to Product: Inside Two Bit Digital's AI Engineering Process](/insights/inside-two-bit-digital-ai-engineering-process): The five-phase process — discovery and architecture, engineering foundation, AI and integration layer, compliance QA, and deployment — used on every Two Bit Digital build.
+- [How We Built a CPR-Compliant Legal SaaS in Six Months: The Averon Story](/insights/building-averon-legal-systems-case-study): Full case study covering the brief, compliance constraints, architecture decisions, multi-tenant security model, client portal challenges, and lessons learned.
+- [AI Integration vs. AI-Native Software: What's the Right Approach?](/insights/ai-integration-vs-ai-native-software): Decision framework for choosing between integrating AI into existing software and building AI-native from scratch — with cost, timeline, and risk comparison.
+- [RegTech and Compliance Software: Why Regulated Industries Cannot Afford Generic Tools](/insights/regtech-compliance-software-regulated-industries): What RegTech means, compliance-first architecture requirements, why generic software fails regulated environments, and how to evaluate a RegTech provider.
+
+### Previously Published
 
 - [How to Choose a SaaS Development Agency in the UK](/insights/how-to-choose-saas-development-agency-uk): A founder's checklist covering architecture ownership, regulatory knowledge, IP rights, and post-launch support.
 - [AI Integration for Regulated Industries](/insights/ai-integration-regulated-industries): What engineering teams get wrong — auditability, data residency, hallucination risk, and RAG architecture.
