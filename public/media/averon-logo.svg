@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160">
+  <title>Averon Legal Systems — Product Wordmark</title>
+  <rect width="480" height="160" rx="16" fill="#09091a"/>
+  <text
+    x="240" y="78"
+    text-anchor="middle"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="52"
+    letter-spacing="-1.6"
+    fill="#eceaf5"
+  >Averon</text>
+  <text
+    x="240" y="112"
+    text-anchor="middle"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="500"
+    font-size="20"
+    letter-spacing="2"
+    fill="#9B7EC8"
+  >LEGAL SYSTEMS</text>
+</svg>

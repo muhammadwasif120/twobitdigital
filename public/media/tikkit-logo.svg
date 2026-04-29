@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160">
+  <title>Tikkit X — Product Wordmark</title>
+  <rect width="360" height="160" rx="16" fill="#09091a"/>
+  <text
+    x="180" y="92"
+    text-anchor="middle"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="56"
+    letter-spacing="-1.8"
+  >
+    <tspan fill="#eceaf5">Tikkit </tspan><tspan fill="#f5c518">X</tspan>
+  </text>
+</svg>
