@@ -1959,6 +1959,564 @@ export const insights: InsightPost[] = [
       },
     ],
   },
+
+  // ── MVP Studio Article 1: Cornerstone — How to Build a SaaS MVP ───────────
+  {
+    slug:        'how-to-build-a-saas-mvp',
+    title:       'How to Build a SaaS MVP in 2025: A Founder\'s Complete Guide',
+    excerpt:     'A practical, opinionated guide to building a SaaS MVP in 2025 — what to build, what to cut, which stack to use, and how to ship in weeks rather than months.',
+    publishedAt: '2026-05-05',
+    readTime:    '16 min read',
+    category:    'MVP Development',
+    tags:        ['SaaS MVP', 'MVP development', 'startup', 'product development', 'founder guide'],
+    metaTitle:   'How to Build a SaaS MVP in 2025: A Founder\'s Complete Guide | Two Bit Digital',
+    metaDesc:    'How to build a SaaS MVP in 2025 — scope, stack, timeline, and launch. A practical guide from Two Bit Digital, a UK SaaS MVP studio that ships production software in 10 days.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Most SaaS MVPs take too long and ship too much. The average founder spends six months building features that users will never touch, on a timeline that stretches indefinitely, with a budget that doubles from the original estimate. This is not because building software is hard. It is because scope is hard. This guide is about how to build a SaaS MVP the right way: what to scope, what to cut, which technology to use, and how to get a production application in front of real users in weeks — not quarters.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Is an MVP and What Is It Not?',
+        text: 'An MVP — Minimum Viable Product — is the smallest version of your product that delivers real value to a real user. Not the smallest version you can build. The smallest version that a user would actually pay for, use, or recommend. This distinction matters enormously. An MVP is not a prototype. A prototype is a mockup. An MVP is a working, deployed application that real users can sign up for and use. An MVP is not a wireframe. Figma is not an MVP. An MVP is not an alpha. An MVP is production-ready — it may be limited in scope, but what it does, it does correctly and reliably.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Scope Session: How to Define What Ships',
+        text: 'The most important step in building an MVP happens before a single line of code is written. It is the scope session — a structured conversation that answers: what is the one problem this product solves, who has that problem, what is the core action the user takes, and what is the minimum feature set that makes that action possible? From the scope session you should be able to write down, in plain language, the complete feature list. If you cannot write it down, it is not ready to build. The scope session also defines what does not ship. This is as important as what does. Features that are deferred to v2 are not failures — they are scope discipline. Every feature you cut from v1 is timeline you recover.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Should Your SaaS MVP Include?',
+      },
+      {
+        type: 'ul',
+        items: [
+          'User authentication — email/password, magic link, or OAuth (Google, GitHub). Users need to sign up and sign in.',
+          'The core feature — the single flow that delivers the value proposition. Not three features. One.',
+          'A dashboard or home screen — where the user lands after sign-in and from which they navigate.',
+          'Basic data persistence — what the user creates or inputs is saved and retrievable.',
+          'Responsive UI — mobile and desktop. Users will test your MVP on their phone.',
+          'An onboarding path — a new user should be able to reach the value moment without a call from you.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'What Should Your SaaS MVP Not Include?',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Native mobile apps — a responsive web app is investor-sufficient and ten times faster to ship.',
+          'A complex admin panel — you can manage early users with direct database access or a simple read view.',
+          'Advanced reporting or analytics — measure user behaviour with Posthog or Mixpanel as an integration, not a built feature.',
+          'API access for third parties — not needed until you have internal users satisfied.',
+          'Multi-language support — solve one market first.',
+          'GDPR consent management beyond the basics — a privacy policy and cookie notice is sufficient at MVP stage.',
+          'Payment billing if your primary goal is validation — it is faster to invoice manually for the first ten customers.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Which Tech Stack Should You Use?',
+        text: 'In 2025, the correct stack for a SaaS MVP is: Next.js 14 (App Router) with TypeScript for the application layer, Supabase for the database and authentication, Vercel for deployment, and Tailwind CSS for styling. This is not a trend. This is a deliberate selection based on four criteria: speed to ship, developer hire-ability when you bring on your first engineer, no vendor lock-in (Supabase is open source, Postgres is portable), and production-grade security from day one (Supabase\'s Row-Level Security isolates user data at the database layer). Stripe for payments if your MVP includes billing. Resend for transactional email. That is the complete stack for 95% of SaaS MVPs.',
+      },
+      {
+        type: 'h2',
+        heading: 'Build It Yourself or Hire a Developer?',
+        text: 'If you are a technical founder who codes professionally, build it yourself with the stack above. If you are non-technical, or if your time is better spent on customers than on code, hire a specialist. The choice between a freelancer, an agency, and a fixed-price MVP studio is primarily about risk. A freelancer is cheap upfront but variable in quality and reliability. A traditional agency is reliable but slow and expensive. A fixed-price MVP studio — like Two Bit Digital — gives you a defined deliverable at a defined price in a defined timeline. The trade-off is scope discipline: the feature list must be agreed upfront, and additions are quoted separately. For most founders, that trade-off is worth it.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Is a Realistic MVP Timeline?',
+        text: 'A production SaaS MVP — authentication, core feature, responsive UI, deployed on a real domain — can be built in 10 working days by an experienced team with a locked scope. That is Two Bit Digital\'s standard timeline. If you are building it yourself, budget 6–12 weeks depending on your technical skill and hours available. If you are using a traditional agency, budget 3–6 months. The difference is not the complexity of the code — it is scope discipline and stack familiarity. An experienced team working on the same stack every day, with a locked spec, is dramatically faster than a general agency starting from scratch.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Does an MVP Launch Actually Look Like?',
+      },
+      {
+        type: 'ul',
+        items: [
+          'A live URL on your domain — not a Vercel preview link, but your actual domain.',
+          'Real users can sign up and use the core feature without your intervention.',
+          'You own the GitHub repository and all deployment credentials.',
+          'Basic documentation exists so that any competent developer can run it locally.',
+          'You have an analytics tool (Posthog, GA4) tracking signups and core actions.',
+          'You have a feedback mechanism — a Typeform, an in-app prompt, or a direct email — to collect early user reactions.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'What Happens After Launch?',
+        text: 'The MVP is not the end. It is the beginning of a feedback loop. After launch, your job is to get ten users, talk to them, and identify which parts of the product they actually use, which parts confuse them, and what they wish existed. That feedback shapes v2. Do not start building v2 until you have learned from v1. The most common mistake post-launch is building more features before validating the features you shipped. Talk to users. Watch recordings of their sessions. Read the feedback. Then prioritise.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital builds production SaaS MVPs in 10 working days. Fixed price. Real code. Full ownership on Day 10. If you are ready to scope your MVP, book a free scope session — we will map exactly what ships before you commit to anything.',
+      },
+    ],
+    faq: [
+      { q: 'How long does it take to build a SaaS MVP?', a: 'With a locked scope and an experienced team using a standardised stack, a production SaaS MVP can be built in 10 working days. Building solo, budget 6–12 weeks. With a traditional agency, budget 3–6 months.' },
+      { q: 'What features should a SaaS MVP include?', a: 'User authentication, the single core feature that delivers your value proposition, a basic dashboard, data persistence, and a responsive UI. Everything else is v2.' },
+      { q: 'Should I build my MVP with no-code tools?', a: 'No-code tools (Bubble, Webflow, Glide) are suitable for very simple MVPs or for building a prototype to test UX assumptions. For a production SaaS with real users, paying customers, and plans for growth, you need real code that you own and can extend.' },
+    ],
+  },
+
+  // ── MVP Studio Article 2: Commercial — SaaS Development Cost ──────────────
+  {
+    slug:        'saas-development-cost-uk',
+    title:       'How Much Does SaaS Development Cost in the UK? (2025 Guide)',
+    excerpt:     'Honest numbers on what SaaS development costs in 2025 — from MVP to full product. What drives the price, what to avoid, and how to get value for your budget.',
+    publishedAt: '2026-05-06',
+    readTime:    '13 min read',
+    category:    'MVP Development',
+    tags:        ['SaaS development cost', 'MVP cost UK', 'software development pricing', 'startup budget'],
+    metaTitle:   'How Much Does SaaS Development Cost in the UK? (2025) | Two Bit Digital',
+    metaDesc:    'Transparent breakdown of SaaS development costs in the UK — MVP, full product, freelancer vs agency vs MVP studio. From Two Bit Digital, a UK SaaS studio.',
+    content: [
+      {
+        type: 'intro',
+        text: 'SaaS development cost is one of the most opaque topics in the startup world. Agencies quote wildly different numbers for the same brief. Freelancers underquote and overrun. Founders get surprised by invoices that are double the estimate. This guide cuts through that. Here are honest numbers, what drives them, and how to get the most from your development budget.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Short Answer: What Does an MVP Cost?',
+        text: 'A production SaaS MVP — user authentication, core feature, responsive UI, deployed on a real domain, with full code ownership — costs between £7,500 and £25,000 from a UK SaaS development studio in 2025. The range depends on scope complexity. A simple two-sided marketplace MVP sits at the lower end. A multi-tenant compliance SaaS with Stripe billing, email onboarding, and an admin panel sits at the higher end. At Two Bit Digital, our Build package starts at £7,500 for a 10-day production MVP.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Four Cost Brackets for SaaS Development',
+      },
+      {
+        type: 'ul',
+        items: [
+          '£500–£3,000: No-code / low-code tools (Bubble, Glide). Fast and cheap. Not suitable for serious products — performance limits, high transaction fees, and you do not own the code.',
+          '£3,000–£12,000: Fixed-price MVP studio (like Two Bit Digital). Production code, real stack, you own everything. Best value for MVP stage.',
+          '£15,000–£60,000: Traditional UK agency MVP. Slower, more process, often includes discovery phases and design sprints. Appropriate for more complex products.',
+          '£60,000+: In-house team (salary + recruitment). High fixed cost, slow to start, appropriate when you have product-market fit and need to build a long-term engineering function.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'What Drives the Cost of SaaS Development?',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Scope — the number of distinct user flows and features is the primary cost driver. Every additional flow adds days.',
+          'Authentication complexity — basic email login is fast. OAuth (Google, GitHub) + magic links + role-based access adds time.',
+          'Payment integration — adding Stripe with subscriptions, webhooks, and billing portal adds 2–4 days to a build.',
+          'Third-party API integrations — each external API adds integration time and error-handling complexity.',
+          'Multi-tenancy — building for multiple isolated organisations (separate workspaces, RLS, org management) is more complex than a single-user product.',
+          'Admin functionality — organiser dashboards, operator panels, and internal tooling each add scope.',
+          'Mobile app — a React Native mobile app in addition to the web app roughly doubles the build time.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Freelancer vs Agency vs MVP Studio: A Cost Comparison',
+        text: 'A UK-based senior freelance developer charges £500–£800 per day. A 10-day MVP would cost £5,000–£8,000 in developer time — but this is rarely achievable, because a freelancer typically needs 4–8 weeks to deliver the same scope due to context switching between clients. A traditional UK agency might charge £15,000–£40,000 for the same MVP, with a timeline of 8–16 weeks. A fixed-price MVP studio delivers the same production-quality output for £7,500–£12,500 in 10 working days — because the scope is locked, the stack is standardised, and there is no scope creep.',
+      },
+      {
+        type: 'h2',
+        heading: 'Hidden Costs Founders Do Not Anticipate',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Scope creep — mid-build feature additions are the number one cause of budget overruns. Lock scope before you start.',
+          'Infrastructure costs — Vercel, Supabase, and domain registration are minimal at MVP stage (often under £50/month), but plan for them.',
+          'Post-launch engineering — your MVP will need iteration. Budget for a post-launch engineering retainer or a second sprint.',
+          'Design revisions — if you supply designs that change mid-build, expect additional cost.',
+          'Third-party API fees — OpenAI, Stripe, Resend, and others charge per use. Understand your expected usage before launch.',
+          'Legal — privacy policy, terms of service, and cookie consent. Use a template service rather than a solicitor at MVP stage.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'How to Get the Best Value From Your Development Budget',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Define scope before you get quotes — a vague brief produces a vague (and therefore inaccurate) estimate.',
+          'Prioritise ruthlessly — build one user flow, not five. You can add v2 features once you have validated v1.',
+          'Choose a fixed-price engagement — hourly billing incentivises slow work and creates budget anxiety.',
+          'Verify you will own the code — some agencies retain IP or require you to use their hosting. Insist on full ownership.',
+          'Ask for references — talk to previous clients about whether the project shipped on time and on budget.',
+          'Plan for iteration — budget is not just for the MVP. Budget for the first two post-launch sprints.',
+        ],
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital offers transparent, fixed-price SaaS MVP development starting at £7,500. No hourly rates. No surprises. You know exactly what you are paying before we start. See our full pricing or book a free scope session.',
+      },
+    ],
+  },
+
+  // ── MVP Studio Article 3: Audience — Non-Technical Founders ───────────────
+  {
+    slug:        'mvp-development-non-technical-founders',
+    title:       'MVP Development for Non-Technical Founders: The Complete Guide',
+    excerpt:     'You do not need to code to build a successful SaaS MVP. But you do need to know how to brief a developer, evaluate the output, and avoid the traps that trip up non-technical founders.',
+    publishedAt: '2026-05-07',
+    readTime:    '12 min read',
+    category:    'MVP Development',
+    tags:        ['non-technical founder', 'MVP development', 'founder guide', 'SaaS startup', 'hiring developers'],
+    metaTitle:   'MVP Development for Non-Technical Founders (2025 Guide) | Two Bit Digital',
+    metaDesc:    'A practical guide for non-technical founders building a SaaS MVP — how to brief developers, evaluate code quality, avoid common mistakes, and ship a real product.',
+    content: [
+      {
+        type: 'intro',
+        text: 'The best products are not built by the best coders. They are built by people who understand the problem deeply and surround themselves with the right team to solve it. As a non-technical founder, you have one genuine disadvantage: you cannot evaluate whether the code you are paying for is good. This guide fixes that. It explains what you need to know — and only what you need to know — to brief a developer correctly, evaluate the output, and avoid the mistakes that burn runway.',
+      },
+      {
+        type: 'h2',
+        heading: 'What You Do Not Need to Know',
+        text: 'You do not need to know how to code. You do not need to understand the difference between SQL and NoSQL, or why TypeScript is preferred over JavaScript, or what a Docker container is. What you need is a clear articulation of the problem you are solving, the user who has that problem, and the core action your product enables. The technical decisions flow from that. If a developer is making technical decisions without asking you those questions first, that is a red flag.',
+      },
+      {
+        type: 'h2',
+        heading: 'How to Brief a Developer as a Non-Technical Founder',
+        text: 'A good brief has five components:',
+      },
+      {
+        type: 'ul',
+        items: [
+          '1. The user — describe the person who will use this product. Their job title, their context, their current workaround.',
+          '2. The problem — what specific problem does this product solve? One sentence. Not three problems — one.',
+          '3. The core flow — describe the single most important thing a user does in your product. "A user signs up, creates a [thing], and [gets the value]." That\'s the MVP.',
+          '4. What success looks like — what does a successful user session look like? What is the outcome they achieve?',
+          '5. What does not ship — explicitly list the features you are not building in v1. This prevents scope creep.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Questions to Ask Before Hiring a Developer',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Can I see examples of previous SaaS products you have built and deployed?',
+          'Who owns the code and the deployment credentials when the project ends?',
+          'What stack will you use, and why?',
+          'How do you handle scope changes mid-project?',
+          'What is included in post-launch support?',
+          'Can I talk to a previous client?',
+          'Is the price fixed or hourly?',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Green Flags and Red Flags When Evaluating Developers',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Green: They push back on your feature list and argue for a simpler scope. This means they understand MVP discipline.',
+          'Green: They give you a preview link after a few days, not at the end. Continuous visibility is good.',
+          'Green: They ask about your users, not just your feature list.',
+          'Red: They promise everything in the brief without negotiating scope.',
+          'Red: They cannot show you previous deployed products — only Figma designs.',
+          'Red: The price is hourly and they cannot give you a fixed estimate.',
+          'Red: They retain access to the codebase or hosting after the project ends.',
+          'Red: They use a proprietary framework or platform you have never heard of.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'How to Evaluate a Delivered MVP (Without Technical Knowledge)',
+        text: 'You do not need to read the code to evaluate whether you received what you paid for. Use these checks:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Sign up as a new user and go through the entire core flow without anyone\'s help. If you get stuck, so will your users.',
+          'Try it on your phone. A production MVP must be responsive.',
+          'Try to break it — enter unexpected inputs, click things in the wrong order, leave required fields blank.',
+          'Check that you received the GitHub repository and can access it without the developer\'s account.',
+          'Check that you have all deployment credentials — Vercel, Supabase, domain registrar — and that logging in works.',
+          'Ask the developer to walk you through the README and confirm you could hand this to another developer.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The Advantage Non-Technical Founders Have',
+        text: 'Non-technical founders often have a stronger product sense than technical founders. They think about the user experience first, not the implementation. They are less likely to over-engineer. They ask "does this solve the problem?" rather than "is this technically elegant?". Those instincts are valuable. Pair them with a disciplined development process — locked scope, fixed price, regular preview links — and you have everything you need to ship a product.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital works with non-technical founders every day. Our scope session is designed for people who know their users but not their stack. Book a free scope session and we will map exactly what your MVP needs — in plain language, no jargon.',
+      },
+    ],
+  },
+
+  // ── MVP Studio Article 4: Stack Authority — Supabase vs Firebase ──────────
+  {
+    slug:        'supabase-vs-firebase-saas-mvp',
+    title:       'Supabase vs Firebase for SaaS MVPs: Our Honest Verdict',
+    excerpt:     'Both are backend-as-a-service platforms that accelerate SaaS development. But for a production SaaS MVP, they are not equivalent. Here is which one to use and why.',
+    publishedAt: '2026-05-08',
+    readTime:    '11 min read',
+    category:    'Engineering',
+    tags:        ['Supabase', 'Firebase', 'SaaS backend', 'MVP development', 'database'],
+    metaTitle:   'Supabase vs Firebase for SaaS MVPs: Our Honest Verdict | Two Bit Digital',
+    metaDesc:    'Supabase vs Firebase for your SaaS MVP — a detailed comparison of features, pricing, data model, row-level security, and long-term portability. Two Bit Digital\'s verdict.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Supabase and Firebase are both backend-as-a-service platforms. Both give you authentication, a database, and storage without managing infrastructure. But they are built on fundamentally different data models, have different pricing trajectories, and offer different levels of security control. For a SaaS MVP, these differences are not abstract — they affect how fast you can build, how safe your data is, and how much it costs as you scale. Here is our direct comparison.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Core Difference: Relational vs Document',
+        text: 'Firebase\'s primary database (Firestore) is a document store — NoSQL, schema-less, designed for flexible, hierarchical data. Supabase is built on PostgreSQL — a mature, relational database with schemas, joins, constraints, and transactions. For most SaaS products, this distinction is decisive. SaaS data is inherently relational: users belong to organisations, organisations have subscriptions, subscriptions have invoices, invoices have line items. Modelling that in a document store requires duplicating data and manually maintaining consistency. In Postgres, a foreign key constraint and a join handle it correctly by default.',
+      },
+      {
+        type: 'h2',
+        heading: 'Row-Level Security: Supabase\'s Critical Advantage',
+        text: 'Row-Level Security (RLS) is a database-level feature that restricts which rows a given user can read or write — without any application code. Supabase exposes RLS through its policy system, meaning you can write rules like "a user can only read rows where the user_id column matches their own ID" and those rules are enforced at the database layer. This means even a bug in your application code cannot expose another user\'s data to an authenticated request. Firebase has no equivalent. Data access rules in Firebase are enforced by Firestore Security Rules at the collection level — but the model is less expressive, and rules interact in complex ways as your data model grows. For a SaaS product where data isolation between users or organisations is a requirement — which is essentially all SaaS — Supabase\'s RLS is meaningfully more secure.',
+      },
+      {
+        type: 'h2',
+        heading: 'Pricing at Scale: Firebase\'s Trap',
+        text: 'Firebase prices on reads and writes. For a SaaS product that queries relational data frequently — dashboard loads, list views, filter operations — Firestore read costs can escalate sharply as your user base grows. A dashboard that performs 10 reads per page load for 1,000 daily active users generates 10 million reads per month. At Firebase\'s standard pricing, that is not free. Supabase prices on database size, compute, and egress — a model that is more predictable for SaaS applications with high query volumes. At startup scale, both are cheap. At Series A scale, Firebase\'s read/write pricing becomes a meaningful cost centre.',
+      },
+      {
+        type: 'h2',
+        heading: 'Vendor Lock-In',
+        text: 'Firebase is a Google product. If Google deprecates it (as they have done with numerous developer products), migration is painful — Firestore\'s document model does not map cleanly to any other database. Supabase is open source. The entire Supabase stack — PostgREST, GoTrue auth, Realtime — is available on GitHub and can be self-hosted on any cloud provider. Your PostgreSQL data is fully portable. If you outgrow Supabase\'s managed hosting, or want to move to RDS or Neon, you can export your data and reconnect. For a founder, that optionality has real value.',
+      },
+      {
+        type: 'h2',
+        heading: 'When Firebase Is the Right Choice',
+        text: 'Firebase has genuine strengths in specific use cases: real-time collaborative applications (shared documents, live whiteboards), mobile apps where offline sync is a first-class requirement, and applications with deeply nested, variable-schema data that would be uncomfortable in a relational model. If your SaaS MVP is a real-time collaboration tool and you have strong mobile requirements, Firebase\'s Realtime Database or Firestore with offline persistence is worth evaluating. For most SaaS MVPs, these use cases do not apply.',
+      },
+      {
+        type: 'h2',
+        heading: 'Our Verdict',
+        text: 'For SaaS MVPs, Supabase is the correct choice in the vast majority of cases. The relational data model is a better fit for SaaS data patterns. Row-Level Security provides stronger data isolation guarantees. Pricing is more predictable at scale. And the open-source nature eliminates vendor lock-in risk. We build every Two Bit Digital MVP on Supabase. We have never regretted that decision.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital uses Supabase with full Row-Level Security on every MVP we build. See the full tech stack rationale, or book a scope session to discuss your specific requirements.',
+      },
+    ],
+  },
+
+  // ── MVP Studio Article 5: Stack Authority — SaaS Tech Stack ──────────────
+  {
+    slug:        'saas-tech-stack-2025',
+    title:       'The SaaS Tech Stack That Ships MVPs in 10 Days (2025)',
+    excerpt:     'The technology choices behind a fast, production-grade SaaS MVP. Next.js, Supabase, Vercel, TypeScript — and why each decision was made deliberately.',
+    publishedAt: '2026-05-09',
+    readTime:    '10 min read',
+    category:    'Engineering',
+    tags:        ['SaaS tech stack', 'Next.js', 'Supabase', 'Vercel', 'TypeScript', 'MVP'],
+    metaTitle:   'The SaaS Tech Stack That Ships MVPs in 10 Days (2025) | Two Bit Digital',
+    metaDesc:    'The production SaaS tech stack used by Two Bit Digital for every MVP build: Next.js 14, Supabase, Vercel, TypeScript. Why these choices and what they mean for your product.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Technology choices made at the MVP stage follow you for years. The wrong stack means expensive migration, developer onboarding friction, and architectural debt that compounds with every feature you add. The right stack means a fast first build, clean handover to your first engineer, and a foundation that scales comfortably to Series A and beyond. This article explains the stack we use for every Two Bit Digital MVP build — and why each choice was made.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Stack at a Glance',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Framework: Next.js 14 (App Router) with TypeScript',
+          'Backend/Database: Supabase — PostgreSQL with Row-Level Security, auth, and storage',
+          'Deployment: Vercel — global CDN, zero-config CI/CD from GitHub',
+          'Styling: Tailwind CSS',
+          'Payments (where in scope): Stripe',
+          'Email (where in scope): Resend or SendGrid',
+          'Analytics: Posthog or Google Analytics 4',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Next.js 14: The Application Layer',
+        text: 'Next.js is the standard for production React applications in 2025. The App Router, introduced in Next.js 13 and matured in 14, gives you server components, server actions, file-based routing, streaming, and built-in API route handlers. The practical benefits for an MVP: server components reduce JavaScript sent to the browser (faster initial loads), server actions eliminate the need for a separate API layer for simple mutations, and the file-based routing means any React developer can navigate the codebase immediately. It is also the best framework for SEO — server-side rendering produces fully indexable pages without client-side hydration.',
+      },
+      {
+        type: 'h2',
+        heading: 'TypeScript: Not Optional',
+        text: 'TypeScript is not a preference. It is a requirement for any production SaaS. Type safety catches bugs at compile time that would otherwise surface as runtime errors in front of users. When you bring on your first engineer, TypeScript makes the codebase self-documenting — every function signature tells them what inputs are expected and what outputs are returned. At Two Bit Digital, we generate TypeScript types directly from the Supabase database schema using the Supabase CLI. This means the types for every table, view, and function are always accurate and up to date.',
+      },
+      {
+        type: 'h2',
+        heading: 'Supabase: The Complete Backend',
+        text: 'Supabase provides a PostgreSQL database, an authentication service, file storage, and real-time subscriptions — all from a single managed platform. The critical feature for SaaS is Row-Level Security (RLS): database-level policies that restrict data access per user, enforced independently of application code. This means a bug in your application cannot expose another user\'s data. We enable RLS from day one, not as an afterthought. Supabase is also open source — the entire stack can be self-hosted on AWS or GCP if you ever need to move off their managed service.',
+      },
+      {
+        type: 'h2',
+        heading: 'Vercel: Zero-Config Deployment',
+        text: 'Vercel is the deployment platform built by the creators of Next.js. Connect your GitHub repository, and every push to main triggers an automatic production deployment. Every pull request gets a preview URL for review. The global edge network means your application loads quickly from anywhere in the world. The operational value for an MVP: you spend zero time on server configuration, certificate management, or auto-scaling setup. That time goes into product instead.',
+      },
+      {
+        type: 'h2',
+        heading: 'Tailwind CSS: Maintainable Styling',
+        text: 'Tailwind\'s utility-first approach means styling is co-located with markup. Any developer can open a component and immediately understand what it looks like without reading a separate CSS file. The production build purges unused utilities, keeping the CSS bundle small. We do not use component libraries (Material UI, Chakra) as they create an upstream dependency with opinionated patterns. Tailwind gives complete control without runtime overhead.',
+      },
+      {
+        type: 'h2',
+        heading: 'Why This Stack Ships in 10 Days',
+        text: 'The 10-day timeline is possible because this stack eliminates infrastructure decisions. There is no server to configure, no database cluster to provision, no deployment pipeline to build. Supabase handles auth — we do not write authentication logic. Vercel handles CI/CD — we do not write deployment scripts. TypeScript and the Supabase schema generator handle type safety — we do not manually maintain interface definitions. Every day that would otherwise be spent on infrastructure is spent on product features.',
+      },
+      {
+        type: 'cta',
+        text: 'For a complete rationale on every technology choice — including trade-offs and alternatives considered — see the Two Bit Digital tech stack deep-dive. Or book a scope session to discuss your specific MVP requirements.',
+      },
+    ],
+  },
+
+  // ── MVP Studio Article 6: Stack Authority — Why Next.js ──────────────────
+  {
+    slug:        'why-build-saas-mvp-nextjs',
+    title:       'Why We Build Every SaaS MVP on Next.js',
+    excerpt:     'Next.js is not the only framework for SaaS. But it is the right one for most MVPs in 2025. Here is the precise reasoning behind that choice.',
+    publishedAt: '2026-05-10',
+    readTime:    '9 min read',
+    category:    'Engineering',
+    tags:        ['Next.js', 'SaaS development', 'React', 'App Router', 'framework'],
+    metaTitle:   'Why We Build Every SaaS MVP on Next.js | Two Bit Digital',
+    metaDesc:    'Why Two Bit Digital uses Next.js 14 App Router for every SaaS MVP — server components, SEO, routing, TypeScript, and developer hire-ability. A technical rationale.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Every developer has a framework opinion. This is not an opinion — it is a rationale. We use Next.js for every Two Bit Digital MVP build, and we can give you a precise reason for every aspect of that choice. If your use case is in the small set where Next.js is the wrong answer, we will tell you. But for the overwhelming majority of SaaS MVPs, Next.js 14 with the App Router is the correct foundation.',
+      },
+      {
+        type: 'h2',
+        heading: 'The App Router Changes the Calculus',
+        text: 'Next.js has been the standard for production React apps for years. The App Router, which became stable in Next.js 13 and production-ready in 14, significantly changed the development model. React Server Components (RSCs) allow components to run on the server — they can query the database directly, access environment variables, and render HTML without sending any JavaScript to the client. For a SaaS product with authenticated dashboards and data-heavy views, this means faster page loads, better Lighthouse scores, and less client-side complexity.',
+      },
+      {
+        type: 'h2',
+        heading: 'Server Actions: No API Layer Required',
+        text: 'Prior to the App Router, any mutation in a React application required an API endpoint: a POST route that validated input, ran server logic, and returned a response. Server Actions allow you to define async functions that run on the server and call them directly from client components. For common MVP patterns — form submission, record creation, status updates — Server Actions eliminate a layer of code. The result is less boilerplate, fewer files, and a cleaner mental model for the application\'s data flow.',
+      },
+      {
+        type: 'h2',
+        heading: 'SEO Without Configuration',
+        text: 'SaaS marketing pages, blog posts, and landing pages need to be indexable by search engines. A client-rendered React SPA is not reliably indexed — Google can process JavaScript, but it is slow and incomplete. Next.js server-renders every page by default, producing fully formed HTML that search engines index immediately. For a founder who wants their MVP\'s landing page, feature pages, and pricing page to appear in search results, this is not a minor benefit.',
+      },
+      {
+        type: 'h2',
+        heading: 'Developer Hire-Ability',
+        text: 'When you hire your first engineer after the MVP, they will inherit this codebase. If that codebase is built on an obscure framework, a proprietary tool, or an unusual architectural pattern, the hiring pool shrinks dramatically and the onboarding time increases. Next.js is the most widely known React framework. Any senior frontend or full-stack developer knows it. Any competent junior developer can learn it quickly. This is not an accident — it is a deliberate reason to use it.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Next.js Is Not Good For',
+        text: 'Intellectual honesty requires acknowledging the limits. Next.js is not ideal for real-time collaborative applications where WebSocket connections per user are the primary architectural concern — in that case, a dedicated WebSocket server alongside Next.js is more appropriate. It is not ideal for extremely compute-intensive server-side operations that need to run continuously — those belong in a separate service. And it is not ideal for teams that have strong expertise in another framework and a short timeline. In those cases, the team\'s existing knowledge often outweighs the stack preference.',
+      },
+      {
+        type: 'h2',
+        heading: 'Alternatives We Considered',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Remix — excellent framework with a strong routing model and good progressive enhancement. Smaller ecosystem than Next.js; fewer community resources for edge cases.',
+          'SvelteKit — clean syntax, good performance, smaller bundle sizes. Significantly smaller talent pool for hiring.',
+          'Nuxt.js — the Vue.js equivalent of Next.js. Appropriate if your team is Vue-first.',
+          'plain React SPA — appropriate for internal tools where SEO is irrelevant and the UI is entirely client-side.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The Verdict',
+        text: 'Next.js 14 with the App Router is the production SaaS standard in 2025. It gives you server rendering, server components, server actions, file-based routing, TypeScript first-class support, and a global developer community — out of the box, without configuration. For the vast majority of SaaS MVPs, no other framework comes close on the combination of speed, quality, and long-term maintainability.',
+      },
+      {
+        type: 'cta',
+        text: 'All Two Bit Digital MVPs are built on Next.js 14 with the App Router. See the full tech stack rationale for the complete picture, or book a scope session to discuss your product requirements.',
+      },
+    ],
+  },
+
+  // ── MVP Studio Article 7: Commercial — Investor-Ready SaaS ───────────────
+  {
+    slug:        'investor-ready-saas-mvp',
+    title:       'Building an Investor-Ready SaaS MVP Before Your Seed Round',
+    excerpt:     'What investors actually expect to see when a pre-seed or seed-stage founder shows them a product — and how to build something that clears that bar.',
+    publishedAt: '2026-05-11',
+    readTime:    '11 min read',
+    category:    'MVP Development',
+    tags:        ['investor-ready MVP', 'seed round', 'SaaS startup', 'pre-seed', 'fundraising'],
+    metaTitle:   'Building an Investor-Ready SaaS MVP Before Your Seed Round | Two Bit Digital',
+    metaDesc:    'What investors expect to see at pre-seed and seed stage — and how to build a SaaS MVP that clears that bar. From Two Bit Digital, a UK SaaS MVP studio.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Investors at pre-seed and seed stage are not expecting a finished product. They are expecting evidence: that the problem is real, that you understand your user, and that you have the execution capability to build a solution. A working SaaS MVP is the most powerful evidence you can show. This article explains what "investor-ready" actually means at MVP stage — and how to build something that demonstrates the right things.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Investors Actually Want to See',
+        text: 'At pre-seed, investors are primarily backing the founder and the thesis. The MVP is supporting evidence, not the primary decision factor. At seed stage, investors expect to see traction or credible validation — users who have tried the product and either paid or expressed strong intent to pay. What investors are not expecting at either stage: a perfect product, a complete feature set, or a polished UI. They are expecting to see that you can execute. A working, deployed web application — real URL, real sign-up flow, real feature — demonstrates execution capability more clearly than any pitch deck.',
+      },
+      {
+        type: 'h2',
+        heading: 'What "Investor-Ready" Means for an MVP',
+      },
+      {
+        type: 'ul',
+        items: [
+          'It is live — accessible on a real domain, not a localhost link or a Figma prototype.',
+          'It works — the core user flow completes without errors or hand-holding.',
+          'It is on real infrastructure — Vercel, not a localhost ngrok tunnel. A domain, not a subdomain of a no-code platform.',
+          'The code is owned by the company — on a company GitHub account, not a contractor\'s personal account.',
+          'It is demonstrable in a meeting — a 5-minute live demo of the core flow, without preparation or explanation.',
+          'It has at least one real user who is not the founder — an external user who signed up and used it independently.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'Common MVP Mistakes That Hurt Fundraising',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Showing Figma instead of a live app — investors know the difference. A prototype does not demonstrate execution.',
+          'Building a no-code product — tools like Bubble or Glide are visible to technical investors and signal limited execution capability.',
+          'A product that only works when you guide the demo — if an investor tries to use it alone and gets stuck, that is a failed demo.',
+          'No real users — showing a product that only the founder has used, with no external validation, weakens the narrative significantly.',
+          'Over-building — arriving at a seed meeting with 40 features suggests poor prioritisation and slow execution. Arrive with one feature that works.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The 10-Day MVP: What It Gets You in a Pitch',
+        text: 'A production SaaS MVP built in 10 working days gives you a live, working application on your own domain, built on a stack that any technical investor or advisor can evaluate. That is: a real URL you can share in a cold email. A live demo you can run in a pitch meeting. Evidence that you can execute quickly. A codebase that a technical co-founder or first engineer can take over immediately. This is the difference between "we have an idea and some designs" and "we have a working product with users." The second story raises money more easily.',
+      },
+      {
+        type: 'h2',
+        heading: 'Getting Early Users Before the Round',
+        text: 'An investor-ready MVP is not just about the product — it is about what the product has generated. Five to ten users who have used the product and given you structured feedback are more valuable in a pitch meeting than any feature list. The fastest path to those users: ship the MVP, immediately put it in front of ten people in your target market (email outreach, LinkedIn, community posts, personal network), offer a free beta or a heavily discounted founder\'s plan, and run one-hour user interviews with everyone who signs up. Their words become your pitch deck quotes.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Timeline: MVP to Seed Round',
+        text: 'A realistic timeline: 2 weeks to build the MVP (with a disciplined team), 4–6 weeks to get the first 10 users through intensive outreach, 2–4 weeks to iterate based on user feedback, and then begin the fundraising process with a live product and early evidence. Total: approximately 3–4 months from idea to fundraising-ready. This is aggressive but achievable for a founder who is not building alone. It is the timeline that a seed investor should expect to see for a pre-product, pre-traction company.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital builds production SaaS MVPs in 10 working days — real code, live on Vercel, full ownership on handover. If you are preparing for a fundraise and need a working product to show investors, book a free scope session. We will tell you exactly what we can build before you commit.',
+      },
+    ],
+    faq: [
+      { q: 'What do seed investors expect to see in an MVP?', a: 'A working, deployed application on a real domain with at least one external user who has used it independently. Not a Figma prototype, not a no-code tool — real, owned code that demonstrates execution capability.' },
+      { q: 'Do I need paying customers before raising a seed round?', a: 'Not necessarily, but evidence of intent — users who signed up, engaged, and expressed willingness to pay — is valuable. The more concrete the evidence, the better the terms.' },
+      { q: 'How fast can I get a working MVP before my investor meeting?', a: 'With a locked scope and an experienced team, a production SaaS MVP can be built in 10 working days. Two Bit Digital\'s Build package delivers this at a fixed price of £7,500.' },
+    ],
+  },
 ]
 
 export function getInsight(slug: string): InsightPost | undefined {

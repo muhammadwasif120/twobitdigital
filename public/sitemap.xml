@@ -67,6 +67,15 @@
   <url><loc>https://www.twobitdigital.com/insights/ai-integration-regulated-industries</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.twobitdigital.com/insights/winning-uk-government-digital-contracts</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- ── MVP Studio blog posts ─────────────────────────────────────── -->
+  <url><loc>https://www.twobitdigital.com/insights/how-to-build-a-saas-mvp</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/saas-development-cost-uk</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/mvp-development-non-technical-founders</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/supabase-vs-firebase-saas-mvp</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/saas-tech-stack-2025</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/why-build-saas-mvp-nextjs</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.twobitdigital.com/insights/investor-ready-saas-mvp</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
   <!-- ── Pillar 4: Two Bit Digital Brand ───────────────────────────── -->
   <url><loc>https://www.twobitdigital.com/insights/what-is-a-saas-development-studio</loc><lastmod>2026-02-03</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.twobitdigital.com/insights/inside-two-bit-digital-ai-engineering-process</loc><lastmod>2026-01-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
