@@ -355,6 +355,21 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       }
     : null
 
+  const faqJsonLd = post.faq && post.faq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type':    'FAQPage',
+        mainEntity: post.faq.map((item) => ({
+          '@type': 'Question',
+          name:    item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text:    item.a,
+          },
+        })),
+      }
+    : null
+
   return (
     <>
       <script
@@ -365,6 +380,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howtoJsonLd) }}
+        />
+      )}
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
       <Nav />
@@ -662,6 +683,69 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               </h2>
 
               <RelatedArticles posts={related} />
+            </div>
+          </section>
+        )}
+
+        {/* ── FAQ ───────────────────────────────────────────────────── */}
+        {post.faq && post.faq.length > 0 && (
+          <section style={{
+            backgroundColor: '#0d0d22',
+            padding:         '4rem 0',
+            borderBottom:    '1px solid rgba(255,255,255,0.06)',
+          }}>
+            <div style={{
+              maxWidth: '760px',
+              margin:   '0 auto',
+              padding:  '0 1.5rem',
+            }}>
+              <div style={{ marginBottom: '2rem' }}>
+                <div className="section-label">FAQ</div>
+                <h2 style={{
+                  fontFamily:    'var(--font-inter)',
+                  fontWeight:    800,
+                  fontSize:      'clamp(1.4rem, 3vw, 1.9rem)',
+                  color:         '#eceaf5',
+                  margin:        '0.5rem 0 0',
+                  letterSpacing: '-0.02em',
+                }}>
+                  Frequently Asked Questions
+                </h2>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {post.faq.map((item) => (
+                  <div
+                    key={item.q}
+                    style={{
+                      backgroundColor: '#09091a',
+                      border:          '1px solid rgba(255,255,255,0.07)',
+                      borderRadius:    '10px',
+                      padding:         '1.5rem',
+                    }}
+                  >
+                    <h3 style={{
+                      fontFamily:  'var(--font-inter)',
+                      fontWeight:  700,
+                      fontSize:    '0.975rem',
+                      color:       '#eceaf5',
+                      margin:      '0 0 0.6rem',
+                      lineHeight:  1.4,
+                    }}>
+                      {item.q}
+                    </h3>
+                    <p style={{
+                      fontFamily:  'var(--font-inter)',
+                      fontWeight:  300,
+                      fontSize:    '0.9rem',
+                      color:       '#9d99b8',
+                      lineHeight:  1.75,
+                      margin:      0,
+                    }}>
+                      {item.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
         )}

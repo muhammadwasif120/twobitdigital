@@ -9,6 +9,7 @@ export type InsightPost = {
   metaTitle:   string
   metaDesc:    string
   content:     Section[]
+  faq?:        { q: string; a: string }[]
 }
 
 type Section = {
@@ -129,6 +130,12 @@ export const insights: InsightPost[] = [
         text: 'Two Bit Digital designs and builds AI workflows for businesses in legal, financial, and enterprise sectors. If you have a process consuming significant staff time and involving documents, data, or decisions, we would be glad to assess whether an AI workflow is the right solution.',
       },
     ],
+    faq: [
+      { q: 'What is an AI workflow?', a: 'An AI workflow is a sequence of automated steps where AI models — such as large language models (LLMs) — process inputs, make decisions, or generate outputs as part of a larger business process. Examples include document review pipelines, customer support automation, and intelligent data extraction systems.' },
+      { q: 'How are AI workflows different from traditional automation?', a: 'Traditional automation follows fixed rules — if X then Y. AI workflows can handle unstructured inputs, ambiguous instructions, and variable outputs. They use machine learning models to interpret context, which makes them suitable for tasks like reading documents, classifying emails, or answering questions.' },
+      { q: 'What tools are used to build AI workflows?', a: 'Common tools include LangChain, LlamaIndex, and custom Python pipelines connected to LLM APIs from OpenAI or Anthropic. For production systems, these are combined with vector databases (Pinecone, pgvector), orchestration layers, and observability tools to monitor outputs and catch failures.' },
+      { q: 'How long does it take to build an AI workflow?', a: 'A focused AI workflow automating a single business process — such as document classification or email triage — typically takes 4 to 8 weeks to build and validate in production. More complex multi-step pipelines with human-in-the-loop oversight can take 3 to 6 months.' },
+    ],
   },
 
   // ── NEW: Article 2 — Custom vs Off-the-Shelf ───────────────────────────────
@@ -214,6 +221,12 @@ export const insights: InsightPost[] = [
         type: 'cta',
         text: 'Two Bit Digital has built custom software for law firms, event technology, and enterprise clients across the UK, US, and Australia. If you are at the build-versus-buy decision point, we are happy to give you an honest assessment.',
       },
+    ],
+    faq: [
+      { q: 'When should a business choose custom software over off-the-shelf?', a: 'Choose custom software when your business processes are genuinely unique, when off-the-shelf tools require significant workarounds, when compliance requirements are not met by standard products, or when you need deep integration with existing systems. Custom software becomes cost-effective when the productivity gains outweigh the build cost within 2 to 3 years.' },
+      { q: 'What are the main disadvantages of custom software?', a: 'Higher upfront cost, longer time to deployment, and ongoing maintenance responsibility. Custom software also depends on the quality of the development team — poor architecture decisions early can be expensive to reverse. However, these risks are manageable with the right engineering partner and a well-scoped project.' },
+      { q: 'How much does custom software development cost in the UK?', a: 'Custom software projects in the UK typically start from £20,000 for simple tools and range to £500,000+ for complex enterprise platforms. The key cost drivers are the number of integrations, compliance requirements, user roles, and the complexity of business logic that needs to be encoded.' },
+      { q: 'Can off-the-shelf software be customised enough for specialist needs?', a: 'Most off-the-shelf platforms allow some configuration and limited customisation. However, deep customisation often requires vendor-specific APIs, incurs licensing fees, and creates dependency on the vendor\'s roadmap. When customisation needs exceed 30 to 40% of the platform\'s functionality, custom development usually becomes the more cost-effective choice.' },
     ],
   },
 
@@ -522,6 +535,12 @@ export const insights: InsightPost[] = [
         type: 'cta',
         text: 'Tikkit X is free to start. You can create your first event, share the registration link, and test the full check-in flow in under ten minutes — no commitment required. Built by Two Bit Digital for Pakistani event organisers.',
       },
+    ],
+    faq: [
+      { q: 'What is event management software?', a: 'Event management software is a digital platform that handles the operational and logistical aspects of running events — including ticket sales, attendee registration, check-in, organiser dashboards, and post-event analytics. Modern platforms also include mobile apps, payment integrations, and offline-capable verification.' },
+      { q: 'What event management software works best in Pakistan?', a: 'Tikkit X is the only event management platform built specifically for the Pakistani market. It supports JazzCash and EasyPaisa payments, works offline at venue gates using cryptographic QR verification, and is designed for the connectivity constraints common at Pakistani event venues.' },
+      { q: 'How does offline ticket verification work at events?', a: 'Offline ticket verification uses cryptographic signing — typically HMAC-SHA256 — to embed a mathematically verifiable signature in each QR code at the time of issue. Scanners validate the signature locally without needing to contact a server, making verification instant and reliable even without internet.' },
+      { q: 'What features should event ticketing software have?', a: 'Key features include: secure QR code generation and scanning, payment gateway integration, real-time attendance tracking, organiser dashboards, refund management, multi-event support, and mobile apps for both attendees and event staff. For Pakistan, offline scanning capability and local payment support (JazzCash, EasyPaisa) are essential.' },
     ],
   },
 
@@ -873,6 +892,12 @@ export const insights: InsightPost[] = [
         type: 'cta',
         text: 'Two Bit Digital builds end-to-end digital transformation solutions for law firms — client-facing websites and portals, internal case management, document digitisation, and compliance infrastructure. Get in touch to discuss your firm\'s requirements.',
       },
+    ],
+    faq: [
+      { q: 'What is digital transformation for law firms?', a: 'Digital transformation for law firms means replacing manual, paper-based legal processes with integrated digital systems — including case management software, client portals, document automation, deadline tracking, and secure communication tools. It reduces administrative overhead and improves client experience.' },
+      { q: 'How long does law firm digital transformation take?', a: 'A focused digitisation of core workflows — case management, document storage, and client communication — typically takes 3 to 6 months. A full transformation including custom compliance software, client portals, and AI-assisted document review can take 12 to 18 months depending on firm size.' },
+      { q: 'What software do UK law firms use for CPR compliance?', a: 'UK costs lawyers and law firms managing CPR Part 47 and Part 36 proceedings typically use bespoke case management software with built-in deadline engines. Averon Legal Systems, built by Two Bit Digital, is a purpose-built SaaS platform that automates CPR Part 47 and Part 36 compliance for costs lawyers.' },
+      { q: 'Is cloud software safe for legal documents?', a: 'Yes, if the platform is built with appropriate security architecture. Key requirements include row-level security (RLS) for data isolation between clients, encryption at rest and in transit, audit logs, and GDPR-compliant data handling. UK law firms should verify that any cloud provider stores data in UK or EEA data centres.' },
     ],
   },
 
@@ -1360,6 +1385,12 @@ export const insights: InsightPost[] = [
         type: 'cta',
         text: 'Two Bit Digital is a UK-registered SaaS development studio (Companies House #14710072) that has built and operates its own products. If you are evaluating agencies for a SaaS build, we are happy to answer every question on this list.',
       },
+    ],
+    faq: [
+      { q: 'How do I choose a SaaS development agency in the UK?', a: 'Look for agencies that have built their own SaaS products — not just client work. Check for multi-tenant architecture experience, a named technical lead, and a track record in your industry vertical. Avoid agencies that lead with design portfolios rather than technical architecture discussions.' },
+      { q: 'What should I ask a SaaS development agency before hiring?', a: 'Ask how they handle multi-tenancy and data isolation. Ask who owns the code at the end of the project. Ask how they manage scope changes. Ask for examples of production SaaS platforms they have built and maintained — not just launched.' },
+      { q: 'How much does SaaS development cost in the UK?', a: 'A production-grade SaaS MVP in the UK typically ranges from £40,000 to £150,000 depending on complexity, integrations, and compliance requirements. Agencies quoting significantly below this range are likely cutting corners on architecture or using undisclosed offshore freelancers.' },
+      { q: 'How long does it take to build a SaaS product?', a: 'A well-scoped SaaS MVP takes 3 to 6 months with a focused team. Full-featured platforms with billing, RBAC, multi-tenancy, and integrations typically take 6 to 12 months. Timelines increase significantly if requirements are not locked before development begins.' },
     ],
   },
   {

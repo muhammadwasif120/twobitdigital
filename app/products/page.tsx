@@ -6,20 +6,34 @@ import Breadcrumb        from '@/components/shared/Breadcrumb'
 import CTABanner         from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'In-House Products | Tikkit X, Averon, Terra Core — Two Bit Digital',
-  description: 'Three in-house products built and owned entirely by Two Bit Digital: Tikkit X (event ticketing), Averon Legal Systems (CPR costs management SaaS), and Terra Core (document intelligence engine).',
+  title:       'In-House Products | Tikkit X, Averon Legal, Terra Core — Two Bit Digital',
+  description: 'Three in-house products built and owned by Two Bit Digital: Tikkit X (event ticketing & management software Pakistan), Averon Legal Systems (CPR Part 47 compliance SaaS UK), and Terra Core (document intelligence engine).',
+  keywords: [
+    'Tikkit X',
+    'event ticketing software Pakistan',
+    'event management software Pakistan',
+    'online event booking Pakistan',
+    'JazzCash ticketing',
+    'EasyPaisa event tickets',
+    'Averon Legal Systems',
+    'CPR Part 47 compliance software',
+    'legal costs management software UK',
+    'Terra Core document intelligence',
+    'AI document processing',
+    'in-house SaaS products',
+  ],
   alternates: {
     canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
-    title:       'In-House Products | Tikkit X, Averon, Terra Core — Two Bit Digital',
-    description: 'Products we have designed, engineered, and own outright — proof of architecture instincts, engineering depth, and product judgement built under the same constraints our clients face.',
+    title:       'In-House Products | Tikkit X, Averon Legal, Terra Core — Two Bit Digital',
+    description: 'Products we have designed, engineered, and own outright. Tikkit X for Pakistan event tech, Averon for UK legal compliance, Terra Core for document intelligence.',
     url:         'https://www.twobitdigital.com/products',
     type:        'website',
   },
   twitter: {
     title:       'In-House Products — Two Bit Digital',
-    description: 'Tikkit X, Averon Legal Systems, and Terra Core. Three products built and owned by Two Bit Digital.',
+    description: 'Tikkit X (Pakistan event ticketing), Averon Legal Systems (CPR Part 47 UK), and Terra Core. Three products built and owned by Two Bit Digital.',
   },
 }
 
