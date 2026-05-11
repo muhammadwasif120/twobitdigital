@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://twobitdigital.com'),
+  metadataBase: new URL('https://www.twobitdigital.com'),
   title: {
     default: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
     template: '%s | Two Bit Digital',
@@ -33,7 +33,12 @@ export const metadata: Metadata = {
     'SaaS platform build',
     'UK government tender technology',
     'enterprise software UK',
-    'Pakistan software development',
+    'software development company Pakistan',
+    'AI development company Pakistan',
+    'custom software development Pakistan',
+    'software house Karachi',
+    'app development Pakistan',
+    'AI automation Pakistan',
     'Australia SaaS development',
     'US AI engineering',
     'compliance software',
@@ -41,25 +46,25 @@ export const metadata: Metadata = {
     'Two Bit Digital',
     'Muhammad Wasif',
   ],
-  authors: [{ name: 'Two Bit Digital', url: 'https://twobitdigital.com' }],
+  authors: [{ name: 'Two Bit Digital', url: 'https://www.twobitdigital.com' }],
   creator: 'Two Bit Digital Ltd',
   publisher: 'Two Bit Digital Ltd',
   icons: { icon: '/favicon.svg' },
   alternates: {
-    canonical: 'https://twobitdigital.com',
+    canonical: 'https://www.twobitdigital.com',
     languages: {
-      'en-GB': 'https://twobitdigital.com',
-      'en-US': 'https://twobitdigital.com',
-      'en-AU': 'https://twobitdigital.com',
-      'en-PK': 'https://twobitdigital.com',
-      'x-default': 'https://twobitdigital.com',
+      'en-GB': 'https://www.twobitdigital.com',
+      'en-US': 'https://www.twobitdigital.com',
+      'en-AU': 'https://www.twobitdigital.com',
+      'en-PK': 'https://www.twobitdigital.com',
+      'x-default': 'https://www.twobitdigital.com',
     },
   },
   openGraph: {
     title: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
     description:
       'Building mission-critical digital systems for regulated markets. End-to-end SaaS platforms, AI engineering, and secure infrastructure across the UK, US, Australia, and Pakistan.',
-    url: 'https://twobitdigital.com',
+    url: 'https://www.twobitdigital.com',
     siteName: 'Two Bit Digital',
     locale: 'en_GB',
     type: 'website',
@@ -104,7 +109,7 @@ export default function RootLayout({
           rel="alternate"
           type="application/rss+xml"
           title="Two Bit Digital Insights — RSS Feed"
-          href="https://twobitdigital.com/feed.xml"
+          href="https://www.twobitdigital.com/feed.xml"
         />
       </head>
       <body className={inter.variable}>

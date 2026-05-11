@@ -23,7 +23,7 @@ export const services: Service[] = [
     longDesc:    'We design and build AI systems that solve real operational problems — not demos, not prototypes. Our AI work spans LLM integration, retrieval-augmented generation, document intelligence, multi-step agent workflows, and custom NLP pipelines. Every system is built with observability, fallback handling, and compliance considerations baked in from day one.',
     icon:        '⚡',
     color:       '#7b5ea7',
-    keywords:    ['AI integration agency UK', 'LLM development agency', 'AI automation company UK', 'RAG system development', 'AI agent workflows'],
+    keywords:    ['AI integration agency UK', 'LLM development agency', 'AI automation company UK', 'RAG system development', 'AI agent workflows', 'AI development company Pakistan', 'AI automation Pakistan', 'machine learning company Pakistan', 'AI integration Pakistan'],
     capabilities: [
       { title: 'LLM Integration',          desc: 'OpenAI, Anthropic, Gemini, and open-source model integration into your existing product or workflow.' },
       { title: 'RAG Systems',              desc: 'Retrieval-Augmented Generation pipelines that ground AI responses in your own documents and data.' },
@@ -39,8 +39,8 @@ export const services: Service[] = [
       { sector: 'Financial',      desc: 'Intelligent data extraction from financial statements and regulatory filings for compliance teams.' },
       { sector: 'Healthcare',     desc: 'Patient record summarisation and clinical note analysis for NHS and private healthcare providers.' },
     ],
-    metaTitle: 'AI Integration Agency UK | LLM & Automation Development — Two Bit Digital',
-    metaDesc:  'Two Bit Digital builds production-grade AI integration systems for regulated industries. LLM pipelines, RAG, document intelligence, and AI automation across UK, US, and Australia.',
+    metaTitle: 'AI Integration Agency UK & Pakistan | LLM & Automation — Two Bit Digital',
+    metaDesc:  'Two Bit Digital builds production-grade AI systems for regulated industries. LLM pipelines, RAG, document intelligence, and AI automation for clients across the UK, US, Australia, and Pakistan.',
   },
   {
     slug:        'saas-development',
@@ -50,7 +50,7 @@ export const services: Service[] = [
     longDesc:    'Building a SaaS product requires more than good code. It requires a deep understanding of product architecture, tenant isolation strategies, billing infrastructure, and the operational realities of a live platform. We have built SaaS from the ground up — including our own — and bring that real-world experience to every engagement.',
     icon:        '🏗️',
     color:       '#f5c518',
-    keywords:    ['SaaS development agency UK', 'custom SaaS platform development', 'SaaS build studio', 'multi-tenant SaaS architecture', 'SaaS MVP development'],
+    keywords:    ['SaaS development agency UK', 'custom SaaS platform development', 'SaaS build studio', 'multi-tenant SaaS architecture', 'SaaS MVP development', 'custom software development Pakistan', 'SaaS development Pakistan', 'software development company Pakistan', 'software house Karachi'],
     capabilities: [
       { title: 'Multi-tenant Architecture', desc: 'Isolated tenant data models with schema-per-tenant or row-level security strategies.' },
       { title: 'Auth & RBAC',              desc: 'Role-based access control, SSO, MFA, and organisation-level permission systems.' },
@@ -66,8 +66,8 @@ export const services: Service[] = [
       { sector: 'HR Tech',        desc: 'Workforce management SaaS for SMEs across the UK and Pakistan — payroll, leave, performance.' },
       { sector: 'PropTech',       desc: 'Property portfolio management platform with tenant portals, maintenance workflows, and financial reporting.' },
     ],
-    metaTitle: 'SaaS Development Agency UK | Custom SaaS Platform Build — Two Bit Digital',
-    metaDesc:  'Two Bit Digital builds production-grade SaaS platforms from architecture to launch. Multi-tenant, RBAC, billing, and analytics. UK-registered studio serving enterprises globally.',
+    metaTitle: 'SaaS & Custom Software Development UK & Pakistan — Two Bit Digital',
+    metaDesc:  'Two Bit Digital builds production-grade SaaS platforms and custom software from architecture to launch. Multi-tenant, RBAC, billing, and analytics. Serving clients across the UK, US, Australia, and Pakistan.',
   },
   {
     slug:        'web-app-development',
@@ -77,7 +77,7 @@ export const services: Service[] = [
     longDesc:    'We build web applications and mobile apps that are engineered to last — not stitched together from templates. Our stack is modern, typed end-to-end, and deployed on globally distributed infrastructure. Whether it is a public-facing marketing site, a customer portal, or a complex internal tool, we apply the same engineering rigour throughout.',
     icon:        '🖥️',
     color:       '#4ade80',
-    keywords:    ['web application development UK', 'Next.js development agency UK', 'custom web app development', 'React development agency', 'TypeScript web development'],
+    keywords:    ['web application development UK', 'Next.js development agency UK', 'custom web app development', 'React development agency', 'TypeScript web development', 'web app development Pakistan', 'app development company Pakistan', 'mobile app development Pakistan', 'React Native developer Pakistan'],
     capabilities: [
       { title: 'Next.js Applications',     desc: 'App Router, Server Components, ISR, and Edge functions for performance-first web applications.' },
       { title: 'React Native Mobile',      desc: 'Cross-platform iOS and Android applications sharing logic with your web codebase.' },

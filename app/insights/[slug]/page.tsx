@@ -31,12 +31,12 @@ export async function generateMetadata({
     title:       post.metaTitle,
     description: post.metaDesc,
     alternates: {
-      canonical: `https://twobitdigital.com/insights/${post.slug}`,
+      canonical: `https://www.twobitdigital.com/insights/${post.slug}`,
     },
     openGraph: {
       title:       post.metaTitle,
       description: post.metaDesc,
-      url:         `https://twobitdigital.com/insights/${post.slug}`,
+      url:         `https://www.twobitdigital.com/insights/${post.slug}`,
       type:        'article',
       publishedTime: post.publishedAt,
       tags:        post.tags,
@@ -314,7 +314,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     '@type':      'Article',
     headline:     post.title,
     description:  post.excerpt,
-    url:          `https://twobitdigital.com/insights/${post.slug}`,
+    url:          `https://www.twobitdigital.com/insights/${post.slug}`,
     datePublished: post.publishedAt,
     keywords:     post.tags.join(', '),
     inLanguage:   'en-GB',
@@ -326,16 +326,16 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       worksFor: {
         '@type': 'Organization',
         name:    'Two Bit Digital',
-        url:     'https://twobitdigital.com',
+        url:     'https://www.twobitdigital.com',
       },
     },
     publisher: {
       '@type': 'Organization',
       name:    'Two Bit Digital',
-      url:     'https://twobitdigital.com',
+      url:     'https://www.twobitdigital.com',
       logo: {
         '@type': 'ImageObject',
-        url:     'https://twobitdigital.com/logo.png',
+        url:     'https://www.twobitdigital.com/logo.png',
       },
     },
   }

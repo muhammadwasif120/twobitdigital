@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     'Two Bit Digital Ltd (Co. #14710072) is a UK-registered SaaS development and AI engineering studio founded by Muhammad Wasif. Engineering-led, compliance-first, operating across the UK, US, Australia, and Pakistan. UN Vendor #1177996 · D&B D-U-N-S 77-532-7428.',
   alternates: {
-    canonical: 'https://twobitdigital.com/about',
+    canonical: 'https://www.twobitdigital.com/about',
   },
   openGraph: {
     title: 'About Two Bit Digital | UK SaaS & AI Engineering Studio',
     description:
       'Founded by Muhammad Wasif — an engineering-led studio building mission-critical SaaS platforms and AI systems for regulated industries across four global markets.',
-    url: 'https://twobitdigital.com/about',
+    url: 'https://www.twobitdigital.com/about',
     type: 'profile',
   },
   twitter: {
@@ -31,17 +31,17 @@ const jsonLd = {
   '@graph': [
     {
       '@type':       'AboutPage',
-      '@id':         'https://twobitdigital.com/about',
-      url:           'https://twobitdigital.com/about',
+      '@id':         'https://www.twobitdigital.com/about',
+      url:           'https://www.twobitdigital.com/about',
       name:          'About Two Bit Digital',
       description:   'Two Bit Digital is a UK-registered SaaS development and AI engineering studio founded by Muhammad Wasif. Engineering-led, compliance-first, operating across UK, US, Australia and Pakistan.',
       inLanguage:    'en-GB',
-      isPartOf:      { '@id': 'https://twobitdigital.com' },
+      isPartOf:      { '@id': 'https://www.twobitdigital.com' },
       about: {
         '@type':  'Organization',
-        '@id':    'https://twobitdigital.com/#organization',
+        '@id':    'https://www.twobitdigital.com/#organization',
         name:     'Two Bit Digital Ltd',
-        url:      'https://twobitdigital.com',
+        url:      'https://www.twobitdigital.com',
         foundingDate: '2022',
         legalName: 'Two Bit Digital Ltd',
         identifier: [
@@ -51,16 +51,16 @@ const jsonLd = {
           { '@type': 'PropertyValue', name: 'UN Vendor',       value: '1177996' },
         ],
         areaServed: ['GB', 'US', 'AU', 'PK'],
-        founder: { '@id': 'https://twobitdigital.com/about#founder' },
+        founder: { '@id': 'https://www.twobitdigital.com/about#founder' },
       },
     },
     {
       '@type':     'Person',
-      '@id':       'https://twobitdigital.com/about#founder',
+      '@id':       'https://www.twobitdigital.com/about#founder',
       name:        'Muhammad Wasif',
       jobTitle:    'Founder & CEO',
-      worksFor:    { '@id': 'https://twobitdigital.com/#organization' },
-      url:         'https://twobitdigital.com/about',
+      worksFor:    { '@id': 'https://www.twobitdigital.com/#organization' },
+      url:         'https://www.twobitdigital.com/about',
       sameAs:      ['https://www.linkedin.com/in/muhammadwasiftbd/'],
       knowsAbout:  ['SaaS Architecture', 'AI Engineering', 'RegTech', 'Government Digital Services', 'Zero-knowledge Security'],
     },

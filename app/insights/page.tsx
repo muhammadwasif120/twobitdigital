@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   description:
     'Technical insights and industry analysis from Two Bit Digital. Covering SaaS architecture, AI integration for regulated industries, and UK government digital procurement.',
   alternates: {
-    canonical: 'https://twobitdigital.com/insights',
+    canonical: 'https://www.twobitdigital.com/insights',
     types: {
-      'application/rss+xml': 'https://twobitdigital.com/feed.xml',
+      'application/rss+xml': 'https://www.twobitdigital.com/feed.xml',
     },
   },
   openGraph: {
     title: 'Insights | SaaS, AI & Government Technology — Two Bit Digital',
     description:
       'Technical analysis, industry perspective, and hard-won lessons from building software for regulated markets.',
-    url: 'https://twobitdigital.com/insights',
+    url: 'https://www.twobitdigital.com/insights',
     type: 'website',
   },
   twitter: {
@@ -38,25 +38,25 @@ function formatDate(iso: string): string {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  '@id': 'https://twobitdigital.com/insights',
-  url: 'https://twobitdigital.com/insights',
+  '@id': 'https://www.twobitdigital.com/insights',
+  url: 'https://www.twobitdigital.com/insights',
   name: 'Two Bit Digital Insights',
   description:
     'Technical analysis, industry perspective, and hard-won lessons from building software for regulated markets.',
   publisher: {
     '@type': 'Organization',
     name: 'Two Bit Digital',
-    url: 'https://twobitdigital.com',
+    url: 'https://www.twobitdigital.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://twobitdigital.com/logo.png',
+      url: 'https://www.twobitdigital.com/logo.png',
     },
   },
   blogPost: insights.map((post) => ({
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
-    url: `https://twobitdigital.com/insights/${post.slug}`,
+    url: `https://www.twobitdigital.com/insights/${post.slug}`,
     datePublished: post.publishedAt,
     keywords: post.tags.join(', '),
     author: {

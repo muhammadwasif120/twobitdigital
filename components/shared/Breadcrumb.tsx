@@ -12,7 +12,7 @@ export default function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
       '@type':   'ListItem',
       position:  i + 1,
       name:      c.label,
-      ...(c.href ? { item: `https://twobitdigital.com${c.href}` } : {}),
+      ...(c.href ? { item: `https://www.twobitdigital.com${c.href}` } : {}),
     })),
   }
 

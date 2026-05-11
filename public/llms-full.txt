@@ -2,8 +2,8 @@
 
 This file contains the complete text content of twobitdigital.com for AI and LLM indexing.
 Last updated: 2026-04-28
-Canonical URL: https://twobitdigital.com
-Structured overview: https://twobitdigital.com/llms.txt
+Canonical URL: https://www.twobitdigital.com
+Structured overview: https://www.twobitdigital.com/llms.txt
 
 ---
 
@@ -41,7 +41,7 @@ Technology: OpenAI, Anthropic Claude, LangChain, LlamaIndex, Pinecone, pgvector,
 
 Use cases: Legal document review copilots, government tender analysis, financial statement extraction, clinical note summarisation.
 
-URL: https://twobitdigital.com/services/ai-integration
+URL: https://www.twobitdigital.com/services/ai-integration
 
 ---
 
@@ -53,7 +53,7 @@ Technology: Next.js 14, TypeScript, Supabase, PostgreSQL, Stripe, Redis, Vercel,
 
 Use cases: Legal costs management SaaS, event ticketing platform, HR tech, PropTech portfolio management.
 
-URL: https://twobitdigital.com/services/saas-development
+URL: https://www.twobitdigital.com/services/saas-development
 
 ---
 
@@ -63,7 +63,7 @@ Full-stack web applications and React Native mobile apps. Next.js App Router, Se
 
 Technology: Next.js 14, TypeScript, React Native, TailwindCSS, Supabase, Vercel, Node.js, Sanity.
 
-URL: https://twobitdigital.com/services/web-app-development
+URL: https://www.twobitdigital.com/services/web-app-development
 
 ---
 
@@ -75,7 +75,7 @@ Technology: AES-256 encryption, HMAC-SHA256, HKDF, PostgreSQL row-level security
 
 Use cases: Legal costs platforms, FCA-compliant audit systems, GDPR document management, SRA-aligned legal workflows.
 
-URL: https://twobitdigital.com/services/compliance-regtech
+URL: https://www.twobitdigital.com/services/compliance-regtech
 
 ---
 
@@ -87,7 +87,7 @@ Two Bit Digital is a UN-registered vendor with a D-U-N-S number and UK registere
 
 Technology: GDS Design System, Next.js, TypeScript, PostgreSQL, AWS GovCloud, Terraform, Kubernetes.
 
-URL: https://twobitdigital.com/services/government-digital
+URL: https://www.twobitdigital.com/services/government-digital
 
 ---
 
@@ -97,7 +97,7 @@ Cloud architecture on AWS and Vercel. CI/CD pipelines with GitHub Actions, serve
 
 Technology: AWS, Vercel, Terraform, GitHub Actions, Docker, Kubernetes, Datadog, Cloudflare.
 
-URL: https://twobitdigital.com/services/cloud-infrastructure
+URL: https://www.twobitdigital.com/services/cloud-infrastructure
 
 ---
 
@@ -127,7 +127,7 @@ Status: Closed beta — accepting UK costs practices
 Market: United Kingdom
 Technology: Next.js, TypeScript, Supabase, PostgreSQL, Stripe
 
-URL: https://twobitdigital.com/products/averon-legal-systems
+URL: https://www.twobitdigital.com/products/averon-legal-systems
 
 ---
 
@@ -138,7 +138,7 @@ Terra Core is a compliance-first document intelligence and storage engine. AES-2
 Status: In development
 Technology: TypeScript, AES-256, HMAC-SHA256, PostgreSQL, AWS KMS
 
-URL: https://twobitdigital.com/products/terra-core
+URL: https://www.twobitdigital.com/products/terra-core
 
 ---
 
@@ -223,7 +223,7 @@ Outcomes: 2.3M audit events chained and verified, no FCA examination findings, d
 ### AI Workflows Explained: How Businesses Are Automating Operations in 2025
 
 Published: 2026-04-27 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/what-are-ai-workflows
+URL: https://www.twobitdigital.com/insights/what-are-ai-workflows
 
 An AI workflow is a sequence of automated steps in which one or more AI models process, analyse, or generate content as part of a broader business process. Unlike traditional rule-based automation, AI workflows handle unstructured inputs — documents, emails, images, and natural language — and produce structured outputs that feed into systems and decisions.
 
@@ -238,7 +238,7 @@ Two Bit Digital builds AI workflows for legal, financial, and enterprise sectors
 ### Custom Software vs. Off-the-Shelf: Why Bespoke Solutions Win for Growing Businesses
 
 Published: 2026-04-24 | Category: SaaS Development
-URL: https://twobitdigital.com/insights/custom-software-vs-off-the-shelf
+URL: https://www.twobitdigital.com/insights/custom-software-vs-off-the-shelf
 
 The decision between custom and off-the-shelf software is not primarily about cost — it is about fit, scalability, and competitive differentiation. Off-the-shelf software trades fit for speed; custom software trades speed for fit. Off-the-shelf makes sense when processes are generic and not a source of competitive advantage. Custom software is necessary when a core process is genuinely differentiating, when regulatory requirements exceed what standard tools can accommodate, when integration requirements are complex, or when the product itself is what is being sold.
 
@@ -249,7 +249,7 @@ The correct cost comparison is not build cost versus subscription cost but total
 ### How to Build an AI Automation Strategy for Your Business
 
 Published: 2026-04-21 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/how-to-build-an-ai-automation-strategy
+URL: https://www.twobitdigital.com/insights/how-to-build-an-ai-automation-strategy
 
 A coherent AI automation strategy follows six steps: audit current processes (map every repeating process, its inputs, outputs, and decision points), identify automation candidates (score by volume, complexity, and strategic value), choose the right AI approach (prompt engineering for classification tasks, RAG for knowledge-intensive tasks, agent frameworks for multi-step autonomous work, traditional automation for fully deterministic processes), decide whether to build or partner (if AI is your core product build internally; if AI is a capability layer, partnering is usually the better economic decision), start with one workflow not ten, and measure and expand.
 
@@ -260,7 +260,7 @@ The failure mode for AI strategies is trying to automate everything simultaneous
 ### What Is a RAG System? How AI Can Search and Learn From Your Own Documents
 
 Published: 2026-04-17 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/what-is-a-rag-system
+URL: https://www.twobitdigital.com/insights/what-is-a-rag-system
 
 RAG (Retrieval-Augmented Generation) is an AI architecture that combines a retrieval system searching a document collection with a generation model that uses retrieved content to produce grounded responses. Documents are split into chunks, converted into numerical embeddings capturing semantic meaning, and stored in a vector database. When a question is asked, it is embedded and matched against document chunks with similar semantic content. The most relevant chunks are passed to the LLM alongside the question, and the model generates a response grounded in those specific documents.
 
@@ -273,7 +273,7 @@ Two Bit Digital builds RAG systems using OpenAI embeddings and Supabase pgvector
 ### The Hidden Cost of Manual Business Processes
 
 Published: 2026-04-14 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/hidden-cost-of-manual-business-processes
+URL: https://www.twobitdigital.com/insights/hidden-cost-of-manual-business-processes
 
 Manual processes cost more than the salary of the person performing them. McKinsey research finds that approximately 60% of all occupations have at least 30% of activities automatable with current technology. Hidden costs beyond salary include: error remediation (manual data entry has a 1-4% error rate with significant downstream remediation costs), process latency (waiting time at every handover limits throughput), opportunity cost (skilled staff performing repetitive tasks instead of differentiating work), compliance risk (inconsistent manual execution creates audit exposure), and staff retention cost (capable employees performing repetitive work are more likely to leave, with recruitment costs often exceeding £15,000 per hire).
 
@@ -284,7 +284,7 @@ A straightforward ROI calculation: hours saved per week multiplied by hourly ful
 ### Event Management Software in 2025: What Every Organiser Needs
 
 Published: 2026-04-09 | Category: Event Technology
-URL: https://twobitdigital.com/insights/event-management-software-guide-2025
+URL: https://www.twobitdigital.com/insights/event-management-software-guide-2025
 
 Event management software handles the full lifecycle of running an event: registration, ticketing, guest management, payments, check-in, and analytics. Essential features include event creation and publishing, RSVP and registration management, unique verifiable QR codes per attendee, mobile check-in scanning from any device, payment processing through local payment methods, real-time analytics, staff scanner access without account creation, offline check-in capability, and post-event reporting.
 
@@ -295,7 +295,7 @@ The most important feature most platforms get wrong is offline capability. A QR 
 ### How Offline QR Verification Is Solving Event Fraud Without the Internet
 
 Published: 2026-04-07 | Category: Event Technology
-URL: https://twobitdigital.com/insights/offline-qr-verification-event-ticketing
+URL: https://www.twobitdigital.com/insights/offline-qr-verification-event-ticketing
 
 Standard QR check-in systems encode a ticket ID in the QR code and send it to a server for validation at scan time — requiring a live internet connection for every scan. Under load (hundreds of simultaneous arrivals in a venue with saturated bandwidth), these systems slow down, time out, or fail.
 
@@ -308,7 +308,7 @@ HMAC-SHA256 signatures cannot be forged without the secret key, making ticket fa
 ### Tikkit X: How We Are Reshaping Event Management in Pakistan
 
 Published: 2026-03-31 | Category: Event Technology
-URL: https://twobitdigital.com/insights/tikkit-x-event-management-pakistan
+URL: https://www.twobitdigital.com/insights/tikkit-x-event-management-pakistan
 
 Tikkit X is a mobile-first event management platform built for Pakistan. It grew out of direct experience organising events in Karachi and repeatedly encountering the same failure points: no reliable advance payment collection, no structured guest list management, and a check-in process that failed when venue internet was unreliable. Tikkit X is a standalone product operated by Two Bit Digital, not an agency feature.
 
@@ -319,7 +319,7 @@ The platform supports the full event lifecycle: event creation in under two minu
 ### From Guest List to Gate: A Complete Guide to Running a Paperless Event
 
 Published: 2026-03-24 | Category: Event Technology
-URL: https://twobitdigital.com/insights/how-to-run-a-paperless-event-pakistan
+URL: https://www.twobitdigital.com/insights/how-to-run-a-paperless-event-pakistan
 
 Six steps to a fully digital event: (1) Set up the event on Tikkit X — name, date, capacity, ticket types, registration mode (open or invite-only) in under two minutes. (2) Configure the registration form — guest details, CNIC where required, category or gender ratio limits. (3) Share the registration link — guests register on any device, pay through JazzCash, EasyPaisa, or bank transfer, and receive a unique QR code immediately. (4) Monitor registrations in real time — approve or decline pending registrations, manage the waitlist, message all registered guests from the dashboard. (5) Run check-in on the day — open the scanner on any mobile device, share a scanner link with door staff (no accounts needed), scan QRs instantly with or without internet. (6) Review post-event analytics — total registrations, check-in rate, arrival timeline, revenue, and individual guest records with timestamps.
 
@@ -330,7 +330,7 @@ Common mistakes: not testing scanner setup before doors open, using a single dev
 ### Digital Transformation for Law Firms: The Complete Guide
 
 Published: 2026-03-17 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/law-firm-digital-transformation-guide
+URL: https://www.twobitdigital.com/insights/law-firm-digital-transformation-guide
 
 Law firm digital transformation means replacing the fragmented combination of manual processes, paper files, and disconnected tools with a coherent digital system covering both client-facing and internal operations. Why most firms still run on paper and email: workflows were established before modern SaaS existed, legal software has historically been expensive and poorly designed for smaller practices, senior fee earners resist time investment in transition, and compliance requirements create risk aversion.
 
@@ -343,7 +343,7 @@ YKC Legal (ykclegal.org), built by Two Bit Digital, demonstrates the client-faci
 ### CPR Part 47 Compliance Software: What UK Costs Lawyers Need
 
 Published: 2026-03-10 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/cpr-part-47-compliance-software
+URL: https://www.twobitdigital.com/insights/cpr-part-47-compliance-software
 
 CPR Part 47 governs detailed assessment of costs in English and Welsh civil litigation — setting specific, non-negotiable timelines for serving the bill of costs, filing the notice of commencement, responding to points of dispute, and requesting hearings. Missing these deadlines carries consequences ranging from cost sanctions to loss of right to assessment.
 
@@ -358,7 +358,7 @@ Averon Legal Systems — built by Two Bit Digital — is a purpose-built CPR Par
 ### Why Your Law Firm Needs a Client Portal
 
 Published: 2026-03-03 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/law-firm-client-portal-guide
+URL: https://www.twobitdigital.com/insights/law-firm-client-portal-guide
 
 The most common complaint clients have about their lawyers is not the legal advice — it is the communication. A law firm client portal is a secure, authenticated web interface where clients access information about their matter. A complete portal includes: case status dashboard, lawyer case diary (chronological record of all significant matter events), document access (secure access to client-visible documents), hearing and deadline calendar, team information, consultation booking, and secure messaging.
 
@@ -371,7 +371,7 @@ Business benefits for the firm: reduced inbound calls from clients chasing updat
 ### Case File Digitisation for Law Firms
 
 Published: 2026-02-24 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/law-firm-case-file-digitisation
+URL: https://www.twobitdigital.com/insights/law-firm-case-file-digitisation
 
 Seven-step law firm digitisation process: (1) Audit paper volume — count active and archived matters, estimate volume, identify files eligible for destruction under retention policy. (2) Prioritise active cases — digitise currently active matters first for immediate operational benefit. (3) Establish scanning and OCR workflow — use a dedicated document scanner (50+ pages per minute) and scan to searchable PDF using OCR. (4) Define naming convention and folder taxonomy before scanning begins — naming must encode matter reference, document type, date, and version consistently. (5) Implement role-based access controls at system level — fee earners see assigned matters only, with all access logged. (6) Plan the physical archive — maintain originals for active matters until conclusion, follow retention policy for archives, use certified confidential waste for destruction. (7) Train the team and enforce the standards.
 
@@ -382,7 +382,7 @@ Most common mistakes: starting with archives rather than active matters; scannin
 ### Law Firm Employee Management Software
 
 Published: 2026-02-17 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/law-firm-employee-management-software
+URL: https://www.twobitdigital.com/insights/law-firm-employee-management-software
 
 Generic HR software does not address the specific requirements of legal practice management. Fee earners bill time against specific matters. Supervisors need team workload visibility without accessing every file's full detail. Partners need portfolio-level performance data. Document access must be controlled at matter level. None of these requirements are satisfied by standard tools.
 
@@ -395,7 +395,7 @@ Averon Legal Systems implements role-based dashboards, matter-linked time record
 ### End-to-End Legal Tech: How One Platform Can Run Your Entire Law Firm
 
 Published: 2026-02-10 | Category: Legal Technology
-URL: https://twobitdigital.com/insights/end-to-end-legal-tech-platform
+URL: https://www.twobitdigital.com/insights/end-to-end-legal-tech-platform
 
 The typical law firm technology stack is not a stack but a collection: a case management system that does not talk to the document store, a client portal not connected to the matter system, a time recording tool requiring manual export for billing. Staff spend 20–30% of their day moving information between disconnected systems.
 
@@ -410,7 +410,7 @@ Two Bit Digital delivers the complete stack: YKC Legal demonstrates the client-f
 ### What Is a SaaS Development Studio?
 
 Published: 2026-02-03 | Category: SaaS Development
-URL: https://twobitdigital.com/insights/what-is-a-saas-development-studio
+URL: https://www.twobitdigital.com/insights/what-is-a-saas-development-studio
 
 A SaaS development studio is a specialist engineering firm that designs and builds Software-as-a-Service products. The defining characteristic is orientation toward product: multi-tenant architecture, scalable data models, billing infrastructure, role-based access control, API design, and operational requirements of software running reliably at scale for paying customers.
 
@@ -427,7 +427,7 @@ Two Bit Digital is a SaaS development studio (Companies House 14710072) that own
 ### From Idea to Product: Inside Two Bit Digital's AI Engineering Process
 
 Published: 2026-01-27 | Category: SaaS Development
-URL: https://twobitdigital.com/insights/inside-two-bit-digital-ai-engineering-process
+URL: https://www.twobitdigital.com/insights/inside-two-bit-digital-ai-engineering-process
 
 Five-phase process used on every Two Bit Digital build: (1) Discovery and architecture design — map user types, workflows, data, and regulatory constraints; design data model, permission structure, and API architecture before writing code. (2) Engineering foundation — database schema and row-level security, authentication, RBAC, multi-tenant isolation, deployment pipeline. (3) AI and integration layer — LLM API integration, RAG pipeline (embedding, vector storage, retrieval), prompt engineering and versioning, confidence thresholds and human oversight logic, audit logging for every AI interaction, and connections to external systems. (4) Quality assurance and compliance review — functional testing plus compliance review: does the audit trail capture every required event? Do access controls correctly enforce permissions? Do failure modes (API unavailable, low-confidence output, malformed input) behave correctly? (5) Deployment and ongoing support — staging environment review, smoke tests, monitoring and alerting, incident response procedures, then ongoing feature development and scaling support.
 
@@ -438,7 +438,7 @@ Tikkit X went from concept to production in under four months through this proce
 ### How We Built a CPR-Compliant Legal SaaS in Six Months: The Averon Story
 
 Published: 2026-01-20 | Category: SaaS Development
-URL: https://twobitdigital.com/insights/building-averon-legal-systems-case-study
+URL: https://www.twobitdigital.com/insights/building-averon-legal-systems-case-study
 
 Averon Legal Systems was built to replace spreadsheet-based CPR Part 47 and Part 36 matter tracking for UK costs lawyers. Compliance constraints mapped before any code was written: CPR required explicit modelling of procedural stages with variable trigger-based timelines; SRA required matter-level access control isolation; GDPR required data processing agreements with all third-party services and a Data Protection Impact Assessment.
 
@@ -453,7 +453,7 @@ Key lessons: RLS-first architecture makes security testable independently of the
 ### AI Integration vs. AI-Native Software: What's the Right Approach?
 
 Published: 2026-01-13 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/ai-integration-vs-ai-native-software
+URL: https://www.twobitdigital.com/insights/ai-integration-vs-ai-native-software
 
 AI integration means adding AI capabilities to an existing software product — the existing system remains the primary architecture, AI is a capability layer. AI-native software is built with AI as a core architectural component from the ground up — data model, UX, and processing logic are all designed around AI capabilities, not adapted to accommodate them.
 
@@ -466,7 +466,7 @@ Cost comparison: AI integration into a well-architected existing system can be d
 ### RegTech and Compliance Software: Why Regulated Industries Cannot Afford Generic Tools
 
 Published: 2026-01-06 | Category: RegTech
-URL: https://twobitdigital.com/insights/regtech-compliance-software-regulated-industries
+URL: https://www.twobitdigital.com/insights/regtech-compliance-software-regulated-industries
 
 RegTech (Regulatory Technology) is software designed to help organisations manage regulatory compliance requirements. The defining characteristic of genuine RegTech: compliance requirements are embedded in the architecture, not added as a feature after the core product is built.
 
@@ -481,7 +481,7 @@ Zero-knowledge encryption means the software vendor has no access to the content
 ### How to Choose a SaaS Development Agency in the UK
 
 Published: 2026-04-10 | Category: SaaS Development
-URL: https://twobitdigital.com/insights/how-to-choose-saas-development-agency-uk
+URL: https://www.twobitdigital.com/insights/how-to-choose-saas-development-agency-uk
 
 Most SaaS builds fail not because of bad code, but because the agency never understood the product. Key checklist: Do they own a product themselves? Can they explain architecture decisions (not just outcomes)? Do they understand your regulatory context (GDPR, FCA, SRA, CQC)? Who specifically will work on your project day-to-day? Does the contract assign full IP ownership to you? What does post-launch support look like? Do they have case studies from your industry? Can you speak to a previous client directly?
 
@@ -492,7 +492,7 @@ Two Bit Digital operates three in-house products and applies real-world product 
 ### AI Integration for Regulated Industries: What Engineering Teams Get Wrong
 
 Published: 2026-04-08 | Category: AI Engineering
-URL: https://twobitdigital.com/insights/ai-integration-regulated-industries
+URL: https://www.twobitdigital.com/insights/ai-integration-regulated-industries
 
 Key failures in regulated AI integration: AI outputs are not auditable by default — the same input can produce different outputs on different runs, with no native audit log. Every prompt and response must be logged with request IDs, timestamps, model version, and temperature settings. Data residency: default API tier terms from OpenAI, Anthropic, and Google are not sufficient for regulated use cases — enterprise DPAs specifying data residency and retention periods are required before processing personal data through any LLM API. Hallucination in high-stakes contexts (legal document review, compliance screening, clinical summarisation) creates professional liability — every AI output must be presented as a draft requiring human confirmation, not a decision requiring human override. RAG is the standard architecture for regulated AI — it retrieves specific identifiable documents, grounds model responses in them, and allows citation of sources.
 
@@ -501,7 +501,7 @@ Key failures in regulated AI integration: AI outputs are not auditable by defaul
 ### How Technology Companies Can Win UK Government Digital Contracts
 
 Published: 2026-04-05 | Category: Government Digital
-URL: https://twobitdigital.com/insights/winning-uk-government-digital-contracts
+URL: https://www.twobitdigital.com/insights/winning-uk-government-digital-contracts
 
 Three main routes to UK government technology contracts: G-Cloud (cloud catalogue allowing direct purchase by buyers without a full tender), DOS/Digital Outcomes and Specialists (specific project delivery with scored evaluation criteria), and Crown Commercial Service TPS. What procurement evaluators actually look for: specific evidence of similar work (sector, scale, outcome — not technology stack), demonstrated understanding of GDS standards and WCAG, named individuals with verifiable credentials, robust risk approach, social value commitments, and clear data and security articulation (Cyber Essentials, ISO 27001).
 
@@ -513,7 +513,7 @@ Two Bit Digital is eligible to respond to UK government procurement frameworks: 
 
 - General / Founder: mwasif@twobitdigital.com
 - New Projects & Sales: sales@twobitdigital.com
-- Contact page: https://twobitdigital.com/contact
+- Contact page: https://www.twobitdigital.com/contact
 - LinkedIn (company): https://www.linkedin.com/company/twobitdigital
 - LinkedIn (founder): https://www.linkedin.com/in/muhammadwasiftbd/
 
@@ -561,4 +561,4 @@ Q: What is RegTech?
 A: RegTech (Regulatory Technology) is software designed to help organisations manage regulatory compliance requirements. Genuine RegTech embeds compliance requirements into the architecture from the ground up — including database-level audit trails, row-level security, AES-256 encryption with client-controlled keys, and data processing agreements. Two Bit Digital builds RegTech for legal, financial, and government sectors.
 
 Q: How can I contact Two Bit Digital?
-A: Email sales@twobitdigital.com for new project enquiries. Visit https://twobitdigital.com/contact to submit a project brief.
+A: Email sales@twobitdigital.com for new project enquiries. Visit https://www.twobitdigital.com/contact to submit a project brief.

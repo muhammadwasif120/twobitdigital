@@ -20,7 +20,7 @@ function isRateLimited(ip: string): boolean {
 
 // ─── Allowed origins ──────────────────────────────────────────────────────────
 const ALLOWED_ORIGINS = [
-  'https://twobitdigital.com',
+  'https://www.twobitdigital.com',
   'https://www.twobitdigital.com',
   'http://localhost:3000',
   'http://localhost:3001',

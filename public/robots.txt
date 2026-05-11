@@ -100,7 +100,7 @@ Allow: /insights
 Allow: /insights/
 
 # ── Sitemaps ───────────────────────────────────────────────────
-Sitemap: https://twobitdigital.com/sitemap.xml
+Sitemap: https://www.twobitdigital.com/sitemap.xml
 
 # ── LLM discovery files ────────────────────────────────────────
 # See /llms.txt for a structured overview for AI systems

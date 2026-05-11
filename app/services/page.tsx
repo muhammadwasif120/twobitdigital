@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     'End-to-end digital engineering services spanning AI integration, SaaS platform development, web applications, compliance & RegTech, government digital, and cloud infrastructure.',
   alternates: {
-    canonical: 'https://twobitdigital.com/services',
+    canonical: 'https://www.twobitdigital.com/services',
   },
   openGraph: {
     title: 'Digital Development Services | SaaS, AI & Government Technology — Two Bit Digital',
     description:
       'End-to-end digital engineering services spanning AI integration, SaaS platforms, web apps, compliance & RegTech, government digital, and cloud infrastructure.',
-    url: 'https://twobitdigital.com/services',
+    url: 'https://www.twobitdigital.com/services',
     type: 'website',
   },
   twitter: {
@@ -33,14 +33,14 @@ const jsonLd = {
   '@type': 'ItemList',
   name: 'Two Bit Digital Services',
   description: 'End-to-end digital engineering services from Two Bit Digital',
-  url: 'https://twobitdigital.com/services',
+  url: 'https://www.twobitdigital.com/services',
   numberOfItems: services.length,
   itemListElement: services.map((s, i) => ({
     '@type': 'ListItem',
     position: i + 1,
     name: s.title,
     description: s.description,
-    url: `https://twobitdigital.com/services/${s.slug}`,
+    url: `https://www.twobitdigital.com/services/${s.slug}`,
   })),
 }
 

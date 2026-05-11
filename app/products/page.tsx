@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title:       'In-House Products | Tikkit X, Averon, Terra Core — Two Bit Digital',
   description: 'Three in-house products built and owned entirely by Two Bit Digital: Tikkit X (event ticketing), Averon Legal Systems (CPR costs management SaaS), and Terra Core (document intelligence engine).',
   alternates: {
-    canonical: 'https://twobitdigital.com/products',
+    canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
     title:       'In-House Products | Tikkit X, Averon, Terra Core — Two Bit Digital',
     description: 'Products we have designed, engineered, and own outright — proof of architecture instincts, engineering depth, and product judgement built under the same constraints our clients face.',
-    url:         'https://twobitdigital.com/products',
+    url:         'https://www.twobitdigital.com/products',
     type:        'website',
   },
   twitter: {
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type':    'CollectionPage',
-  '@id':      'https://twobitdigital.com/products',
-  url:        'https://twobitdigital.com/products',
+  '@id':      'https://www.twobitdigital.com/products',
+  url:        'https://www.twobitdigital.com/products',
   name:       'In-House Products — Two Bit Digital',
   description:'Products designed, engineered, and owned by Two Bit Digital Ltd.',
   inLanguage: 'en-GB',
-  isPartOf:   { '@id': 'https://twobitdigital.com' },
+  isPartOf:   { '@id': 'https://www.twobitdigital.com' },
 }
 
 const products = [

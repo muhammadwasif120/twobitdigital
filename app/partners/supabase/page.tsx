@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: 'Supabase Integration | Two Bit Digital — Technology Partner',
   description:
     'Two Bit Digital is a Supabase Technology Partner. We build production SaaS platforms on Supabase — multi-tenant RLS architecture, Auth, Realtime, Storage, and Edge Functions powering Tikkit X and Averon Legal Systems.',
-  alternates: { canonical: 'https://twobitdigital.com/partners/supabase' },
+  alternates: { canonical: 'https://www.twobitdigital.com/partners/supabase' },
   openGraph: {
     title: 'Building Production SaaS on Supabase | Two Bit Digital',
     description:
       'How Two Bit Digital engineers multi-tenant SaaS platforms using Supabase — Row Level Security, Auth, Realtime, Storage, and Edge Functions.',
-    url: 'https://twobitdigital.com/partners/supabase',
+    url: 'https://www.twobitdigital.com/partners/supabase',
     type: 'website',
   },
 }

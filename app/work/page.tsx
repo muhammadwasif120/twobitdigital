@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title:       'Case Studies | Software Development & AI Projects — Two Bit Digital',
   description: 'Anonymised case studies from Two Bit Digital — real engineering outcomes across legal tech, government, financial services, and emerging markets. Architecture, delivery timelines, and measurable results.',
   alternates: {
-    canonical: 'https://twobitdigital.com/work',
+    canonical: 'https://www.twobitdigital.com/work',
   },
   openGraph: {
     title:       'Case Studies | Software Development & AI Projects — Two Bit Digital',
     description: 'Real outcomes from real engagements across legal tech, government, financial services, and emerging markets. Client names are anonymised — the engineering is not.',
-    url:         'https://twobitdigital.com/work',
+    url:         'https://www.twobitdigital.com/work',
     type:        'website',
   },
   twitter: {
@@ -27,12 +27,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type':    'CollectionPage',
-  '@id':      'https://twobitdigital.com/work',
-  url:        'https://twobitdigital.com/work',
+  '@id':      'https://www.twobitdigital.com/work',
+  url:        'https://www.twobitdigital.com/work',
   name:       'Case Studies — Two Bit Digital',
   description:'Anonymised case studies from Two Bit Digital covering SaaS platforms, AI systems, government portals, and compliance engineering.',
   inLanguage: 'en-GB',
-  isPartOf:   { '@id': 'https://twobitdigital.com' },
+  isPartOf:   { '@id': 'https://www.twobitdigital.com' },
 }
 
 export default function WorkPage() {

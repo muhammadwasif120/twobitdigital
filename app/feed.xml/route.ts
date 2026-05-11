@@ -1,7 +1,7 @@
 /**
  * RSS 2.0 Feed — Two Bit Digital Insights
  * ─────────────────────────────────────────────────────────────────────────────
- * Served at: https://twobitdigital.com/feed.xml
+ * Served at: https://www.twobitdigital.com/feed.xml
  *
  * Includes all insight articles with:
  *   - Correct RFC 822 pubDate derived from publishedAt (ISO date)
@@ -15,7 +15,7 @@
 import { NextResponse } from 'next/server'
 import { insights }     from '@/lib/insights'
 
-const SITE_URL   = 'https://twobitdigital.com'
+const SITE_URL   = 'https://www.twobitdigital.com'
 const SITE_NAME  = 'Two Bit Digital'
 const FEED_TITLE = 'Two Bit Digital Insights'
 const FEED_DESC  = 'Technical analysis, industry perspective, and hard-won lessons from building software for regulated markets. Covering SaaS architecture, AI integration, legal technology, event tech, and UK government digital procurement.'

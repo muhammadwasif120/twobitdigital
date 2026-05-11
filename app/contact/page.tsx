@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'Get in touch with Two Bit Digital — a UK-registered SaaS and AI engineering studio. Send a project brief, enquire about services, or connect directly with our team. We respond within one business day.',
   alternates: {
-    canonical: 'https://twobitdigital.com/contact',
+    canonical: 'https://www.twobitdigital.com/contact',
   },
   openGraph: {
     title: 'Contact Two Bit Digital | Start a Project',
     description:
       'Send a brief to Two Bit Digital — engineering-led SaaS and AI studio serving clients across the UK, US, Australia and Pakistan. Priority response within one business day.',
-    url: 'https://twobitdigital.com/contact',
+    url: 'https://www.twobitdigital.com/contact',
     type: 'website',
   },
   twitter: {
@@ -30,17 +30,17 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type':    'ContactPage',
-  '@id':      'https://twobitdigital.com/contact',
-  url:        'https://twobitdigital.com/contact',
+  '@id':      'https://www.twobitdigital.com/contact',
+  url:        'https://www.twobitdigital.com/contact',
   name:       'Contact Two Bit Digital',
   description:'Dedicated contact page for Two Bit Digital Ltd — send a project brief or reach our team directly.',
   inLanguage: 'en-GB',
-  isPartOf:   { '@id': 'https://twobitdigital.com' },
+  isPartOf:   { '@id': 'https://www.twobitdigital.com' },
   mainEntity: {
     '@type':       'Organization',
-    '@id':         'https://twobitdigital.com/#organization',
+    '@id':         'https://www.twobitdigital.com/#organization',
     name:          'Two Bit Digital Ltd',
-    url:           'https://twobitdigital.com',
+    url:           'https://www.twobitdigital.com',
     contactPoint: [
       {
         '@type':           'ContactPoint',

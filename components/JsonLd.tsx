@@ -1,7 +1,7 @@
 // Structured data for SEO, AEO, and GEO
 // Targets: Google, Bing, Perplexity, ChatGPT, Gemini, Claude
 
-const SITE_URL = 'https://twobitdigital.com'
+const SITE_URL = 'https://www.twobitdigital.com'
 
 const personSchema = {
   '@context': 'https://schema.org',

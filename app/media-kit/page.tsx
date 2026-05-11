@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: 'Media Kit | Two Bit Digital — Brand Assets & Press Resources',
   description:
     'Official brand assets, logo variants, colour palette, and typography guidelines for Two Bit Digital Ltd. For press, partnership, and integration listing use.',
-  alternates: { canonical: 'https://twobitdigital.com/media-kit' },
+  alternates: { canonical: 'https://www.twobitdigital.com/media-kit' },
   openGraph: {
     title: 'Media Kit | Two Bit Digital',
     description:
       'Official brand assets, logos, colour palette, and typography guidelines for Two Bit Digital Ltd.',
-    url: 'https://twobitdigital.com/media-kit',
+    url: 'https://www.twobitdigital.com/media-kit',
     type: 'website',
   },
   robots: { index: true, follow: true },
@@ -273,7 +273,7 @@ export default function MediaKitPage() {
                 {[
                   { label: 'Full Legal Name',  value: 'Two Bit Digital Ltd' },
                   { label: 'Studio Type',      value: 'SaaS Development & AI Engineering Studio' },
-                  { label: 'Website',          value: 'twobitdigital.com', href: 'https://twobitdigital.com' },
+                  { label: 'Website',          value: 'twobitdigital.com', href: 'https://www.twobitdigital.com' },
                   { label: 'Founder & CEO',    value: 'Muhammad Wasif', href: 'https://www.linkedin.com/in/muhammadwasiftbd/' },
                   { label: 'Registered In',    value: 'England and Wales · Co. No. 14710072' },
                   { label: 'UN Vendor No.',    value: '1177996' },
