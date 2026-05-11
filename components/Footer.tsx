@@ -18,6 +18,11 @@ const companyLinks = [
   { label: 'Contact',              href: '/contact' },
 ]
 
+const marketLinks = [
+  { label: 'United Kingdom',       href: '/markets/uk' },
+  { label: 'Pakistan',             href: '/markets/pakistan' },
+]
+
 const productLinks = [
   { label: 'Tikkit X',             href: 'https://tikkitx.com',  external: true },
   { label: 'Averon Legal Systems', href: '/products/averon-legal-systems', external: false },
@@ -45,7 +50,7 @@ export default function Footer() {
     }}>
       <div style={{ maxWidth:'1200px', margin:'0 auto', padding:'0 1.5rem' }}>
         <div
-          style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr 1fr', gap:'2.5rem', marginBottom:'3rem' }}
+          style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr 1fr 1fr', gap:'2.5rem', marginBottom:'3rem' }}
           className="footer-grid"
         >
           {/* Brand */}
@@ -153,6 +158,25 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Markets */}
+          <div>
+            <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
+              Markets
+            </h4>
+            <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'0.75rem' }}>
+              {marketLinks.map((m) => (
+                <li key={m.href}>
+                  <Link href={m.href} style={linkStyle}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = '#9d99b8')}
+                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = '#5e5a7a')}
+                  >
+                    {m.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Company */}
           <div>
             <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
@@ -218,10 +242,13 @@ export default function Footer() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 1100px) {
+          .footer-grid { grid-template-columns: 2fr 1fr 1fr !important; }
+        }
+        @media (max-width: 700px) {
           .footer-grid { grid-template-columns: 1fr 1fr !important; }
         }
-        @media (max-width: 500px) {
+        @media (max-width: 400px) {
           .footer-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>

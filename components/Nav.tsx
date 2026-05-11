@@ -12,6 +12,11 @@ const mainLinks = [
   { label: 'Insights', href: '/insights' },
 ]
 
+const marketLinks = [
+  { label: 'UK',       href: '/markets/uk' },
+  { label: 'Pakistan', href: '/markets/pakistan' },
+]
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -212,6 +217,29 @@ export default function Nav() {
             {l.label}
           </Link>
         ))}
+        <div style={{ paddingTop:'0.25rem', paddingBottom:'0.25rem', borderBottom:'1px solid rgba(255,255,255,0.04)' }}>
+          <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#3d3a56', fontWeight:600 }}>
+            Markets
+          </span>
+          <div style={{ display:'flex', gap:'1rem', marginTop:'0.5rem' }}>
+            {marketLinks.map((m) => (
+              <Link
+                key={m.href}
+                href={m.href}
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  fontFamily:     'var(--font-inter)',
+                  fontSize:       '0.9rem',
+                  color:          pathname.startsWith(m.href) ? '#f5c518' : '#9d99b8',
+                  textDecoration: 'none',
+                  fontWeight:     pathname.startsWith(m.href) ? 600 : 400,
+                }}
+              >
+                {m.label}
+              </Link>
+            ))}
+          </div>
+        </div>
         <Link
           href="/contact"
           onClick={() => setMenuOpen(false)}
