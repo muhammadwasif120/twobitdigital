@@ -1,20 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ── Canonical domain enforcement ────────────────────────────────────────────
-  // Permanently redirect www.twobitdigital.com → twobitdigital.com.
-  // Eliminates www duplicate pages from Google's index, consolidates crawl
-  // budget, and fixes redirect errors caused by www URLs in GSC.
-  async redirects() {
-    return [
-      {
-        source:      '/:path*',
-        has:         [{ type: 'host', value: 'www.twobitdigital.com' }],
-        destination: 'https://twobitdigital.com/:path*',
-        permanent:   true,   // 308 — tells Google to transfer all signals
-      },
-    ]
-  },
-
   // ── Trailing-slash normalisation ────────────────────────────────────────────
   // Prevents /insights/ and /insights being treated as separate URLs.
   trailingSlash: false,
