@@ -2,85 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ── Core pages ──────────────────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/</loc><lastmod>2026-04-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://twobitdigital.com/</loc><lastmod>2026-04-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 
   <!-- ── Market pages ────────────────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/markets/pakistan</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://www.twobitdigital.com/markets/uk</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://www.twobitdigital.com/about</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/contact</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/services</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/ai-integration</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/saas-development</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/web-app-development</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/compliance-regtech</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/government-digital</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/services/cloud-infrastructure</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/work</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/products</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/products/tikkit-x</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/products/averon-legal-systems</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/products/terra-core</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/partners/supabase</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/partners/meta</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/media-kit</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.twobitdigital.com/privacy</loc><lastmod>2026-04-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.twobitdigital.com/terms</loc><lastmod>2026-04-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://twobitdigital.com/markets/pakistan</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://twobitdigital.com/markets/uk</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://twobitdigital.com/about</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/contact</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/services</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://twobitdigital.com/services/ai-integration</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/services/saas-development</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/services/web-app-development</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/services/compliance-regtech</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/services/government-digital</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/services/cloud-infrastructure</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/work</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/products</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/products/tikkit-x</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/products/averon-legal-systems</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/products/terra-core</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/partners/supabase</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/partners/meta</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/media-kit</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://twobitdigital.com/privacy</loc><lastmod>2026-04-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://twobitdigital.com/terms</loc><lastmod>2026-04-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
   <!-- ── Launch / MVP Studio ───────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/launch</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/how-it-works</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/what-ships</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/pricing</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/tech-stack</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/case-studies</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/case-studies/tikkit-x</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/case-studies/averon-legal</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/launch/faq</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/launch</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://twobitdigital.com/launch/how-it-works</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/launch/what-ships</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/launch/pricing</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/launch/tech-stack</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/launch/case-studies</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/launch/case-studies/tikkit-x</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/launch/case-studies/averon-legal</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/launch/faq</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ── Insights index ──────────────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights</loc><lastmod>2026-04-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/insights</loc><lastmod>2026-04-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
   <!-- ── Pillar 1: AI & Custom Software ─────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/what-are-ai-workflows</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/custom-software-vs-off-the-shelf</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/how-to-build-an-ai-automation-strategy</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/what-is-a-rag-system</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/hidden-cost-of-manual-business-processes</loc><lastmod>2026-04-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/what-are-ai-workflows</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/custom-software-vs-off-the-shelf</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/how-to-build-an-ai-automation-strategy</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/what-is-a-rag-system</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/hidden-cost-of-manual-business-processes</loc><lastmod>2026-04-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ── Pillar 2: Event Technology / Tikkit X ──────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/event-management-software-guide-2025</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/offline-qr-verification-event-ticketing</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/tikkit-x-event-management-pakistan</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/how-to-run-a-paperless-event-pakistan</loc><lastmod>2026-03-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/event-management-software-guide-2025</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/offline-qr-verification-event-ticketing</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/tikkit-x-event-management-pakistan</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/how-to-run-a-paperless-event-pakistan</loc><lastmod>2026-03-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ── Pakistan Law Firm series ──────────────────────────────────────── -->
+  <url><loc>https://twobitdigital.com/law-firm-websites-pakistan</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://twobitdigital.com/insights/ykc-legal-law-firm-website-pakistan</loc><lastmod>2026-05-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-website-pakistan-guide</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-website-cost-pakistan</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/what-law-firm-website-needs-pakistan</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/why-pakistani-lawyers-need-website</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
   <!-- ── Pillar 3: Legal Technology ─────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/law-firm-digital-transformation-guide</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/cpr-part-47-compliance-software</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/law-firm-client-portal-guide</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/law-firm-case-file-digitisation</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/law-firm-employee-management-software</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/end-to-end-legal-tech-platform</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-digital-transformation-guide</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/cpr-part-47-compliance-software</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-client-portal-guide</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-case-file-digitisation</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/law-firm-employee-management-software</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/end-to-end-legal-tech-platform</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ── Existing articles ───────────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/how-to-choose-saas-development-agency-uk</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/ai-integration-regulated-industries</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/winning-uk-government-digital-contracts</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/how-to-choose-saas-development-agency-uk</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/ai-integration-regulated-industries</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/winning-uk-government-digital-contracts</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ── MVP Studio blog posts ─────────────────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/how-to-build-a-saas-mvp</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/saas-development-cost-uk</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/mvp-development-non-technical-founders</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/supabase-vs-firebase-saas-mvp</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/saas-tech-stack-2025</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/why-build-saas-mvp-nextjs</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/investor-ready-saas-mvp</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/how-to-build-a-saas-mvp</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/saas-development-cost-uk</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/mvp-development-non-technical-founders</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/supabase-vs-firebase-saas-mvp</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/saas-tech-stack-2025</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/why-build-saas-mvp-nextjs</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/investor-ready-saas-mvp</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
   <!-- ── Pillar 4: Two Bit Digital Brand ───────────────────────────── -->
-  <url><loc>https://www.twobitdigital.com/insights/what-is-a-saas-development-studio</loc><lastmod>2026-02-03</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/inside-two-bit-digital-ai-engineering-process</loc><lastmod>2026-01-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/building-averon-legal-systems-case-study</loc><lastmod>2026-01-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/ai-integration-vs-ai-native-software</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.twobitdigital.com/insights/regtech-compliance-software-regulated-industries</loc><lastmod>2026-01-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/what-is-a-saas-development-studio</loc><lastmod>2026-02-03</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://twobitdigital.com/insights/inside-two-bit-digital-ai-engineering-process</loc><lastmod>2026-01-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/building-averon-legal-systems-case-study</loc><lastmod>2026-01-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/ai-integration-vs-ai-native-software</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://twobitdigital.com/insights/regtech-compliance-software-regulated-industries</loc><lastmod>2026-01-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>

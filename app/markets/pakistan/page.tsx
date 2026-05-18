@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     'business automation Pakistan',
   ],
   alternates: {
-    canonical: 'https://www.twobitdigital.com/markets/pakistan',
+    canonical: 'https://twobitdigital.com/markets/pakistan',
   },
   openGraph: {
     title: 'Software Development Company in Pakistan | AI & SaaS — Two Bit Digital',
     description:
       'UK-registered software development studio operating in Pakistan. AI systems, SaaS platforms, mobile apps, and enterprise software for Pakistani businesses and international clients.',
-    url: 'https://www.twobitdigital.com/markets/pakistan',
+    url: 'https://twobitdigital.com/markets/pakistan',
     type: 'website',
   },
   twitter: {
@@ -51,18 +51,18 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  '@id': 'https://www.twobitdigital.com/markets/pakistan',
-  url: 'https://www.twobitdigital.com/markets/pakistan',
+  '@id': 'https://twobitdigital.com/markets/pakistan',
+  url: 'https://twobitdigital.com/markets/pakistan',
   name: 'Software Development Company in Pakistan — Two Bit Digital',
   description:
     'Two Bit Digital operates a core engineering hub in Karachi, Pakistan. We build AI systems, SaaS platforms, mobile apps, and enterprise software for Pakistani businesses and global clients.',
   inLanguage: 'en',
-  isPartOf: { '@id': 'https://www.twobitdigital.com' },
+  isPartOf: { '@id': 'https://twobitdigital.com' },
   about: {
     '@type': 'Organization',
-    '@id': 'https://www.twobitdigital.com/#organization',
+    '@id': 'https://twobitdigital.com/#organization',
     name: 'Two Bit Digital Ltd',
-    url: 'https://www.twobitdigital.com',
+    url: 'https://twobitdigital.com',
     foundingLocation: { '@type': 'Country', name: 'United Kingdom' },
     areaServed: [
       { '@type': 'Country', name: 'Pakistan', sameAs: 'https://www.wikidata.org/wiki/Q843' },
@@ -85,9 +85,9 @@ const jsonLd = {
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.twobitdigital.com' },
-      { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.twobitdigital.com/markets' },
-      { '@type': 'ListItem', position: 3, name: 'Pakistan', item: 'https://www.twobitdigital.com/markets/pakistan' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://twobitdigital.com' },
+      { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://twobitdigital.com/markets' },
+      { '@type': 'ListItem', position: 3, name: 'Pakistan', item: 'https://twobitdigital.com/markets/pakistan' },
     ],
   },
 }
@@ -140,6 +140,15 @@ const faqJsonLd = {
 }
 
 const services = [
+  {
+    icon: '⚖️',
+    color: '#f5c518',
+    title: 'Law Firm Websites & Digital Presence',
+    slug: null,
+    href: '/law-firm-websites-pakistan',
+    desc: 'Professional websites for Pakistani law firms, advocates, and barristers. Practice area pages, client portals, case search, consultation booking, and judgements libraries — built to rank on Google and convert clients.',
+    tags: ['Law Firm Websites', 'Client Portals', 'Case Search', 'Legal SEO', 'Consultation Booking'],
+  },
   {
     icon: '⚡',
     color: '#7b5ea7',
@@ -389,8 +398,8 @@ export default function PakistanMarketPage() {
             }}>
               {services.map((svc) => (
                 <Link
-                  key={svc.slug}
-                  href={`/services/${svc.slug}`}
+                  key={svc.title}
+                  href={'href' in svc && svc.href ? svc.href : `/services/${svc.slug}`}
                   style={{
                     display: 'block',
                     backgroundColor: '#0d0d22',
@@ -676,10 +685,10 @@ export default function PakistanMarketPage() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
               {[
+                { href: '/insights/law-firm-website-pakistan-guide', label: 'Law Firm Websites in Pakistan: The Complete Guide' },
+                { href: '/insights/ykc-legal-law-firm-website-pakistan', label: 'YKC Legal Case Study: 75-Year Firm Goes Digital' },
                 { href: '/insights/tikkit-x-event-management-pakistan', label: 'Tikkit X: Event Management for Pakistan' },
-                { href: '/insights/how-to-run-a-paperless-event-pakistan', label: 'How to Run a Paperless Event in Pakistan' },
                 { href: '/insights/what-are-ai-workflows', label: 'What Are AI Workflows? A Business Guide' },
-                { href: '/insights/hidden-cost-of-manual-business-processes', label: 'The Hidden Cost of Manual Business Processes' },
               ].map((link) => (
                 <Link
                   key={link.href}

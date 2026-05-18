@@ -20,6 +20,444 @@ type Section = {
 }
 
 export const insights: InsightPost[] = [
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // PAKISTAN LAW FIRM CLUSTER — May 2026
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── Pakistan Article 1 — YKC Legal Case Study ─────────────────────────────
+  {
+    slug:        'ykc-legal-law-firm-website-pakistan',
+    title:       'How We Built YKC Legal\'s Digital Presence: A Pakistan Law Firm Case Study',
+    excerpt:     'YKC Legal is one of Pakistan\'s oldest law firms. They had zero digital presence. Two Bit Digital built everything — and they were on Google within two weeks.',
+    publishedAt: '2026-05-19',
+    readTime:    '9 min read',
+    category:    'Legal Technology',
+    tags:        ['law firm website Pakistan', 'YKC Legal', 'legal digital presence', 'law firm case study', 'Pakistan law firm'],
+    metaTitle:   'YKC Legal Case Study: Law Firm Website Pakistan | Two Bit Digital',
+    metaDesc:    'How Two Bit Digital built a complete digital presence for YKC Legal — one of Pakistan\'s oldest law firms. Client portal, case search, 17 practice areas, and on Google in two weeks.',
+    content: [
+      {
+        type: 'intro',
+        text: 'YKC Legal has been practising law in Pakistan since 1950. Three generations of advocates. Decades of cases across criminal, civil, family, corporate, and constitutional law. A reputation earned entirely in courtrooms, through referrals, through results. And until Two Bit Digital got involved — zero digital presence. No website. No Google ranking. No way for anyone who did not already know them to find them. This is the story of what we built and what happened when it went live.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Brief',
+        text: 'The firm needed a complete digital presence — not a brochure site with a phone number, but a working system. Something that would put them on Google, allow clients to understand the full scope of their practice, and begin the process of digitising how the firm interacts with clients. The instruction was clear: build something that reflects the calibre of a firm with 75 years of history, not something that looks like a template bought for a few thousand rupees.',
+      },
+      {
+        type: 'h2',
+        heading: 'What We Built',
+      },
+      {
+        type: 'ul',
+        items: [
+          '17 practice area pages — each one a standalone SEO target, written for the client searching that specific type of lawyer in Pakistan. Criminal law, family law, corporate law, property, immigration, and 12 others.',
+          'Client portal with case diary — a secure login area where clients track their matter, see upcoming hearings, access filed documents, and communicate with the firm. Replaces the WhatsApp and phone chasing that both clients and fee earners find exhausting.',
+          'Online consultation booking — clients book directly from the website. They choose a time, confirm, and receive a structured confirmation. No back-and-forth. No missed messages.',
+          'Judgements library — a searchable repository of relevant case law and precedents. Positions the firm as an authority the moment a potential client lands on the site.',
+          'Case search — advocates, clients, and the public can search the firm\'s case history by type, jurisdiction, and outcome.',
+          'Full team profiles — every advocate with their qualifications, practice areas, years of experience, and approach. Builds trust before anyone has made contact.',
+          'Bilingual content — the site operates in English and Urdu, with correct right-to-left Urdu typography throughout.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The Technical Foundation',
+        text: 'The site is built on Next.js 14 with TypeScript and deployed on Vercel\'s edge network. Every page is statically generated — meaning it loads in milliseconds regardless of where in Pakistan the visitor is connecting from. The database layer uses PostgreSQL with row-level security enforced at the database level, not just the application level — meaning even if the application code had a bug, client data would remain isolated. The client portal authentication uses a session-based system with secure httpOnly cookies. Every document in the portal is stored with access controls verifying the user\'s identity before serving the file.',
+      },
+      {
+        type: 'h2',
+        heading: 'The SEO Architecture',
+        text: 'Technical SEO was built into the architecture from day one, not retrofitted after launch. Every practice area page has a unique, descriptive URL, a hand-written meta title and description, structured schema markup declaring it as a LegalService with the firm as the provider, and a canonical URL. The sitemap was submitted to Google Search Console and Bing Webmaster Tools on launch day. The internal linking structure — practice area pages linking to team profiles, team profiles linking to case studies, the judgements library linking to practice areas — signals to Google the topical depth of the site.',
+      },
+      {
+        type: 'callout',
+        text: 'YKC Legal was appearing on Google for relevant search terms within two weeks of launch. The keyword footprint — the number of search terms the site ranks for — has been expanding since. This is what happens when SEO is part of the architecture, not an add-on.',
+      },
+      {
+        type: 'h2',
+        heading: 'What This Means for Pakistani Law Firms',
+        text: 'YKC Legal is not a special case. The conditions that made this build successful — a firm with genuine expertise, a clear area of practice, and competition that has almost no digital presence — exist across Pakistan\'s legal market. Most established firms have the reputation. Almost none of them have a digital presence that matches it. The gap between where Pakistani law firms are digitally and where their clients are looking for them is significant. And it is closing faster than most firms realise.',
+      },
+      {
+        type: 'cta',
+        text: 'If your law firm has the reputation but not the digital presence to match, Two Bit Digital builds exactly what YKC Legal has — a complete digital platform that works for your practice. Get in touch to discuss your firm.',
+      },
+    ],
+  },
+
+  // ── Pakistan Article 2 — Complete Guide Cornerstone ───────────────────────
+  {
+    slug:        'law-firm-website-pakistan-guide',
+    title:       'Law Firm Websites in Pakistan: The Complete 2025 Guide',
+    excerpt:     'What does a professional law firm website actually need in Pakistan in 2025? This guide covers everything — from the minimum viable presence to a full digital practice platform.',
+    publishedAt: '2026-05-18',
+    readTime:    '12 min read',
+    category:    'Legal Technology',
+    tags:        ['law firm website Pakistan', 'lawyer website Pakistan', 'legal website Pakistan', 'law firm digital presence', 'Pakistan legal tech'],
+    metaTitle:   'Law Firm Websites in Pakistan: The Complete Guide 2025 | Two Bit Digital',
+    metaDesc:    'What does a professional law firm website in Pakistan actually need? The complete guide — practice area pages, client portals, SEO, consultation booking, and what to avoid.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Pakistan\'s legal market is digitally underserved. The majority of law firms — including some of the most established — have either no website or a static page that has not been updated since it was built. Meanwhile, clients are searching Google before making any decision about which lawyer to contact. This guide covers everything a Pakistani law firm needs to know about building a professional digital presence in 2025: what to include, what to avoid, how long it takes, and how much it costs.',
+      },
+      {
+        type: 'h2',
+        heading: 'Why Pakistani Law Firms Need a Website in 2025',
+        text: 'The short answer: because your next client is looking for you online before they call. The longer answer is that a professional website is no longer a differentiator in Pakistan\'s legal market — it is fast becoming table stakes. Firms that have a strong digital presence are capturing clients who would previously have been referred to them by word of mouth — and some of those are going to competitors who are simply easier to find. The legal market in Pakistan is not saturated online. That means the firms that move now are capturing territory that will be much harder to claim in three years.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Two Types of Law Firm Website',
+        text: 'Not every firm needs the same thing. There are two fundamentally different approaches, and the right one depends on your practice type, your client base, and your goals.',
+      },
+      {
+        type: 'h3',
+        heading: 'Type 1: The Professional Presence',
+        text: 'For firms where most clients come from referrals and personal relationships, the website\'s job is credibility rather than discovery. When a referred client Googles you after hearing your name, they need to find something that matches the reputation they heard about. This means: a professional design, practice area pages, team profiles, and a clear contact method. Timeline: 4–6 weeks. Cost: PKR 150,000–300,000.',
+      },
+      {
+        type: 'h3',
+        heading: 'Type 2: The Full Digital Practice Platform',
+        text: 'For firms that want to actively acquire new clients online — or that handle ongoing matters and want to improve how they manage client relationships — the website needs to do much more. This means practice area pages optimised for search, a client portal with case diary, consultation booking, a judgements library, and an ongoing SEO strategy. This is what Two Bit Digital built for YKC Legal. Timeline: 10–16 weeks. Cost: PKR 500,000–1,200,000.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Every Law Firm Website Must Include',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Practice area pages — not a single list of services, but a dedicated page for each area of practice. Each one targets the specific search terms clients use when looking for that type of lawyer.',
+          'Team profiles — every advocate with their qualifications, experience, and areas of practice. Clients hire lawyers, not firms. The people matter.',
+          'Contact information — phone, email, WhatsApp, physical address, and a contact form. Every channel a Pakistani client might want to use.',
+          'Mobile-optimised design — Pakistan\'s internet usage is overwhelmingly mobile. A site that does not work properly on a phone is invisible to most of your potential clients.',
+          'Fast page loads — slow sites rank lower on Google and convert fewer visitors. Every site Two Bit Digital builds is performance-optimised from the ground up.',
+          'Legal disclaimers — your firm\'s regulatory obligations around client communication and advertising apply online as much as they do offline.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The Features That Separate Good Law Firm Websites From Great Ones',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Client portal — a secure login area where clients track their matter progress, see documents, and communicate with the firm. Reduces the constant status-update calls and messages that every legal team deals with.',
+          'Consultation booking — let clients book their first meeting directly on your website. No back-and-forth, no missed calls, no WhatsApp threads.',
+          'Judgements library — a searchable archive of relevant case law. Demonstrates depth of expertise before any contact is made.',
+          'Bilingual content — English and Urdu, with properly rendered right-to-left Urdu typography for the sections of your client base more comfortable in Urdu.',
+          'Case results and testimonials — evidence of outcomes, framed carefully within the ethical constraints of legal advertising in Pakistan.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'SEO for Pakistani Law Firms: How to Rank on Google',
+        text: 'Search engine optimisation for a Pakistani law firm is not complicated, but it does require doing the right things from the start rather than retrofitting them later.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Practice area pages are your primary SEO assets. A page titled "Criminal Lawyer in Karachi" targeting that specific phrase is worth ten times more than a generic "Our Services" page.',
+          'Location pages matter. Clients search for "family lawyer Lahore" not "family lawyer Pakistan". If your firm operates in multiple cities, each location needs its own content.',
+          'Google Search Console is essential. Submit your sitemap on launch day and use URL Inspection to request indexing for your priority pages immediately.',
+          'Schema markup — structured data that tells Google what type of business you are, what services you offer, and where you are located — signals search intent correctly and improves how your listing appears.',
+          'Page speed is a ranking factor. A site that loads in under 2 seconds on a mobile connection in Pakistan will outrank an equivalent site that loads in 6 seconds.',
+          'Internal linking — connecting your practice area pages to team profiles, your judgements library to relevant practice areas — creates a web of topical authority that Google rewards.',
+        ],
+      },
+      {
+        type: 'callout',
+        text: 'YKC Legal — one of Pakistan\'s oldest law firms — was appearing on Google for relevant search terms within two weeks of their new site going live. This is not unusual when technical SEO is built into the architecture from day one.',
+      },
+      {
+        type: 'h2',
+        heading: 'What to Avoid When Building a Law Firm Website in Pakistan',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Cheap templates — they look similar to dozens of other sites, they are not built for SEO, and they cannot be extended to include portals, booking systems, or case search.',
+          'A single "About" page with all your practice areas listed — this is invisible to Google. Each practice area needs its own dedicated page.',
+          'Hosting on shared servers with slow response times — Pakistani hosting providers with poor infrastructure will hurt your rankings.',
+          'No mobile optimisation — building a site for desktop and assuming it works on mobile is one of the most common and costly mistakes.',
+          'Ignoring Google Search Console — not submitting your sitemap means waiting weeks or months for Google to find your site naturally.',
+          'Not owning your domain — your domain name should be registered in your firm\'s name, not your web designer\'s account. You should control it.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'How to Choose a Developer for Your Law Firm Website',
+        text: 'The right developer for a law firm website in Pakistan is not necessarily the cheapest one — it is the one who understands both the technical requirements and the context of legal practice.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Ask to see live examples — not mockups, but URLs of sites they have built that are currently live and ranking.',
+          'Ask specifically about SEO — how do they build for search? What does their technical SEO process look like?',
+          'Ask about ownership — who owns the code, the domain, and the hosting account? Everything should be in your firm\'s name.',
+          'Ask about ongoing support — what happens after launch? Who fixes bugs? Who updates the site when you add a new team member?',
+          'Ask about their Pakistan experience — understanding local payment methods, hosting considerations, and bilingual requirements matters.',
+        ],
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital has built law firm websites for Pakistani practices including YKC Legal — appearing on Google within two weeks of launch. If your firm is ready to build a digital presence that matches your reputation, get in touch.',
+      },
+    ],
+  },
+
+  // ── Pakistan Article 3 — Cost Article ─────────────────────────────────────
+  {
+    slug:        'law-firm-website-cost-pakistan',
+    title:       'How Much Does a Law Firm Website Cost in Pakistan? (2025 Honest Guide)',
+    excerpt:     'The cost of a law firm website in Pakistan ranges from PKR 80,000 for a basic template to over PKR 1,200,000 for a full digital platform. Here is how to understand what you are actually paying for.',
+    publishedAt: '2026-05-17',
+    readTime:    '8 min read',
+    category:    'Legal Technology',
+    tags:        ['law firm website cost Pakistan', 'lawyer website price Pakistan', 'legal website cost', 'web development cost Pakistan'],
+    metaTitle:   'Law Firm Website Cost in Pakistan 2025: Honest Pricing Guide | Two Bit Digital',
+    metaDesc:    'How much does a law firm website cost in Pakistan? A transparent breakdown — from basic templates at PKR 80,000 to full digital platforms at PKR 1,200,000+. What you get at each level.',
+    content: [
+      {
+        type: 'intro',
+        text: 'The honest answer: it depends entirely on what you are actually trying to build. A law firm website in Pakistan can cost PKR 80,000 from a freelancer with a template, or PKR 1,200,000 from a specialist studio building a full digital platform. Both are "a law firm website." What they deliver is completely different. This guide breaks down what you get at each price point — and helps you decide which is right for your firm.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Three Tiers of Law Firm Website in Pakistan',
+      },
+      {
+        type: 'h3',
+        heading: 'Tier 1: Template or Freelancer Build — PKR 80,000–200,000',
+        text: 'What you get: a professionally designed brochure site built on a template (usually WordPress, Wix, or a similar platform). Practice areas listed as a single page or a simple dropdown. Team photos and bios. Contact form. The site looks acceptable but is not built for SEO, cannot be extended with portals or booking systems, and you are renting the platform — not owning the code. Good for: a firm that simply needs a professional-looking URL to direct referred clients to, and has no plans to acquire clients through Google.',
+      },
+      {
+        type: 'h3',
+        heading: 'Tier 2: Custom-Built Professional Site — PKR 250,000–500,000',
+        text: 'What you get: a fully custom-built site on a modern framework with dedicated practice area pages (one page per practice area), optimised for search, with proper technical SEO built in. Team profiles, contact system, basic blog or insights section. Mobile-first design. This is where Two Bit Digital\'s basic engagement sits. Good for: firms that want to rank on Google for their practice areas, own their codebase, and have a site that can be extended over time.',
+      },
+      {
+        type: 'h3',
+        heading: 'Tier 3: Full Digital Practice Platform — PKR 600,000–1,200,000+',
+        text: 'What you get: everything in Tier 2 plus a client portal with secure case diary, online consultation booking system, judgements library, case search functionality, bilingual English/Urdu content, and an ongoing SEO programme. This is the full-stack digital presence — the equivalent of what Two Bit Digital built for YKC Legal. Good for: established firms with ongoing client relationships, firms actively looking to acquire new clients through Google, and firms who want to modernise how they manage client communications.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Drives the Cost Up',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Number of practice area pages — each one needs unique content, SEO optimisation, and design. A firm with 17 practice areas is more work than one with 5.',
+          'Client portal complexity — a basic case status display is straightforward. A full portal with document management, secure messaging, and hearing date tracking is a significant engineering project.',
+          'Bilingual content — writing and correctly rendering Urdu content (including RTL typography) adds scope.',
+          'Consultation booking system — building a booking calendar with confirmations, reminders, and intake forms is a distinct feature layer.',
+          'Judgements library — depending on the volume of judgements and the search functionality required, this can range from simple to complex.',
+          'Ongoing SEO and content — a monthly retainer for continued SEO work, new content, and ranking improvement is separate from the build cost.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'What Drives the Cost Down (and Why That Is Not Always Good)',
+        text: 'A much lower quote than these ranges usually means one of three things: a template with minimal customisation, a developer who does not build for SEO (meaning the site will be invisible on Google), or a project that looks finished at launch but will need expensive remedial work within 12–18 months. The firms that come to Two Bit Digital for remedial work — to rebuild a site that was done cheaply and did not deliver — always spend more in total than if they had done it properly the first time.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Five-Year Cost Comparison',
+        text: 'A Tier 1 template site at PKR 150,000 build cost plus PKR 3,000 per month platform fee over five years is PKR 330,000. But if that site does not rank on Google and does not convert new clients, the opportunity cost — the clients who went to a competitor — is uncountable. A Tier 3 platform at PKR 900,000 build cost that ranks for 40 relevant search terms and converts 5 new clients per month at an average matter value of PKR 50,000 is generating PKR 250,000 per month in new business. The economics change entirely when you include what the website is actually supposed to do.',
+      },
+      {
+        type: 'callout',
+        text: 'Two Bit Digital provides fixed-price quotes for law firm website projects — no hidden costs, no hourly billing that overruns. Every engagement begins with a scoping call where we understand your firm\'s needs and provide a precise figure before any work begins.',
+      },
+      {
+        type: 'h2',
+        heading: 'What to Ask Before Agreeing a Price',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Is the price fixed or estimated? Fixed-price projects mean no surprises.',
+          'What does the quote include? Content writing, SEO setup, Google Search Console submission, training?',
+          'Who owns the code and domain after delivery? You should own everything.',
+          'What happens if you need changes after launch? Is there a support period included?',
+          'What is the payment structure? A reasonable structure is 30–40% upfront, 30–40% at design approval, and the balance on launch.',
+        ],
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital provides transparent, fixed-price quotes for law firm website projects in Pakistan. Get in touch with a brief description of your firm and what you are looking to build — we will come back with a clear scope and a fixed figure.',
+      },
+    ],
+  },
+
+  // ── Pakistan Article 4 — Features Article ─────────────────────────────────
+  {
+    slug:        'what-law-firm-website-needs-pakistan',
+    title:       'What Should a Pakistani Law Firm Website Include? The Essential Checklist',
+    excerpt:     'Most Pakistani law firm websites are missing the features that actually win clients and build trust. Here is the complete checklist of what a serious legal digital presence needs.',
+    publishedAt: '2026-05-16',
+    readTime:    '7 min read',
+    category:    'Legal Technology',
+    tags:        ['law firm website features Pakistan', 'lawyer website Pakistan', 'what should a law firm website include', 'legal website checklist'],
+    metaTitle:   'Law Firm Website Features Pakistan: The Essential Checklist 2025 | Two Bit Digital',
+    metaDesc:    'What should a Pakistani law firm website include? The complete checklist — practice area pages, client portal, consultation booking, SEO, mobile design, and more.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Most Pakistani law firm websites are missing the features that actually do the work. They have a logo, a list of services, and a phone number — and nothing else. The result is a website that looks like a website but does not function as one. It does not rank on Google. It does not convert visitors into enquiries. It does not reduce the administrative burden on the fee earners. This checklist covers everything a serious law firm digital presence in Pakistan needs to include — in order of importance.',
+      },
+      {
+        type: 'h2',
+        heading: 'Non-Negotiable: The Minimum Viable Legal Website',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Individual practice area pages — one page per area of law. Not a list. Not a dropdown. A full page for "Criminal Law", a full page for "Family Law", a full page for "Corporate Law". Each one is a separate Google ranking opportunity.',
+          'Team profiles — every advocate with their name, photo, qualifications, call to the bar, and areas of practice. Clients hire people. If they cannot find information about your team, they will go to a firm where they can.',
+          'Clear contact options — phone number (click-to-call on mobile), email, WhatsApp link, physical address with a map embed, and a contact form. Every channel.',
+          'Mobile-first design — not mobile-compatible. Mobile-first. Pakistan\'s internet users are predominantly on mobile. A site that requires pinching and zooming is not a professional presence.',
+          'SSL certificate and HTTPS — every site needs to be served over HTTPS. Google ranks HTTP sites lower and browsers flag them as "not secure". Non-negotiable.',
+          'Fast page loading — under 3 seconds on a mobile connection. Anything slower is losing you visitors and ranking positions.',
+          'Legal disclaimers — the Pakistan Bar Council rules on lawyer advertising apply to your website. Your site needs appropriate disclaimers and cannot make misleading claims.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'For Firms That Want to Rank on Google',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Location-specific practice area pages — "Criminal Lawyer in Karachi" performs better than "Criminal Lawyer" for clients searching in your city.',
+          'Unique, expert-written content on every page — not generic text. Not copied from another site. Content that demonstrates actual knowledge of that area of practice.',
+          'Schema markup — structured data that tells Google your firm\'s name, address, practice areas, and contact details in a format it can read directly.',
+          'Sitemap submitted to Google Search Console — so Google knows every page on your site and can crawl them efficiently.',
+          'Internal linking — your criminal law page links to your relevant team members. Your team members link back to their practice areas. Google follows these links.',
+          'A regularly updated insights or blog section — fresh content signals an active site and creates additional ranking opportunities for questions clients are searching.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'For Firms With Ongoing Client Relationships',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Client portal with case diary — a secure login where clients track their matter in real time. Upcoming hearings, filed documents, case progress, messages from the firm.',
+          'Secure document sharing — clients upload documents, the firm reviews them in the portal. No email attachments, no WhatsApp forwards of sensitive documents.',
+          'Hearing date tracker — clients can see their upcoming court dates without calling the office every week.',
+          'In-portal messaging — structured communication between client and fee earner, with a record of every exchange.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'For Firms Acquiring New Clients Through the Website',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Online consultation booking — clients choose a time, complete a brief intake form, and receive a confirmation. First contact is structured before the first meeting.',
+          'WhatsApp integration — a WhatsApp chat button that opens a direct conversation with the firm. Widely used in Pakistan and widely expected.',
+          'Clear pricing information (where appropriate) — not every firm can publish prices, but for routine matters (uncontested divorce, straightforward property transfer), publishing a starting price removes a friction point for potential clients.',
+          'Case results and testimonials — handled carefully within advertising rules, evidence of outcomes builds trust before any conversation.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'For Establishing Authority',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Judgements library — a searchable archive of relevant case law. Signals expertise that goes beyond a simple service listing.',
+          'Case search — the ability for clients and other advocates to search the firm\'s case history.',
+          'Thought leadership content — long-form articles on legal developments in Pakistan, written in accessible language. Ranks on Google and positions individual advocates as authorities.',
+          'Bilingual content — English and Urdu, with properly rendered RTL Urdu typography. Accessible to the full range of potential clients.',
+        ],
+      },
+      {
+        type: 'callout',
+        text: 'YKC Legal — one of Pakistan\'s oldest law firms — includes every item on this checklist. Their site was appearing on Google for relevant terms within two weeks of launch. The checklist works.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital builds law firm websites in Pakistan that include everything on this list. Get in touch to discuss which elements your firm needs and what that looks like as a project.',
+      },
+    ],
+  },
+
+  // ── Pakistan Article 5 — Awareness Article ────────────────────────────────
+  {
+    slug:        'why-pakistani-lawyers-need-website',
+    title:       'Why Every Pakistani Law Firm Needs a Professional Website in 2025',
+    excerpt:     'Referrals still work in Pakistan\'s legal market. But the clients they send now Google you before they call. Here is why your digital presence matters more than you think.',
+    publishedAt: '2026-05-15',
+    readTime:    '6 min read',
+    category:    'Legal Technology',
+    tags:        ['law firm website Pakistan', 'why lawyers need website', 'advocate website Pakistan', 'law firm digital marketing Pakistan'],
+    metaTitle:   'Why Pakistani Law Firms Need a Professional Website in 2025 | Two Bit Digital',
+    metaDesc:    'Why does your law firm need a website in Pakistan? Referrals still work — but referred clients now Google you before they call. Here is what they find when they do.',
+    content: [
+      {
+        type: 'intro',
+        text: 'You probably get most of your clients through referrals. Someone you represented tells their colleague about you. A fellow advocate refers a matter outside their speciality. A satisfied family comes back with a new instruction. This has worked for decades and it will keep working. But there is a step in that process that has changed — and most Pakistani law firms have not noticed. The person who was referred to you now Googles your name before they call. And what they find — or do not find — shapes whether they call at all.',
+      },
+      {
+        type: 'h2',
+        heading: 'What Happens When a Referred Client Searches Your Firm',
+        text: 'A colleague tells someone "you should speak to Advocate Ahmad — he handled exactly this for me." The person sits down, opens their phone, and types the firm\'s name into Google. Three things happen: they find a professional site that confirms the referral\'s confidence — they call. They find nothing, or a half-built page from 2018 — they hesitate, maybe look at another name from the same referral. They find a competitor who appears in the search results for the same practice area — they call both. Your reputation earned the referral. Your digital presence decides whether it converts.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Clients You Are Not Seeing',
+        text: 'Beyond referrals, there is an entire category of client that Pakistani law firms are currently invisible to: the person who does not know which lawyer to call. Someone facing a property dispute in Lahore who searches "property lawyer Lahore". A family going through divorce proceedings who searches "family court lawyer Karachi". A business owner with a contract dispute who searches "commercial litigation Pakistan". These are real searches happening right now. The firms that appear get the call. The firms that do not — including many excellent firms — are simply not in the consideration set.',
+      },
+      {
+        type: 'h2',
+        heading: 'Your Competition Is Weaker Than You Think',
+        text: 'Pakistan\'s legal market is one of the least digitally competitive professional markets in the country. Most law firms have no website. Of those that do, most have something so basic it does not rank for anything. This means the barrier to becoming the most visible law firm in your practice area — online — is lower than in almost any other professional service sector. A firm that commits to a proper digital presence now is not fighting to beat a crowded digital market. It is stepping into an almost empty room and turning on the lights.',
+      },
+      {
+        type: 'h2',
+        heading: 'What a Professional Website Actually Does For Your Practice',
+      },
+      {
+        type: 'ul',
+        items: [
+          'It validates referrals — when a referred client searches you and finds a professional, authoritative site, their confidence in the referral increases. You were already in their consideration; now you are their first call.',
+          'It captures direct search traffic — clients searching for your practice area in your city find you before they find anyone else. These are high-intent enquiries from people who have already decided they need a lawyer.',
+          'It reduces administrative friction — a client portal with case diary means clients stop calling to ask for status updates. Consultation booking means the first call is already structured before it happens.',
+          'It signals the quality of your practice — a firm with a 17-practice-area website, a searchable judgements library, and advocate profiles with verifiable credentials looks exactly as serious as it is.',
+          'It works around the clock — your website is answering questions, building trust, and collecting enquiries at 2am when no one in your office is there to answer the phone.',
+        ],
+      },
+      {
+        type: 'h2',
+        heading: 'The Objection: "My Clients Are Not Online"',
+        text: 'This was a reasonable position five years ago. It is not accurate today. Pakistan has over 100 million internet users — the majority of them on mobile. Urban professionals, business owners, educated families — the clients Pakistani law firms typically serve — are not just online, they are routinely searching for professional services online. The demographic that "is not online" is shrinking every year. The demographic that searches before calling is growing every year.',
+      },
+      {
+        type: 'callout',
+        text: 'YKC Legal — one of Pakistan\'s oldest and most respected law firms — had zero digital presence before working with Two Bit Digital. Within two weeks of their new site going live, they were appearing on Google for relevant search terms. The timeline to visibility for a well-built law firm site in Pakistan is weeks, not months.',
+      },
+      {
+        type: 'h2',
+        heading: 'The Right Time to Build Is Now',
+        text: 'The firms that build their digital presence in 2025 will own the rankings that their competitors will be trying to break into in 2027. SEO compounds over time: a site that has been live, indexed, and accumulating content for two years will outrank a new site almost regardless of the new site\'s quality. The first-mover advantage in Pakistan\'s legal digital market is still available. It will not be for much longer.',
+      },
+      {
+        type: 'cta',
+        text: 'Two Bit Digital builds professional digital presences for Pakistani law firms — from a clean professional site to a full platform with client portal, case search, and consultation booking. Get in touch to discuss what your firm needs.',
+      },
+    ],
+  },
+
   // ── NEW: Article 1 — AI Workflows Cornerstone ──────────────────────────────
   {
     slug:        'what-are-ai-workflows',

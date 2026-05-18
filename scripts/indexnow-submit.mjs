@@ -49,6 +49,13 @@ const INSIGHT_SLUGS = [
   'building-averon-legal-systems-case-study',
   'ai-integration-vs-ai-native-software',
   'regtech-compliance-software-regulated-industries',
+
+  // Pakistan Law Firm series
+  'ykc-legal-law-firm-website-pakistan',
+  'law-firm-website-pakistan-guide',
+  'law-firm-website-cost-pakistan',
+  'what-law-firm-website-needs-pakistan',
+  'why-pakistani-lawyers-need-website',
 ]
 
 // ── Build the full URL list ──────────────────────────────────────────────────

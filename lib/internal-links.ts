@@ -171,4 +171,36 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { label: 'AI Integration for Regulated Industries', href: '/insights/ai-integration-regulated-industries', note: 'What regulated industries specifically need from AI that generic tools miss' },
   ],
 
+  // ── Pakistan Law Firm series ────────────────────────────────────────────────
+
+  'ykc-legal-law-firm-website-pakistan': [
+    { label: 'Law Firm Websites Pakistan — Full Service', href: '/law-firm-websites-pakistan',                      note: 'Build a full-platform law firm website like YKC Legal — client portal, case search, and more' },
+    { label: 'The Complete Guide to Law Firm Websites in Pakistan', href: '/insights/law-firm-website-pakistan-guide', note: 'Everything a Pakistani law firm needs to know before commissioning a website' },
+    { label: 'Averon Legal Systems',                     href: '/products/averon-legal-systems',                    note: 'Two Bit Digital\'s legal management SaaS — multi-tenant case management and CPR compliance' },
+  ],
+
+  'law-firm-website-pakistan-guide': [
+    { label: 'Law Firm Websites Pakistan — Full Service',  href: '/law-firm-websites-pakistan',                        note: 'See what Two Bit Digital builds for Pakistani law firms — and speak to the team' },
+    { label: 'How We Built YKC Legal\'s Digital Presence', href: '/insights/ykc-legal-law-firm-website-pakistan',      note: 'The real case study behind this guide — 17 practice areas, client portal, and live in 2 weeks on Google' },
+    { label: 'How Much Does a Law Firm Website Cost in Pakistan?', href: '/insights/law-firm-website-cost-pakistan',   note: 'PKR price tiers, cost drivers, and a five-year comparison — template vs custom vs full platform' },
+  ],
+
+  'law-firm-website-cost-pakistan': [
+    { label: 'Law Firm Websites Pakistan — Full Service',  href: '/law-firm-websites-pakistan',                          note: 'Get a scoped proposal for your firm — no sales pressure, just a clear brief' },
+    { label: 'The Complete Guide to Law Firm Websites in Pakistan', href: '/insights/law-firm-website-pakistan-guide',   note: 'What should your website actually include? The full 2025 guide for Pakistani law firms' },
+    { label: 'How We Built YKC Legal\'s Digital Presence', href: '/insights/ykc-legal-law-firm-website-pakistan',        note: 'What a full-platform build looks like in practice — features, timeline, and outcome' },
+  ],
+
+  'what-law-firm-website-needs-pakistan': [
+    { label: 'Law Firm Websites Pakistan — Full Service',  href: '/law-firm-websites-pakistan',                          note: 'Two Bit Digital builds every item on this checklist into a single, cohesive platform' },
+    { label: 'How We Built YKC Legal\'s Digital Presence', href: '/insights/ykc-legal-law-firm-website-pakistan',        note: 'See the checklist in action — YKC Legal\'s complete digital presence built by Two Bit Digital' },
+    { label: 'How Much Does a Law Firm Website Cost in Pakistan?', href: '/insights/law-firm-website-cost-pakistan',     note: 'PKR pricing for each tier — basic presence through to full client portal and case search' },
+  ],
+
+  'why-pakistani-lawyers-need-website': [
+    { label: 'Law Firm Websites Pakistan — Full Service',      href: '/law-firm-websites-pakistan',                          note: 'Ready to act? Two Bit Digital builds professional law firm websites for Pakistani practices' },
+    { label: 'The Complete Guide to Law Firm Websites in Pakistan', href: '/insights/law-firm-website-pakistan-guide',       note: 'Once you\'ve decided you need a website — here\'s everything you need to know before commissioning one' },
+    { label: 'What Should a Pakistani Law Firm Website Include?', href: '/insights/what-law-firm-website-needs-pakistan',    note: 'The feature checklist — minimum requirements through to full digital platform' },
+  ],
+
 }
