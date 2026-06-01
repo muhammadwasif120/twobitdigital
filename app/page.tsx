@@ -1,7 +1,8 @@
-import Nav        from '@/components/Nav'
-import Hero       from '@/components/Hero'
-import TrustStrip from '@/components/TrustStrip'
-import Ticker     from '@/components/Ticker'
+import Nav          from '@/components/Nav'
+import Hero         from '@/components/Hero'
+import TrustStrip   from '@/components/TrustStrip'
+import PartnerStrip from '@/components/PartnerStrip'
+import Ticker       from '@/components/Ticker'
 import About      from '@/components/About'
 import Services   from '@/components/Services'
 import Government from '@/components/Government'
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustStrip />
+        <PartnerStrip />
         <Ticker />
         <About />
         <Services />
