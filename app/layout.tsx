@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.twobitdigital.com'),
+  metadataBase: new URL('https://twobitdigital.com'),
   title: {
     default: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
     template: '%s | Two Bit Digital',
@@ -46,25 +46,29 @@ export const metadata: Metadata = {
     'Two Bit Digital',
     'Muhammad Wasif',
   ],
-  authors: [{ name: 'Two Bit Digital', url: 'https://www.twobitdigital.com' }],
+  authors: [{ name: 'Two Bit Digital', url: 'https://twobitdigital.com' }],
   creator: 'Two Bit Digital Ltd',
   publisher: 'Two Bit Digital Ltd',
-  icons: { icon: '/favicon.svg' },
+  icons: {
+    icon:             [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    shortcut:         '/favicon.svg',
+    apple:            '/favicon.svg',
+  },
   alternates: {
-    canonical: 'https://www.twobitdigital.com',
+    canonical: 'https://twobitdigital.com',
     languages: {
-      'en-GB': 'https://www.twobitdigital.com',
-      'en-US': 'https://www.twobitdigital.com',
-      'en-AU': 'https://www.twobitdigital.com',
-      'en-PK': 'https://www.twobitdigital.com',
-      'x-default': 'https://www.twobitdigital.com',
+      'en-GB': 'https://twobitdigital.com',
+      'en-US': 'https://twobitdigital.com',
+      'en-AU': 'https://twobitdigital.com',
+      'en-PK': 'https://twobitdigital.com',
+      'x-default': 'https://twobitdigital.com',
     },
   },
   openGraph: {
     title: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
     description:
       'Building mission-critical digital systems for regulated markets. End-to-end SaaS platforms, AI engineering, and secure infrastructure across the UK, US, Australia, and Pakistan.',
-    url: 'https://www.twobitdigital.com',
+    url: 'https://twobitdigital.com',
     siteName: 'Two Bit Digital',
     locale: 'en_GB',
     type: 'website',
@@ -109,7 +113,7 @@ export default function RootLayout({
           rel="alternate"
           type="application/rss+xml"
           title="Two Bit Digital Insights — RSS Feed"
-          href="https://www.twobitdigital.com/feed.xml"
+          href="https://twobitdigital.com/feed.xml"
         />
       </head>
       <body className={inter.variable}>
