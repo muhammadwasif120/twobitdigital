@@ -16,7 +16,7 @@ const values = [
   {
     icon:  '📦',
     title: 'Product Thinking',
-    desc:  "We don't build websites. We build products. Because we fund and operate Tikkit X, Averon Legal Systems, and Terra Core ourselves, we approach every client engagement with the same commercial rigour we apply to our own balance sheet.",
+    desc:  "We don't build websites. We build products. Because we fund and operate Tikkit X, Trade OS, Averon Legal Systems, and Terra Core ourselves, we approach every client engagement with the same commercial rigour we apply to our own balance sheet.",
   },
   {
     icon:  '🤝',
@@ -82,7 +82,7 @@ const credentials = [
 const story = [
   "Two Bit Digital was founded on a single conviction: that the software powering regulated industries — legal firms, government agencies, financial institutions, healthcare networks — deserves the same architectural rigour that big-tech platforms apply to their consumer products. For too long, regulated markets have been under-served by vendors who prioritise sales cycles over system integrity.",
   "We are an engineering-led studio, not a sales-led consultancy. That distinction matters enormously in practice. It means our senior engineers are involved in scoping from day one. It means we decline projects where we cannot guarantee quality delivery. It means the same principals who write the architecture review the code in production. There are no bait-and-switch handoffs to junior teams after the contract is signed.",
-  "What separates us further is that we own and operate our own products. Tikkit X, our offline-capable event management platform, was built to withstand the connectivity demands of large-scale outdoor events in markets with unreliable infrastructure. Terra Core, currently in development, applies zero-knowledge security architecture to data residency challenges in regulated sectors. Averon Legal Systems is redesigning the brief-to-billing workflow for law firms in the UK and Pakistan. We build these products with our own capital, which means we carry commercial risk — and that sharpens every technical decision we make for clients.",
+  "What separates us further is that we own and operate our own products. Tikkit X, our offline-capable event management platform, was built to withstand the connectivity demands of large-scale outdoor events in markets with unreliable infrastructure. Trade OS is a multi-module commodity trading and logistics ERP with a cryptographically chained, tamper-evident audit trail, refined inside a live trading operation and now available to license. Terra Core, currently in development, applies zero-knowledge security architecture to data residency challenges in regulated sectors. Averon Legal Systems is redesigning the brief-to-billing workflow for law firms in the UK and Pakistan. We build these products with our own capital, which means we carry commercial risk — and that sharpens every technical decision we make for clients.",
   "Operating across the UK, United States, Australia, and Pakistan gives us genuine multi-jurisdictional fluency. We understand UK data protection obligations, US enterprise procurement requirements, AUS deployment standards, and the regulatory landscape of Pakistan's emerging digital economy. We do not outsource that knowledge to compliance consultants — it is embedded in how we design systems from the first architecture diagram.",
 ]
 

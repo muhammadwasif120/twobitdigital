@@ -6,8 +6,8 @@ import Breadcrumb        from '@/components/shared/Breadcrumb'
 import CTABanner         from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'In-House Products | Tikkit X, Averon Legal, Terra Core — Two Bit Digital',
-  description: 'Three in-house products built and owned by Two Bit Digital: Tikkit X (event ticketing & management software Pakistan), Averon Legal Systems (CPR Part 47 compliance SaaS UK), and Terra Core (document intelligence engine).',
+  title:       'In-House Products | Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
+  description: 'Four in-house products built and owned by Two Bit Digital: Tikkit X (event ticketing & management software Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 compliance SaaS UK), and Terra Core (document intelligence engine).',
   keywords: [
     'Tikkit X',
     'event ticketing software Pakistan',
@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     'online event booking Pakistan',
     'JazzCash ticketing',
     'EasyPaisa event tickets',
+    'Trade OS',
+    'commodity trading software',
+    'trading and logistics ERP',
+    'agri-commodity ERP Pakistan',
     'Averon Legal Systems',
     'CPR Part 47 compliance software',
     'legal costs management software UK',
@@ -26,14 +30,14 @@ export const metadata: Metadata = {
     canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
-    title:       'In-House Products | Tikkit X, Averon Legal, Terra Core — Two Bit Digital',
-    description: 'Products we have designed, engineered, and own outright. Tikkit X for Pakistan event tech, Averon for UK legal compliance, Terra Core for document intelligence.',
+    title:       'In-House Products | Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
+    description: 'Products we have designed, engineered, and own outright. Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance, Terra Core for document intelligence.',
     url:         'https://www.twobitdigital.com/products',
     type:        'website',
   },
   twitter: {
     title:       'In-House Products — Two Bit Digital',
-    description: 'Tikkit X (Pakistan event ticketing), Averon Legal Systems (CPR Part 47 UK), and Terra Core. Three products built and owned by Two Bit Digital.',
+    description: 'Tikkit X (Pakistan event ticketing), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 UK), and Terra Core. Four products built and owned by Two Bit Digital.',
   },
 }
 
@@ -57,8 +61,12 @@ const products = [
     statusColor: '#4ade80',
     sector:      'Event Technology · Pakistan',
     href:        'https://tikkitx.com',
+    detailsHref: undefined as string | undefined,
     gradient:    'linear-gradient(135deg, #f5c518 0%, #c9a012 100%)',
     initials:    'TX',
+    ambientGlow: 'rgba(245,197,24,0.06)',
+    shadowColor: 'rgba(245,197,24,0.2)',
+    initialsColor: '#09091a',
     description: "Tikkit X is a mobile-first event ticketing and management platform built for markets with unreliable internet connectivity. It solves a real problem that Western ticketing platforms ignore entirely: what happens when the scanner can't reach the server at the venue gate. Our answer was an offline-capable cryptographic QR verification engine using HMAC-SHA256 and HKDF — every ticket is mathematically verifiable without a network request. Built for Pakistan's event industry, Tikkit X also includes CNIC identity validation, multi-vertical theming for concerts, conferences, and sports events, a unified attendee dashboard, and a real-time organiser analytics portal. It is the only platform in its market that treats fraud prevention as a cryptographic problem rather than a connectivity problem.",
     features: [
       'Offline HMAC-SHA256/HKDF cryptographic QR verification',
@@ -70,6 +78,30 @@ const products = [
     tech: ['Next.js', 'React Native', 'TypeScript', 'Supabase', 'HMAC-SHA256', 'HKDF', 'Vercel'],
   },
   {
+    slug:        'trade-os',
+    name:        'Trade OS',
+    tagline:     'Commodity trading & logistics ERP with a cryptographically tamper-evident audit trail.',
+    status:      'Live',
+    statusColor: '#4ade80',
+    sector:      'Commodity Trading & Logistics · Pakistan',
+    href:        '#',
+    detailsHref: '/products/trade-os',
+    gradient:    'linear-gradient(135deg, #0d9488 0%, #0f5f58 100%)',
+    initials:    'TO',
+    ambientGlow: 'rgba(13,148,136,0.07)',
+    shadowColor: 'rgba(13,148,136,0.25)',
+    initialsColor: '#09091a',
+    description: "Trade OS is a full-stack trading and logistics ERP built for commodity trading and export businesses running purchase, milling, warehousing, and international delivery on spreadsheets, WhatsApp threads, and paper ledgers. It unifies the entire trade lifecycle — contracts, purchase orders, lot and milling traceability, warehouse and bag stock, vessel-tracked delivery orders, broker and trader ledgers, and multi-currency accounts receivable/payable — into one system of record. Every ledger-affecting action writes to a cryptographically hash-chained, append-only audit log enforced at the database level via row-level security, so the business can produce a tamper-evident record on demand. Refined inside a live commodity trading operation across 20+ interconnected modules, Trade OS is now available to license to other trading and logistics companies.",
+    features: [
+      'Cryptographically hash-chained, append-only audit log enforced via database-level RLS',
+      '20+ integrated modules spanning trading, contracts, milling, warehousing, and finance',
+      'Multi-currency ledger system with automatic currency-mismatch guards',
+      'Vessel-tracked delivery orders with real-time stock reconciliation',
+      'Broker, trader, and client ledgers with full audit-trail traceability',
+    ],
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Row-Level Security', 'HMAC-SHA256', 'Vercel'],
+  },
+  {
     slug:        'averon-legal',
     name:        'Averon Legal Systems',
     tagline:     'CPR Part 47 and Part 36 case management SaaS for UK costs lawyers.',
@@ -77,8 +109,12 @@ const products = [
     statusColor: '#a48bcf',
     sector:      'Legal Technology · United Kingdom',
     href:        '#',
+    detailsHref: undefined as string | undefined,
     gradient:    'linear-gradient(135deg, #7b5ea7 0%, #5b3f87 100%)',
     initials:    'AV',
+    ambientGlow: 'rgba(123,94,167,0.07)',
+    shadowColor: 'rgba(123,94,167,0.25)',
+    initialsColor: '#09091a',
     description: "Averon Legal Systems is a compliance-first SaaS platform purpose-built for UK costs lawyers and legal costs professionals managing matters under CPR Part 47 and Part 36. Before Averon, the workflow was Excel, email, and memory — a professional liability risk disguised as a process. Averon replaces that with role-specific dashboards for partners, supervisors, and fee earners; a matter lifecycle engine built around CPR procedural timelines; automated deadline alerting with configurable advance warnings; structured document management; and a client-facing portal for status transparency. The architecture is multi-tenant from the ground up, built on Next.js, TypeScript, Supabase, and Stripe, with every data boundary enforced at the database level — not just in application logic.",
     features: [
       'CPR Part 47 and Part 36 compliant matter workflows',
@@ -97,8 +133,12 @@ const products = [
     statusColor: '#9d99b8',
     sector:      'Document Intelligence · Multi-vertical',
     href:        '#',
+    detailsHref: undefined as string | undefined,
     gradient:    'linear-gradient(135deg, #2a2a4a 0%, #16163a 100%)',
     initials:    'TC',
+    ambientGlow: 'rgba(96,165,250,0.05)',
+    shadowColor: 'rgba(22,22,58,0.4)',
+    initialsColor: '#9d99b8',
     description: "Terra Core is a document intelligence and storage engine designed for organisations that cannot afford to treat document security as an afterthought. It provides AES-256 zero-knowledge encryption so that documents are mathematically inaccessible to anyone without the correct key — including the infrastructure layer. Every action on every document is recorded in a cryptographically chained audit log, making retroactive tampering detectable without external verification. Terra Core also includes AI-powered document classification, secure streaming for large files, and a compliance framework that maps to UK GDPR, FCA data handling requirements, and multi-jurisdiction regulatory environments. It is being built as the underlying document layer for Averon Legal Systems and as a standalone product for regulated industries that process sensitive documentation at scale.",
     features: [
       'AES-256 zero-knowledge encryption at rest and in transit',
@@ -119,7 +159,7 @@ const whyBuildOwnSection = [
   },
   {
     title:   'Architecture Proof',
-    body:    'Our products are living case studies. Tikkit X proves we can build for connectivity-constrained markets. Averon proves we understand compliance-heavy workflow SaaS. Terra Core proves we take cryptographic security seriously enough to implement it from scratch. Every client engagement benefits from that accumulated depth.',
+    body:    'Our products are living case studies. Tikkit X proves we can build for connectivity-constrained markets. Trade OS proves we can architect multi-module ERPs with database-enforced, tamper-evident audit trails. Averon proves we understand compliance-heavy workflow SaaS. Terra Core proves we take cryptographic security seriously enough to implement it from scratch. Every client engagement benefits from that accumulated depth.',
     accent:  '#7b5ea7',
   },
   {
@@ -209,7 +249,7 @@ export default function ProductsPage() {
           flexDirection: 'column',
           gap:           '2.5rem',
         }}>
-          {products.map((product, idx) => (
+          {products.map((product) => (
             <article
               key={product.slug}
               style={{
@@ -229,11 +269,7 @@ export default function ProductsPage() {
                 height:        '400px',
                 borderRadius:  '50%',
                 pointerEvents: 'none',
-                background:    `radial-gradient(circle, ${
-                  idx === 0 ? 'rgba(245,197,24,0.06)' :
-                  idx === 1 ? 'rgba(123,94,167,0.07)' :
-                              'rgba(96,165,250,0.05)'
-                } 0%, transparent 70%)`,
+                background:    `radial-gradient(circle, ${product.ambientGlow} 0%, transparent 70%)`,
               }} />
 
               <div style={{ padding: 'clamp(2rem, 4vw, 3rem)', position: 'relative', zIndex: 1 }}>
@@ -256,17 +292,13 @@ export default function ProductsPage() {
                     alignItems:     'center',
                     justifyContent: 'center',
                     flexShrink:     0,
-                    boxShadow:      `0 8px 24px ${
-                      idx === 0 ? 'rgba(245,197,24,0.2)' :
-                      idx === 1 ? 'rgba(123,94,167,0.25)' :
-                                  'rgba(22,22,58,0.4)'
-                    }`,
+                    boxShadow:      `0 8px 24px ${product.shadowColor}`,
                   }}>
                     <span style={{
                       fontFamily:    'var(--font-inter)',
                       fontWeight:    800,
                       fontSize:      '1.1rem',
-                      color:         idx === 2 ? '#9d99b8' : '#09091a',
+                      color:         product.initialsColor,
                       letterSpacing: '-0.03em',
                     }}>
                       {product.initials}
@@ -464,6 +496,10 @@ export default function ProductsPage() {
 
                 {/* ── CTA ── */}
                 <div style={{
+                  display:     'flex',
+                  alignItems:  'center',
+                  gap:         '1rem',
+                  flexWrap:    'wrap',
                   paddingTop:  '1.75rem',
                   borderTop:   '1px solid rgba(255,255,255,0.06)',
                 }}>
@@ -491,22 +527,24 @@ export default function ProductsPage() {
                       Visit Product →
                     </Link>
                   ) : (
-                    <span style={{
-                      display:         'inline-flex',
-                      alignItems:      'center',
-                      gap:             '0.5rem',
-                      fontFamily:      'var(--font-inter)',
-                      fontWeight:      600,
-                      fontSize:        '0.82rem',
-                      letterSpacing:   '0.04em',
-                      textTransform:   'uppercase',
-                      color:           '#5e5a7a',
-                      backgroundColor: 'rgba(255,255,255,0.04)',
-                      border:          '1px solid rgba(255,255,255,0.07)',
-                      padding:         '0.7rem 1.5rem',
-                      borderRadius:    '7px',
-                      cursor:          'default',
-                    }}>
+                    <Link
+                      href="/contact"
+                      style={{
+                        display:         'inline-flex',
+                        alignItems:      'center',
+                        gap:             '0.5rem',
+                        fontFamily:      'var(--font-inter)',
+                        fontWeight:      600,
+                        fontSize:        '0.82rem',
+                        letterSpacing:   '0.04em',
+                        textTransform:   'uppercase',
+                        color:           '#9d99b8',
+                        backgroundColor: 'rgba(255,255,255,0.04)',
+                        border:          '1px solid rgba(255,255,255,0.07)',
+                        padding:         '0.7rem 1.5rem',
+                        borderRadius:    '7px',
+                        textDecoration:  'none',
+                      }}>
                       <span style={{
                         width:           '6px',
                         height:          '6px',
@@ -514,8 +552,26 @@ export default function ProductsPage() {
                         backgroundColor: product.statusColor,
                         flexShrink:      0,
                       }} />
-                      In Development
-                    </span>
+                      {product.status === 'In Development' ? 'In Development' : 'Enquire About Licensing →'}
+                    </Link>
+                  )}
+                  {product.detailsHref && (
+                    <Link
+                      href={product.detailsHref}
+                      style={{
+                        display:        'inline-flex',
+                        alignItems:     'center',
+                        gap:            '0.4rem',
+                        fontFamily:     'var(--font-inter)',
+                        fontWeight:     600,
+                        fontSize:       '0.82rem',
+                        letterSpacing:  '0.02em',
+                        color:          '#9d99b8',
+                        textDecoration: 'none',
+                      }}
+                    >
+                      View Full Capabilities →
+                    </Link>
                   )}
                 </div>
 
@@ -621,7 +677,7 @@ export default function ProductsPage() {
         {/* ── CTA Banner ────────────────────────────────────────────── */}
         <CTABanner
           heading="Have a product idea? We know what it takes to build one."
-          subtext="We have shipped production software across four markets, two regulatory frameworks, and three product verticals. If you have an idea that needs serious engineering behind it, bring it to us."
+          subtext="We have shipped production software across four markets, two regulatory frameworks, and four product verticals. If you have an idea that needs serious engineering behind it, bring it to us."
           ctaLabel="Tell Us About It"
           ctaHref="/contact"
         />

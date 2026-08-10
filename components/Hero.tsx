@@ -1,9 +1,77 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import type { CSSProperties } from 'react'
+import Link from 'next/link'
+
+type RibbonItem = {
+  accent:   string
+  initials: string
+  name:     string
+  subtitle: string
+  badge:    string
+  href:     string
+  external?: boolean
+}
+
+const ribbonItems: RibbonItem[] = [
+  {
+    accent:   '#f5c518',
+    initials: 'TX',
+    name:     'Tikkit X',
+    subtitle: 'Event platform · Pakistan',
+    badge:    'Offline QR',
+    href:     'https://tikkitx.com',
+    external: true,
+  },
+  {
+    accent:   '#0d9488',
+    initials: 'TO',
+    name:     'Trade OS',
+    subtitle: 'Trading & logistics ERP · Pakistan',
+    badge:    'Hash-Chained Audit',
+    href:     '/products/trade-os',
+  },
+  {
+    accent:   '#7b5ea7',
+    initials: '4x',
+    name:     'Studio Overview',
+    subtitle: '4 products · UK + PK · AI-first',
+    badge:    'Government bids',
+    href:     '/products',
+  },
+]
+
+const RIBBON_ITEM_H  = 116
+const RIBBON_GAP     = 20
+const RIBBON_PITCH   = RIBBON_ITEM_H + RIBBON_GAP
+const PER_ITEM_S      = 3
+const RIBBON_TOTAL_S  = ribbonItems.length * PER_ITEM_S
+
+// Shared rhythmic stop points: scroll eases in, briefly holds on each item, then
+// eases to the next — a "departures board" rhythm instead of a flat linear crawl.
+const ribbonStops = (() => {
+  const n = ribbonItems.length
+  const segPct = 100 / n
+  const holdHalf = 4
+  const stops: { pct: number; y: number }[] = [{ pct: 0, y: 0 }]
+  for (let k = 1; k <= n; k++) {
+    const y = -(k * RIBBON_PITCH)
+    const enterPct = k * segPct - holdHalf
+    const holdPct  = k === n ? 100 : k * segPct + holdHalf
+    stops.push({ pct: enterPct, y })
+    stops.push({ pct: holdPct, y })
+  }
+  return stops
+})()
+
+const ribbonScrollKeyframes = `@keyframes ribbonScroll {
+  ${ribbonStops.map((s) => `${s.pct}% { transform: translateY(${s.y}px); }`).join('\n  ')}
+}`
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null)
+  const ref     = useRef<HTMLDivElement>(null)
+  const maskRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const el = ref.current
@@ -14,6 +82,34 @@ export default function Hero() {
     )
     el.querySelectorAll('.reveal').forEach((r) => obs.observe(r))
     return () => obs.disconnect()
+  }, [])
+
+  // Highlights whichever ribbon card is actually closest to the mask's vertical
+  // centre right now — polled directly off live geometry so it always matches what
+  // is visually centred, regardless of the scroll animation's timing.
+  useEffect(() => {
+    const root = maskRef.current
+    if (!root) return
+    const tick = () => {
+      const items = root.querySelectorAll<HTMLElement>('.ribbon-item')
+      if (!items.length) return
+      const rootRect = root.getBoundingClientRect()
+      const rootCenter = rootRect.top + rootRect.height / 2
+      let closest: HTMLElement | null = null
+      let closestDist = Infinity
+      items.forEach((item) => {
+        const r = item.getBoundingClientRect()
+        const dist = Math.abs((r.top + r.height / 2) - rootCenter)
+        if (dist < closestDist) {
+          closestDist = dist
+          closest = item
+        }
+      })
+      items.forEach((item) => item.classList.toggle('is-centered', item === closest))
+    }
+    tick()
+    const interval = setInterval(tick, 150)
+    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -171,82 +267,74 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right column — visual cards */}
-        <div className="reveal reveal-delay-2 hero-cards" style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          {/* Top card — tilted */}
-          <div style={{
-            backgroundColor: '#11112b',
-            border:          '1px solid rgba(255,255,255,0.08)',
-            borderRadius:    '14px',
-            padding:         '1.25rem 1.5rem',
-            transform:       'rotate(-1.5deg)',
-            position:        'relative',
-          }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-              <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase' }}>
-                Active Deployment
-              </span>
-              <span style={{
-                fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 500,
-                color: '#09091a', backgroundColor: '#4ade80',
-                padding: '0.15rem 0.5rem', borderRadius: '999px',
-              }}>● Live</span>
-            </div>
-            <p style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'1.25rem', color:'#eceaf5', margin:'0 0 0.25rem' }}>
-              Tikkit X
-            </p>
-            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.82rem', color:'#9d99b8', margin:'0 0 1rem' }}>
-              Event platform · Pakistan · Production
-            </p>
-            <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap' }}>
-              {[
-                { label:'Live',        bg:'rgba(74,222,128,0.12)', color:'#4ade80' },
-                { label:'CNIC Verify', bg:'rgba(164,139,207,0.15)', color:'#a48bcf' },
-                { label:'Offline QR',  bg:'rgba(245,197,24,0.12)', color:'#f5c518' },
-              ].map((tag) => (
-                <span key={tag.label} style={{
-                  fontFamily:'var(--font-inter)', fontSize:'0.68rem', fontWeight:500,
-                  backgroundColor:tag.bg, color:tag.color,
-                  padding:'0.2rem 0.6rem', borderRadius:'999px',
-                }}>
-                  {tag.label}
-                </span>
-              ))}
-            </div>
+        {/* Right column — endless vertical ribbon of individual cards */}
+        <div className="reveal reveal-delay-2 hero-cards" style={{ position: 'relative' }}>
+          <div style={{ padding: '0 0.25rem 1.25rem' }}>
+            <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase' }}>
+              Live Deployments
+            </span>
           </div>
 
-          {/* Bottom card */}
-          <div style={{
-            backgroundColor: '#11112b',
-            border:          '1px solid rgba(255,255,255,0.08)',
-            borderRadius:    '14px',
-            padding:         '1.25rem 1.5rem',
-          }}>
-            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'0.5rem' }}>
-              Studio Overview
-            </p>
-            <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.92rem', color:'#9d99b8', marginBottom:'1.25rem', lineHeight:1.6 }}>
-              Three in-house SaaS products. Government bids. One studio.
-            </p>
-            <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'0.75rem' }}>
-              {[
-                { stat:'3',      label:'Products' },
-                { stat:'UK+PK',  label:'Markets' },
-                { stat:'AI',     label:'First' },
-              ].map((item) => (
-                <div key={item.stat} style={{
-                  backgroundColor: '#16163a',
-                  borderRadius:    '8px',
-                  padding:         '0.6rem 0.5rem',
-                  textAlign:       'center',
-                }}>
-                  <p style={{ fontFamily:'var(--font-inter)', fontWeight:800, fontSize:'1.1rem', color:'#f5c518', margin:0 }}>
-                    {item.stat}
-                  </p>
-                  <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.65rem', color:'#5e5a7a', margin:0 }}>
-                    {item.label}
-                  </p>
-                </div>
+          <div
+            ref={maskRef}
+            className="ribbon-mask"
+            style={{ height: `${RIBBON_PITCH * 2.7 + 20}px`, overflow: 'hidden', position: 'relative' }}
+          >
+            <div className="ribbon-track" style={{ display: 'flex', flexDirection: 'column', gap: `${RIBBON_GAP}px`, padding: '10px 16px' }}>
+              {[...ribbonItems, ...ribbonItems].map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.href}
+                  {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className="ribbon-item"
+                  style={{
+                    height: `${RIBBON_ITEM_H}px`, flexShrink: 0, boxSizing: 'border-box',
+                    padding: '1.1rem 1.4rem',
+                    backgroundColor: '#11112b',
+                    border: `1px solid ${item.accent}30`,
+                    borderRadius: '20px',
+                    boxShadow: `0 8px 24px rgba(0,0,0,0.25), 0 0 28px ${item.accent}14`,
+                    display: 'flex', alignItems: 'center', gap: '1rem',
+                    textDecoration: 'none', color: 'inherit',
+                    ['--ribbon-accent' as string]: item.accent,
+                    ['--ribbon-glow' as string]: `${item.accent}55`,
+                  } as CSSProperties}
+                >
+                  <div style={{
+                    width: '42px', height: '42px', borderRadius: '14px', flexShrink: 0,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    backgroundColor: `${item.accent}18`, border: `1px solid ${item.accent}30`,
+                  }}>
+                    <span style={{ fontFamily:'var(--font-inter)', fontWeight:800, fontSize:'0.8rem', color: item.accent }}>
+                      {item.initials}
+                    </span>
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.2rem' }}>
+                      <p style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.98rem', color:'#eceaf5', margin:0 }}>
+                        {item.name}
+                      </p>
+                      <span style={{
+                        fontFamily: 'var(--font-inter)', fontSize: '0.6rem', fontWeight: 500,
+                        color: '#09091a', backgroundColor: '#4ade80',
+                        padding: '0.1rem 0.4rem', borderRadius: '999px', flexShrink: 0,
+                      }}>● Live</span>
+                    </div>
+                    <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#9d99b8', margin:'0 0 0.4rem' }}>
+                      {item.subtitle}
+                    </p>
+                    <span style={{
+                      fontFamily:'var(--font-inter)', fontSize:'0.65rem', fontWeight:500,
+                      backgroundColor:`${item.accent}18`, color:item.accent,
+                      padding:'0.15rem 0.5rem', borderRadius:'999px',
+                    }}>
+                      {item.badge}
+                    </span>
+                  </div>
+                  <span className="ribbon-arrow" style={{ fontSize: '0.9rem', color: item.accent, flexShrink: 0, opacity: 0 }}>
+                    →
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -257,6 +345,34 @@ export default function Hero() {
         @keyframes pulse {
           0%, 100% { opacity: 1; }
           50%       { opacity: 0.4; }
+        }
+        ${ribbonScrollKeyframes}
+        .ribbon-track {
+          animation: ribbonScroll ${RIBBON_TOTAL_S}s ease-in-out infinite;
+        }
+        .ribbon-item {
+          transform: scale(0.97);
+          filter: brightness(0.8) saturate(0.85);
+          transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .ribbon-item.is-centered {
+          transform: scale(1.04);
+          filter: brightness(1.18) saturate(1.2);
+          border-color: var(--ribbon-accent);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 40px var(--ribbon-glow);
+        }
+        .ribbon-item:hover {
+          border-color: var(--ribbon-accent);
+        }
+        .ribbon-item:hover .ribbon-arrow {
+          opacity: 1;
+        }
+        .ribbon-mask:hover .ribbon-track {
+          animation-play-state: paused;
+        }
+        .ribbon-mask {
+          -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
         }
         @media (max-width: 768px) {
           .hero-grid        { grid-template-columns: 1fr !important; gap: 2.5rem !important; }

@@ -196,6 +196,12 @@ const caseStudies = [
     tags: ['Next.js', 'TypeScript', 'Supabase', 'Client Portal', 'Case Management'],
     href: '/work',
   },
+  {
+    title: 'Trade OS — Commodity Trading & Logistics ERP',
+    desc: 'Our in-house trading and logistics ERP, built and owned outright. Unifies contracts, purchase orders, milling, warehouse and bag stock, vessel-tracked delivery orders, and multi-currency accounts into one platform, backed by a cryptographically hash-chained, tamper-evident audit log — refined inside a live commodity trading operation and available to license.',
+    tags: ['Next.js', 'TypeScript', 'Supabase', 'Row-Level Security', 'Multi-Currency Ledgers'],
+    href: '/products',
+  },
 ]
 
 const whyItems = [

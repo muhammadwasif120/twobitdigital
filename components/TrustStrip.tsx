@@ -120,7 +120,7 @@ export default function TrustStrip() {
         })}
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @media (max-width: 900px) {
           .trust-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .trust-grid > div:nth-child(2),
@@ -137,7 +137,7 @@ export default function TrustStrip() {
           .trust-grid > div:first-child,
           .trust-grid > a:first-child { border-top: none; }
         }
-      `}</style>
+      ` }} />
     </div>
   )
 }

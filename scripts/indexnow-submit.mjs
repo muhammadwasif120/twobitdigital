@@ -56,6 +56,18 @@ const INSIGHT_SLUGS = [
   'law-firm-website-cost-pakistan',
   'what-law-firm-website-needs-pakistan',
   'why-pakistani-lawyers-need-website',
+
+  // Trade OS series
+  'trade-os-commodity-trading-platform',
+  'why-spreadsheets-fail-commodity-trading',
+  'tamper-evident-audit-trail-commodity-trading',
+  'agri-commodity-erp-pakistan',
+  'multi-currency-commodity-trading-software',
+  'commodity-trading-erp-software-guide',
+  'commodity-trading-broker-commission-management',
+  'warehouse-stock-management-commodity-trading',
+  'export-compliance-software-pakistan',
+  'commodity-trading-erp-multi-entity',
 ]
 
 // ── Build the full URL list ──────────────────────────────────────────────────
