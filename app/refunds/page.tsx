@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title:       'Refund Policy | StarkVault — Two Bit Digital',
-  description: 'Refund and cancellation policy for StarkVault, a product of Two Bit Digital Ltd. Payments processed by Paddle. EU/UK 14-day cooling-off period applies.',
+  description: 'Refund and cancellation policy for StarkVault by Two Bit Digital Ltd. 30-day satisfaction guarantee. EU/UK 14-day cooling-off right. Payments processed by Paddle.',
   alternates:  { canonical: 'https://twobitdigital.com/refunds' },
   robots:      { index: true, follow: true },
 }
@@ -176,9 +176,10 @@ export default function RefundsPage() {
                 'PayPal: typically 3–5 business days.',
               ]} />
               <P>
-                Refunds are issued in the currency of the original transaction. If exchange rates have
-                moved, the refunded amount in your local currency may differ slightly from the original charge.
-                Two Bit Digital and Paddle are not responsible for exchange rate differences.
+                StarkVault is priced in USD. Refunds are issued in USD to the original payment method.
+                If your card was charged in a different currency, the refunded USD amount will be converted
+                at your card issuer&apos;s rate on the date of the refund. Two Bit Digital and Paddle are
+                not responsible for exchange rate differences.
               </P>
             </Section>
 

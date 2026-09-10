@@ -5,109 +5,59 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-const SV = '#6366f1'   // StarkVault indigo
-const SV_DIM = '#4f46e5'
+const SV = '#6366f1'
 
-const PLANS = [
-  {
-    name:       'Free',
-    tagline:    'For individuals and small teams getting started.',
-    monthly:    0,
-    annual:     0,
-    cta:        'Get started free',
-    ctaHref:    '#',
-    highlight:  false,
-    badge:      null,
-    features: [
-      '1 GB encrypted storage',
-      '1 user',
-      'AES-256 file vault',
-      '7-day version history',
-      'Web access',
-      'Email support',
-    ],
-    missing: [
-      'Team collaboration',
-      'Audit log',
-      'API access',
-      'Priority support',
-    ],
-  },
-  {
-    name:       'Pro',
-    tagline:    'For teams that need more storage, collaboration, and control.',
-    monthly:    15,
-    annual:     12,
-    cta:        'Start Pro trial',
-    ctaHref:    '#',
-    highlight:  true,
-    badge:      'Most popular',
-    features: [
-      '50 GB encrypted storage',
-      'Up to 10 users',
-      'AES-256 + zero-knowledge architecture',
-      '90-day version history',
-      'Full audit log',
-      'API access',
-      'Two-factor authentication',
-      'Custom vault branding',
-      'Priority email & chat support',
-    ],
-    missing: [],
-  },
-  {
-    name:       'Enterprise',
-    tagline:    'For organisations with compliance, scale, and security requirements.',
-    monthly:    null,
-    annual:     null,
-    cta:        'Talk to us',
-    ctaHref:    '/contact',
-    highlight:  false,
-    badge:      null,
-    features: [
-      'Unlimited storage',
-      'Unlimited users',
-      'Everything in Pro',
-      'SSO / SAML integration',
-      'Custom data residency',
-      'SOC 2 / ISO 27001 alignment packages',
-      'On-premises deployment option',
-      'Dedicated account manager',
-      '99.9% uptime SLA',
-      'Custom contracts & invoicing',
-    ],
-    missing: [],
-  },
+const FREE_FEATURES = [
+  '10 documents',
+  '2 cards',
+  '5 expiry watches',
+  '1 active share link',
+  'Email + push alerts',
+  'Web, iOS & Android',
+]
+
+const PLUS_FEATURES = [
+  'Unlimited documents',
+  'Unlimited cards',
+  'Unlimited expiry watches',
+  'Unlimited share links',
+  'Email + push alerts',
+  'Web, iOS & Android',
+  'Priority support',
 ]
 
 const FAQ = [
   {
-    q: 'What is StarkVault?',
-    a: 'StarkVault is a zero-knowledge encrypted document vault built for businesses and teams that need to store, share, and audit sensitive files without trusting the platform with their keys. Files are encrypted client-side before they reach our servers.',
+    q: 'What happens when I hit the Free plan limit?',
+    a: "There's no blocking screen or hard gate. If you try to add an 11th document, you'll see an inline message right there — \"You have reached the Free plan limit of 10 documents. Upgrade to Plus for unlimited storage.\" Everything else keeps working normally; you just can't add past the cap until you upgrade. The same applies for cards, expiry watches, and share links.",
   },
   {
-    q: 'Can I change my plan at any time?',
-    a: 'Yes. You can upgrade or downgrade at any time. Upgrades take effect immediately; downgrades take effect at the end of the current billing period.',
+    q: 'Is the Free plan actually free forever?',
+    a: 'Yes. No credit card required, no trial period, no expiry. The Free plan is free forever with the limits shown above.',
+  },
+  {
+    q: 'How does annual billing work?',
+    a: 'Annual billing charges $29 once per year — equivalent to $2.42/month, a saving of around 40% compared to monthly. You get a receipt from Paddle on the charge date. Annual plans auto-renew unless you cancel before the renewal date.',
+  },
+  {
+    q: 'Can I switch between monthly and annual?',
+    a: "Yes. You can switch to annual at any time from your account settings — you'll be charged $29 and your billing cycle will reset. Switching from annual to monthly takes effect at the end of your current annual period.",
   },
   {
     q: 'What payment methods are accepted?',
-    a: 'All major credit and debit cards (Visa, Mastercard, American Express) and PayPal. Payments are processed securely by Paddle, our authorised reseller and Merchant of Record.',
+    a: 'All major credit and debit cards (Visa, Mastercard, American Express) and PayPal. Payments are processed securely by Paddle, our Merchant of Record. Your statement will show a charge from Paddle.',
   },
   {
-    q: 'Is there a free trial on the Pro plan?',
-    a: 'Yes — the Pro plan includes a 14-day free trial. No credit card is required to start the trial.',
+    q: 'Is StarkVault available on mobile?',
+    a: 'Yes — StarkVault is available on Web, iOS, and Android. Your plan and limits apply identically across all platforms. The Free-plan limits are enforced at the database level, not per-app, so they apply the same regardless of which platform you use.',
+  },
+  {
+    q: "I'm a business. Is there an Enterprise plan?",
+    a: 'Enterprise is available as a separate, non-self-serve arrangement. Join the waitlist and we will reach out to discuss your requirements.',
   },
   {
     q: 'What is your refund policy?',
-    a: 'We offer a 14-day refund window from the date of purchase. See our full refund policy for details.',
-  },
-  {
-    q: 'Where is my data stored?',
-    a: 'StarkVault stores encrypted data on Supabase infrastructure hosted in the EU (Frankfurt). Enterprise customers can request alternative data residency regions. Two Bit Digital never has access to your plaintext files.',
-  },
-  {
-    q: 'Who handles billing and payments?',
-    a: 'Payments are processed by Paddle.com Market Limited, our Merchant of Record. Paddle handles all payment processing, tax calculation, and invoicing on behalf of Two Bit Digital.',
+    a: 'We offer a 30-day satisfaction guarantee on first-time Plus purchases. EU and UK customers have a statutory 14-day cooling-off right. See our full refund policy for details.',
   },
 ]
 
@@ -121,18 +71,16 @@ export default function PricingPage() {
 
         {/* Hero */}
         <section style={{ background: 'linear-gradient(180deg, #0d0d22 0%, #09091a 100%)', padding: '5rem 0 4rem', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-          <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
-            {/* StarkVault badge */}
+          <div style={{ maxWidth: '640px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: `${SV}14`, border: `1px solid ${SV}30`, borderRadius: '999px', padding: '0.3rem 1rem', marginBottom: '1.5rem' }}>
               <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: SV, display: 'inline-block' }} />
               <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: SV }}>StarkVault</span>
             </div>
-
             <h1 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: 'clamp(2rem, 5vw, 3rem)', color: '#eceaf5', margin: '0 0 1rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>
-              Simple, transparent pricing.
+              Free forever.<br />Unlimited when you need it.
             </h1>
-            <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.1rem', color: '#9d99b8', lineHeight: 1.8, margin: '0 0 2.5rem' }}>
-              Encrypted document storage for teams that cannot afford a breach. Start free, scale when you need to.
+            <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.05rem', color: '#9d99b8', lineHeight: 1.8, margin: '0 0 2.5rem' }}>
+              Start for free with no credit card. Upgrade to Plus when your storage grows.
             </p>
 
             {/* Billing toggle */}
@@ -146,7 +94,9 @@ export default function PricingPage() {
                   color: !annual ? '#fff' : '#5e5a7a',
                   transition: 'all 0.2s',
                 }}
-              >Monthly</button>
+              >
+                Monthly
+              </button>
               <button
                 onClick={() => setAnnual(true)}
                 style={{
@@ -159,8 +109,8 @@ export default function PricingPage() {
                 }}
               >
                 Annual
-                <span style={{ backgroundColor: '#4ade8020', color: '#4ade80', border: '1px solid #4ade8040', borderRadius: '999px', padding: '0.05rem 0.4rem', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.04em' }}>
-                  SAVE 20%
+                <span style={{ backgroundColor: '#4ade8020', color: '#4ade80', border: '1px solid #4ade8040', borderRadius: '999px', padding: '0.05rem 0.45rem', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.06em' }}>
+                  SAVE 40%
                 </span>
               </button>
             </div>
@@ -169,113 +119,197 @@ export default function PricingPage() {
 
         {/* Plan cards */}
         <section style={{ backgroundColor: '#09091a', padding: '4rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-          <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 1.5rem' }}>
-            <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem', alignItems: 'start' }}>
-              {PLANS.map((plan) => (
-                <div
-                  key={plan.name}
-                  style={{
-                    backgroundColor: plan.highlight ? '#0d0d22' : '#0a0a1f',
-                    border: plan.highlight ? `1px solid ${SV}50` : '1px solid rgba(255,255,255,0.07)',
-                    borderRadius: '12px',
-                    padding: '2rem',
-                    position: 'relative',
-                    boxShadow: plan.highlight ? `0 0 40px ${SV}18` : 'none',
-                  }}
-                >
-                  {plan.badge && (
-                    <div style={{
-                      position: 'absolute', top: '-1px', left: '50%', transform: 'translateX(-50%)',
-                      backgroundColor: SV, color: '#fff',
-                      fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.65rem',
-                      letterSpacing: '0.08em', textTransform: 'uppercase',
-                      padding: '0.2rem 0.9rem', borderRadius: '0 0 8px 8px',
-                    }}>
-                      {plan.badge}
-                    </div>
-                  )}
+          <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 1.5rem' }}>
+            <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', alignItems: 'start' }}>
 
-                  <h2 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '1.2rem', color: '#eceaf5', margin: '0 0 0.4rem', letterSpacing: '-0.01em' }}>
-                    {plan.name}
-                  </h2>
-                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a', margin: '0 0 1.5rem', lineHeight: 1.6 }}>
-                    {plan.tagline}
-                  </p>
+              {/* Free */}
+              <div style={{ backgroundColor: '#0a0a1f', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '12px', padding: '2rem' }}>
+                <h2 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '1.3rem', color: '#eceaf5', margin: '0 0 0.3rem', letterSpacing: '-0.01em' }}>Free</h2>
+                <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a', margin: '0 0 1.5rem', lineHeight: 1.6 }}>
+                  Everything you need to get started. No credit card, no expiry.
+                </p>
 
-                  {/* Price */}
-                  <div style={{ marginBottom: '1.75rem' }}>
-                    {plan.monthly === null ? (
-                      <div style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '2rem', color: '#eceaf5', letterSpacing: '-0.03em' }}>
-                        Custom
-                      </div>
-                    ) : (
-                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.25rem' }}>
-                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.1rem', color: '#5e5a7a' }}>£</span>
-                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '2.5rem', color: '#eceaf5', letterSpacing: '-0.03em' }}>
-                          {plan.monthly === 0 ? '0' : annual ? plan.annual : plan.monthly}
-                        </span>
-                        {plan.monthly > 0 && (
-                          <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a' }}>
-                            /mo{annual ? ' · billed annually' : ''}
-                          </span>
-                        )}
-                      </div>
-                    )}
-                    {plan.monthly === 0 && (
-                      <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 400, fontSize: '0.75rem', color: '#5e5a7a', margin: '0.2rem 0 0' }}>
-                        No credit card required
-                      </p>
-                    )}
+                <div style={{ marginBottom: '1.75rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.25rem' }}>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.1rem', color: '#5e5a7a' }}>$</span>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '2.8rem', color: '#eceaf5', letterSpacing: '-0.03em' }}>0</span>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a' }}>/forever</span>
                   </div>
-
-                  {/* CTA */}
-                  <Link
-                    href={plan.ctaHref}
-                    style={{
-                      display: 'block', textAlign: 'center',
-                      fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.85rem',
-                      letterSpacing: '0.03em', textTransform: 'uppercase',
-                      padding: '0.8rem 1.5rem', borderRadius: '8px',
-                      textDecoration: 'none', marginBottom: '1.75rem',
-                      backgroundColor: plan.highlight ? SV : 'transparent',
-                      color: plan.highlight ? '#fff' : '#9d99b8',
-                      border: plan.highlight ? 'none' : '1px solid rgba(255,255,255,0.12)',
-                    }}
-                  >
-                    {plan.cta} →
-                  </Link>
-
-                  {/* Features */}
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-                    {plan.features.map((f) => (
-                      <li key={f} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
-                        <span style={{ color: SV, fontWeight: 700, fontSize: '0.8rem', lineHeight: 1.7, flexShrink: 0 }}>✓</span>
-                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.83rem', color: '#9d99b8', lineHeight: 1.6 }}>{f}</span>
-                      </li>
-                    ))}
-                    {plan.missing.map((f) => (
-                      <li key={f} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', opacity: 0.35 }}>
-                        <span style={{ color: '#5e5a7a', fontWeight: 700, fontSize: '0.8rem', lineHeight: 1.7, flexShrink: 0 }}>✕</span>
-                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.83rem', color: '#5e5a7a', lineHeight: 1.6 }}>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.75rem', color: '#3a3860', margin: '0.3rem 0 0' }}>
+                    No card required
+                  </p>
                 </div>
-              ))}
+
+                <Link href="#" style={{
+                  display: 'block', textAlign: 'center',
+                  fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.85rem',
+                  letterSpacing: '0.03em', textTransform: 'uppercase',
+                  padding: '0.8rem 1.5rem', borderRadius: '8px', textDecoration: 'none',
+                  marginBottom: '1.75rem', color: '#9d99b8',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                }}>
+                  Get started free →
+                </Link>
+
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  {FREE_FEATURES.map((f) => (
+                    <li key={f} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
+                      <span style={{ color: '#5e5a7a', fontWeight: 700, fontSize: '0.8rem', lineHeight: 1.7, flexShrink: 0 }}>✓</span>
+                      <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.83rem', color: '#9d99b8', lineHeight: 1.6 }}>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Plus */}
+              <div style={{ backgroundColor: '#0d0d22', border: `1px solid ${SV}50`, borderRadius: '12px', padding: '2rem', position: 'relative', boxShadow: `0 0 40px ${SV}18` }}>
+                <div style={{
+                  position: 'absolute', top: '-1px', left: '50%', transform: 'translateX(-50%)',
+                  backgroundColor: SV, color: '#fff',
+                  fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.62rem',
+                  letterSpacing: '0.1em', textTransform: 'uppercase',
+                  padding: '0.2rem 1rem', borderRadius: '0 0 8px 8px',
+                }}>
+                  Plus
+                </div>
+
+                <h2 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '1.3rem', color: '#eceaf5', margin: '0 0 0.3rem', letterSpacing: '-0.01em' }}>Plus</h2>
+                <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a', margin: '0 0 1.5rem', lineHeight: 1.6 }}>
+                  Unlimited everything. One flat price, no per-seat nonsense.
+                </p>
+
+                <div style={{ marginBottom: '1.75rem' }}>
+                  {annual ? (
+                    <>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.25rem' }}>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.1rem', color: '#5e5a7a' }}>$</span>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '2.8rem', color: '#eceaf5', letterSpacing: '-0.03em' }}>29</span>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a' }}>/year</span>
+                      </div>
+                      <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.75rem', color: '#4ade80', margin: '0.3rem 0 0' }}>
+                        $2.42/mo equivalent · save ~40% vs monthly
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.25rem' }}>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1.1rem', color: '#5e5a7a' }}>$</span>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '2.8rem', color: '#eceaf5', letterSpacing: '-0.03em' }}>3.99</span>
+                        <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#5e5a7a' }}>/month</span>
+                      </div>
+                      <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.75rem', color: '#5e5a7a', margin: '0.3rem 0 0' }}>
+                        Or $29/year — save ~40%
+                      </p>
+                    </>
+                  )}
+                </div>
+
+                <Link href="#" style={{
+                  display: 'block', textAlign: 'center',
+                  fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.85rem',
+                  letterSpacing: '0.03em', textTransform: 'uppercase',
+                  padding: '0.8rem 1.5rem', borderRadius: '8px', textDecoration: 'none',
+                  marginBottom: '1.75rem', color: '#fff', backgroundColor: SV,
+                }}>
+                  Upgrade to Plus →
+                </Link>
+
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  {PLUS_FEATURES.map((f) => (
+                    <li key={f} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
+                      <span style={{ color: SV, fontWeight: 700, fontSize: '0.8rem', lineHeight: 1.7, flexShrink: 0 }}>✓</span>
+                      <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.83rem', color: '#9d99b8', lineHeight: 1.6 }}>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
             </div>
           </div>
         </section>
 
-        {/* Paddle / billing note */}
-        <section style={{ backgroundColor: '#0d0d22', padding: '2rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-          <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
-            <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#3a3860', lineHeight: 1.8, margin: 0 }}>
-              Payments are processed by{' '}
-              <a href="https://www.paddle.com" target="_blank" rel="noopener noreferrer" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>Paddle.com Market Limited</a>
-              , who act as our authorised reseller and Merchant of Record. Your statement will show a charge from Paddle.
-              All prices shown exclude VAT where applicable. VAT is calculated at checkout based on your location.
-              See our{' '}
-              <Link href="/refunds" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>refund policy</Link>.
+        {/* How the paywall works */}
+        <section style={{ backgroundColor: '#0d0d22', padding: '4rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+          <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }} className="paywall-grid">
+              <div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#3a3860', marginBottom: '0.75rem' }}>
+                  No hard gates
+                </div>
+                <h2 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: 'clamp(1.3rem, 3vw, 1.75rem)', color: '#eceaf5', margin: '0 0 1rem', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
+                  The upgrade prompt appears exactly when it makes sense.
+                </h2>
+                <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.875rem', color: '#9d99b8', lineHeight: 1.85, margin: 0 }}>
+                  There is no "upgrade to continue" modal blocking your workflow. Limits are enforced
+                  at the point of action — if you try to add an 11th document, you see an inline message
+                  right there. Everything else keeps working normally until you are ready to upgrade.
+                </p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {[
+                  { label: 'Documents', free: '10', plus: 'Unlimited' },
+                  { label: 'Cards', free: '2', plus: 'Unlimited' },
+                  { label: 'Expiry watches', free: '5', plus: 'Unlimited' },
+                  { label: 'Share links', free: '1 active', plus: 'Unlimited' },
+                  { label: 'Platforms', free: 'Web · iOS · Android', plus: 'Web · iOS · Android' },
+                  { label: 'Alerts', free: 'Email + push', plus: 'Email + push' },
+                ].map((row) => (
+                  <div key={row.label} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.5rem', alignItems: 'center', padding: '0.6rem 0', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.75rem', fontWeight: 600, color: '#5e5a7a' }}>{row.label}</span>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.75rem', fontWeight: 400, color: '#5e5a7a', textAlign: 'center' }}>{row.free}</span>
+                    <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.75rem', fontWeight: 600, color: SV, textAlign: 'center' }}>{row.plus}</span>
+                  </div>
+                ))}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.5rem', paddingTop: '0.4rem' }}>
+                  <span />
+                  <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700, color: '#3a3860', textAlign: 'center', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Free</span>
+                  <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700, color: SV, textAlign: 'center', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Plus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Enterprise waitlist */}
+        <section style={{ backgroundColor: '#09091a', padding: '4rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+          <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 1.5rem' }}>
+            <div style={{ backgroundColor: '#0d0d22', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '12px', padding: '2.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
+              <div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#3a3860', marginBottom: '0.5rem' }}>Enterprise</div>
+                <h3 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: '1.2rem', color: '#eceaf5', margin: '0 0 0.5rem', letterSpacing: '-0.01em' }}>
+                  Need something beyond Plus?
+                </h3>
+                <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.875rem', color: '#9d99b8', margin: 0, lineHeight: 1.7, maxWidth: '480px' }}>
+                  Enterprise is not self-serve — it is a custom arrangement for teams with specific
+                  compliance, deployment, or integration requirements. Join the waitlist and we will
+                  reach out to discuss your needs.
+                </p>
+              </div>
+              <Link href="/enterprise" style={{
+                display: 'inline-flex', alignItems: 'center', flexShrink: 0,
+                fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.8rem',
+                letterSpacing: '0.04em', textTransform: 'uppercase',
+                color: '#9d99b8', textDecoration: 'none',
+                border: '1px solid rgba(255,255,255,0.12)',
+                padding: '0.75rem 1.5rem', borderRadius: '8px', whiteSpace: 'nowrap',
+              }}>
+                Join waitlist →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Paddle billing note */}
+        <section style={{ backgroundColor: '#0d0d22', padding: '1.5rem 0', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+          <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
+            <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.78rem', color: '#3a3860', lineHeight: 1.8, margin: 0 }}>
+              Payments processed by{' '}
+              <a href="https://www.paddle.com" target="_blank" rel="noopener noreferrer" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>
+                Paddle.com Market Limited
+              </a>
+              , Merchant of Record. Your statement shows a charge from Paddle.
+              Prices in USD. VAT calculated at checkout by location.{' '}
+              <Link href="/refunds" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>Refund policy</Link>.
             </p>
           </div>
         </section>
@@ -291,13 +325,13 @@ export default function PricingPage() {
                 Common questions about StarkVault.
               </h2>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: '10px', overflow: 'hidden' }}>
-              {FAQ.map((item) => (
-                <div key={item.q} style={{ backgroundColor: '#09091a', padding: '1.5rem 2rem', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              {FAQ.map((item, i) => (
+                <div key={item.q} style={{ padding: '1.5rem 0', borderBottom: i < FAQ.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
                   <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.9rem', color: '#eceaf5', margin: '0 0 0.5rem', letterSpacing: '-0.01em' }}>
                     {item.q}
                   </p>
-                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.85rem', color: '#9d99b8', margin: 0, lineHeight: 1.75 }}>
+                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.85rem', color: '#9d99b8', margin: 0, lineHeight: 1.8 }}>
                     {item.a}
                   </p>
                 </div>
@@ -306,32 +340,44 @@ export default function PricingPage() {
           </div>
         </section>
 
-        {/* CTA bottom */}
+        {/* Bottom CTA */}
         <section style={{ backgroundColor: '#0d0d22', padding: '5rem 0' }}>
           <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
             <h2 style={{ fontFamily: 'var(--font-inter)', fontWeight: 800, fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#eceaf5', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
-              Still have questions?
+              Start free. No card needed.
             </h2>
             <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '1rem', color: '#9d99b8', lineHeight: 1.8, margin: '0 0 2rem' }}>
-              Talk to us about StarkVault, enterprise licensing, or custom compliance requirements.
+              StarkVault is free forever for up to 10 documents. Upgrade to Plus any time.
             </p>
-            <Link href="/contact" style={{
-              display: 'inline-flex', alignItems: 'center',
-              fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.875rem',
-              letterSpacing: '0.03em', textTransform: 'uppercase',
-              color: '#09091a', backgroundColor: SV,
-              padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none',
-            }}>
-              Contact us →
-            </Link>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Link href="#" style={{
+                display: 'inline-flex', alignItems: 'center',
+                fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.875rem',
+                letterSpacing: '0.03em', textTransform: 'uppercase',
+                color: '#fff', backgroundColor: SV,
+                padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none',
+              }}>
+                Create free account →
+              </Link>
+              <Link href="/contact" style={{
+                display: 'inline-flex', alignItems: 'center',
+                fontFamily: 'var(--font-inter)', fontWeight: 500, fontSize: '0.875rem',
+                color: '#9d99b8', textDecoration: 'none',
+                border: '1px solid rgba(255,255,255,0.12)',
+                padding: '0.9rem 2rem', borderRadius: '8px',
+              }}>
+                Talk to us
+              </Link>
+            </div>
           </div>
         </section>
 
       </main>
 
       <style dangerouslySetInnerHTML={{ __html: `
-        @media (max-width: 900px) {
+        @media (max-width: 700px) {
           .pricing-grid { grid-template-columns: 1fr !important; }
+          .paywall-grid { grid-template-columns: 1fr !important; }
         }
       ` }} />
 
