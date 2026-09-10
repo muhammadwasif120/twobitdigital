@@ -5,15 +5,15 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title:       'Refund Policy | StarkVault — Two Bit Digital',
-  description: 'Refund and cancellation policy for StarkVault by Two Bit Digital Ltd. 30-day satisfaction guarantee. EU/UK 14-day cooling-off right. Payments processed by Paddle.',
-  alternates:  { canonical: 'https://twobitdigital.com/refunds' },
+  description: 'Refund and cancellation policy for StarkVault by Two Bit Digital. 30-day satisfaction guarantee. Payments processed by Paddle.',
+  alternates:  { canonical: 'https://twobitdigital.com/starkvault/refunds' },
   robots:      { index: true, follow: true },
 }
 
 const LAST_UPDATED   = '10 September 2026'
 const EFFECTIVE_DATE = '10 September 2026'
-const COMPANY        = 'Two Bit Digital Ltd'
-const COMPANY_NO     = '14710072'
+const COMPANY        = 'Two Bit Digital'
+const COMPANY_NO     = 'SECP CUIN 0250598'
 const CONTACT_EMAIL  = 'billing@twobitdigital.com'
 const PADDLE_SUPPORT = 'https://www.paddle.com/legal/refund-policy'
 
@@ -88,7 +88,7 @@ export default function RefundsPage() {
             }}>
               <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 400, fontSize: '0.875rem', color: '#9d99b8', lineHeight: 1.8, margin: 0 }}>
                 This policy applies to purchases of <strong style={{ color: '#eceaf5' }}>StarkVault</strong>, a product of{' '}
-                <strong style={{ color: '#eceaf5' }}>{COMPANY}</strong> (Companies House No. {COMPANY_NO}).
+                <strong style={{ color: '#eceaf5' }}>{COMPANY}</strong> ({COMPANY_NO}).
                 All payments are processed by <strong style={{ color: '#eceaf5' }}>Paddle.com Market Limited</strong> (&ldquo;Paddle&rdquo;),
                 who act as our authorised reseller and Merchant of Record. When you purchase StarkVault,
                 you are transacting directly with Paddle, and your receipt will show a charge from Paddle.
@@ -221,7 +221,7 @@ export default function RefundsPage() {
             <Section id="changes" title="10. Changes to This Policy">
               <P>
                 We may update this refund policy from time to time. The current version is always
-                available at <Link href="/refunds" style={{ color: '#6366f1', textDecoration: 'underline' }}>twobitdigital.com/refunds</Link>.
+                available at <Link href="/starkvault/refunds" style={{ color: '#6366f1', textDecoration: 'underline' }}>twobitdigital.com/starkvault/refunds</Link>.
                 Changes take effect when posted. Purchases made before a change are governed by the
                 policy in effect at the time of purchase.
               </P>
@@ -234,7 +234,7 @@ export default function RefundsPage() {
                   {COMPANY}
                 </p>
                 <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.85rem', color: '#9d99b8', margin: '0 0 0.25rem' }}>
-                  Companies House No. {COMPANY_NO} · England & Wales
+                  {COMPANY_NO} · Karachi, Pakistan
                 </p>
                 <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.85rem', color: '#9d99b8', margin: '0 0 0.25rem' }}>
                   Email:{' '}

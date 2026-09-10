@@ -309,7 +309,7 @@ export default function PricingPage() {
               </a>
               , Merchant of Record. Your statement shows a charge from Paddle.
               Prices in USD. VAT calculated at checkout by location.{' '}
-              <Link href="/refunds" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>Refund policy</Link>.
+              <Link href="/starkvault/refunds" style={{ color: '#5e5a7a', textDecoration: 'underline' }}>Refund policy</Link>.
             </p>
           </div>
         </section>
