@@ -240,7 +240,7 @@ export default function PricingPage() {
                   The upgrade prompt appears exactly when it makes sense.
                 </h2>
                 <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.875rem', color: '#9d99b8', lineHeight: 1.85, margin: 0 }}>
-                  There is no "upgrade to continue" modal blocking your workflow. Limits are enforced
+                  There is no &ldquo;upgrade to continue&rdquo; modal blocking your workflow. Limits are enforced
                   at the point of action — if you try to add an 11th document, you see an inline message
                   right there. Everything else keeps working normally until you are ready to upgrade.
                 </p>

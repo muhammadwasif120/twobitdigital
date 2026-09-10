@@ -89,7 +89,7 @@ export default function RefundsPage() {
               <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 400, fontSize: '0.875rem', color: '#9d99b8', lineHeight: 1.8, margin: 0 }}>
                 This policy applies to purchases of <strong style={{ color: '#eceaf5' }}>StarkVault</strong>, a product of{' '}
                 <strong style={{ color: '#eceaf5' }}>{COMPANY}</strong> (Companies House No. {COMPANY_NO}).
-                All payments are processed by <strong style={{ color: '#eceaf5' }}>Paddle.com Market Limited</strong> ("Paddle"),
+                All payments are processed by <strong style={{ color: '#eceaf5' }}>Paddle.com Market Limited</strong> (&ldquo;Paddle&rdquo;),
                 who act as our authorised reseller and Merchant of Record. When you purchase StarkVault,
                 you are transacting directly with Paddle, and your receipt will show a charge from Paddle.
               </p>
