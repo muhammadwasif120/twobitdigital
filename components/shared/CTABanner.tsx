@@ -3,17 +3,19 @@
 import Link from 'next/link'
 
 type Props = {
-  heading?: string
-  subtext?: string
-  ctaLabel?: string
-  ctaHref?:  string
+  heading?:     string
+  subtext?:     string
+  ctaLabel?:    string
+  ctaHref?:     string
+  ctaExternal?: boolean
 }
 
 export default function CTABanner({
-  heading  = 'Ready to Build Something Serious?',
-  subtext  = 'Bring us your brief. We\'ll bring the architecture, the engineering, and the delivery track record.',
-  ctaLabel = 'Start a Project',
-  ctaHref  = '/contact',
+  heading     = 'Ready to Build Something Serious?',
+  subtext     = 'Bring us your brief. We\'ll bring the architecture, the engineering, and the delivery track record.',
+  ctaLabel    = 'Start a Project',
+  ctaHref     = '/contact',
+  ctaExternal = false,
 }: Props) {
   return (
     <section style={{
@@ -63,6 +65,7 @@ export default function CTABanner({
         </p>
         <Link
           href={ctaHref}
+          {...(ctaExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           style={{
             display:         'inline-flex',
             alignItems:      'center',

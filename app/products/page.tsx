@@ -6,9 +6,13 @@ import Breadcrumb        from '@/components/shared/Breadcrumb'
 import CTABanner         from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'In-House Products | Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
-  description: 'Four in-house products built and owned by Two Bit Digital: Tikkit X (event ticketing & management software Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 compliance SaaS UK), and Terra Core (document intelligence engine).',
+  title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
+  description: 'Five in-house products built and owned by Two Bit Digital: StarkVault (document vault & expiry tracking), Tikkit X (event ticketing Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 SaaS UK), and Terra Core (document intelligence engine).',
   keywords: [
+    'StarkVault',
+    'document vault',
+    'expiry tracking',
+    'renewal reminder app',
     'Tikkit X',
     'event ticketing software Pakistan',
     'event management software Pakistan',
@@ -30,14 +34,14 @@ export const metadata: Metadata = {
     canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
-    title:       'In-House Products | Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
-    description: 'Products we have designed, engineered, and own outright. Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance, Terra Core for document intelligence.',
+    title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
+    description: 'Products we have designed, engineered, and own outright. StarkVault for document vaulting and expiry tracking, Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance, Terra Core for document intelligence.',
     url:         'https://www.twobitdigital.com/products',
     type:        'website',
   },
   twitter: {
     title:       'In-House Products — Two Bit Digital',
-    description: 'Tikkit X (Pakistan event ticketing), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 UK), and Terra Core. Four products built and owned by Two Bit Digital.',
+    description: 'StarkVault, Tikkit X, Trade OS, Averon Legal Systems, and Terra Core. Five products built and owned by Two Bit Digital.',
   },
 }
 
@@ -53,6 +57,30 @@ const jsonLd = {
 }
 
 const products = [
+  {
+    slug:        'stark-vault',
+    name:        'StarkVault',
+    tagline:     'Document vault, five-stage expiry alerts, and forensic secure sharing — never miss a renewal.',
+    status:      'Live',
+    statusColor: '#4ade80',
+    sector:      'Personal & Business Productivity · Multi-platform',
+    href:        'https://www.starkvault.tech',
+    detailsHref: '/starkvault',
+    gradient:    'linear-gradient(135deg, #6366f1 0%, #4338ca 100%)',
+    initials:    'SV',
+    ambientGlow: 'rgba(99,102,241,0.07)',
+    shadowColor: 'rgba(99,102,241,0.3)',
+    initialsColor: '#fff',
+    description: "StarkVault is a document vault and renewal tracking platform that solves one deceptively simple problem: the critical dates buried in your passport, visa, driving licence, domain registration, and subscriptions are scattered across email threads, renewal notices, and folders, so they expire without warning. StarkVault tracks all of them in one place and escalates at five independently toggleable thresholds — 90, 60, 30, 14, and 7 days — via email digest and native push on iOS and Android. It also links subscriptions to the payment card that funds them, so you can see exactly which services are at risk when a card is about to expire. When you need to share a sensitive document, Secure Share creates a time-limited link, burns a forensic watermark server-side into every shared PDF, logs every view, and gives you a kill switch that revokes access the instant you flip it.",
+    features: [
+      'Five-stage expiry alert system at 90 / 60 / 30 / 14 / 7 days, each threshold independently toggleable',
+      'Encrypted document vault organised by category: Identity, Immigration, Vehicle, Finance, and more',
+      'Money Map: subscription and card tracking with at-risk detection when a card expires before the next charge',
+      'Secure Share: time-limited links, forensic server-side PDF watermarking, per-view access log, and kill switch',
+      'Cross-platform on Web, iOS, and Android with Face ID / fingerprint app lock',
+    ],
+    tech: ['Next.js', 'React Native', 'TypeScript', 'Supabase', 'PostgreSQL', 'Row-Level Security', 'Resend', 'Vercel'],
+  },
   {
     slug:        'tikkit-x',
     name:        'Tikkit X',
@@ -159,7 +187,7 @@ const whyBuildOwnSection = [
   },
   {
     title:   'Architecture Proof',
-    body:    'Our products are living case studies. Tikkit X proves we can build for connectivity-constrained markets. Trade OS proves we can architect multi-module ERPs with database-enforced, tamper-evident audit trails. Averon proves we understand compliance-heavy workflow SaaS. Terra Core proves we take cryptographic security seriously enough to implement it from scratch. Every client engagement benefits from that accumulated depth.',
+    body:    'Our products are living case studies. StarkVault proves we can build consumer-grade SaaS with a security posture most enterprises would not bother with. Tikkit X proves we can build for connectivity-constrained markets. Trade OS proves we can architect multi-module ERPs with database-enforced, tamper-evident audit trails. Averon proves we understand compliance-heavy workflow SaaS. Terra Core proves we take cryptographic security seriously enough to implement it from scratch.',
     accent:  '#7b5ea7',
   },
   {

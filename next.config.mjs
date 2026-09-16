@@ -4,21 +4,6 @@ const nextConfig = {
   // Prevents /insights/ and /insights being treated as separate URLs.
   trailingSlash: false,
 
-  async redirects() {
-    return [
-      {
-        source:      '/pricing',
-        destination: '/starkvault/pricing',
-        permanent:   false,
-      },
-      {
-        source:      '/refunds',
-        destination: '/starkvault/refunds',
-        permanent:   false,
-      },
-    ]
-  },
-
   async headers() {
     return [
       {

@@ -25,6 +25,14 @@ const ribbonItems: RibbonItem[] = [
     external: true,
   },
   {
+    accent:   '#6366f1',
+    initials: 'SV',
+    name:     'StarkVault',
+    subtitle: 'Document vault & expiry tracking',
+    badge:    'Secure Share',
+    href:     '/starkvault',
+  },
+  {
     accent:   '#0d9488',
     initials: 'TO',
     name:     'Trade OS',
@@ -34,9 +42,9 @@ const ribbonItems: RibbonItem[] = [
   },
   {
     accent:   '#7b5ea7',
-    initials: '4x',
+    initials: '5x',
     name:     'Studio Overview',
-    subtitle: '4 products · UK + PK · AI-first',
+    subtitle: '5 products · UK + PK · AI-first',
     badge:    'Government bids',
     href:     '/products',
   },
