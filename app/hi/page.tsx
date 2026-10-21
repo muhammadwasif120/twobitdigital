@@ -177,7 +177,7 @@ export default function HiPage() {
         }}>
           We&apos;re a Google Cloud Partner, verified Meta Tech Provider, and UN-registered vendor.
           We build our own products too — Tikkit X is live, Averon Legal Systems is in beta,
-          and Terra Core is in development.
+          and our industry CRMs are available to demo today.
         </p>
       </section>
 

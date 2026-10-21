@@ -35,7 +35,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
 
   'what-is-a-rag-system': [
     { label: 'AI Workflows Explained',               href: '/insights/what-are-ai-workflows',                       note: 'How RAG fits into a broader AI workflow architecture' },
-    { label: 'Terra Core — Document Intelligence',   href: '/products/terra-core',                                  note: 'Two Bit Digital\'s compliance-first document intelligence engine built on RAG' },
     { label: 'AI Integration & Automation Services', href: '/services/ai-integration',                              note: 'RAG system design and deployment for regulated industries' },
     { label: 'AI Integration for Regulated Industries', href: '/insights/ai-integration-regulated-industries',      note: 'What regulated industries need from AI that standard deployments miss' },
   ],

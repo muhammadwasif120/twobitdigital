@@ -238,9 +238,9 @@ export default function PrivacyPage() {
                 data as a business.
               </Callout>
               <P>
-                Our in-house products — particularly Terra Core and Tikkit X — are built on zero-knowledge
-                cryptographic principles. AES-256 encryption with key isolation means that encrypted data
-                cannot be decrypted without the client&apos;s own keys. We never hold the keys.
+                Our products encrypt data in transit and at rest and use role-based access controls so that
+                users only see the data they are authorised to see. See each product&apos;s own privacy policy
+                for the specifics of how it handles your data.
               </P>
               <P>
                 As a company, we extend this philosophy to our business operations:

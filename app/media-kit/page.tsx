@@ -352,7 +352,7 @@ export default function MediaKitPage() {
                   }}>
                     &ldquo;Two Bit Digital is a SaaS development studio specialising in multi-tenant
                     web applications, AI-powered workflows, and product engineering — building
-                    Tikkit X, Averon Legal Systems, and Terra Core.&rdquo;
+                    Tikkit X, StarkVault, Trade OS, Averon Legal Systems and a range of industry CRMs.&rdquo;
                   </p>
                 </div>
 
@@ -372,7 +372,8 @@ export default function MediaKitPage() {
                     {[
                       { name: 'Tikkit X',              status: 'Live',   desc: 'Event ticketing & management · Pakistan' },
                       { name: 'Averon Legal Systems',  status: 'Beta',   desc: 'CPR Part 47/36 case management · UK law firms' },
-                      { name: 'Terra Core',            status: 'Dev',    desc: 'Zero-knowledge document intelligence' },
+                      { name: 'StarkVault',            status: 'Live',   desc: 'Document & renewal tracking · Web + mobile' },
+                      { name: 'Trade OS',              status: 'Live',   desc: 'Commodity trading & logistics ERP' },
                     ].map((p) => (
                       <div key={p.name} style={{
                         display:   'flex',
