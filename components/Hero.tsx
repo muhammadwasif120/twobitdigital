@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import type { CSSProperties } from 'react'
 import Link from 'next/link'
+import { whatsappHref } from '@/lib/whatsapp'
 
 type RibbonItem = {
   accent:   string
@@ -42,11 +43,11 @@ const ribbonItems: RibbonItem[] = [
   },
   {
     accent:   '#7b5ea7',
-    initials: '5x',
-    name:     'Studio Overview',
-    subtitle: '5 products · UK + PK · AI-first',
-    badge:    'Government bids',
-    href:     '/products',
+    initials: 'CRM',
+    name:     'Industry CRMs',
+    subtitle: 'Textile · FMCG · Education · Rentals',
+    badge:    'Live demos',
+    href:     '/crms',
   },
 ]
 
@@ -188,7 +189,7 @@ export default function Hero() {
               color:        '#f5c518',
               letterSpacing:'0.06em',
             }}>
-              Web · App · AI Solutions
+              CRMs · SaaS · Websites · AI
             </span>
           </div>
 
@@ -201,9 +202,9 @@ export default function Hero() {
             marginBottom:'1.5rem',
             letterSpacing:'-0.03em',
           }}>
-            <span style={{ color: '#eceaf5', display: 'block' }}>Deploying</span>
-            <span style={{ color: '#f5c518', display: 'block' }}>Intelligence</span>
-            <span style={{ color: '#eceaf5', display: 'block' }}>at Scale.</span>
+            <span style={{ color: '#eceaf5', display: 'block' }}>Business software,</span>
+            <span style={{ color: '#f5c518', display: 'block' }}>already built.</span>
+            <span style={{ color: '#eceaf5', display: 'block' }}>Live in weeks.</span>
           </h1>
 
           {/* Subheading */}
@@ -216,15 +217,15 @@ export default function Hero() {
             maxWidth:    '520px',
             marginBottom:'2.5rem',
           }}>
-            Building mission-critical digital systems for regulated markets. Two Bit Digital engineers
-            end-to-end SaaS platforms and secure infrastructure for enterprises and government bodies
-            across the UK, US, Australia, and Pakistan.
+            We build CRMs, SaaS platforms, websites and AI tools for growing businesses. Try a working demo of the system closest to yours, then we customise it and take it live.
           </p>
 
           {/* CTAs */}
           <div className="reveal reveal-delay-3" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a
-              href="#services"
+              href={whatsappHref('Hi Two Bit Digital, I would like to request a demo.')}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 fontFamily:      'var(--font-inter)',
                 fontWeight:      700,
@@ -241,10 +242,10 @@ export default function Hero() {
               onMouseEnter={(e) => ((e.target as HTMLElement).style.backgroundColor = '#c9a012')}
               onMouseLeave={(e) => ((e.target as HTMLElement).style.backgroundColor = '#f5c518')}
             >
-              Explore Services
+              Request a Demo on WhatsApp
             </a>
             <a
-              href="#portfolio"
+              href="/crms"
               style={{
                 fontFamily:      'var(--font-inter)',
                 fontWeight:      700,
@@ -270,7 +271,7 @@ export default function Hero() {
                 el.style.color       = '#eceaf5'
               }}
             >
-              View Our Products
+              See Our CRMs
             </a>
           </div>
         </div>
@@ -279,7 +280,7 @@ export default function Hero() {
         <div className="reveal reveal-delay-2 hero-cards" style={{ position: 'relative' }}>
           <div style={{ padding: '0 0.25rem 1.25rem' }}>
             <span style={{ fontFamily:'var(--font-inter)', fontSize:'0.7rem', color:'#5e5a7a', letterSpacing:'0.08em', textTransform:'uppercase' }}>
-              Live Deployments
+              Recent Work
             </span>
           </div>
 

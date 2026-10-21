@@ -16,7 +16,7 @@ const values = [
   {
     icon:  '📦',
     title: 'Product Thinking',
-    desc:  "We don't build websites. We build products. Because we fund and operate Tikkit X, Trade OS, Averon Legal Systems, and Terra Core ourselves, we approach every client engagement with the same commercial rigour we apply to our own balance sheet.",
+    desc:  "We don't build websites. We build products. Because we fund and operate Tikkit X, StarkVault, Trade OS and Averon Legal Systems ourselves, we approach every client engagement with the same commercial rigour we apply to our own balance sheet.",
   },
   {
     icon:  '🤝',
@@ -267,9 +267,8 @@ export default function AboutContent() {
               {[
                 "Muhammad Wasif founded Two Bit Digital after years of observing a critical gap in the market: enterprises and governments needed enterprise-grade digital systems, but most vendors lacked the engineering depth to deliver them — and the ones that did rarely understood regulated industries.",
                 "With a computer science foundation and a career spanning full-stack architecture, AI integration, and compliance-heavy product design, Wasif has led the development of systems that operate at scale under strict regulatory constraints. He personally architected the offline-first synchronisation layer in Tikkit X, enabling the platform to operate reliably at large outdoor events in markets with degraded connectivity — a problem most SaaS platforms ignore entirely.",
-                "He is currently leading the development of Terra Core, a platform designed around zero-knowledge security architecture for data residency challenges in regulated industries — a technically demanding area that requires deep cryptographic literacy alongside product thinking.",
-                "Wasif operates across the UK, Pakistan, US, and Australian markets with direct commercial and technical accountability across all four jurisdictions. He is the principal engineering voice in every engagement Two Bit Digital takes on.",
-              ].map((para, i) => (
+                "Today he leads the Two Bit Digital product line, from event ticketing and renewal tracking to industry CRMs for distribution, textile export, education and rentals, and is the principal engineering voice in every engagement we take on.",
+                              ].map((para, i) => (
                 <p key={i} style={{
                   fontFamily: 'var(--font-inter)',
                   fontWeight: 300,

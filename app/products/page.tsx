@@ -6,8 +6,8 @@ import Breadcrumb        from '@/components/shared/Breadcrumb'
 import CTABanner         from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
-  description: 'Five in-house products built and owned by Two Bit Digital: StarkVault (document vault & expiry tracking), Tikkit X (event ticketing Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 SaaS UK), and Terra Core (document intelligence engine).',
+  title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal — Two Bit Digital',
+  description: 'Four in-house products built and owned by Two Bit Digital: StarkVault (document vault & expiry tracking), Tikkit X (event ticketing Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 SaaS UK).',
   keywords: [
     'StarkVault',
     'document vault',
@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     'Averon Legal Systems',
     'CPR Part 47 compliance software',
     'legal costs management software UK',
-    'Terra Core document intelligence',
     'AI document processing',
     'in-house SaaS products',
   ],
@@ -34,14 +33,14 @@ export const metadata: Metadata = {
     canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
-    title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal, Terra Core — Two Bit Digital',
-    description: 'Products we have designed, engineered, and own outright. StarkVault for document vaulting and expiry tracking, Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance, Terra Core for document intelligence.',
+    title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal — Two Bit Digital',
+    description: 'Products we have designed, engineered, and own outright. StarkVault for document vaulting and expiry tracking, Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance.',
     url:         'https://www.twobitdigital.com/products',
     type:        'website',
   },
   twitter: {
     title:       'In-House Products — Two Bit Digital',
-    description: 'StarkVault, Tikkit X, Trade OS, Averon Legal Systems, and Terra Core. Five products built and owned by Two Bit Digital.',
+    description: 'StarkVault, Tikkit X, Trade OS, Averon Legal Systems. Four products built and owned by Two Bit Digital.',
   },
 }
 
@@ -153,30 +152,6 @@ const products = [
     ],
     tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Stripe', 'Resend', 'Vercel'],
   },
-  {
-    slug:        'terra-core',
-    name:        'Terra Core',
-    tagline:     'Compliance-first document intelligence and zero-knowledge storage engine.',
-    status:      'In Development',
-    statusColor: '#9d99b8',
-    sector:      'Document Intelligence · Multi-vertical',
-    href:        '#',
-    detailsHref: undefined as string | undefined,
-    gradient:    'linear-gradient(135deg, #2a2a4a 0%, #16163a 100%)',
-    initials:    'TC',
-    ambientGlow: 'rgba(96,165,250,0.05)',
-    shadowColor: 'rgba(22,22,58,0.4)',
-    initialsColor: '#9d99b8',
-    description: "Terra Core is a document intelligence and storage engine designed for organisations that cannot afford to treat document security as an afterthought. It provides AES-256 zero-knowledge encryption so that documents are mathematically inaccessible to anyone without the correct key — including the infrastructure layer. Every action on every document is recorded in a cryptographically chained audit log, making retroactive tampering detectable without external verification. Terra Core also includes AI-powered document classification, secure streaming for large files, and a compliance framework that maps to UK GDPR, FCA data handling requirements, and multi-jurisdiction regulatory environments. It is being built as the underlying document layer for Averon Legal Systems and as a standalone product for regulated industries that process sensitive documentation at scale.",
-    features: [
-      'AES-256 zero-knowledge encryption at rest and in transit',
-      'Cryptographically chained audit logs with tamper detection',
-      'AI-powered document classification and metadata extraction',
-      'Secure document streaming for large file handling',
-      'Multi-jurisdiction compliance mapping (UK GDPR, FCA, and beyond)',
-    ],
-    tech: ['TypeScript', 'AES-256', 'HMAC-SHA256', 'PostgreSQL', 'AWS KMS', 'AWS S3', 'Node.js'],
-  },
 ] as const
 
 const whyBuildOwnSection = [
@@ -187,7 +162,7 @@ const whyBuildOwnSection = [
   },
   {
     title:   'Architecture Proof',
-    body:    'Our products are living case studies. StarkVault proves we can build consumer-grade SaaS with a security posture most enterprises would not bother with. Tikkit X proves we can build for connectivity-constrained markets. Trade OS proves we can architect multi-module ERPs with database-enforced, tamper-evident audit trails. Averon proves we understand compliance-heavy workflow SaaS. Terra Core proves we take cryptographic security seriously enough to implement it from scratch.',
+    body:    'Our products are living case studies. StarkVault proves we can build consumer-grade SaaS with a security posture most enterprises would not bother with. Tikkit X proves we can build for connectivity-constrained markets. Trade OS proves we can architect multi-module ERPs with database-enforced, tamper-evident audit trails. Averon proves we understand compliance-heavy workflow SaaS.',
     accent:  '#7b5ea7',
   },
   {
@@ -580,7 +555,7 @@ export default function ProductsPage() {
                         backgroundColor: product.statusColor,
                         flexShrink:      0,
                       }} />
-                      {product.status === 'In Development' ? 'In Development' : 'Enquire About Licensing →'}
+                      Enquire About Licensing →
                     </Link>
                   )}
                   {product.detailsHref && (

@@ -319,7 +319,7 @@ const faqSchema = {
       name: 'What in-house products has Two Bit Digital built?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Two Bit Digital has built three proprietary SaaS products: Tikkit X (a live event ticketing and management platform for Pakistan), Averon Legal Systems (a CPR Part 47/36 case management SaaS for UK law firms, currently in beta), and Terra Core (a zero-knowledge AES-256 document intelligence platform, in development).',
+        text: 'Two Bit Digital has built proprietary products including Tikkit X (a live event ticketing and management platform for Pakistan), StarkVault (a document and renewal tracker), Trade OS (a commodity trading ERP), Averon Legal Systems (a CPR Part 47/36 case management SaaS for UK law firms, in beta) and a range of industry CRMs for distribution, textile export, education, packaging, LPG and car rental.',
       },
     },
     {

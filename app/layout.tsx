@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import JsonLd from '@/components/JsonLd'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import './globals.css'
 
 const inter = Inter({
@@ -14,11 +15,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://twobitdigital.com'),
   title: {
-    default: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
+    default: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
     template: '%s | Two Bit Digital',
   },
   description:
-    'Two Bit Digital is a UK-registered SaaS development and AI engineering studio. We build mission-critical digital systems for regulated markets — enterprises, startups, and government bodies across the UK, US, Australia, and Pakistan.',
+    'Ready-built CRMs and ERPs, SaaS products, websites and AI tools for growing businesses. Try a live demo, then we tailor it to your workflow and take it live. UK-registered, engineering in Karachi.',
   keywords: [
     'SaaS development UK',
     'AI engineering studio',
@@ -65,9 +66,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
+    title: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
     description:
-      'Building mission-critical digital systems for regulated markets. End-to-end SaaS platforms, AI engineering, and secure infrastructure across the UK, US, Australia, and Pakistan.',
+      'Working CRMs, ERPs, SaaS and websites you can see today. We tailor them to your business and take them live.',
     url: 'https://twobitdigital.com',
     siteName: 'Two Bit Digital',
     locale: 'en_GB',
@@ -83,9 +84,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Two Bit Digital — SaaS Development & AI Engineering Studio',
+    title: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
     description:
-      'Building mission-critical digital systems for regulated markets across the UK, US, Australia, and Pakistan.',
+      'Working CRMs, ERPs, SaaS and websites you can see today. We tailor them to your business and take them live.',
     images: ['/opengraph-image'],
   },
   robots: {
@@ -119,6 +120,7 @@ export default function RootLayout({
       <body className={inter.variable}>
         <JsonLd />
         {children}
+        <WhatsAppButton />
         <GoogleAnalytics gaId="G-H37B9RGMHP" />
       </body>
     </html>

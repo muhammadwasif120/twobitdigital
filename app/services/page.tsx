@@ -89,7 +89,7 @@ export default function ServicesPage() {
             ]} />
 
             <div style={{ maxWidth: '780px', marginTop: '1.5rem' }}>
-              <div className="section-label">What We Build</div>
+              <div className="section-label">What We Do</div>
               <h1 style={{
                 fontFamily:    'var(--font-inter)',
                 fontWeight:    800,
@@ -99,8 +99,8 @@ export default function ServicesPage() {
                 margin:        '0.75rem 0 1.5rem',
                 letterSpacing: '-0.03em',
               }}>
-                End-to-End{' '}
-                <span style={{ color: '#f5c518' }}>Digital Engineering</span>
+                Software that fits{' '}
+                <span style={{ color: '#f5c518' }}>how you work</span>
               </h1>
               <p style={{
                 fontFamily: 'var(--font-inter)',
@@ -111,9 +111,7 @@ export default function ServicesPage() {
                 margin:     0,
                 maxWidth:   '640px',
               }}>
-                Full-stack capability from AI and machine learning pipelines to regulated SaaS
-                platforms, government digital services, and the cloud infrastructure that holds
-                it all together — built for production, not for demos.
+                We build CRMs and ERPs, SaaS products, websites and AI tools. Every service below comes with real examples we have already shipped, and a team that stays with you after launch.
               </p>
             </div>
           </div>

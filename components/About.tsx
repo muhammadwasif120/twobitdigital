@@ -65,7 +65,7 @@ export default function About() {
             <div className="reveal reveal-delay-2" style={{ display:'flex', flexDirection:'column', gap:'1.1rem', marginBottom:'2.5rem' }}>
               {[
                 "Headquartered in the UK with core development operations anchored in Karachi, Pakistan, Two Bit Digital is led by Founder & CEO Muhammad Wasif. We bridge the gap between complex architectural engineering and intuitive product design.",
-                "Because we actively develop, fund, and scale our own proprietary platforms — like the offline-capable architecture of Tikkit X and the zero-knowledge security models of Terra Core — we don't just build software for our clients. We build with the exact same rigour, commercial awareness, and technological foresight.",
+                "Because we actively develop, fund, and scale our own proprietary platforms — like Tikkit X, StarkVault and our industry CRMs — we don't just build software for our clients. We build with the exact same rigour, commercial awareness, and technological foresight.",
                 "With high-security capabilities and native AI integration, our systems are battle-tested and compliant across major global jurisdictions.",
               ].map((para, i) => (
                 <p key={i} style={{
