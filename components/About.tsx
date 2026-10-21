@@ -58,15 +58,15 @@ export default function About() {
               marginBottom: '1.75rem',
               letterSpacing:'-0.03em',
             }}>
-              Led by Engineering &amp;{' '}
-              <span style={{ color: '#f5c518' }}>Product Vision.</span>
+              Small team. Senior engineers.amp;{' '}
+              <span style={{ color: '#f5c518' }}>Products we run ourselves.</span>
             </h2>
 
             <div className="reveal reveal-delay-2" style={{ display:'flex', flexDirection:'column', gap:'1.1rem', marginBottom:'2.5rem' }}>
               {[
-                "Headquartered in the UK with core development operations anchored in Karachi, Pakistan, Two Bit Digital is led by Founder & CEO Muhammad Wasif. We bridge the gap between complex architectural engineering and intuitive product design.",
-                "Because we actively develop, fund, and scale our own proprietary platforms — like Tikkit X, StarkVault and our industry CRMs — we don't just build software for our clients. We build with the exact same rigour, commercial awareness, and technological foresight.",
-                "With high-security capabilities and native AI integration, our systems are battle-tested and compliant across major global jurisdictions.",
+                "Two Bit Digital is a software studio registered in the UK, with our engineering team in Karachi, Pakistan. We are led by Founder & CEO Muhammad Wasif, and we build the way a product company does: small senior team, working software early, and the people who build it stay with you after launch.",
+                "We run our own products, including Tikkit X and StarkVault, and we have built CRMs and ERPs for distributors, exporters, schools, rental companies and trading houses. That experience is what we bring to your project.",
+                "Security and AI are part of how we build: role-based access, audit trails, encrypted data, and AI assistants where they save your team real time.",
               ].map((para, i) => (
                 <p key={i} style={{
                   fontFamily: 'var(--font-inter)',
