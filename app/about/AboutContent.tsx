@@ -11,7 +11,7 @@ const values = [
   {
     icon:  '🔒',
     title: 'Compliance by Default',
-    desc:  'Regulated industries cannot bolt compliance onto legacy code. We design for audit trails, data residency, and access control from day one — serving clients across GDPR, FCA, SRA, and SEC jurisdictions without retrofitting.',
+    desc:  'Regulated industries cannot bolt compliance onto legacy code. We design for audit trails, data residency, and access control from day one — built with audit trails and role-based access.',
   },
   {
     icon:  '📦',
@@ -30,7 +30,7 @@ const footprint = [
     flag:   '🇬🇧',
     market: 'United Kingdom',
     role:   'HQ & Legal Entity',
-    detail: 'Registered in England & Wales · Co. #14710072 · Regulated by HMRC',
+    detail: 'Registered in England & Wales · Co. #14710072',
   },
   {
     flag:   '🇵🇰',

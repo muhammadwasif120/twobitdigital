@@ -6,7 +6,7 @@ import { crms }   from '@/lib/portfolio'
 import { whatsappHref } from '@/lib/whatsapp'
 
 export const metadata: Metadata = {
-  title:       'Industry CRMs & ERPs | Request a Demo — Two Bit Digital',
+  title:       'Industry CRMs & ERPs | Request a Demo',
   description: 'Ready-built CRMs and ERPs for distribution, textile export, education, packaging, LPG, car rental, commodity trading and more. Request a demo on WhatsApp.',
   alternates:  { canonical: 'https://www.twobitdigital.com/crms' },
 }
