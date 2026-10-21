@@ -21,6 +21,75 @@ type Section = {
 
 export const insights: InsightPost[] = [
 
+  {
+    slug:        "crm-for-distribution-business-pakistan",
+    title:       "How to Choose a CRM for a Distribution Business in Pakistan",
+    excerpt:     "Most distributors outgrow spreadsheets before they notice. Here is what a distribution CRM should actually do, and the questions to ask before you buy or build.",
+    publishedAt: '2026-10-21',
+    readTime:    "6 min read",
+    category:    "CRM & ERP",
+    tags:        ["distribution CRM Pakistan", "FMCG distribution software", "distributor ERP", "booker commission software"],
+    metaTitle:   "CRM for Distribution Businesses in Pakistan: What to Look For | Two Bit Digital",
+    metaDesc:    "What a distribution CRM should handle: invoicing, bookers and commissions, batch and expiry stock, dispatch, receivables and returns. A buyer's checklist.",
+    content: [
+      { type: 'intro', text: "A distributor lives and dies by three numbers: what is in the warehouse, what customers owe, and what each salesperson sold. When those live in separate spreadsheets and WhatsApp groups, nobody has the same answer twice. A good distribution CRM puts all three in one place." },
+      { type: 'h2', heading: "What a distribution CRM should cover" },
+      { type: 'ul', items: ["Sale invoicing with customer-specific pricing and discounts", "Bookers and sales officers, with orders, targets and commission calculated automatically", "Batch and expiry tracking, so near-expiry stock is sold first", "Dispatch and delivery tracking, including a link customers can open to see order status", "Receivables, cheques and credit limits per customer", "Sales and purchase returns that adjust stock and ledgers correctly", "Profit and loss, stock valuation and credit reports"] },
+      { type: 'h2', heading: "Questions to ask before you choose" },
+      { type: 'ol', items: ["Does it handle cheques and post-dated cheques, not just cash and card?", "Can my bookers place orders from their phone?", "Can I import my current customers and products from Excel?", "Who can see costs and margins, and who cannot?", "What happens to my data if I stop using the system?"] },
+      { type: 'h2', heading: "Buy, or build around a ready system" },
+      { type: 'p', text: "Off-the-shelf tools rarely fit local workflows. Fully custom builds take a long time. A middle path is to start from a working system built for your industry and adapt it. At Two Bit Digital we have built an FMCG distribution CRM covering the areas above, with a demo you can click through before deciding." },
+      { type: 'cta', text: "Want to see a working distribution CRM? Message us on WhatsApp and we will walk you through it." },
+    ],
+    faq: [{ q: "How long does it take to set up a distribution CRM?", a: "It depends on how much your workflow differs from the standard system and how much data you are bringing across. Request a demo and we will give you a realistic estimate for your case." }],
+  },
+
+  {
+    slug:        "textile-export-erp-what-to-look-for",
+    title:       "Textile Export ERP: What to Look For Before You Choose",
+    excerpt:     "Textile exporters juggle orders, production, packaging, shipping documents and cheques. A checklist for choosing or building an ERP that keeps it all connected.",
+    publishedAt: '2026-10-21',
+    readTime:    "6 min read",
+    category:    "CRM & ERP",
+    tags:        ["textile ERP Pakistan", "garment export software", "textile export management", "order traceability"],
+    metaTitle:   "Textile Export ERP Checklist for Pakistani Exporters | Two Bit Digital",
+    metaDesc:    "A practical checklist for textile and garment exporters choosing an ERP: orders, production planning, packaging, shipping documents, cheques and traceability.",
+    content: [
+      { type: 'intro', text: "A textile order touches many hands: sales, planning, production, packaging, warehouse, shipping and accounts. If each team keeps its own sheet, nobody can say where an order is or whether it will ship on time." },
+      { type: 'h2', heading: "The modules that matter" },
+      { type: 'ul', items: ["Orders and parties: buyers, agents and suppliers in one place", "Production planning against order dates", "Purchasing and warehouse stock", "Packaging and shipping, with export documents generated from the order", "Cheques and payment tracking", "Commissions for agents and sales staff", "Traceability from order to dispatch, with a tracking link buyers can open"] },
+      { type: 'h2', heading: "Signs you have outgrown spreadsheets" },
+      { type: 'ul', items: ["Two people give different answers about the same order", "Shipping documents are re-typed from order sheets", "You find out about a late order after the buyer calls", "Month-end takes days because data is scattered"] },
+      { type: 'h2', heading: "Start from a working system" },
+      { type: 'p', text: "We built Textile Pro CRM around this order-to-shipment flow. You can try the demo, tell us where your process differs, and we adapt it to your mill or garment unit." },
+      { type: 'cta', text: "Request a demo of Textile Pro CRM on WhatsApp." },
+    ],
+    faq: [{ q: "Can an ERP import my existing order and party data?", a: "Yes. A good system lets you bring across parties, products and open orders from Excel so you are not starting from zero." }],
+  },
+
+  {
+    slug:        "school-management-software-features-that-matter",
+    title:       "School and Academy Management Software: Features That Actually Matter",
+    excerpt:     "Fee collection, attendance, exams and timetables are the daily work of an academy. Here is what to look for in management software, and what to skip.",
+    publishedAt: '2026-10-21',
+    readTime:    "5 min read",
+    category:    "CRM & ERP",
+    tags:        ["school management software Pakistan", "academy management system", "fee management", "tuition academy software"],
+    metaTitle:   "School & Academy Management Software: Features That Matter | Two Bit Digital",
+    metaDesc:    "The features a school or tuition academy really needs: student records, attendance, fees with receipts, exams and report cards, timetable, teacher pay.",
+    content: [
+      { type: 'intro', text: "Most academies start with a notebook and a spreadsheet. It works until fees go unrecorded, attendance disputes start, or a second branch opens. The right software removes that friction without adding complexity for teachers." },
+      { type: 'h2', heading: "The core features" },
+      { type: 'ul', items: ["Student records with parents or guardians linked", "Class and batch management, including promotion at year end", "Daily attendance for students and staff", "Fee plans, invoices, printed receipts and a clear list of defaulters", "Exams, results and printable report cards", "Timetable that avoids teacher and room clashes", "Teacher pay linked to attendance or hours", "Role-based logins so teachers see only their own classes"] },
+      { type: 'h2', heading: "What to skip at the start" },
+      { type: 'p', text: "Do not pay for features you will not use in year one. Get fees, attendance and student records right first, then add exams and reports." },
+      { type: 'h2', heading: "Try before you commit" },
+      { type: 'p', text: "Academy+ is our school and academy system. It has demo logins for admin, teacher, accountant and receptionist so you can see what each role sees." },
+      { type: 'cta', text: "See Academy+ in action. Message us on WhatsApp." },
+    ],
+    faq: [{ q: "Does it work for multiple branches?", a: "Academy+ is built with multi-branch support, so each branch can be managed separately while owners see the whole picture." }],
+  },
+
   // ══════════════════════════════════════════════════════════════════════════
   // PAKISTAN LAW FIRM CLUSTER — May 2026
   // ══════════════════════════════════════════════════════════════════════════
@@ -29,13 +98,13 @@ export const insights: InsightPost[] = [
   {
     slug:        'ykc-legal-law-firm-website-pakistan',
     title:       'How We Built YKC Legal\'s Digital Presence: A Pakistan Law Firm Case Study',
-    excerpt:     'YKC Legal is one of Pakistan\'s oldest law firms. They had zero digital presence. Two Bit Digital built everything — and they were on Google within two weeks.',
+    excerpt:     'YKC Legal has practised in Karachi since 1950. Here is how Two Bit Digital built a website that matches that reputation, with search visibility designed in from day one.',
     publishedAt: '2026-05-19',
     readTime:    '9 min read',
     category:    'Legal Technology',
     tags:        ['law firm website Pakistan', 'YKC Legal', 'legal digital presence', 'law firm case study', 'Pakistan law firm'],
     metaTitle:   'YKC Legal Case Study: Law Firm Website Pakistan | Two Bit Digital',
-    metaDesc:    'How Two Bit Digital built a complete digital presence for YKC Legal — one of Pakistan\'s oldest law firms. Client portal, case search, 17 practice areas, and on Google in two weeks.',
+    metaDesc:    'How Two Bit Digital built a complete digital presence for YKC Legal — a Karachi law firm practising since 1950. Practice areas, case search, reported judgements and technical SEO built in.',
     content: [
       {
         type: 'intro',
@@ -74,7 +143,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'YKC Legal was appearing on Google for relevant search terms within two weeks of launch. The keyword footprint — the number of search terms the site ranks for — has been expanding since. This is what happens when SEO is part of the architecture, not an add-on.',
+        text: 'For YKC Legal we built technical SEO into the architecture from the first commit: clean URLs, structured data, a sitemap and fast pages. That is what it means for SEO to be part of the architecture, not an add-on.',
       },
       {
         type: 'h2',
@@ -171,7 +240,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'YKC Legal — one of Pakistan\'s oldest law firms — was appearing on Google for relevant search terms within two weeks of their new site going live. This is not unusual when technical SEO is built into the architecture from day one.',
+        text: 'YKC Legal, a Karachi firm practising since 1950, launched with technical SEO built into the architecture from day one: clean URLs, structured data and a sitemap.',
       },
       {
         type: 'h2',
@@ -205,7 +274,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'cta',
-        text: 'Two Bit Digital has built law firm websites for Pakistani practices including YKC Legal — appearing on Google within two weeks of launch. If your firm is ready to build a digital presence that matches your reputation, get in touch.',
+        text: 'Two Bit Digital has built law firm websites for Pakistani practices including YKC Legal. If your firm is ready to build a digital presence that matches your reputation, get in touch.',
       },
     ],
   },
@@ -383,7 +452,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'YKC Legal — one of Pakistan\'s oldest law firms — includes every item on this checklist. Their site was appearing on Google for relevant terms within two weeks of launch. The checklist works.',
+        text: 'YKC Legal, a Karachi firm practising since 1950, is built around this checklist: practice area pages, team profiles, reported judgements, case search and clear contact details.',
       },
       {
         type: 'cta',
@@ -444,7 +513,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'YKC Legal — one of Pakistan\'s oldest and most respected law firms — had zero digital presence before working with Two Bit Digital. Within two weeks of their new site going live, they were appearing on Google for relevant search terms. The timeline to visibility for a well-built law firm site in Pakistan is weeks, not months.',
+        text: 'YKC Legal, a Karachi firm practising since 1950, came to Two Bit Digital wanting a website that matched its reputation. We built the site with technical SEO in place from the start, so search engines can find and understand every practice area.',
       },
       {
         type: 'h2',
@@ -542,7 +611,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'Two Bit Digital builds AI workflows using Anthropic Claude and OpenAI APIs, RAG architectures on Supabase pgvector, and Next.js-based orchestration layers. Our in-house products — Averon Legal Systems and Terra Core — are themselves AI workflow platforms built for regulated industries.',
+        text: 'Two Bit Digital builds AI workflows using Anthropic Claude and OpenAI APIs, RAG architectures on Supabase pgvector, and Next.js-based orchestration layers. Our in-house products, such as Averon Legal Systems, are themselves workflow platforms built for regulated industries.',
       },
       {
         type: 'h2',
@@ -804,7 +873,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'Two Bit Digital has built RAG systems for legal document intelligence, internal knowledge management, and compliance applications. Our Terra Core platform is built on this architecture — providing zero-knowledge, encrypted document intelligence for regulated industries.',
+        text: 'Two Bit Digital has built RAG systems for legal document intelligence, internal knowledge management, and compliance applications. We apply the same architecture to document-heavy workflows in regulated industries.',
       },
       {
         type: 'cta',
@@ -1295,7 +1364,7 @@ export const insights: InsightPost[] = [
       {
         type: 'h2',
         heading: 'What Does a Fully Digitised Law Firm Look Like in Practice?',
-        text: 'YKC Legal — a 75-year-old Pakistani law firm with practice areas spanning civil litigation, corporate law, immigration, and criminal defence — is a live example of a client-facing digital layer built by Two Bit Digital. The firm\'s website (ykclegal.org) provides structured information about all 17 practice areas, a searchable case repository, a judgements library, team profiles, and a direct consultation booking system — all accessible from any device. The client portal allows registered clients to view their case diary, track matter progress, and access documents without calling the office.',
+        text: 'YKC Legal, a Karachi firm practising since 1950, is a live example of a client-facing digital layer built by Two Bit Digital. The firm\'s website (ykclegal.org) provides structured information about its practice areas, a searchable case repository, a reported judgements library, team profiles and clear contact routes, all accessible from any device.',
       },
       {
         type: 'callout',
@@ -1773,7 +1842,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'Two Bit Digital operates three in-house products: Tikkit X (live), Averon Legal Systems (beta), and Terra Core (development). Every decision we made in those builds informs how we advise our clients.',
+        text: 'Two Bit Digital operates in-house products including Tikkit X (live), StarkVault (live), Trade OS and Averon Legal Systems (beta). Every decision we made in those builds informs how we advise our clients.',
       },
       {
         type: 'h2',
@@ -2042,7 +2111,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'Two Bit Digital is a SaaS development studio (UK Companies House #14710072) that builds and operates its own products: Tikkit X (live event management platform), Averon Legal Systems (legal tech, beta), and Terra Core (document intelligence, in development). Every client product we build benefits from the engineering decisions we have made — and learned from — in our own.',
+        text: 'Two Bit Digital is a SaaS development studio (UK Companies House #14710072) that builds and operates its own products: Tikkit X (live event management platform), StarkVault (document and renewal tracking), Trade OS (commodity trading ERP) and Averon Legal Systems (legal tech, beta). Every client product we build benefits from the engineering decisions we have made — and learned from — in our own.',
       },
       {
         type: 'h2',
@@ -2368,7 +2437,7 @@ export const insights: InsightPost[] = [
       },
       {
         type: 'callout',
-        text: 'Two Bit Digital\'s Terra Core platform — currently in development — extends this RegTech architecture to document intelligence. It provides AES-256 zero-knowledge encryption for document storage, tamper-detection audit logs, and multi-jurisdiction compliance mapping for organisations that need to demonstrate to regulators exactly what happened to every document in their system.',
+        text: 'The same RegTech principles apply to document-heavy systems: encrypted storage, tamper-evident audit logs and a clear record for regulators of exactly what happened to every document in the system.',
       },
       {
         type: 'h2',

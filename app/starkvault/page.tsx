@@ -468,8 +468,7 @@ export default function StarkVaultPage() {
                 StarkVault uses standard server-side encryption, not end-to-end zero-knowledge encryption.
                 Our systems can read a document in order to generate a watermark when you create a share link.
                 We do not access your documents except for this specific technical function.
-                If your use case requires true zero-knowledge encryption, Terra Core — our document intelligence
-                engine currently in development — is designed for that.
+                If your use case requires true zero-knowledge encryption, StarkVault is not designed for that requirement.
               </p>
             </div>
           </div>
