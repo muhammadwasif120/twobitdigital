@@ -2,14 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { whatsappHref } from '@/lib/whatsapp'
 import { usePathname } from 'next/navigation'
 
 const mainLinks = [
-  { label: 'About',    href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Launch',   href: '/launch' },
-  { label: 'Work',     href: '/work' },
+  { label: 'CRMs',     href: '/crms' },
+  { label: 'Sites',    href: '/sites' },
   { label: 'Products', href: '/products' },
+  { label: 'Services', href: '/services' },
+  { label: 'About',    href: '/about' },
   { label: 'Insights', href: '/insights' },
 ]
 
@@ -139,7 +140,7 @@ export default function Nav() {
             )
           })}
           <Link
-            href="/contact"
+            href={whatsappHref('Hi Two Bit Digital, I would like to request a demo.')}
             style={{
               fontFamily:      'var(--font-inter)',
               fontWeight:      700,
@@ -156,7 +157,7 @@ export default function Nav() {
             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#c9a012')}
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#f5c518')}
           >
-            Start a Project
+            Request a Demo
           </Link>
         </nav>
 
@@ -242,7 +243,7 @@ export default function Nav() {
           </div>
         </div>
         <Link
-          href="/contact"
+          href={whatsappHref('Hi Two Bit Digital, I would like to request a demo.')}
           onClick={() => setMenuOpen(false)}
           style={{
             marginTop:       '0.5rem',
@@ -259,7 +260,7 @@ export default function Nav() {
             textAlign:       'center',
           }}
         >
-          Start a Project
+          Request a Demo
         </Link>
       </div>
 
