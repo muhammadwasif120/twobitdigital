@@ -24,50 +24,47 @@ export default function QrCodeGeneratorPage() {
       <Nav />
       <main style={{ backgroundColor: '#09091a', minHeight: '100vh' }}>
 
-        {/* ── Hero ── */}
+        {/* ── Compact header ── */}
         <section style={{
-          background:    'linear-gradient(180deg, #09091a 0%, #0d0d22 100%)',
-          paddingTop:    '9rem',
-          paddingBottom: '5rem',
-          borderBottom:  '1px solid rgba(255,255,255,0.06)',
-          position:      'relative',
-          overflow:      'hidden',
+          paddingTop:   '6rem',
+          paddingBottom: '1.5rem',
+          borderBottom: '1px solid rgba(255,255,255,0.06)',
         }}>
-          <div style={{
-            position: 'absolute', top: '-120px', left: '50%',
-            transform: 'translateX(-50%)', width: '800px', height: '500px',
-            borderRadius: '50%', pointerEvents: 'none',
-            background: 'radial-gradient(circle, rgba(245,197,24,0.05) 0%, transparent 65%)',
-          }} />
-          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
             <Breadcrumb crumbs={[
               { label: 'Home', href: '/' },
               { label: 'Free Tools', href: '/tools' },
               { label: 'QR Code Generator' },
             ]} />
-            <div style={{ maxWidth: '780px', marginTop: '1.5rem' }}>
-              <div className="section-label">Free Tool</div>
+            <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
               <h1 style={{
                 fontFamily: 'var(--font-inter)', fontWeight: 800,
-                fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', lineHeight: 1.1,
-                color: '#eceaf5', margin: '0.75rem 0 1.25rem', letterSpacing: '-0.03em',
+                fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', lineHeight: 1.1,
+                color: '#eceaf5', margin: 0, letterSpacing: '-0.03em',
               }}>
                 QR Code Generator
               </h1>
-              <p style={{
-                fontFamily: 'var(--font-inter)', fontWeight: 300,
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#9d99b8',
-                lineHeight: 1.8, margin: 0, maxWidth: '600px',
+              <span style={{
+                fontFamily: 'var(--font-inter)', fontWeight: 600,
+                fontSize: '0.7rem', letterSpacing: '0.06em', textTransform: 'uppercase',
+                color: '#09091a', backgroundColor: '#22c55e',
+                padding: '0.2rem 0.6rem', borderRadius: '999px', whiteSpace: 'nowrap',
               }}>
-                Enter any URL or text and get a high-resolution QR code instantly.
-                Download as PNG — ready to print on flyers, business cards, or signage.
-              </p>
+                Free · No sign-up
+              </span>
             </div>
+            <p style={{
+              fontFamily: 'var(--font-inter)', fontWeight: 300,
+              fontSize: '0.95rem', color: '#9d99b8',
+              lineHeight: 1.7, margin: '0.5rem 0 0',
+            }}>
+              Enter any URL or text — get a high-res QR code ready to download and print.
+            </p>
           </div>
         </section>
 
         {/* ── Tool ── */}
-        <section style={{ backgroundColor: '#09091a', padding: '5rem 0' }}>
+        <section style={{ backgroundColor: '#09091a', padding: '2.5rem 0 4rem' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
             <QrCodeTool />
           </div>
@@ -83,7 +80,7 @@ export default function QrCodeGeneratorPage() {
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
             <h2 style={{
               fontFamily: 'var(--font-inter)', fontWeight: 700,
-              fontSize: '1.5rem', color: '#eceaf5', marginBottom: '2.5rem',
+              fontSize: '1.4rem', color: '#eceaf5', marginBottom: '2rem',
               letterSpacing: '-0.02em', textAlign: 'center',
             }}>
               What to use QR codes for
@@ -107,19 +104,13 @@ export default function QrCodeGeneratorPage() {
               ].map((u) => (
                 <div key={u.label} style={{
                   background: '#11112b', border: '1px solid rgba(255,255,255,0.06)',
-                  borderRadius: '12px', padding: '1.5rem',
+                  borderRadius: '12px', padding: '1.4rem',
                 }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{u.icon}</div>
-                  <h3 style={{
-                    fontFamily: 'var(--font-inter)', fontWeight: 700,
-                    fontSize: '0.9rem', color: '#eceaf5', margin: '0 0 0.4rem',
-                  }}>
+                  <div style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>{u.icon}</div>
+                  <h3 style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.875rem', color: '#eceaf5', margin: '0 0 0.35rem' }}>
                     {u.label}
                   </h3>
-                  <p style={{
-                    fontFamily: 'var(--font-inter)', fontWeight: 300,
-                    fontSize: '0.8rem', color: '#9d99b8', lineHeight: 1.6, margin: 0,
-                  }}>
+                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.8rem', color: '#9d99b8', lineHeight: 1.6, margin: 0 }}>
                     {u.body}
                   </p>
                 </div>
@@ -130,7 +121,7 @@ export default function QrCodeGeneratorPage() {
 
         <CTABanner
           heading="Need QR ticketing for your event?"
-          subtext="Tikkit X — our event management platform — features offline-capable HMAC QR verification and supports thousands of scans per minute. Built for Pakistan and beyond."
+          subtext="Tikkit X — our event management platform — features offline-capable HMAC QR verification built for high-volume events."
           ctaLabel="Learn About Tikkit X"
           ctaHref="https://tikkitx.com"
         />

@@ -5,6 +5,7 @@ import WhatWeDo     from '@/components/WhatWeDo'
 import Portfolio    from '@/components/Portfolio'
 import HowItWorks   from '@/components/HowItWorks'
 import Expertise    from '@/components/Expertise'
+import FreeTools    from '@/components/FreeTools'
 import About        from '@/components/About'
 import PartnerStrip from '@/components/PartnerStrip'
 import Government   from '@/components/Government'
@@ -23,6 +24,7 @@ export default function Home() {
         <Portfolio />
         <HowItWorks />
         <Expertise />
+        <FreeTools />
         <About />
         <PartnerStrip />
         <Government />

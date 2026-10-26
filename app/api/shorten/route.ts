@@ -24,8 +24,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
   }
 
-  const raw = (body.url ?? '').trim()
+  let raw = (body.url ?? '').trim()
   if (!raw) return NextResponse.json({ error: 'URL is required' }, { status: 400 })
+
+  // Auto-prepend https:// if no protocol given (e.g. "example.com" or "www.example.com")
+  if (!/^https?:\/\//i.test(raw)) raw = 'https://' + raw
 
   // Validate URL
   try {
@@ -34,7 +37,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Only http/https URLs are supported' }, { status: 400 })
     }
   } catch {
-    return NextResponse.json({ error: 'Please enter a valid URL' }, { status: 400 })
+    return NextResponse.json({ error: 'Please enter a valid URL (e.g. example.com)' }, { status: 400 })
   }
 
   const supabase = createClient(supabaseUrl, serviceKey)

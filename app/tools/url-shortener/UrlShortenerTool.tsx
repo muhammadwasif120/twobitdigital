@@ -96,10 +96,10 @@ export default function UrlShortenerTool() {
           <input
             id="url-input"
             ref={inputRef}
-            type="url"
+            type="text"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            placeholder="https://example.com/some/very/long/url"
+            placeholder="example.com/some/very/long/url"
             required
             autoFocus
             style={{

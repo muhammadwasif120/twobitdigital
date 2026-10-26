@@ -24,50 +24,47 @@ export default function UrlShortenerPage() {
       <Nav />
       <main style={{ backgroundColor: '#09091a', minHeight: '100vh' }}>
 
-        {/* ── Hero ── */}
+        {/* ── Compact header ── */}
         <section style={{
-          background:    'linear-gradient(180deg, #09091a 0%, #0d0d22 100%)',
-          paddingTop:    '9rem',
-          paddingBottom: '5rem',
+          paddingTop:    '6rem',
+          paddingBottom: '1.5rem',
           borderBottom:  '1px solid rgba(255,255,255,0.06)',
-          position:      'relative',
-          overflow:      'hidden',
         }}>
-          <div style={{
-            position: 'absolute', top: '-120px', left: '50%',
-            transform: 'translateX(-50%)', width: '800px', height: '500px',
-            borderRadius: '50%', pointerEvents: 'none',
-            background: 'radial-gradient(circle, rgba(245,197,24,0.05) 0%, transparent 65%)',
-          }} />
-          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem' }}>
             <Breadcrumb crumbs={[
               { label: 'Home', href: '/' },
               { label: 'Free Tools', href: '/tools' },
               { label: 'URL Shortener' },
             ]} />
-            <div style={{ maxWidth: '780px', marginTop: '1.5rem' }}>
-              <div className="section-label">Free Tool</div>
+            <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
               <h1 style={{
                 fontFamily: 'var(--font-inter)', fontWeight: 800,
-                fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', lineHeight: 1.1,
-                color: '#eceaf5', margin: '0.75rem 0 1.25rem', letterSpacing: '-0.03em',
+                fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', lineHeight: 1.1,
+                color: '#eceaf5', margin: 0, letterSpacing: '-0.03em',
               }}>
                 URL Shortener
               </h1>
-              <p style={{
-                fontFamily: 'var(--font-inter)', fontWeight: 300,
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#9d99b8',
-                lineHeight: 1.8, margin: 0, maxWidth: '600px',
+              <span style={{
+                fontFamily: 'var(--font-inter)', fontWeight: 600,
+                fontSize: '0.7rem', letterSpacing: '0.06em', textTransform: 'uppercase',
+                color: '#09091a', backgroundColor: '#22c55e',
+                padding: '0.2rem 0.6rem', borderRadius: '999px', whiteSpace: 'nowrap',
               }}>
-                Paste any long URL and get a clean short link — hosted on twobitdigital.com.
-                Free forever, no account needed.
-              </p>
+                Free · No sign-up
+              </span>
             </div>
+            <p style={{
+              fontFamily: 'var(--font-inter)', fontWeight: 300,
+              fontSize: '0.95rem', color: '#9d99b8',
+              lineHeight: 1.7, margin: '0.5rem 0 0',
+            }}>
+              Paste any URL and get a clean short link at twobitdigital.com/s/…
+            </p>
           </div>
         </section>
 
         {/* ── Tool ── */}
-        <section style={{ backgroundColor: '#09091a', padding: '5rem 0' }}>
+        <section style={{ backgroundColor: '#09091a', padding: '2.5rem 0 4rem' }}>
           <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem' }}>
             <UrlShortenerTool />
           </div>
@@ -83,7 +80,7 @@ export default function UrlShortenerPage() {
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
             <h2 style={{
               fontFamily: 'var(--font-inter)', fontWeight: 700,
-              fontSize: '1.5rem', color: '#eceaf5', marginBottom: '2.5rem',
+              fontSize: '1.4rem', color: '#eceaf5', marginBottom: '2rem',
               letterSpacing: '-0.02em', textAlign: 'center',
             }}>
               How it works
@@ -92,7 +89,7 @@ export default function UrlShortenerPage() {
               .steps-grid {
                 display: grid;
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
+                gap: 1.25rem;
               }
               @media (min-width: 640px) {
                 .steps-grid { grid-template-columns: repeat(3, 1fr); }
@@ -100,31 +97,25 @@ export default function UrlShortenerPage() {
             `}</style>
             <div className="steps-grid">
               {[
-                { n: '01', title: 'Paste your URL',   body: 'Drop any long link — a product page, article, event invite — into the box above.' },
-                { n: '02', title: 'Get a short link',  body: 'We generate a unique short code and return a clean twobitdigital.com/s/... link instantly.' },
-                { n: '03', title: 'Share anywhere',    body: 'Copy and paste it into emails, messages, social posts, or printed materials.' },
+                { n: '01', title: 'Paste your URL',  body: 'Drop any long link — a product page, article, or event invite — into the box.' },
+                { n: '02', title: 'Get a short link', body: 'We generate a unique code and return a clean twobitdigital.com/s/… link instantly.' },
+                { n: '03', title: 'Share anywhere',   body: 'Copy and paste it into emails, messages, social posts, or printed materials.' },
               ].map((s) => (
                 <div key={s.n} style={{
                   background: '#11112b', border: '1px solid rgba(255,255,255,0.06)',
-                  borderRadius: '12px', padding: '1.75rem',
+                  borderRadius: '12px', padding: '1.5rem',
                 }}>
                   <div style={{
                     fontFamily: 'var(--font-inter)', fontWeight: 800,
-                    fontSize: '2rem', color: 'rgba(245,197,24,0.15)',
-                    lineHeight: 1, marginBottom: '0.75rem',
+                    fontSize: '1.75rem', color: 'rgba(245,197,24,0.15)',
+                    lineHeight: 1, marginBottom: '0.6rem',
                   }}>
                     {s.n}
                   </div>
-                  <h3 style={{
-                    fontFamily: 'var(--font-inter)', fontWeight: 700,
-                    fontSize: '1rem', color: '#eceaf5', margin: '0 0 0.5rem',
-                  }}>
+                  <h3 style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.95rem', color: '#eceaf5', margin: '0 0 0.4rem' }}>
                     {s.title}
                   </h3>
-                  <p style={{
-                    fontFamily: 'var(--font-inter)', fontWeight: 300,
-                    fontSize: '0.875rem', color: '#9d99b8', lineHeight: 1.7, margin: 0,
-                  }}>
+                  <p style={{ fontFamily: 'var(--font-inter)', fontWeight: 300, fontSize: '0.85rem', color: '#9d99b8', lineHeight: 1.7, margin: 0 }}>
                     {s.body}
                   </p>
                 </div>
@@ -135,7 +126,7 @@ export default function UrlShortenerPage() {
 
         <CTABanner
           heading="Need a full link management platform?"
-          subtext="We build custom software for businesses — including analytics dashboards, branded short-link platforms, and more. Talk to us about your brief."
+          subtext="We build custom software for businesses — analytics dashboards, branded short-link platforms, and more."
           ctaLabel="Start a Conversation"
           ctaHref="/contact"
         />
