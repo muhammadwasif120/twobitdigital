@@ -49,43 +49,10 @@ export default function QrCodeTool() {
 
   function downloadPng() {
     if (!dataUrl) return
-
-    const img = new Image()
-    img.onload = () => {
-      const footerH = Math.round(size * 0.09)
-      const canvas  = document.createElement('canvas')
-      canvas.width  = size
-      canvas.height = size + footerH
-      const ctx     = canvas.getContext('2d')!
-
-      ctx.drawImage(img, 0, 0, size, size)
-
-      ctx.fillStyle = '#09091a'
-      ctx.fillRect(0, size, size, footerH)
-
-      const fontSize = Math.round(footerH * 0.42)
-      ctx.font         = `700 ${fontSize}px Inter, Arial, sans-serif`
-      ctx.textBaseline = 'middle'
-      ctx.textAlign    = 'center'
-
-      // Measure both words to centre them together
-      ctx.fillStyle = '#eceaf5'
-      const w1 = ctx.measureText('Two Bit ').width
-      const w2 = ctx.measureText('Digital').width
-      const totalW = w1 + w2
-      const startX = (size - totalW) / 2
-
-      ctx.textAlign = 'left'
-      ctx.fillText('Two Bit ', startX, size + footerH / 2)
-      ctx.fillStyle = '#f5c518'
-      ctx.fillText('Digital', startX + w1, size + footerH / 2)
-
-      const a = document.createElement('a')
-      a.href     = canvas.toDataURL('image/png')
-      a.download = 'qr-twobitdigital.png'
-      a.click()
-    }
-    img.src = dataUrl
+    const a = document.createElement('a')
+    a.href     = dataUrl
+    a.download = 'qrcode.png'
+    a.click()
   }
 
   const previewSize = size === 256 ? 160 : size === 512 ? 200 : 240
@@ -240,15 +207,6 @@ export default function QrCodeTool() {
                 />
               </div>
 
-              {/* Watermark preview */}
-              <div style={{
-                background: '#09091a', borderRadius: '6px', padding: '5px 14px',
-                display: 'flex', gap: '4px', alignItems: 'center',
-              }}>
-                <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.72rem', color: '#eceaf5' }}>Two Bit</span>
-                <span style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '0.72rem', color: '#f5c518' }}>Digital</span>
-              </div>
-
               <button
                 onClick={downloadPng}
                 style={{
@@ -266,9 +224,6 @@ export default function QrCodeTool() {
                 Download PNG ({size}px)
               </button>
 
-              <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.72rem', color: '#3d3a56', margin: 0, textAlign: 'center' }}>
-                Download includes Two Bit Digital watermark
-              </p>
             </>
           )}
         </div>
