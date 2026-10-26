@@ -15,6 +15,18 @@ const tools = [
     label: 'QR Code Generator',
     desc:  'Generate a high-res QR code for any URL or text. Download as PNG.',
   },
+  {
+    href:  '/tools/excel-to-pdf',
+    icon:  '📊',
+    label: 'Excel to PDF',
+    desc:  'Convert any Excel spreadsheet to a clean PDF in seconds.',
+  },
+  {
+    href:  '/tools/pdf-editor',
+    icon:  '📑',
+    label: 'PDF Editor',
+    desc:  'Add text, rotate pages and download — nothing stored on our servers.',
+  },
 ]
 
 export default function FreeTools() {
@@ -86,6 +98,9 @@ export default function FreeTools() {
             gap: 1.25rem;
           }
           @media (min-width: 640px) {
+            .free-tools-grid { grid-template-columns: 1fr 1fr; }
+          }
+          @media (min-width: 1024px) {
             .free-tools-grid { grid-template-columns: 1fr 1fr; }
           }
           .free-tool-card {

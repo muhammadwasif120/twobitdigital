@@ -6,9 +6,9 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import CTABanner from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'Free Tools — URL Shortener, QR Code Generator & More',
+  title: 'Free Tools — URL Shortener, QR Code, PDF Editor & More',
   description:
-    'Free online tools by Two Bit Digital. Shorten URLs, generate QR codes, and more — no sign-up required. Built by a UK software engineering studio.',
+    'Free online tools by Two Bit Digital. Shorten URLs, generate QR codes, convert Excel to PDF, edit PDFs and more — no sign-up required.',
   alternates: { canonical: 'https://twobitdigital.com/tools' },
   openGraph: {
     title: 'Free Tools by Two Bit Digital',
@@ -32,6 +32,30 @@ const tools = [
     icon:        '▦',
     label:       'QR Code Generator',
     desc:        'Generate a QR code for any URL or text instantly. Download as PNG — ready to print or share.',
+    badge:       'Free',
+    badgeColor:  '#22c55e',
+  },
+  {
+    href:        '/tools/excel-to-pdf',
+    icon:        '📊',
+    label:       'Excel to PDF',
+    desc:        'Upload an Excel spreadsheet and download a formatted PDF in seconds. No data leaves your browser.',
+    badge:       'Free',
+    badgeColor:  '#22c55e',
+  },
+  {
+    href:        '/tools/pdf-to-excel',
+    icon:        '📄',
+    label:       'PDF to Excel',
+    desc:        'Extract text content from any PDF into an Excel file, one sheet per page. Fully client-side.',
+    badge:       'Free',
+    badgeColor:  '#22c55e',
+  },
+  {
+    href:        '/tools/pdf-editor',
+    icon:        '📑',
+    label:       'PDF Editor',
+    desc:        'Add text annotations and rotate pages in your PDF, then download. Nothing stored on our servers.',
     badge:       'Free',
     badgeColor:  '#22c55e',
   },

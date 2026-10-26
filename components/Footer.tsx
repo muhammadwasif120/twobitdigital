@@ -13,6 +13,9 @@ const serviceLinks = [
 const toolLinks = [
   { label: 'URL Shortener',        href: '/tools/url-shortener' },
   { label: 'QR Code Generator',    href: '/tools/qr-code-generator' },
+  { label: 'Excel to PDF',         href: '/tools/excel-to-pdf' },
+  { label: 'PDF to Excel',         href: '/tools/pdf-to-excel' },
+  { label: 'PDF Editor',           href: '/tools/pdf-editor' },
   { label: 'All Free Tools',       href: '/tools' },
 ]
 

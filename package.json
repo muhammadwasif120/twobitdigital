@@ -14,11 +14,16 @@
     "@next/third-parties": "^16.2.3",
     "@supabase/supabase-js": "^2.109.0",
     "@types/qrcode": "^1.5.6",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9",
     "next": "14.2.35",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.6.205",
     "qrcode": "^1.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "resend": "^6.11.0"
+    "resend": "^6.11.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",
