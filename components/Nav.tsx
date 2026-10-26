@@ -10,6 +10,7 @@ const mainLinks = [
   { label: 'Sites',    href: '/sites' },
   { label: 'Products', href: '/products' },
   { label: 'Services', href: '/services' },
+  { label: 'Tools',    href: '/tools' },
   { label: 'About',    href: '/about' },
   { label: 'Insights', href: '/insights' },
 ]

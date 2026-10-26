@@ -10,6 +10,12 @@ const serviceLinks = [
   { label: 'Government Digital',   href: '/services/government-digital' },
 ]
 
+const toolLinks = [
+  { label: 'URL Shortener',        href: '/tools/url-shortener' },
+  { label: 'QR Code Generator',    href: '/tools/qr-code-generator' },
+  { label: 'All Free Tools',       href: '/tools' },
+]
+
 const companyLinks = [
   { label: 'About',                href: '/about' },
   { label: 'Our Work',             href: '/work' },
@@ -60,7 +66,7 @@ export default function Footer() {
     }}>
       <div style={{ maxWidth:'1200px', margin:'0 auto', padding:'0 1.5rem' }}>
         <div
-          style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr 1fr 1fr 1fr', gap:'2.5rem', marginBottom:'3rem' }}
+          style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr 1fr 1fr 1fr 1fr', gap:'2rem', marginBottom:'3rem' }}
           className="footer-grid"
         >
           {/* Brand */}
@@ -187,6 +193,25 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Free Tools */}
+          <div>
+            <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
+              Free Tools
+            </h4>
+            <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'0.75rem' }}>
+              {toolLinks.map((t) => (
+                <li key={t.href}>
+                  <Link href={t.href} style={linkStyle}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = '#9d99b8')}
+                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = '#5e5a7a')}
+                  >
+                    {t.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Markets */}
           <div>
             <h4 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'0.8rem', letterSpacing:'0.08em', textTransform:'uppercase', color:'#eceaf5', margin:'0 0 1.25rem' }}>
@@ -272,7 +297,7 @@ export default function Footer() {
 
       <style>{`
         @media (max-width: 1200px) {
-          .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr !important; }
+          .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr 1fr !important; }
         }
         @media (max-width: 900px) {
           .footer-grid { grid-template-columns: 2fr 1fr 1fr !important; }
