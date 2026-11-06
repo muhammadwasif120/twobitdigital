@@ -6,7 +6,7 @@ import Breadcrumb        from '@/components/shared/Breadcrumb'
 import CTABanner         from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal — Two Bit Digital',
+  title:       'In-House SaaS Products — Pakistan & UK',
   description: 'Four in-house products built and owned by Two Bit Digital: StarkVault (document vault & expiry tracking), Tikkit X (event ticketing Pakistan), Trade OS (commodity trading & logistics ERP), Averon Legal Systems (CPR Part 47 SaaS UK).',
   keywords: [
     'StarkVault',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.twobitdigital.com/products',
   },
   openGraph: {
-    title:       'In-House Products | StarkVault, Tikkit X, Trade OS, Averon Legal — Two Bit Digital',
+    title:       'In-House SaaS Products — Pakistan & UK',
     description: 'Products we have designed, engineered, and own outright. StarkVault for document vaulting and expiry tracking, Tikkit X for Pakistan event tech, Trade OS for commodity trading & logistics, Averon for UK legal compliance.',
     url:         'https://www.twobitdigital.com/products',
     type:        'website',

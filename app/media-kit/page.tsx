@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Media Kit | Two Bit Digital — Brand Assets & Press Resources',
+  title: 'Media Kit — Brand Assets & Press Resources',
   description:
     'Official brand assets, logo variants, colour palette, and typography guidelines for Two Bit Digital Ltd. For press, partnership, and integration listing use.',
   alternates: { canonical: 'https://www.twobitdigital.com/media-kit' },

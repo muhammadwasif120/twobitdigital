@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Tikkit X Case Study — Event Tech for Pakistan · Two Bit Digital',
+  title: 'Tikkit X Case Study — Event Tech for Pakistan',
   description: 'How Two Bit Digital built Tikkit X: offline-first event ticketing and QR verification for Pakistan\'s unconnected venues. JazzCash, EasyPaisa, HMAC-SHA256.',
   keywords: ['event ticketing saas case study', 'offline qr ticketing', 'pakistan event tech', 'saas mvp case study', 'react native mvp'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/case-studies/tikkit-x' },

@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import CTABanner  from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'StarkVault — Document Vault, Expiry Tracking & Secure Share · Two Bit Digital',
+  title:       'StarkVault — Document Vault, Expiry Tracking & Secure Share',
   description: 'StarkVault tracks your passports, visas, licences, domains, cards, and subscriptions — with 5-stage expiry alerts, encrypted document storage, and secure time-limited sharing. Built by Two Bit Digital.',
   keywords: [
     'StarkVault',

@@ -4,7 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Two Bit Digital',
+  title: 'Privacy Policy',
   description:
     'Two Bit Digital privacy policy. We do not sell your data. We do not store what we do not need. Our architecture is built on zero-knowledge principles.',
   alternates: { canonical: 'https://www.twobitdigital.com/privacy' },

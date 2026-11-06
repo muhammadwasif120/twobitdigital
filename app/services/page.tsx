@@ -8,14 +8,14 @@ import { services } from '@/lib/services'
 import ServiceCards from './ServiceCards'
 
 export const metadata: Metadata = {
-  title: 'Digital Development Services | SaaS, AI & Government Technology — Two Bit Digital',
+  title: 'Software Development Services in Pakistan',
   description:
     'End-to-end digital engineering services spanning AI integration, SaaS platform development, web applications, compliance & RegTech, government digital, and cloud infrastructure.',
   alternates: {
     canonical: 'https://www.twobitdigital.com/services',
   },
   openGraph: {
-    title: 'Digital Development Services | SaaS, AI & Government Technology — Two Bit Digital',
+    title: 'Software Development Services in Pakistan',
     description:
       'End-to-end digital engineering services spanning AI integration, SaaS platforms, web apps, compliance & RegTech, government digital, and cloud infrastructure.',
     url: 'https://www.twobitdigital.com/services',

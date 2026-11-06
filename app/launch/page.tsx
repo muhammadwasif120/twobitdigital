@@ -4,7 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'MVP Development UK · Two Bit Digital',
+  title: 'MVP Development UK',
   description: 'Production SaaS in 10 working days. Real code, live on Vercel, source on GitHub. UK-registered MVP studio. Book your scope session today.',
   keywords: [
     'MVP development UK',
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.twobitdigital.com/launch' },
   openGraph: {
-    title: 'MVP Development UK · Two Bit Digital',
+    title: 'MVP Development UK',
     description: 'Production SaaS in 10 working days. Real code, live on Vercel, source on GitHub. UK-registered MVP studio.',
     url: 'https://www.twobitdigital.com/launch',
     type: 'website',
   },
   twitter: {
-    title: 'MVP Development UK · Two Bit Digital',
+    title: 'MVP Development UK',
     description: 'Your SaaS. Live in 10 days. Real code, live deployment, you own everything.',
   },
 }

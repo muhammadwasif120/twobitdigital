@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Tech Stack for SaaS MVPs · Two Bit Digital',
+  title: 'Tech Stack for SaaS MVPs',
   description: 'Why we build every SaaS MVP on Next.js, Supabase, Vercel, and TypeScript. A deliberate stack chosen for speed, ownership, and scalability.',
   keywords: ['next.js saas development', 'supabase mvp', 'next.js supabase saas', 'saas tech stack 2025', 'vercel saas deployment'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/tech-stack' },

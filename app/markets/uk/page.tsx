@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import CTABanner from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'Software Development Agency UK | AI & SaaS Engineering Studio — Two Bit Digital',
+  title: 'Software Development Agency UK | AI & SaaS Engineering Studio',
   description:
     'Two Bit Digital is a UK-registered SaaS development and AI engineering studio serving businesses across England, Scotland, Wales, and Northern Ireland. We build AI systems, SaaS platforms, legal tech, and compliance software for regulated UK markets.',
   keywords: [

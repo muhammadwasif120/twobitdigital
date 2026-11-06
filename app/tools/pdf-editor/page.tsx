@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import PdfEditorTool from './PdfEditorTool'
 
 export const metadata: Metadata = {
-  title: 'PDF Editor — Free Tool | Two Bit Digital',
+  title: 'PDF Editor — Free Online Tool',
   description: 'Edit your PDF online — add text, rotate pages, reorder, then download. 100% client-side, no uploads, no accounts.',
 }
 

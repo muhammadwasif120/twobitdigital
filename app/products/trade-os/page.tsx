@@ -6,7 +6,7 @@ import Breadcrumb   from '@/components/shared/Breadcrumb'
 import CTABanner    from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title:       'Trade OS — Commodity Trading & Logistics ERP · Two Bit Digital',
+  title:       'Trade OS — Commodity Trading & Logistics ERP',
   description: 'Trade OS is a multi-module commodity trading and logistics ERP with a cryptographically hash-chained, tamper-evident audit trail. Built and owned by Two Bit Digital, available to license.',
   keywords: [
     'Trade OS',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://twobitdigital.com/products/trade-os' },
   openGraph: {
-    title:       'Trade OS — Commodity Trading & Logistics ERP · Two Bit Digital',
+    title:       'Trade OS — Commodity Trading & Logistics ERP',
     description: 'A full-stack trading and logistics ERP with a cryptographically tamper-evident audit trail, refined inside a live commodity trading operation.',
     url:         'https://twobitdigital.com/products/trade-os',
     type:        'website',

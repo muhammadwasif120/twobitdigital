@@ -217,7 +217,7 @@ export default function Hero() {
             maxWidth:    '520px',
             marginBottom:'2.5rem',
           }}>
-            We build CRMs, SaaS platforms, websites and AI tools for growing businesses. Try a working demo of the system closest to yours, then we customise it and take it live.
+            We build CRMs, SaaS platforms, websites and AI tools for businesses in Pakistan and beyond. Try a working demo of the system closest to yours, then we customise it and take it live.
           </p>
 
           {/* CTAs */}

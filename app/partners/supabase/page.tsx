@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Supabase Integration | Two Bit Digital — Technology Partner',
+  title: 'Supabase Integration — Technology Partner',
   description:
     'Two Bit Digital is a Supabase Technology Partner. We build production SaaS platforms on Supabase — multi-tenant RLS architecture, Auth, Realtime, Storage, and Edge Functions powering Tikkit X and Averon Legal Systems.',
   alternates: { canonical: 'https://www.twobitdigital.com/partners/supabase' },

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Meta Tech Provider | Two Bit Digital — Verified Partner',
+  title: 'Meta Tech Provider — Verified Partner',
   description:
     'Two Bit Digital is a verified Meta Tech Provider. We build production integrations with WhatsApp Business API, Meta Conversions API, Instagram Graph API, and Meta Business Suite for clients across the UK, US, Australia, and Pakistan.',
   alternates: { canonical: 'https://twobitdigital.com/partners/meta' },

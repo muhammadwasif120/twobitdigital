@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Google Cloud Partner | Two Bit Digital — Partner Advantage Member',
+  title: 'Google Cloud Partner — Partner Advantage Member',
   description:
     'Two Bit Digital is a Google Cloud Partner Advantage member. We build and deploy production systems on Google Cloud — Vertex AI, Cloud Run, BigQuery, Firebase, Cloud Storage, and Google Workspace APIs — for clients across the UK, US, Australia, and Pakistan.',
   keywords: [

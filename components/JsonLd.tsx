@@ -62,11 +62,21 @@ const organizationSchema = {
     email: 'mwasif@twobitdigital.com',
     worksFor: { '@id': `${SITE_URL}/#organization` },
   },
-  address: {
-    '@type': 'PostalAddress',
-    addressCountry: 'GB',
-    addressRegion: 'England',
-  },
+  address: [
+    {
+      '@type': 'PostalAddress',
+      addressCountry: 'GB',
+      addressRegion: 'England',
+      description: 'Registered HQ',
+    },
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Karachi',
+      addressRegion: 'Sindh',
+      addressCountry: 'PK',
+      description: 'Development Operations',
+    },
+  ],
   areaServed: [
     { '@type': 'Country', name: 'United Kingdom' },
     { '@type': 'Country', name: 'United States' },

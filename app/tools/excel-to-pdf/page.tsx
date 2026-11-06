@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import ExcelToPdfTool from './ExcelToPdfTool'
 
 export const metadata: Metadata = {
-  title: 'Excel to PDF Converter — Free Tool | Two Bit Digital',
+  title: 'Excel to PDF Converter — Free Online Tool',
   description: 'Convert Excel spreadsheets (.xlsx, .xls) to PDF instantly. 100% client-side — your file never leaves your browser.',
 }
 

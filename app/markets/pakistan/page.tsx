@@ -6,9 +6,9 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import CTABanner from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'Software Development Company in Pakistan | AI & SaaS Studio — Two Bit Digital',
+  title: 'Software Development Company in Pakistan',
   description:
-    'Two Bit Digital is a UK-registered software development company operating in Pakistan. We build AI systems, SaaS platforms, mobile apps, and custom software for businesses across Karachi, Lahore, and Islamabad.',
+    'UK-registered software studio building AI systems, SaaS platforms and CRMs for businesses across Pakistan — Karachi, Lahore and Islamabad. Engineering team based in Karachi.',
   keywords: [
     'software development company Pakistan',
     'AI development company Pakistan',
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     'business automation Pakistan',
   ],
   alternates: {
-    canonical: 'https://twobitdigital.com/markets/pakistan',
+    canonical: 'https://www.twobitdigital.com/markets/pakistan',
   },
   openGraph: {
-    title: 'Software Development Company in Pakistan | AI & SaaS — Two Bit Digital',
+    title: 'Software Development Company in Pakistan',
     description:
       'UK-registered software development studio operating in Pakistan. AI systems, SaaS platforms, mobile apps, and enterprise software for Pakistani businesses and international clients.',
     url: 'https://twobitdigital.com/markets/pakistan',

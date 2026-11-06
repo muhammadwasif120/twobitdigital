@@ -7,7 +7,7 @@ import CTABanner from '@/components/shared/CTABanner'
 import { insights } from '@/lib/insights'
 
 export const metadata: Metadata = {
-  title: 'Insights | SaaS, AI & Government Technology — Two Bit Digital',
+  title: 'Insights: SaaS, AI & Software Development',
   description:
     'Technical insights and industry analysis from Two Bit Digital. Covering SaaS architecture, AI integration for regulated industries, and UK government digital procurement.',
   alternates: {
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Insights | SaaS, AI & Government Technology — Two Bit Digital',
+    title: 'Insights: SaaS, AI & Software Development',
     description:
       'Technical analysis, industry perspective, and hard-won lessons from building software for regulated markets.',
     url: 'https://www.twobitdigital.com/insights',
     type: 'website',
   },
   twitter: {
-    title: 'Insights | SaaS, AI & Government Technology — Two Bit Digital',
+    title: 'Insights: SaaS, AI & Software Development',
     description:
       'Technical analysis, industry perspective, and hard-won lessons from building software for regulated markets.',
   },

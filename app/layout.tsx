@@ -13,13 +13,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://twobitdigital.com'),
+  metadataBase: new URL('https://www.twobitdigital.com'),
   title: {
-    default: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
+    default: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
     template: '%s | Two Bit Digital',
   },
   description:
-    'Ready-built CRMs and ERPs, SaaS products, websites and AI tools for growing businesses. Try a live demo, then we tailor it to your workflow and take it live. UK-registered, engineering in Karachi.',
+    "Pakistan's software studio for CRM, ERP, SaaS and AI. Ready-built systems for distribution, textile, education and more. UK-registered, engineering in Karachi.",
   keywords: [
     'SaaS development UK',
     'AI engineering studio',
@@ -56,20 +56,20 @@ export const metadata: Metadata = {
     apple:            '/favicon.svg',
   },
   alternates: {
-    canonical: 'https://twobitdigital.com',
+    canonical: 'https://www.twobitdigital.com',
     languages: {
-      'en-GB': 'https://twobitdigital.com',
-      'en-US': 'https://twobitdigital.com',
-      'en-AU': 'https://twobitdigital.com',
-      'en-PK': 'https://twobitdigital.com',
-      'x-default': 'https://twobitdigital.com',
+      'en-GB': 'https://www.twobitdigital.com',
+      'en-US': 'https://www.twobitdigital.com',
+      'en-AU': 'https://www.twobitdigital.com',
+      'en-PK': 'https://www.twobitdigital.com',
+      'x-default': 'https://www.twobitdigital.com',
     },
   },
   openGraph: {
-    title: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
+    title: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
     description:
-      'Working CRMs, ERPs, SaaS and websites you can see today. We tailor them to your business and take them live.',
-    url: 'https://twobitdigital.com',
+      "Pakistan's software studio for CRM, ERP, SaaS and AI — ready-built systems, demo today, live in weeks.",
+    url: 'https://www.twobitdigital.com',
     siteName: 'Two Bit Digital',
     locale: 'en_GB',
     type: 'website',
@@ -84,9 +84,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Two Bit Digital — CRMs, SaaS & Websites Built for Your Business',
+    title: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
     description:
-      'Working CRMs, ERPs, SaaS and websites you can see today. We tailor them to your business and take them live.',
+      "Pakistan's software studio — CRM, ERP, SaaS and AI. Ready-built systems, demo today, live in weeks.",
     images: ['/opengraph-image'],
   },
   robots: {

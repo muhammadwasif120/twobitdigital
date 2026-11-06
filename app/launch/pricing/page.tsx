@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'MVP Development Pricing UK · Two Bit Digital',
+  title: 'MVP Development Pricing UK',
   description: 'Transparent, fixed-price MVP development. No hourly rates, no surprises. Three packages from £1,500 to £12,500. See exactly what you get.',
   keywords: ['mvp development cost uk', 'saas mvp price', 'mvp development pricing', 'fixed price mvp development', 'saas development cost uk'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/pricing' },

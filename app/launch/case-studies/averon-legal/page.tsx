@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Averon Legal Systems Case Study — Legal Tech UK · Two Bit Digital',
+  title: 'Averon Legal Systems Case Study — Legal Tech UK',
   description: 'How Two Bit Digital built Averon Legal Systems: CPR Part 47 and Part 36 compliance SaaS for UK costs lawyers. Deadline engine, multi-tenant, client portal.',
   keywords: ['legal tech saas case study', 'cpr part 47 software', 'costs lawyer software', 'legal compliance saas uk', 'saas mvp case study uk'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/case-studies/averon-legal' },

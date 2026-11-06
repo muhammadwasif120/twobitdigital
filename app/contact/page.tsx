@@ -7,21 +7,21 @@ import Contact    from '@/components/Contact'
 import ContactDetails from './ContactDetails'
 
 export const metadata: Metadata = {
-  title: 'Contact Two Bit Digital | Start a Project',
+  title: 'Contact | Start a Project',
   description:
     'Get in touch with Two Bit Digital — a UK-registered SaaS and AI engineering studio. Send a project brief, enquire about services, or connect directly with our team. We respond within one business day.',
   alternates: {
     canonical: 'https://www.twobitdigital.com/contact',
   },
   openGraph: {
-    title: 'Contact Two Bit Digital | Start a Project',
+    title: 'Contact | Start a Project',
     description:
       'Send a brief to Two Bit Digital — engineering-led SaaS and AI studio serving clients across the UK, US, Australia and Pakistan. Priority response within one business day.',
     url: 'https://www.twobitdigital.com/contact',
     type: 'website',
   },
   twitter: {
-    title: 'Contact Two Bit Digital | Start a Project',
+    title: 'Contact | Start a Project',
     description:
       'Reach Two Bit Digital for SaaS builds, AI integration, or compliance-critical digital systems. Response within one business day.',
   },

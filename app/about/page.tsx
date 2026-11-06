@@ -6,21 +6,21 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import AboutContent from './AboutContent'
 
 export const metadata: Metadata = {
-  title: 'About Two Bit Digital | UK SaaS & AI Engineering Studio',
+  title: 'About | Software Studio, Karachi & UK',
   description:
     'Two Bit Digital Ltd (Co. #14710072) is a UK-registered SaaS development and AI engineering studio founded by Muhammad Wasif. Engineering-led, compliance-first, operating across the UK, US, Australia, and Pakistan. UN Vendor #1177996 · D&B D-U-N-S 77-532-7428.',
   alternates: {
     canonical: 'https://www.twobitdigital.com/about',
   },
   openGraph: {
-    title: 'About Two Bit Digital | UK SaaS & AI Engineering Studio',
+    title: 'About | Software Studio, Karachi & UK',
     description:
       'Founded by Muhammad Wasif — an engineering-led studio building mission-critical SaaS platforms and AI systems for regulated industries across four global markets.',
     url: 'https://www.twobitdigital.com/about',
     type: 'profile',
   },
   twitter: {
-    title: 'About Two Bit Digital | UK SaaS & AI Engineering Studio',
+    title: 'About | Software Studio, Karachi & UK',
     description:
       'Founded by Muhammad Wasif — engineering-led, compliance-first, operating across UK, US, Australia and Pakistan.',
   },

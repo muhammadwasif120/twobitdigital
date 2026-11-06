@@ -5,12 +5,12 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: "What's Included in Your MVP Build · Two Bit Digital",
+  title: "What Ships in Your MVP Build",
   description: 'No vague deliverables. Here is exactly what you receive when Two Bit Digital builds your SaaS MVP — product, technical, and ownership spec.',
   keywords: ['what does MVP development include', 'SaaS MVP deliverables', 'MVP development spec', 'what ships in SaaS MVP', 'MVP development UK'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/what-ships' },
   openGraph: {
-    title: "What's Included in Your MVP Build · Two Bit Digital",
+    title: "What Ships in Your MVP Build",
     description: 'Exact deliverable spec for a Two Bit Digital SaaS MVP build. Product, technical, ownership.',
     url: 'https://www.twobitdigital.com/launch/what-ships',
     type: 'website',

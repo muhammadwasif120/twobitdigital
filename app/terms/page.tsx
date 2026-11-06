@@ -4,7 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Two Bit Digital',
+  title: 'Terms of Service',
   description:
     'Terms of Service for Two Bit Digital Ltd. Governing law: England and Wales. All client engagements are subject to a separate written agreement.',
   alternates: { canonical: 'https://www.twobitdigital.com/terms' },

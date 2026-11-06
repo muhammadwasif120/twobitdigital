@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'MVP Case Studies · Two Bit Digital',
+  title: 'MVP Case Studies',
   description: 'Real SaaS products built by Two Bit Digital. Tikkit X — event tech for Pakistan. Averon Legal Systems — compliance SaaS for UK costs lawyers.',
   keywords: ['saas mvp case study', 'mvp development examples', 'saas development uk case study', 'mvp development portfolio'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/case-studies' },

@@ -5,12 +5,12 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'How MVP Development Works · Two Bit Digital',
+  title: 'How MVP Development Works',
   description: 'Day-by-day: how Two Bit Digital builds your SaaS MVP in 10 working days. Scope to launch. No surprises. See the full process.',
   keywords: ['MVP development process UK', 'how does MVP development work', 'SaaS MVP timeline', 'MVP development steps', 'MVP development process'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/how-it-works' },
   openGraph: {
-    title: 'How MVP Development Works · Two Bit Digital',
+    title: 'How MVP Development Works',
     description: 'Day-by-day: how Two Bit Digital builds your SaaS MVP in 10 working days.',
     url: 'https://www.twobitdigital.com/launch/how-it-works',
     type: 'website',

@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/shared/Breadcrumb'
 import CTABanner from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'Law Firm Websites Pakistan | Legal Digital Presence — Two Bit Digital',
+  title: 'Law Firm Websites Pakistan | Legal Digital Presence',
   description:
     'Professional websites for Pakistani law firms, advocates, and barristers. Client portals, case search, practice area pages, consultation booking, and built-in SEO. See our YKC Legal case study.',
   keywords: [

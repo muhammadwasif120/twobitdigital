@@ -5,12 +5,12 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'MVP Development FAQ · Two Bit Digital',
+  title: 'MVP Development FAQ',
   description: 'Everything founders ask before building a SaaS MVP with Two Bit Digital. Process, pricing, ownership, technical questions — all answered.',
   keywords: ['mvp development faq', 'saas mvp questions', 'mvp development uk questions', 'how does mvp development work', 'saas mvp process'],
   alternates: { canonical: 'https://www.twobitdigital.com/launch/faq' },
   openGraph: {
-    title: 'MVP Development FAQ · Two Bit Digital',
+    title: 'MVP Development FAQ',
     description: 'Every question founders ask before building with Two Bit Digital — answered honestly.',
     url: 'https://www.twobitdigital.com/launch/faq',
     type: 'website',

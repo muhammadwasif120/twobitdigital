@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import PdfToExcelTool from './PdfToExcelTool'
 
 export const metadata: Metadata = {
-  title: 'PDF to Excel Converter — Free Tool | Two Bit Digital',
+  title: 'PDF to Excel Converter — Free Online Tool',
   description: 'Extract text from any PDF into an Excel spreadsheet. 100% client-side — your file never leaves your browser.',
 }
 
