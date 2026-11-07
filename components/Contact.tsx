@@ -24,6 +24,7 @@ export default function Contact() {
     message:      '',
     honeypot:     '',
   })
+  const [token, setToken]           = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted]   = useState(false)
   const [toast, setToast]           = useState<{ type: ToastType; msg: string }>({ type: null, msg: '' })
@@ -37,6 +38,11 @@ export default function Contact() {
     )
     el.querySelectorAll('.reveal').forEach((r) => obs.observe(r))
     return () => obs.disconnect()
+  }, [])
+
+  // Signed token that proves the page was loaded (the server also refuses instant submissions)
+  useEffect(() => {
+    fetch('/api/contact/token', { cache: 'no-store' }).then((r) => r.json()).then((d) => setToken(d.token ?? '')).catch(() => setToken(''))
   }, [])
 
   useEffect(() => {
@@ -59,7 +65,7 @@ export default function Contact() {
       const res = await fetch('/api/contact', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(form),
+        body:    JSON.stringify({ ...form, token }),
       })
       if (res.ok) {
         setSubmitted(true)
@@ -74,6 +80,10 @@ export default function Contact() {
             value:          1,
           })
         }
+      } else if (res.status === 429 || res.status === 400) {
+        const d = await res.json().catch(() => ({}))
+        setToast({ type: 'error', msg: d.error ?? 'Please try again in a moment.' })
+        if (res.status === 400) fetch('/api/contact/token', { cache: 'no-store' }).then((r) => r.json()).then((x) => setToken(x.token ?? '')).catch(() => {})
       } else {
         throw new Error('Server error')
       }

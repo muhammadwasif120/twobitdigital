@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { checkToken, spamSignals } from '@/lib/contact-guard'
 
 // ─── Simple in-memory rate limiter ────────────────────────────────────────────
 const rateMap = new Map<string, { count: number; reset: number }>()
@@ -21,15 +22,16 @@ function isRateLimited(ip: string): boolean {
 // ─── Allowed origins ──────────────────────────────────────────────────────────
 const ALLOWED_ORIGINS = [
   'https://www.twobitdigital.com',
-  'https://www.twobitdigital.com',
+  'https://twobitdigital.com',
   'http://localhost:3000',
   'http://localhost:3001',
 ]
 
 export async function POST(request: Request) {
   // CORS origin check
+  // Browsers always send Origin on a form POST. A missing Origin means a script, so it is refused too.
   const origin = request.headers.get('origin') ?? ''
-  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
+  if (!ALLOWED_ORIGINS.includes(origin)) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
@@ -50,11 +52,20 @@ export async function POST(request: Request) {
 
   try {
     const body = await request.json()
-    const { name, email, company, project_type, message, honeypot } = body
+    const { name, email, company, project_type, message, honeypot, token } = body
 
     // Bot trap — fake success, log nothing
     if (honeypot) {
       return NextResponse.json({ success: true })
+    }
+
+    // Signed form token: proves the page was loaded and the form was not filled in instantly
+    const tk = checkToken(token)
+    if (tk === 'too_fast') {
+      return NextResponse.json({ error: 'That was quick. Please wait a few seconds and send it again.' }, { status: 429 })
+    }
+    if (tk !== 'ok') {
+      return NextResponse.json({ error: 'Please refresh the page and try again.' }, { status: 400 })
     }
 
     // Required field validation
@@ -84,13 +95,17 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 })
     }
 
-    const subject = project_type
+    // Soft signals never drop a message: a flagged one goes to one inbox with a warning so no real lead is lost
+    const flags = spamSignals({ name: String(name), email: String(email), company: String(company ?? ''), message: String(message) })
+    const suspicious = flags.length >= 2 || flags.some((f) => /link|disposable/.test(f))
+    const base = project_type
       ? `New project brief from ${name} — ${project_type}`
       : `New project brief from ${name}`
+    const subject = suspicious ? `[Suspected spam] ${base}` : base
 
     await resend.emails.send({
       from:    'Two Bit Digital <noreply@twobitdigital.com>',
-      to:      ['mwasif@twobitdigital.com', 'sales@twobitdigital.com'],
+      to:      suspicious ? ['mwasif@twobitdigital.com'] : ['mwasif@twobitdigital.com', 'sales@twobitdigital.com'],
       replyTo: String(email),
       subject,
       html: `
@@ -100,6 +115,7 @@ export async function POST(request: Request) {
           <body style="font-family:Arial,sans-serif;background:#09091a;color:#eceaf5;padding:2rem;max-width:600px;margin:0 auto;">
             <div style="background:#11112b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:2rem;">
               <h1 style="font-size:1.4rem;color:#f5c518;margin:0 0 1.5rem;">New Project Brief</h1>
+              ${suspicious ? `<p style="background:#3a1f1f;color:#ffb4b4;padding:0.6rem 0.8rem;border-radius:8px;font-size:0.85rem;">Flagged as possible spam: ${escapeHtml(flags.join('; '))}</p>` : ''}
               <table style="width:100%;border-collapse:collapse;">
                 <tr>
                   <td style="padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#9d99b8;width:140px;font-size:0.85rem;">Name</td>
