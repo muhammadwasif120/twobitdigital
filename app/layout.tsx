@@ -15,11 +15,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.twobitdigital.com'),
   title: {
-    default: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
+    default: 'SaaS & AI Engineering | UK, US & Pakistan | Two Bit Digital',
     template: '%s | Two Bit Digital',
   },
   description:
-    "Pakistan's software studio for CRM, ERP, SaaS and AI. Ready-built systems for distribution, textile, education and more. UK-registered, engineering in Karachi.",
+    'UK-registered SaaS and AI engineering studio building CRM, ERP and custom software for businesses in the UK, US and Pakistan. Engineering in Karachi, registered in England.',
   keywords: [
     'SaaS development UK',
     'AI engineering studio',
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
+    title: 'SaaS & AI Engineering | UK, US & Pakistan | Two Bit Digital',
     description:
-      "Pakistan's software studio for CRM, ERP, SaaS and AI — ready-built systems, demo today, live in weeks.",
+      'UK-registered SaaS and AI engineering studio — CRM, ERP and custom software for the UK, US and Pakistan. Demo today, live in weeks.',
     url: 'https://www.twobitdigital.com',
     siteName: 'Two Bit Digital',
     locale: 'en_GB',
@@ -84,9 +84,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CRM, SaaS & AI Software for Pakistan | Two Bit Digital',
+    title: 'SaaS & AI Engineering | UK, US & Pakistan | Two Bit Digital',
     description:
-      "Pakistan's software studio — CRM, ERP, SaaS and AI. Ready-built systems, demo today, live in weeks.",
+      'UK-registered SaaS and AI engineering studio — CRM, ERP and custom software for the UK, US and Pakistan.',
     images: ['/opengraph-image'],
   },
   robots: {
