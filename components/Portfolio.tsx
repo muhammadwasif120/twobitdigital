@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Screenshot from '@/components/shared/Screenshot'
 
 const products = [
   {
-    initials: 'A+',
-    gradient: 'linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%)',
     name:     'Academy+',
+    image:    '/screens/academy-plus.webp',
     sector:   'School & Academy CRM · Education',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   'academyplus.app',
@@ -14,9 +14,8 @@ const products = [
     href:     '/crms',
   },
   {
-    initials: 'FM',
-    gradient: 'linear-gradient(135deg, #fb7185 0%, #e11d48 100%)',
     name:     'FMCG Distribution CRM',
+    image:    '/screens/fmcg-crm.webp',
     sector:   'Distribution · Consumer Goods',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -24,9 +23,8 @@ const products = [
     href:     '/crms',
   },
   {
-    initials: 'TP',
-    gradient: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
     name:     'Textile Pro CRM',
+    image:    '/screens/textile-pro-crm.webp',
     sector:   'Textile & Garment Export',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -34,9 +32,8 @@ const products = [
     href:     '/crms',
   },
   {
-    initials: 'CO',
-    gradient: 'linear-gradient(135deg, #34d399 0%, #059669 100%)',
     name:     'Cars OS',
+    image:    '/screens/cars-os.webp',
     sector:   'Car Rental & Fleet',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -44,9 +41,8 @@ const products = [
     href:     '/crms',
   },
   {
-    initials: 'TX',
-    gradient: 'linear-gradient(135deg, #f5c518 0%, #c9a012 100%)',
     name:     'Tikkit X',
+    image:    '/screens/tikkit-x.webp',
     sector:   'Event Ticketing · Pakistan',
     status:   { label: 'Live', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   'tikkitx.com',
@@ -54,9 +50,8 @@ const products = [
     href:     'https://tikkitx.com',
   },
   {
-    initials: 'TO',
-    gradient: 'linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%)',
     name:     'Trade OS',
+    image:    '/screens/trade-os.webp',
     sector:   'Commodity Trading & Export ERP',
     status:   { label: 'Live', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -169,24 +164,7 @@ export default function Portfolio() {
                 }
               }}
             >
-              {/* Logo box */}
-              <div style={{
-                width:        '52px',
-                height:       '52px',
-                borderRadius: '12px',
-                background:   p.gradient,
-                display:      'flex',
-                alignItems:   'center',
-                justifyContent:'center',
-                fontFamily:   'var(--font-inter)',
-                fontWeight:   800,
-                fontSize:     '1rem',
-                color:        p.initials === 'TC' ? '#9d99b8' : '#09091a',
-                border:       '1px solid rgba(255,255,255,0.1)',
-                flexShrink:   0,
-              }}>
-                {p.initials}
-              </div>
+              <Screenshot src={p.image} alt={`${p.name} screenshot`} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" />
 
               <div style={{ flex: 1 }}>
                 <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:'0.4rem' }}>

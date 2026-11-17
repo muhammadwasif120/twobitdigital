@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import type { CSSProperties } from 'react'
 import Link from 'next/link'
 import { whatsappHref } from '@/lib/whatsapp'
+import Screenshot from '@/components/shared/Screenshot'
 
 type RibbonItem = {
   accent:   string
@@ -274,6 +275,10 @@ export default function Hero() {
               See Our CRMs
             </a>
           </div>
+
+          <Link href="/crms" className="hero-shot" aria-label="See our CRMs">
+            <Screenshot src="/screens/fmcg-crm.webp" alt="FMCG Distribution CRM dashboard" sizes="(max-width: 768px) 100vw, 1px" />
+          </Link>
         </div>
 
         {/* Right column — endless vertical ribbon of individual cards */}
@@ -356,6 +361,7 @@ export default function Hero() {
           50%       { opacity: 0.4; }
         }
         ${ribbonScrollKeyframes}
+        .hero-shot { display: none; margin-top: 2.25rem; }
         .ribbon-track {
           animation: ribbonScroll ${RIBBON_TOTAL_S}s ease-in-out infinite;
         }
@@ -386,6 +392,7 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-grid        { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
           .hero-cards       { display: none !important; }
+          .hero-shot        { display: block !important; }
         }
       `}</style>
     </section>

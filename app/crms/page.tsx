@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav        from '@/components/Nav'
 import Footer     from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
+import Screenshot from '@/components/shared/Screenshot'
 import { crms }   from '@/lib/portfolio'
 import { whatsappHref } from '@/lib/whatsapp'
 
@@ -32,6 +33,9 @@ export default function CrmsPage() {
               const external = href.startsWith('http')
               return (
                 <article key={c.name} style={{ backgroundColor: '#11112b', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-inter)' }}>
+                  {c.image && (
+                    <Screenshot src={c.image} alt={`${c.name} dashboard screenshot`} sizes="(max-width: 640px) 100vw, 360px" />
+                  )}
                   <span style={{ alignSelf: 'flex-start', fontSize: '0.72rem', color: gold, border: `1px solid ${gold}55`, padding: '2px 10px', borderRadius: '999px' }}>{c.industry}</span>
                   <h2 style={{ margin: 0, fontSize: '1.2rem', color: '#eceaf5' }}>{c.name}</h2>
                   <p style={{ margin: 0, color: gold, fontWeight: 600, fontSize: '0.92rem' }}>{c.tagline}</p>

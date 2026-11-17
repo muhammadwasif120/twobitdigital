@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav        from '@/components/Nav'
 import Footer     from '@/components/Footer'
 import Breadcrumb from '@/components/shared/Breadcrumb'
+import Screenshot from '@/components/shared/Screenshot'
 import { sites }  from '@/lib/portfolio'
 import { whatsappHref } from '@/lib/whatsapp'
 
@@ -31,7 +32,10 @@ export default function SitesPage() {
             {sites.map((s) => (
               <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer"
                  style={{ backgroundColor: '#11112b', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '1.5rem', textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-inter)' }}>
-                <span style={{ fontSize: '0.72rem', color: gold }}>{s.sector}</span>
+                {s.image && (
+                  <Screenshot src={s.image} alt={`${s.name} website screenshot`} sizes="(max-width: 640px) 100vw, 360px" />
+                )}
+                <span style={{ fontSize: '0.72rem', color: gold, marginTop: '0.5rem' }}>{s.sector}</span>
                 <h2 style={{ margin: 0, fontSize: '1.1rem', color: '#eceaf5' }}>{s.name}</h2>
                 <p style={{ margin: 0, color: '#9d99b8', fontSize: '0.92rem', lineHeight: 1.6 }}>{s.desc}</p>
                 <span style={{ marginTop: 'auto', color: gold, fontWeight: 600, fontSize: '0.88rem' }}>Visit site →</span>
