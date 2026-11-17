@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     'Google Cloud Partner Advantage',
     'Two Bit Digital Google Cloud',
   ],
-  alternates: { canonical: 'https://twobitdigital.com/partners/google-cloud' },
+  alternates: { canonical: 'https://www.twobitdigital.com/partners/google-cloud' },
   openGraph: {
     title: 'Google Cloud Partner | Two Bit Digital',
     description:
       'Google Cloud Partner Advantage member — Vertex AI, Cloud Run, BigQuery, Firebase, and Google Workspace API integrations in production.',
-    url: 'https://twobitdigital.com/partners/google-cloud',
+    url: 'https://www.twobitdigital.com/partners/google-cloud',
     type: 'website',
   },
 }
@@ -190,8 +190,8 @@ export default function GoogleCloudPartnerPage() {
             '@context': 'https://schema.org',
             '@type':    'Organization',
             name:       'Two Bit Digital',
-            url:        'https://twobitdigital.com',
-            '@id':      'https://twobitdigital.com/#organization',
+            url:        'https://www.twobitdigital.com',
+            '@id':      'https://www.twobitdigital.com/#organization',
             memberOf: {
               '@type': 'Organization',
               name:    'Google Cloud Partner Advantage',

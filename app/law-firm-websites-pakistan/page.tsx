@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     'law firm client portal Pakistan',
   ],
   alternates: {
-    canonical: 'https://twobitdigital.com/law-firm-websites-pakistan',
+    canonical: 'https://www.twobitdigital.com/law-firm-websites-pakistan',
   },
   openGraph: {
     title: 'Law Firm Websites Pakistan | Two Bit Digital',
     description:
       'The lawyer who buys the cheap template gets a website. The lawyer who comes to Two Bit Digital gets something that works while they are in court.',
-    url: 'https://twobitdigital.com/law-firm-websites-pakistan',
+    url: 'https://www.twobitdigital.com/law-firm-websites-pakistan',
     type: 'website',
   },
   twitter: {
@@ -51,13 +51,13 @@ const serviceJsonLd = {
   name: 'Law Firm Website Design & Development — Pakistan',
   description:
     'Two Bit Digital designs and builds professional websites and digital systems for Pakistani law firms, advocates, and barristers. Services include practice area pages, client portals, case search, consultation booking, judgements libraries, and ongoing SEO.',
-  url: 'https://twobitdigital.com/law-firm-websites-pakistan',
+  url: 'https://www.twobitdigital.com/law-firm-websites-pakistan',
   serviceType: 'Law Firm Website Development',
   areaServed: { '@type': 'Country', name: 'Pakistan' },
   provider: {
     '@type': 'Organization',
     name: 'Two Bit Digital',
-    url: 'https://twobitdigital.com',
+    url: 'https://www.twobitdigital.com',
     address: { '@type': 'PostalAddress', addressLocality: 'Karachi', addressCountry: 'PK' },
   },
 }

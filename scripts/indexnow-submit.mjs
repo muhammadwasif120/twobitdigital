@@ -10,7 +10,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-const HOST        = 'twobitdigital.com'
+const HOST        = 'www.twobitdigital.com'
 const KEY         = '109bbd99fac314c6ee680ec105fdc6f3'
 const KEY_URL     = `https://${HOST}/${KEY}.txt`
 const INDEXNOW_API = 'https://api.indexnow.org/indexnow'

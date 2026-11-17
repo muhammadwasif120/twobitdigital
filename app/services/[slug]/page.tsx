@@ -22,16 +22,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return { title: 'Service Not Found' }
 
   return {
-    title:       service.metaTitle,
+    title:       { absolute: service.metaTitle },
     description: service.metaDesc,
     keywords:    service.keywords,
     alternates: {
-      canonical: `https://twobitdigital.com/services/${service.slug}`,
+      canonical: `https://www.twobitdigital.com/services/${service.slug}`,
     },
     openGraph: {
       title:       service.metaTitle,
       description: service.metaDesc,
-      url:         `https://twobitdigital.com/services/${service.slug}`,
+      url:         `https://www.twobitdigital.com/services/${service.slug}`,
       type:        'website',
     },
     twitter: {
@@ -54,13 +54,13 @@ export default async function ServicePage({ params }: Props) {
     '@type':      'Service',
     name:         service.title,
     description:  service.description,
-    url:          `https://twobitdigital.com/services/${service.slug}`,
+    url:          `https://www.twobitdigital.com/services/${service.slug}`,
     serviceType:  service.title,
     provider: {
       '@type': 'Organization',
       name:    'Two Bit Digital',
-      url:     'https://twobitdigital.com',
-      '@id':   'https://twobitdigital.com/#organization',
+      url:     'https://www.twobitdigital.com',
+      '@id':   'https://www.twobitdigital.com/#organization',
     },
     areaServed: [
       { '@type': 'Country', name: 'United Kingdom', sameAs: 'https://www.wikidata.org/wiki/Q145' },

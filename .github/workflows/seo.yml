@@ -1,0 +1,95 @@
+name: SEO
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Task to run'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, sitemap, audit]
+
+jobs:
+  sitemap:
+    name: Submit sitemap
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.inputs.task == 'all' || github.event.inputs.task == 'sitemap'
+    steps:
+      - name: Submit sitemap to Search Console
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_KEY }}
+        run: |
+          pip install -q google-auth google-auth-httplib2 google-api-python-client
+          python3 -c "
+          import os, json, tempfile
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+
+          key_data = json.loads(os.environ['GSC_KEY_JSON'])
+          with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+              json.dump(key_data, f)
+              key_file = f.name
+
+          scopes = ['https://www.googleapis.com/auth/webmasters']
+          creds = service_account.Credentials.from_service_account_file(key_file, scopes=scopes)
+          service = build('searchconsole', 'v1', credentials=creds)
+          service.sitemaps().submit(
+              siteUrl='sc-domain:twobitdigital.com',
+              feedpath='https://www.twobitdigital.com/sitemap.xml',
+          ).execute()
+          print('Sitemap submitted: https://www.twobitdigital.com/sitemap.xml')
+          "
+
+  audit:
+    name: Weekly SEO audit
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.task == 'all' || github.event.inputs.task == 'audit'
+    steps:
+      - name: Run technical audit
+        run: |
+          python3 -c "
+          import urllib.request, json, sys, time
+
+          UA = 'Mozilla/5.0 (compatible; SEO-Audit/1.0)'
+          url = 'https://www.twobitdigital.com'
+          req = urllib.request.Request(url, headers={'User-Agent': UA})
+          t0 = time.time()
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  html = r.read().decode('utf-8', errors='replace')
+                  status = r.status
+                  elapsed = time.time() - t0
+          except Exception as e:
+              print(f'FAIL: {e}'); sys.exit(1)
+
+          checks = [
+              ('Status 200', status == 200),
+              ('Has title', '<title>' in html.lower()),
+              ('Has meta description', 'name=\"description\"' in html.lower()),
+              ('Has canonical', 'rel=\"canonical\"' in html.lower()),
+              ('Has og:image', 'og:image' in html.lower()),
+              ('Has JSON-LD', 'application/ld+json' in html.lower()),
+              ('Pakistan in title or H1', 'pakistan' in html.lower()[:3000]),
+              ('TTFB < 2s', elapsed < 2.0),
+          ]
+          passed = sum(1 for _, r in checks if r)
+          print(f'Score: {passed}/{len(checks)}')
+          for name, result in checks:
+              print(f'  {\"✓\" if result else \"✗\"} {name}')
+          if passed < len(checks): sys.exit(1)
+          "
+
+      - name: Check sitemap count
+        run: |
+          curl -sf https://www.twobitdigital.com/sitemap.xml | grep -c '<url>' | xargs -I{} echo "Sitemap URLs: {}"
+
+      - name: Check Pakistan geo-signal in title
+        run: |
+          TITLE=$(curl -sf https://www.twobitdigital.com | grep -o '<title>[^<]*</title>' | head -1)
+          echo "Title: $TITLE"
+          echo "$TITLE" | grep -qi "pakistan" && echo "✓ Pakistan in title" || echo "✗ Pakistan missing from title — fix needed"

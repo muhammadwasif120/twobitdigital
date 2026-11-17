@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: 'Free URL Shortener — Shorten Any Link Instantly',
   description:
     'Free URL shortener by Two Bit Digital. Create short, branded links instantly — no account required. Short links hosted on twobitdigital.com.',
-  alternates: { canonical: 'https://twobitdigital.com/tools/url-shortener' },
+  alternates: { canonical: 'https://www.twobitdigital.com/tools/url-shortener' },
   openGraph: {
     title: 'Free URL Shortener by Two Bit Digital',
     description: 'Shorten any URL instantly. No sign-up. Hosted on twobitdigital.com.',
-    url: 'https://twobitdigital.com/tools/url-shortener',
+    url: 'https://www.twobitdigital.com/tools/url-shortener',
     type: 'website',
   },
 }

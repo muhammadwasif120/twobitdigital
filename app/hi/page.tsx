@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Muhammad Wasif — Founder, Two Bit Digital',
     description: 'AI-integrated software, event tech, and legal tech for regulated markets.',
-    url: 'https://twobitdigital.com/hi',
+    url: 'https://www.twobitdigital.com/hi',
     type: 'profile',
   },
 }
@@ -29,7 +29,7 @@ const builds = [
     emoji: '🎟️',
     title: 'Event Technology',
     desc:  'Tikkit X — mobile-first ticketing for Pakistan. Offline QR, JazzCash/EasyPaisa, live in production.',
-    href:  '/products/tikkit-x',
+    href:  '/launch/case-studies/tikkit-x',
     color: GOLD,
   },
   {

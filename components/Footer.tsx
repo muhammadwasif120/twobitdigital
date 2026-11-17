@@ -43,7 +43,7 @@ const launchLinks = [
 
 const productLinks = [
   { label: 'Tikkit X',             href: 'https://tikkitx.com',  external: true },
-  { label: 'Averon Legal Systems', href: '/products/averon-legal-systems', external: false },
+  { label: 'Averon Legal Systems', href: '/launch/case-studies/averon-legal', external: false },
   { label: 'Industry CRMs',        href: '/crms', external: false },
   { label: 'Websites We\'ve Built', href: '/sites', external: false },
 ]

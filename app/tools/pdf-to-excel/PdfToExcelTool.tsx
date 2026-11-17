@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 type PageData = { page: number; rows: string[][] }
 
@@ -69,6 +70,7 @@ export default function PdfToExcelTool() {
 
       const baseName = (file?.name ?? 'document').replace(/\.[^.]+$/, '')
       XLSX.writeFile(wb, `${baseName}.xlsx`)
+      trackEvent('tool_use', { tool: 'pdf_to_excel' })
       setStatus('done')
     } catch {
       setError('Export failed. Please try again.')

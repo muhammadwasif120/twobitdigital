@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 /* ─── Single URL shortener ───────────────────────────────────── */
 
@@ -29,6 +30,7 @@ function SingleShortener() {
       const data = await res.json()
       if (!res.ok) { setError(data.error || 'Something went wrong.'); setState('error'); return }
       setShortUrl(data.shortUrl)
+      trackEvent('tool_use', { tool: 'url_shortener' })
       setState('done')
     } catch {
       setError('Network error — please check your connection.')
@@ -151,6 +153,7 @@ function BatchShortener() {
       const data = await res.json()
       if (!res.ok) { setApiError(data.error || 'Something went wrong.'); setLoading(false); return }
       setResults(data.results)
+      trackEvent('tool_use', { tool: 'url_shortener_batch', count: urls.length })
     } catch {
       setApiError('Network error — please check your connection.')
     }

@@ -1,40 +1,33 @@
 import type { Metadata } from 'next'
+import ToolPageShell from '@/components/shared/ToolPageShell'
 import PdfToExcelTool from './PdfToExcelTool'
 
 export const metadata: Metadata = {
   title: 'PDF to Excel Converter — Free Online Tool',
   description: 'Extract text from any PDF into an Excel spreadsheet. 100% client-side — your file never leaves your browser.',
+  alternates: { canonical: 'https://www.twobitdigital.com/tools/pdf-to-excel' },
+  openGraph: {
+    title: 'Free PDF to Excel Converter by Two Bit Digital',
+    description: 'Extract PDF text into an Excel file in your browser. No upload, no account.',
+    url: 'https://www.twobitdigital.com/tools/pdf-to-excel',
+    type: 'website',
+  },
 }
 
 export default function PdfToExcelPage() {
   return (
-    <main style={{ background: '#09091a', minHeight: '100vh', paddingTop: '5.5rem' }}>
-      <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 1.5rem 4rem' }}>
-        <div style={{ marginBottom: '2rem' }}>
-          <div className="section-label">Free Tool</div>
-          <h1 style={{
-            fontFamily:    'var(--font-inter)',
-            fontWeight:    800,
-            fontSize:      'clamp(1.6rem, 3vw, 2.2rem)',
-            color:         '#eceaf5',
-            margin:        '0.5rem 0 0.5rem',
-            letterSpacing: '-0.03em',
-            lineHeight:    1.1,
-          }}>
-            PDF to Excel Converter
-          </h1>
-          <p style={{
-            fontFamily: 'var(--font-inter)',
-            fontWeight: 300,
-            fontSize:   '0.95rem',
-            color:      '#9d99b8',
-            margin:     0,
-          }}>
-            Extract text content from a PDF into an Excel file. Works entirely in your browser — no uploads, no accounts.
-          </p>
-        </div>
-        <PdfToExcelTool />
-      </div>
-    </main>
+    <ToolPageShell
+      title="PDF to Excel Converter"
+      intro="Extract text from a PDF into an Excel file, one sheet per page. Works entirely in your browser — no uploads, no accounts."
+      maxWidth="860px"
+      cta={{
+        heading: 'Re-typing data from PDFs all day?',
+        subtext: 'We build AI document workflows that read invoices, contracts and forms and feed the data straight into your system.',
+        label:   'Talk to Us',
+        href:    '/contact',
+      }}
+    >
+      <PdfToExcelTool />
+    </ToolPageShell>
   )
 }

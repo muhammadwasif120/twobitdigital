@@ -27,7 +27,7 @@ async function shortenOne(supabase: SupabaseClient<any>, url: string): Promise<{
   for (let attempt = 0; attempt < 5; attempt++) {
     const code = randomCode()
     const { error } = await supabase.from('short_links').insert({ code, target_url: url })
-    if (!error) return { code, shortUrl: `https://twobitdigital.com/s/${code}` }
+    if (!error) return { code, shortUrl: `https://www.twobitdigital.com/s/${code}` }
     if ((error as { code?: string }).code !== '23505') return { error: 'DB error' }
   }
   return { error: 'Please try again' }

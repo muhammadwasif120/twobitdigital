@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     'export compliance software',
     'warehouse management ERP',
   ],
-  alternates: { canonical: 'https://twobitdigital.com/products/trade-os' },
+  alternates: { canonical: 'https://www.twobitdigital.com/products/trade-os' },
   openGraph: {
     title:       'Trade OS — Commodity Trading & Logistics ERP',
     description: 'A full-stack trading and logistics ERP with a cryptographically tamper-evident audit trail, refined inside a live commodity trading operation.',
-    url:         'https://twobitdigital.com/products/trade-os',
+    url:         'https://www.twobitdigital.com/products/trade-os',
     type:        'website',
   },
   twitter: {
@@ -37,7 +37,7 @@ const jsonLd = {
   name:       'Trade OS',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  url:        'https://twobitdigital.com/products/trade-os',
+  url:        'https://www.twobitdigital.com/products/trade-os',
   description:'Multi-module commodity trading and logistics ERP with a cryptographically hash-chained, tamper-evident audit trail.',
   brand: { '@type': 'Organization', name: 'Two Bit Digital' },
 }

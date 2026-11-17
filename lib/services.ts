@@ -38,7 +38,7 @@ export const services: Service[] = [
       { sector: 'Government',     desc: 'Automated tender document analysis and compliance scoring for public procurement teams.' },
       { sector: 'Financial',      desc: 'Intelligent data extraction from financial statements and regulatory filings for compliance teams.' },
     ],
-    metaTitle: 'AI Integration Agency UK & Pakistan | LLM & Automation — Two Bit Digital',
+    metaTitle: 'AI Integration Agency UK & Pakistan | Two Bit Digital',
     metaDesc:  'Two Bit Digital builds production-grade AI systems for regulated industries. LLM pipelines, RAG, document intelligence, and AI automation for clients across the UK, US, Australia, and Pakistan.',
   },
   {
@@ -65,7 +65,7 @@ export const services: Service[] = [
       { sector: 'HR Tech',        desc: 'Workforce management SaaS for SMEs across the UK and Pakistan — payroll, leave, performance.' },
       { sector: 'PropTech',       desc: 'Property portfolio management platform with tenant portals, maintenance workflows, and financial reporting.' },
     ],
-    metaTitle: 'SaaS & Custom Software Development UK & Pakistan — Two Bit Digital',
+    metaTitle: 'SaaS & Custom Software Development | Two Bit Digital',
     metaDesc:  'Two Bit Digital builds production-grade SaaS platforms and custom software from architecture to launch. Multi-tenant, RBAC, billing, and analytics. Serving clients across the UK, US, Australia, and Pakistan.',
   },
   {
@@ -92,7 +92,7 @@ export const services: Service[] = [
       { sector: 'Government',     desc: 'Public-sector citizen portal with WCAG 2.2 AA accessibility, secure authentication, and audit logging.' },
       { sector: 'Media',          desc: 'Editorial platform handling 1M+ monthly users with edge caching and personalised content feeds.' },
     ],
-    metaTitle: 'Web & App Development Agency UK | Next.js & TypeScript — Two Bit Digital',
+    metaTitle: 'Web & App Development Agency UK | Two Bit Digital',
     metaDesc:  'Two Bit Digital builds high-performance web and mobile applications with Next.js and TypeScript. UK-based studio delivering for enterprises, startups, and government.',
   },
   {
@@ -117,7 +117,7 @@ export const services: Service[] = [
       { sector: 'Legal Costs',    desc: 'Averon Legal Systems — CPR Part 47/36 case management SaaS co-built with a qualified costs lawyer.' },
       { sector: 'Healthcare',     desc: 'GDPR-compliant patient data platform with granular consent management and access logging.' },
     ],
-    metaTitle: 'Compliance & RegTech Software Development UK — Two Bit Digital',
+    metaTitle: 'Compliance & RegTech Software UK | Two Bit Digital',
     metaDesc:  'Two Bit Digital builds compliance-first RegTech software: legal case management, cryptographic audit trails, zero-knowledge storage, and regulatory workflow systems.',
   },
   {
@@ -143,7 +143,7 @@ export const services: Service[] = [
       { sector: 'Central Govt',    desc: 'Internal workflow system for a regulatory body — case assignment, decision recording, appeals management.' },
       { sector: 'Education',       desc: 'Admissions and student lifecycle management system for a multi-academy trust.' },
     ],
-    metaTitle: 'Government Digital Services UK | Public Sector Technology Partner — Two Bit Digital',
+    metaTitle: 'Government Digital Services UK | Two Bit Digital',
     metaDesc:  'Two Bit Digital delivers government digital services for UK public sector bodies. UN Vendor registered, D&B verified, and eligible for GCloud, Crown Commercial, and OJEU procurement.',
   },
   {
@@ -170,7 +170,7 @@ export const services: Service[] = [
       { sector: 'SaaS',           desc: 'Multi-region Vercel/Supabase deployment with edge caching and 99.99% uptime SLA achievement.' },
       { sector: 'Government',     desc: 'AWS GovCloud deployment for a public sector data platform — IL2 security classification aligned.' },
     ],
-    metaTitle: 'Cloud Infrastructure & DevOps Agency UK | AWS & Vercel — Two Bit Digital',
+    metaTitle: 'Cloud & DevOps Agency UK | AWS & Vercel | Two Bit Digital',
     metaDesc:  'Two Bit Digital architects and operates cloud infrastructure on AWS and Vercel. CI/CD, serverless, observability, and cost optimisation for scaling businesses.',
   },
 ]

@@ -18,7 +18,7 @@ The studio is founded and led by Muhammad Wasif (Founder & CEO). LinkedIn: https
 ## In-House Products
 
 - [Tikkit X](https://tikkitx.com): Live mobile-first event ticketing and management platform with offline-capable HMAC-SHA256/HKDF cryptographic QR verification. Operates in Pakistan. Supports JazzCash and EasyPaisa payments. Free to start.
-- [Averon Legal Systems](/products/averon-legal-systems): CPR Part 47 and Part 36 case management SaaS for UK costs lawyers. Role-based dashboards, automated deadline alerting, document management, and client portal. Currently in closed beta.
+- [Averon Legal Systems](/launch/case-studies/averon-legal): CPR Part 47 and Part 36 case management SaaS for UK costs lawyers. Role-based dashboards, automated deadline alerting, document management, and client portal. Currently in closed beta.
 - [Terra Core](/products/terra-core): Compliance-first document intelligence engine with AES-256 zero-knowledge encryption and cryptographically chained audit logs. In development.
 
 ## Legal Technology Solutions

@@ -180,7 +180,7 @@ const caseStudies = [
     title: 'Averon Legal Systems — CPR Part 47 Compliance SaaS, UK',
     desc: "Multi-tenant SaaS platform for UK costs lawyers. Automates CPR Part 47 and Part 36 compliance deadlines, with RBAC, a client portal, matter tracking, and a built-in deadline engine. Two Bit Digital's own in-house product — currently in beta.",
     tags: ['Next.js', 'Supabase', 'CPR Part 47', 'Multi-tenant', 'Row-Level Security'],
-    href: '/products/averon-legal-systems',
+    href: '/launch/case-studies/averon-legal',
   },
   {
     title: 'YKC Legal — Full Digital Platform',

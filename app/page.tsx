@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Nav          from '@/components/Nav'
 import Hero         from '@/components/Hero'
 import TrustStrip   from '@/components/TrustStrip'
@@ -11,7 +12,12 @@ import PartnerStrip from '@/components/PartnerStrip'
 import Government   from '@/components/Government'
 import FinalCTA     from '@/components/FinalCTA'
 import Contact      from '@/components/Contact'
+import FeaturedInsights from '@/components/FeaturedInsights'
 import Footer       from '@/components/Footer'
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.twobitdigital.com' },
+}
 
 export default function Home() {
   return (
@@ -28,6 +34,7 @@ export default function Home() {
         <About />
         <PartnerStrip />
         <Government />
+        <FeaturedInsights />
         <FinalCTA />
         <Contact />
       </main>

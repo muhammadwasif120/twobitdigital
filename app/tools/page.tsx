@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: 'Free Tools — URL Shortener, QR Code, PDF Editor & More',
   description:
     'Free online tools by Two Bit Digital. Shorten URLs, generate QR codes, convert Excel to PDF, edit PDFs and more — no sign-up required.',
-  alternates: { canonical: 'https://twobitdigital.com/tools' },
+  alternates: { canonical: 'https://www.twobitdigital.com/tools' },
   openGraph: {
     title: 'Free Tools by Two Bit Digital',
     description: 'URL shortener, QR code generator and more — free, no sign-up.',
-    url: 'https://twobitdigital.com/tools',
+    url: 'https://www.twobitdigital.com/tools',
     type: 'website',
   },
 }

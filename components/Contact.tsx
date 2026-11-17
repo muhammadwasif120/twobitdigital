@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 
 const projectTypes = [
+  'CRM / ERP System',
+  'Website / Online Store',
   'Web Application / Portal',
   'Mobile Application',
   'AI Integration / Automation',

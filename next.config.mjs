@@ -4,6 +4,19 @@ const nextConfig = {
   // Prevents /insights/ and /insights being treated as separate URLs.
   trailingSlash: false,
 
+  async redirects() {
+    return [
+      { source: '/contact-us',                  destination: '/contact',                          permanent: true },
+      { source: '/customer-support',            destination: '/contact',                          permanent: true },
+      { source: '/business-consultation',       destination: '/services',                         permanent: true },
+      { source: '/administrative-work',         destination: '/services',                         permanent: true },
+      { source: '/global-procurement-solutions',destination: '/services/government-digital',      permanent: true },
+      { source: '/products/tikkit-x',           destination: '/launch/case-studies/tikkit-x',     permanent: true },
+      { source: '/products/averon-legal-systems',destination: '/launch/case-studies/averon-legal',permanent: true },
+      { source: '/products/terra-core',         destination: '/products',                         permanent: true },
+    ]
+  },
+
   async headers() {
     return [
       {

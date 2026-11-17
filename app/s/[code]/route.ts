@@ -11,7 +11,7 @@ export async function GET(
   const serviceKey  = process.env.SUPABASE_SERVICE_ROLE_KEY
 
   if (!supabaseUrl || !serviceKey) {
-    return NextResponse.redirect(new URL('https://twobitdigital.com/tools/url-shortener'))
+    return NextResponse.redirect(new URL('https://www.twobitdigital.com/tools/url-shortener'))
   }
 
   const supabase = createClient(supabaseUrl, serviceKey)
@@ -22,7 +22,7 @@ export async function GET(
     .single()
 
   if (!data) {
-    return NextResponse.redirect(new URL('https://twobitdigital.com/tools/url-shortener'))
+    return NextResponse.redirect(new URL('https://www.twobitdigital.com/tools/url-shortener'))
   }
 
   // Increment click count without blocking the redirect

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import JsonLd from '@/components/JsonLd'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import AnalyticsEvents from '@/components/AnalyticsEvents'
 import './globals.css'
 
 const inter = Inter({
@@ -47,23 +48,13 @@ export const metadata: Metadata = {
     'Two Bit Digital',
     'Muhammad Wasif',
   ],
-  authors: [{ name: 'Two Bit Digital', url: 'https://twobitdigital.com' }],
+  authors: [{ name: 'Two Bit Digital', url: 'https://www.twobitdigital.com' }],
   creator: 'Two Bit Digital Ltd',
   publisher: 'Two Bit Digital Ltd',
   icons: {
     icon:             [{ url: '/favicon.svg', type: 'image/svg+xml' }],
     shortcut:         '/favicon.svg',
     apple:            '/favicon.svg',
-  },
-  alternates: {
-    canonical: 'https://www.twobitdigital.com',
-    languages: {
-      'en-GB': 'https://www.twobitdigital.com',
-      'en-US': 'https://www.twobitdigital.com',
-      'en-AU': 'https://www.twobitdigital.com',
-      'en-PK': 'https://www.twobitdigital.com',
-      'x-default': 'https://www.twobitdigital.com',
-    },
   },
   openGraph: {
     title: 'SaaS & AI Engineering | UK, US & Pakistan | Two Bit Digital',
@@ -114,13 +105,14 @@ export default function RootLayout({
           rel="alternate"
           type="application/rss+xml"
           title="Two Bit Digital Insights — RSS Feed"
-          href="https://twobitdigital.com/feed.xml"
+          href="https://www.twobitdigital.com/feed.xml"
         />
       </head>
       <body className={inter.variable}>
         <JsonLd />
         {children}
         <WhatsAppButton />
+        <AnalyticsEvents />
         <GoogleAnalytics gaId="G-H37B9RGMHP" />
       </body>
     </html>

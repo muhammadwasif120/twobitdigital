@@ -54,25 +54,25 @@ export const internalLinks: Record<string, InternalLink[]> = {
   // ── Pillar 2: Event Technology / Tikkit X ──────────────────────────────────
 
   'event-management-software-guide-2025': [
-    { label: 'Tikkit X — Live Event Ticketing Platform',    href: '/products/tikkit-x',                                note: 'The platform built for Pakistan\'s event organisers — free to start' },
+    { label: 'Tikkit X — Live Event Ticketing Platform',    href: '/launch/case-studies/tikkit-x',                                note: 'The platform built for Pakistan\'s event organisers — free to start' },
     { label: 'How Offline QR Verification Stops Event Fraud', href: '/insights/offline-qr-verification-event-ticketing', note: 'The cryptographic technology behind fraud-proof ticket scanning' },
     { label: 'How to Run a Paperless Event',                href: '/insights/how-to-run-a-paperless-event-pakistan',   note: 'Step-by-step guide from registration to post-event analytics' },
   ],
 
   'offline-qr-verification-event-ticketing': [
-    { label: 'Tikkit X — Live Event Ticketing Platform',  href: '/products/tikkit-x',                               note: 'The platform using HMAC-SHA256 offline QR verification in production' },
+    { label: 'Tikkit X — Live Event Ticketing Platform',  href: '/launch/case-studies/tikkit-x',                               note: 'The platform using HMAC-SHA256 offline QR verification in production' },
     { label: 'How to Run a Paperless Event',              href: '/insights/how-to-run-a-paperless-event-pakistan',  note: 'The complete operational guide to digital event management' },
     { label: 'Event Management Software in 2025',         href: '/insights/event-management-software-guide-2025',   note: 'Full buyer\'s guide covering offline capability, fraud prevention, and payments' },
   ],
 
   'tikkit-x-event-management-pakistan': [
-    { label: 'Tikkit X — Product Page',              href: '/products/tikkit-x',                                note: 'Full feature overview, pricing, and how to get started' },
+    { label: 'Tikkit X — Product Page',              href: '/launch/case-studies/tikkit-x',                                note: 'Full feature overview, pricing, and how to get started' },
     { label: 'How to Run a Paperless Event',         href: '/insights/how-to-run-a-paperless-event-pakistan',  note: 'A step-by-step guide using Tikkit X from setup to post-event analytics' },
     { label: 'How Offline QR Verification Works',   href: '/insights/offline-qr-verification-event-ticketing', note: 'The cryptographic technology behind Tikkit X\'s fraud prevention' },
   ],
 
   'how-to-run-a-paperless-event-pakistan': [
-    { label: 'Tikkit X — Live Event Ticketing Platform',      href: '/products/tikkit-x',                               note: 'The platform that handles every step in this guide — free to start' },
+    { label: 'Tikkit X — Live Event Ticketing Platform',      href: '/launch/case-studies/tikkit-x',                               note: 'The platform that handles every step in this guide — free to start' },
     { label: 'How Offline QR Verification Stops Event Fraud', href: '/insights/offline-qr-verification-event-ticketing', note: 'How the cryptographic check-in system in Step 5 actually works' },
     { label: 'Event Management Software in 2025',             href: '/insights/event-management-software-guide-2025',   note: 'The complete buyer\'s guide to choosing event management software' },
   ],
@@ -80,38 +80,38 @@ export const internalLinks: Record<string, InternalLink[]> = {
   // ── Pillar 3: Legal Technology ──────────────────────────────────────────────
 
   'law-firm-digital-transformation-guide': [
-    { label: 'Averon Legal Systems',                    href: '/products/averon-legal-systems',               note: 'Two Bit Digital\'s CPR-compliant legal management SaaS — currently in beta' },
+    { label: 'Averon Legal Systems',                    href: '/launch/case-studies/averon-legal',               note: 'Two Bit Digital\'s CPR-compliant legal management SaaS — currently in beta' },
     { label: 'CPR Part 47 Compliance Software',         href: '/insights/cpr-part-47-compliance-software',    note: 'What purpose-built CPR 47 compliance software must do for costs lawyers' },
     { label: 'Why Your Law Firm Needs a Client Portal', href: '/insights/law-firm-client-portal-guide',       note: 'Client expectations in 2025 and what a modern portal must contain' },
     { label: 'Compliance & RegTech Services',           href: '/services/compliance-regtech',                 note: 'Two Bit Digital\'s full legal technology and regulatory software offering' },
   ],
 
   'cpr-part-47-compliance-software': [
-    { label: 'Averon Legal Systems',                    href: '/products/averon-legal-systems',              note: 'The CPR Part 47 and Part 36 SaaS built to address exactly these challenges' },
+    { label: 'Averon Legal Systems',                    href: '/launch/case-studies/averon-legal',              note: 'The CPR Part 47 and Part 36 SaaS built to address exactly these challenges' },
     { label: 'Law Firm Digital Transformation Guide',   href: '/insights/law-firm-digital-transformation-guide', note: 'The complete playbook for digitising a law firm — client-facing and internal' },
     { label: 'End-to-End Legal Tech Platform',          href: '/insights/end-to-end-legal-tech-platform',   note: 'Why fragmented tools create compliance gaps that one platform solves' },
   ],
 
   'law-firm-client-portal-guide': [
-    { label: 'Averon Legal Systems',                   href: '/products/averon-legal-systems',               note: 'Includes a client portal with case diary, document access, and hearings calendar' },
+    { label: 'Averon Legal Systems',                   href: '/launch/case-studies/averon-legal',               note: 'Includes a client portal with case diary, document access, and hearings calendar' },
     { label: 'Law Firm Digital Transformation Guide',  href: '/insights/law-firm-digital-transformation-guide', note: 'How the client portal fits into a full law firm digital transformation' },
     { label: 'Compliance & RegTech Services',          href: '/services/compliance-regtech',                  note: 'Two Bit Digital builds secure, compliant client portals for law firms' },
   ],
 
   'law-firm-case-file-digitisation': [
-    { label: 'Averon Legal Systems',                   href: '/products/averon-legal-systems',                note: 'The document management infrastructure that makes digitised files operationally useful' },
+    { label: 'Averon Legal Systems',                   href: '/launch/case-studies/averon-legal',                note: 'The document management infrastructure that makes digitised files operationally useful' },
     { label: 'Law Firm Digital Transformation Guide',  href: '/insights/law-firm-digital-transformation-guide', note: 'How case file digitisation fits into a full firm-wide digital transformation' },
     { label: 'Law Firm Employee Management Software',  href: '/insights/law-firm-employee-management-software', note: 'Role-based access controls and time recording after digitisation is complete' },
   ],
 
   'law-firm-employee-management-software': [
-    { label: 'Averon Legal Systems',                   href: '/products/averon-legal-systems',                note: 'Built-in role-based dashboards, matter-linked time recording, and task allocation' },
+    { label: 'Averon Legal Systems',                   href: '/launch/case-studies/averon-legal',                note: 'Built-in role-based dashboards, matter-linked time recording, and task allocation' },
     { label: 'Law Firm Digital Transformation Guide',  href: '/insights/law-firm-digital-transformation-guide', note: 'How employee management fits into a complete law firm digital stack' },
     { label: 'Case File Digitisation Guide',           href: '/insights/law-firm-case-file-digitisation',    note: 'The access control and document structure that underpins team management' },
   ],
 
   'end-to-end-legal-tech-platform': [
-    { label: 'Averon Legal Systems',                   href: '/products/averon-legal-systems',                  note: 'Two Bit Digital\'s single platform covering all layers described in this article' },
+    { label: 'Averon Legal Systems',                   href: '/launch/case-studies/averon-legal',                  note: 'Two Bit Digital\'s single platform covering all layers described in this article' },
     { label: 'Law Firm Digital Transformation Guide',  href: '/insights/law-firm-digital-transformation-guide', note: 'The complete transformation roadmap — client-facing and internal management' },
     { label: 'Compliance & RegTech Services',          href: '/services/compliance-regtech',                    note: 'How Two Bit Digital builds integrated legal technology for regulated firms' },
   ],
@@ -153,7 +153,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
   ],
 
   'building-averon-legal-systems-case-study': [
-    { label: 'Averon Legal Systems',                    href: '/products/averon-legal-systems',          note: 'Product overview and beta access information' },
+    { label: 'Averon Legal Systems',                    href: '/launch/case-studies/averon-legal',          note: 'Product overview and beta access information' },
     { label: 'Compliance & RegTech Services',           href: '/services/compliance-regtech',            note: 'The service capability behind the Averon build' },
     { label: 'CPR Part 47 Compliance Software',         href: '/insights/cpr-part-47-compliance-software', note: 'What CPR 47 compliance actually requires from software' },
   ],
@@ -166,7 +166,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
 
   'regtech-compliance-software-regulated-industries': [
     { label: 'Compliance & RegTech Services',          href: '/services/compliance-regtech',              note: 'Two Bit Digital\'s compliance-first engineering practice' },
-    { label: 'Averon Legal Systems',                   href: '/products/averon-legal-systems',            note: 'A live example of RegTech built for CPR-regulated legal practice' },
+    { label: 'Averon Legal Systems',                   href: '/launch/case-studies/averon-legal',            note: 'A live example of RegTech built for CPR-regulated legal practice' },
     { label: 'AI Integration for Regulated Industries', href: '/insights/ai-integration-regulated-industries', note: 'What regulated industries specifically need from AI that generic tools miss' },
   ],
 
@@ -175,7 +175,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
   'ykc-legal-law-firm-website-pakistan': [
     { label: 'Law Firm Websites Pakistan — Full Service', href: '/law-firm-websites-pakistan',                      note: 'Build a full-platform law firm website like YKC Legal — client portal, case search, and more' },
     { label: 'The Complete Guide to Law Firm Websites in Pakistan', href: '/insights/law-firm-website-pakistan-guide', note: 'Everything a Pakistani law firm needs to know before commissioning a website' },
-    { label: 'Averon Legal Systems',                     href: '/products/averon-legal-systems',                    note: 'Two Bit Digital\'s legal management SaaS — multi-tenant case management and CPR compliance' },
+    { label: 'Averon Legal Systems',                     href: '/launch/case-studies/averon-legal',                    note: 'Two Bit Digital\'s legal management SaaS — multi-tenant case management and CPR compliance' },
   ],
 
   'law-firm-website-pakistan-guide': [

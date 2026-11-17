@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
     if (!error) {
       return NextResponse.json({
         code,
-        shortUrl: `https://twobitdigital.com/s/${code}`,
+        shortUrl: `https://www.twobitdigital.com/s/${code}`,
       })
     }
     // 23505 = unique_violation — try a new code

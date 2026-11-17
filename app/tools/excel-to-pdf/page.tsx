@@ -1,40 +1,33 @@
 import type { Metadata } from 'next'
+import ToolPageShell from '@/components/shared/ToolPageShell'
 import ExcelToPdfTool from './ExcelToPdfTool'
 
 export const metadata: Metadata = {
   title: 'Excel to PDF Converter — Free Online Tool',
   description: 'Convert Excel spreadsheets (.xlsx, .xls) to PDF instantly. 100% client-side — your file never leaves your browser.',
+  alternates: { canonical: 'https://www.twobitdigital.com/tools/excel-to-pdf' },
+  openGraph: {
+    title: 'Free Excel to PDF Converter by Two Bit Digital',
+    description: 'Convert .xlsx and .xls to PDF in your browser. No upload, no account.',
+    url: 'https://www.twobitdigital.com/tools/excel-to-pdf',
+    type: 'website',
+  },
 }
 
 export default function ExcelToPdfPage() {
   return (
-    <main style={{ background: '#09091a', minHeight: '100vh', paddingTop: '5.5rem' }}>
-      <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 1.5rem 4rem' }}>
-        <div style={{ marginBottom: '2rem' }}>
-          <div className="section-label">Free Tool</div>
-          <h1 style={{
-            fontFamily:    'var(--font-inter)',
-            fontWeight:    800,
-            fontSize:      'clamp(1.6rem, 3vw, 2.2rem)',
-            color:         '#eceaf5',
-            margin:        '0.5rem 0 0.5rem',
-            letterSpacing: '-0.03em',
-            lineHeight:    1.1,
-          }}>
-            Excel to PDF Converter
-          </h1>
-          <p style={{
-            fontFamily: 'var(--font-inter)',
-            fontWeight: 300,
-            fontSize:   '0.95rem',
-            color:      '#9d99b8',
-            margin:     0,
-          }}>
-            Upload your spreadsheet and download a clean PDF. Works entirely in your browser — no uploads, no accounts.
-          </p>
-        </div>
-        <ExcelToPdfTool />
-      </div>
-    </main>
+    <ToolPageShell
+      title="Excel to PDF Converter"
+      intro="Upload your spreadsheet and download a clean PDF. Works entirely in your browser — no uploads, no accounts."
+      maxWidth="860px"
+      cta={{
+        heading: 'Still running the business on spreadsheets?',
+        subtext: 'We build ready-made CRMs and ERPs for distribution, textile, education and more. See one running, then we tailor it to you.',
+        label:   'See Our CRMs',
+        href:    '/crms',
+      }}
+    >
+      <ExcelToPdfTool />
+    </ToolPageShell>
   )
 }

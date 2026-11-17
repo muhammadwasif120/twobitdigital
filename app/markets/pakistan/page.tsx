@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: 'Software Development Company in Pakistan',
     description:
       'UK-registered software development studio operating in Pakistan. AI systems, SaaS platforms, mobile apps, and enterprise software for Pakistani businesses and international clients.',
-    url: 'https://twobitdigital.com/markets/pakistan',
+    url: 'https://www.twobitdigital.com/markets/pakistan',
     type: 'website',
   },
   twitter: {
@@ -51,18 +51,18 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  '@id': 'https://twobitdigital.com/markets/pakistan',
-  url: 'https://twobitdigital.com/markets/pakistan',
+  '@id': 'https://www.twobitdigital.com/markets/pakistan',
+  url: 'https://www.twobitdigital.com/markets/pakistan',
   name: 'Software Development Company in Pakistan — Two Bit Digital',
   description:
     'Two Bit Digital operates a core engineering hub in Karachi, Pakistan. We build AI systems, SaaS platforms, mobile apps, and enterprise software for Pakistani businesses and global clients.',
   inLanguage: 'en',
-  isPartOf: { '@id': 'https://twobitdigital.com' },
+  isPartOf: { '@id': 'https://www.twobitdigital.com' },
   about: {
     '@type': 'Organization',
-    '@id': 'https://twobitdigital.com/#organization',
+    '@id': 'https://www.twobitdigital.com/#organization',
     name: 'Two Bit Digital Ltd',
-    url: 'https://twobitdigital.com',
+    url: 'https://www.twobitdigital.com',
     foundingLocation: { '@type': 'Country', name: 'United Kingdom' },
     areaServed: [
       { '@type': 'Country', name: 'Pakistan', sameAs: 'https://www.wikidata.org/wiki/Q843' },
@@ -85,9 +85,9 @@ const jsonLd = {
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://twobitdigital.com' },
-      { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://twobitdigital.com/markets' },
-      { '@type': 'ListItem', position: 3, name: 'Pakistan', item: 'https://twobitdigital.com/markets/pakistan' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.twobitdigital.com' },
+      { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.twobitdigital.com/markets' },
+      { '@type': 'ListItem', position: 3, name: 'Pakistan', item: 'https://www.twobitdigital.com/markets/pakistan' },
     ],
   },
 }
@@ -188,7 +188,7 @@ const caseStudies = [
     title: 'Tikkit X — Event Ticketing Platform, Pakistan',
     desc: 'A mobile-first event ticketing and management platform built specifically for the Pakistani events industry. Features offline-capable HMAC-SHA256 QR code verification, JazzCash and EasyPaisa payment integration, and a freemium model for event organisers.',
     tags: ['React Native', 'Supabase', 'JazzCash', 'EasyPaisa', 'Offline-first'],
-    href: '/products/tikkit-x',
+    href: '/launch/case-studies/tikkit-x',
   },
   {
     title: 'YKC Legal — Full Digital Platform, Pakistan',

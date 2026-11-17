@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     'card expiry tracker',
     'Two Bit Digital',
   ],
-  alternates: { canonical: 'https://twobitdigital.com/starkvault' },
+  alternates: { canonical: 'https://www.twobitdigital.com/starkvault' },
   openGraph: {
     title:       'StarkVault — Never Miss a Renewal',
     description: 'Encrypted document vault with 5-stage expiry alerts, subscription and card tracking, and forensically watermarked secure sharing. Free to start.',
-    url:         'https://twobitdigital.com/starkvault',
+    url:         'https://www.twobitdigital.com/starkvault',
     type:        'website',
   },
   twitter: {

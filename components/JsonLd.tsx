@@ -240,6 +240,43 @@ const servicesSchema = {
   ],
 }
 
+const localBusinessPakistanSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${SITE_URL}/#localbusiness-pk`,
+  name: 'Two Bit Digital — Pakistan',
+  description:
+    'SaaS and AI engineering studio in Karachi, Pakistan. We build custom software, CRM, ERP, and AI-powered systems for businesses across Pakistan, UK, US, and Australia.',
+  url: SITE_URL,
+  image: `${SITE_URL}/Two bit FF-01.png`,
+  logo: `${SITE_URL}/Two bit FF-01.png`,
+  email: 'sales@twobitdigital.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Karachi',
+    addressRegion: 'Sindh',
+    addressCountry: 'PK',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 24.8607,
+    longitude: 67.0011,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Karachi' },
+    { '@type': 'City', name: 'Lahore' },
+    { '@type': 'City', name: 'Islamabad' },
+    { '@type': 'Country', name: 'Pakistan' },
+  ],
+  priceRange: '$$',
+  openingHours: 'Mo-Fr 09:00-18:00',
+  sameAs: [
+    'https://www.linkedin.com/company/twobitdigital',
+    'https://find-and-update.company-information.service.gov.uk/company/14710072',
+  ],
+  parentOrganization: { '@id': `${SITE_URL}/#organization` },
+}
+
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
@@ -361,6 +398,10 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessPakistanSchema) }}
       />
       <script
         type="application/ld+json"

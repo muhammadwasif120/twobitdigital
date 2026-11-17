@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: 'Free QR Code Generator — Instant Download, No Sign-Up',
   description:
     'Generate a QR code for any URL or text in seconds. Download as PNG, ready to print or share. Free tool by Two Bit Digital.',
-  alternates: { canonical: 'https://twobitdigital.com/tools/qr-code-generator' },
+  alternates: { canonical: 'https://www.twobitdigital.com/tools/qr-code-generator' },
   openGraph: {
     title: 'Free QR Code Generator by Two Bit Digital',
     description: 'Create QR codes instantly. Download as PNG. No account required.',
-    url: 'https://twobitdigital.com/tools/qr-code-generator',
+    url: 'https://www.twobitdigital.com/tools/qr-code-generator',
     type: 'website',
   },
 }

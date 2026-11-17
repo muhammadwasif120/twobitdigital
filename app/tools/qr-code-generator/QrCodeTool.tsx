@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 const SIZES = [
   { label: 'Small',  value: 256 },
@@ -53,6 +54,7 @@ export default function QrCodeTool() {
     a.href     = dataUrl
     a.download = 'qrcode.png'
     a.click()
+    trackEvent('tool_use', { tool: 'qr_code_generator' })
   }
 
   const previewSize = size === 256 ? 160 : size === 512 ? 200 : 240
@@ -87,7 +89,7 @@ export default function QrCodeTool() {
               rows={3}
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="https://twobitdigital.com"
+              placeholder="https://www.twobitdigital.com"
               autoFocus
               style={{
                 width: '100%', boxSizing: 'border-box',

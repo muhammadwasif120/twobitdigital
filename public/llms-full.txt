@@ -127,7 +127,7 @@ Status: Closed beta — accepting UK costs practices
 Market: United Kingdom
 Technology: Next.js, TypeScript, Supabase, PostgreSQL, Stripe
 
-URL: https://www.twobitdigital.com/products/averon-legal-systems
+URL: https://www.twobitdigital.com/launch/case-studies/averon-legal
 
 ---
 
@@ -138,7 +138,7 @@ Terra Core is a compliance-first document intelligence and storage engine. AES-2
 Status: In development
 Technology: TypeScript, AES-256, HMAC-SHA256, PostgreSQL, AWS KMS
 
-URL: https://www.twobitdigital.com/products/terra-core
+URL: https://www.twobitdigital.com/products
 
 ---
 

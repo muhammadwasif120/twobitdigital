@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 type SheetPreview = { name: string; rows: string[][] }
 
@@ -67,6 +68,7 @@ export default function ExcelToPdfTool() {
 
       const baseName = (file?.name ?? 'spreadsheet').replace(/\.[^.]+$/, '')
       doc.save(`${baseName}.pdf`)
+      trackEvent('tool_use', { tool: 'excel_to_pdf' })
       setStatus('done')
     } catch {
       setError('Conversion failed. Please try again.')

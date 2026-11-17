@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useRef, useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 type Annotation = { pageIndex: number; x: number; y: number; text: string; size: number; color: string }
 type PageInfo    = { index: number; rotation: number; width: number; height: number }
@@ -155,6 +156,7 @@ export default function PdfEditorTool() {
       a.download     = (file.name.replace(/\.pdf$/i, '') + '_edited.pdf')
       a.click()
       URL.revokeObjectURL(url)
+      trackEvent('tool_use', { tool: 'pdf_editor' })
       setStatus('done')
     } catch {
       setError('Could not save PDF. Please try again.')
