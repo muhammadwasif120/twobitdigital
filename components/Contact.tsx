@@ -1,6 +1,15 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
+import Script from 'next/script'
+
+// Cloudflare Turnstile. Inert (no script, no widget) until NEXT_PUBLIC_TURNSTILE_SITE_KEY is set.
+const TURNSTILE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+
+type TurnstileApi = {
+  render: (el: HTMLElement, opts: Record<string, unknown>) => string
+  reset: (id?: string) => void
+}
 
 const projectTypes = [
   'CRM / ERP System',
@@ -24,12 +33,35 @@ export default function Contact() {
     company:      '',
     project_type: '',
     message:      '',
-    honeypot:     '',
+    fax:          '', // hidden bot trap
   })
   const [token, setToken]           = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted]   = useState(false)
   const [toast, setToast]           = useState<{ type: ToastType; msg: string }>({ type: null, msg: '' })
+  const [cfToken, setCfToken]       = useState('')
+  const [checkFailed, setCheckFailed] = useState(false)
+  const checkBox  = useRef<HTMLDivElement>(null)
+  const widgetId  = useRef<string | null>(null)
+
+  const renderCheck = useCallback(() => {
+    const ts = (window as Window & { turnstile?: TurnstileApi }).turnstile
+    if (!TURNSTILE_KEY || !ts || !checkBox.current || widgetId.current) return
+    widgetId.current = ts.render(checkBox.current, {
+      sitekey:  TURNSTILE_KEY,
+      theme:    'dark',
+      appearance: 'interaction-only',
+      callback:           (t: string) => { setCfToken(t); setCheckFailed(false) },
+      'expired-callback': () => setCfToken(''),
+      'error-callback':   () => { setCfToken(''); setCheckFailed(true) },
+    })
+  }, [])
+
+  const resetCheck = () => {
+    setCfToken('')
+    const ts = (window as Window & { turnstile?: TurnstileApi }).turnstile
+    if (ts && widgetId.current) ts.reset(widgetId.current)
+  }
 
   useEffect(() => {
     const el = ref.current
@@ -59,19 +91,26 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (form.honeypot) return // bot trap
+    if (form.fax) return // bot trap
     if (!form.name || !form.email || !form.message) return
+    if (TURNSTILE_KEY && !cfToken) {
+      setToast({ type: 'error', msg: checkFailed
+        ? 'The security check could not load. Please email sales@twobitdigital.com or WhatsApp us instead.'
+        : 'Just a moment — finishing the security check. Please try again in a few seconds.' })
+      return
+    }
 
     setSubmitting(true)
     try {
       const res = await fetch('/api/contact', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({ ...form, token }),
+        body:    JSON.stringify({ ...form, token, cfToken }),
       })
+      if (!res.ok) resetCheck()
       if (res.ok) {
         setSubmitted(true)
-        setForm({ name: '', email: '', company: '', project_type: '', message: '', honeypot: '' })
+        setForm({ name: '', email: '', company: '', project_type: '', message: '', fax: '' })
         // Fire GA4 conversion event
         type GtagFn = (cmd: string, event: string, params: Record<string, unknown>) => void
         const w = window as Window & { gtag?: GtagFn }
@@ -293,10 +332,11 @@ export default function Contact() {
               {/* Honeypot */}
               <input
                 type="text"
-                name="honeypot"
-                value={form.honeypot}
+                name="fax"
+                value={form.fax}
                 onChange={handleChange}
-                style={{ display:'none' }}
+                aria-hidden="true"
+                style={{ position:'absolute', left:'-9999px', width:'1px', height:'1px', opacity:0 }}
                 tabIndex={-1}
                 autoComplete="off"
               />
@@ -391,6 +431,24 @@ export default function Contact() {
                   onBlur={(e)   => (e.target.style.borderColor = 'rgba(255,255,255,0.08)')}
                 />
               </div>
+
+              {TURNSTILE_KEY && (
+                <>
+                  <Script
+                    src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+                    strategy="afterInteractive"
+                    onReady={renderCheck}
+                    onError={() => setCheckFailed(true)}
+                  />
+                  <div ref={checkBox} style={{ marginBottom: checkFailed ? '0.75rem' : 0 }} />
+                  {checkFailed && (
+                    <p role="alert" style={{ fontFamily:'var(--font-inter)', fontSize:'0.8rem', color:'#f87171', margin:'0 0 1rem' }}>
+                      The security check could not load (an ad blocker can cause this). Please email{' '}
+                      <a href="mailto:sales@twobitdigital.com" style={{ color:'#f5c518' }}>sales@twobitdigital.com</a> or use the WhatsApp button instead.
+                    </p>
+                  )}
+                </>
+              )}
 
               <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:'1rem' }}>
                 <button

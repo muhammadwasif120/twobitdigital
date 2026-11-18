@@ -9,6 +9,38 @@ const secret = () =>
   process.env.CONTACT_SECRET ?? createHash('sha256').update(`contact:${process.env.RESEND_API_KEY ?? 'dev'}`).digest('hex')
 const sign = (payload: string) => createHmac('sha256', secret()).update(payload).digest('base64url')
 
+// Only headers Vercel sets itself: a client-supplied cf-connecting-ip would let a bot rotate fake IPs past the rate limit.
+export function clientIp(headers: Headers): string {
+  return (
+    headers.get('x-vercel-forwarded-for') ??
+    headers.get('x-real-ip') ??
+    headers.get('x-forwarded-for')?.split(',')[0].trim() ??
+    'unknown'
+  )
+}
+
+export type TurnstileResult = 'ok' | 'failed' | 'disabled' | 'unavailable'
+
+// Inert until TURNSTILE_SECRET_KEY is set. A Cloudflare outage returns 'unavailable' so real leads are not lost.
+export async function verifyTurnstile(token: unknown, ip: string): Promise<TurnstileResult> {
+  const secret = process.env.TURNSTILE_SECRET_KEY
+  if (!secret) return 'disabled'
+  if (typeof token !== 'string' || !token || token.length > 4096) return 'failed'
+  try {
+    const body = new URLSearchParams({ secret, response: token })
+    if (ip !== 'unknown') body.set('remoteip', ip)
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body,
+      signal: AbortSignal.timeout(5000),
+    })
+    const data = (await res.json()) as { success?: boolean }
+    return data.success ? 'ok' : 'failed'
+  } catch {
+    return 'unavailable'
+  }
+}
+
 export const MIN_AGE_MS = 4_000
 export const MAX_AGE_MS = 3 * 60 * 60 * 1000
 

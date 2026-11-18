@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { checkToken, spamSignals } from '@/lib/contact-guard'
+import { checkToken, clientIp, spamSignals, verifyTurnstile } from '@/lib/contact-guard'
 
 // ─── Simple in-memory rate limiter ────────────────────────────────────────────
 const rateMap = new Map<string, { count: number; reset: number }>()
@@ -35,11 +35,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
-  // Rate limiting — use CF-Connecting-IP (Vercel/Cloudflare) or x-forwarded-for
-  const ip =
-    request.headers.get('cf-connecting-ip') ??
-    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
-    'unknown'
+  const ip = clientIp(request.headers)
 
   if (isRateLimited(ip)) {
     return NextResponse.json(
@@ -48,14 +44,12 @@ export async function POST(request: Request) {
     )
   }
 
-  const resend = new Resend(process.env.RESEND_API_KEY)
-
   try {
     const body = await request.json()
-    const { name, email, company, project_type, message, honeypot, token } = body
+    const { name, email, company, project_type, message, honeypot, fax, token, cfToken } = body
 
-    // Bot trap — fake success, log nothing
-    if (honeypot) {
+    // Bot trap — fake success, log nothing. `fax` is the hidden field; `honeypot` is the old name, kept for cached pages.
+    if (honeypot || fax) {
       return NextResponse.json({ success: true })
     }
 
@@ -89,11 +83,19 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid email address' }, { status: 400 })
     }
 
+    // Cloudflare Turnstile: a real-browser challenge that scripts cannot pass (no-op until the secret key is set)
+    const human = await verifyTurnstile(cfToken, ip)
+    if (human === 'failed') {
+      return NextResponse.json({ error: 'Security check failed. Please refresh the page and try again.' }, { status: 400 })
+    }
+    if (human === 'unavailable') console.error('Turnstile verification unavailable; allowing submission')
+
     // Resend API key guard
     if (!process.env.RESEND_API_KEY) {
       console.error('RESEND_API_KEY is not configured')
       return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 })
     }
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     // Soft signals never drop a message: a flagged one goes to one inbox with a warning so no real lead is lost
     const flags = spamSignals({ name: String(name), email: String(email), company: String(company ?? ''), message: String(message) })
@@ -103,7 +105,7 @@ export async function POST(request: Request) {
       : `New project brief from ${name}`
     const subject = suspicious ? `[Suspected spam] ${base}` : base
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from:    'Two Bit Digital <noreply@twobitdigital.com>',
       to:      suspicious ? ['mwasif@twobitdigital.com'] : ['mwasif@twobitdigital.com', 'sales@twobitdigital.com'],
       replyTo: String(email),
@@ -150,6 +152,12 @@ export async function POST(request: Request) {
         </html>
       `,
     })
+
+    // The SDK returns send failures instead of throwing; without this a failed send showed visitors "Brief received"
+    if (sendError) {
+      console.error('Resend send failed:', sendError)
+      return NextResponse.json({ error: 'Failed to send message' }, { status: 500 })
+    }
 
     return NextResponse.json({ success: true })
   } catch (error) {
