@@ -48,10 +48,8 @@ export const sites: Site[] = [
   { name: 'Fine Apparels', image: '/screens/fine-apparels.webp', sector: 'Apparel Manufacturing', desc: 'Capabilities, facility, process and portfolio.', href: 'https://fineapparels.co' },
   { name: 'Eagle Vogue', image: '/screens/eagle-vogue.webp', sector: 'E-commerce', desc: 'Leather storefront on Shopify with 3D product views and fit finder.', href: 'https://eagle-vogue.vercel.app' },
   { name: 'HAVN Studios', image: '/screens/havn-studios.webp', sector: 'Creative Studio', desc: 'Immersive 3D and motion site with a Sanity CMS.', href: 'https://havn-studios.vercel.app' },
-  { name: 'The American Web Store', sector: 'Web Agency', desc: 'High-converting funnel site with pricing and work pages.', href: 'https://theamericanwebstore.com' },
   { name: 'Explore St. Louis', image: '/screens/explore-st-louis.webp', sector: 'Tourism', desc: 'Destination site with events, hotels, neighbourhoods, search and maps.', href: 'https://explore-stl.vercel.app' },
   { name: 'Lazy Bird Rentals', image: '/screens/lazy-bird-rentals.webp', sector: 'Equipment Rental', desc: 'Camera and lighting hire catalogue.', href: 'https://lazybird-rentals.vercel.app' },
   { name: 'CandyXWorld', image: '/screens/candyxworld.webp', sector: 'E-commerce / Directory', desc: 'Browse candies by category, region and dietary needs.', href: 'https://candyxworld.vercel.app' },
-  { name: 'DramayBaazi', sector: 'Entertainment Media', desc: 'Dramas, reviews and news with a rich-text editor.', href: 'https://dramaybaz.vercel.app' },
   { name: 'Black Mark Securities', image: '/screens/black-mark-securities.webp', sector: 'Security & CCTV', desc: 'Lead-generation site with assessment booking.', href: 'https://black-mark-securities.vercel.app' },
 ]
