@@ -15,7 +15,9 @@ export default function AnalyticsEvents() {
         page_path: window.location.pathname,
       }
 
-      if (href.startsWith('https://wa.me/')) trackEvent('whatsapp_click', params)
+      const custom = link.getAttribute('data-track')
+      if (custom) trackEvent(custom, { ...params, destination: href.slice(0, 100) })
+      else if (href.startsWith('https://wa.me/')) trackEvent('whatsapp_click', params)
       else if (href.startsWith('mailto:')) trackEvent('email_click', params)
     }
 

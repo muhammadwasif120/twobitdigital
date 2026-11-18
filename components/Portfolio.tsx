@@ -7,6 +7,7 @@ const products = [
   {
     name:     'Academy+',
     image:    '/screens/academy-plus.webp',
+    demo:     'https://academyplus.app',
     sector:   'School & Academy CRM · Education',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   'academyplus.app',
@@ -16,6 +17,7 @@ const products = [
   {
     name:     'FMCG Distribution CRM',
     image:    '/screens/fmcg-crm.webp',
+    demo:     'https://fmcg-pro-crm.vercel.app/login',
     sector:   'Distribution · Consumer Goods',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -25,6 +27,7 @@ const products = [
   {
     name:     'Textile Pro CRM',
     image:    '/screens/textile-pro-crm.webp',
+    demo:     'https://textile-pro-crm.vercel.app',
     sector:   'Textile & Garment Export',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -34,6 +37,7 @@ const products = [
   {
     name:     'Cars OS',
     image:    '/screens/cars-os.webp',
+    demo:     'https://cars-os-six.vercel.app/demo',
     sector:   'Car Rental & Fleet',
     status:   { label: 'Live demo', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -52,6 +56,7 @@ const products = [
   {
     name:     'Trade OS',
     image:    '/screens/trade-os.webp',
+    demo:     'https://sims-demo-neon.vercel.app',
     sector:   'Commodity Trading & Export ERP',
     status:   { label: 'Live', color: '#4ade80', bg: 'rgba(74,222,128,0.12)' },
     domain:   null,
@@ -164,7 +169,14 @@ export default function Portfolio() {
                 }
               }}
             >
-              <Screenshot src={p.image} alt={`${p.name} screenshot`} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" />
+              <Screenshot
+                src={p.image}
+                alt={`${p.name} screenshot`}
+                sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px"
+                href={p.demo ?? p.href}
+                badge={p.demo ? '▶ Try live demo' : p.href.startsWith('http') ? 'Visit site ↗' : undefined}
+                track={p.demo ? 'demo_click' : undefined}
+              />
 
               <div style={{ flex: 1 }}>
                 <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:'0.4rem' }}>

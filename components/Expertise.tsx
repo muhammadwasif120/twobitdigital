@@ -1,4 +1,5 @@
 import SectionHead from '@/components/shared/SectionHead'
+import { IconTile, type IconName } from '@/components/shared/Icon'
 
 const gold = '#f5c518'
 
@@ -7,18 +8,21 @@ const industries = [
   'Commodity Trading', 'Law Firms & Legal Tech', 'Events & Ticketing', 'Media & Publishing', 'Tourism', 'Retail & E-commerce',
 ]
 
-const strengths = [
-  { t: 'Built for how you really trade', d: 'Cheques, commissions, bookers, delivery registers, PKR and multi-currency, Excel imports. Local workflows are built in, not bolted on.' },
-  { t: 'Secure by design',               d: 'Role-based access, audit trails and encrypted data handling, so staff only see what they should and every change is traceable.' },
-  { t: 'Web, mobile and offline',        d: 'Browser apps, installable PWAs and React Native mobile apps. Our ticketing app keeps scanning even when the internet drops.' },
-  { t: 'Modern, mainstream technology',  d: 'Next.js, TypeScript, Postgres on Supabase, Vercel. Popular tools any developer can pick up, so you are never locked in to us.' },
-  { t: 'AI where it earns its place',    d: 'Document extraction, content generation and assistants wired into the workflow, using Claude, OpenAI and Gemini.' },
-  { t: 'Connected to the tools you use', d: 'WhatsApp messaging, Stripe payments, Shopify stores, email and accounting exports.' },
+const strengths: { icon: IconName; t: string; d: string }[] = [
+  { icon: 'receipt',  t: 'Built for how you really trade', d: 'Cheques, commissions, bookers, delivery registers, PKR and multi-currency, Excel imports. Local workflows are built in, not bolted on.' },
+  { icon: 'shield',   t: 'Secure by design',               d: 'Role-based access, audit trails and encrypted data handling, so staff only see what they should and every change is traceable.' },
+  { icon: 'devices',  t: 'Web, mobile and offline',        d: 'Browser apps, installable PWAs and React Native mobile apps. Our ticketing app keeps scanning even when the internet drops.' },
+  { icon: 'code',     t: 'Modern, mainstream technology',  d: 'Next.js, TypeScript, Postgres on Supabase, Vercel. Popular tools any developer can pick up, so you are never locked in to us.' },
+  { icon: 'sparkles', t: 'AI where it earns its place',    d: 'Document extraction, content generation and assistants wired into the workflow, using Claude, OpenAI and Gemini.' },
+  { icon: 'link',     t: 'Connected to the tools you use', d: 'WhatsApp messaging, Stripe payments, Shopify stores, email and accounting exports.' },
 ]
 
 export default function Expertise() {
   return (
-    <section id="expertise" style={{ backgroundColor: '#0d0d22', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '6rem 0' }}>
+    <section id="expertise" style={{
+      background: 'radial-gradient(ellipse 50% 40% at 15% 0%, rgba(123,94,167,0.13), transparent 70%), #0d0d22',
+      borderTop: '1px solid rgba(255,255,255,0.06)', padding: '6rem 0',
+    }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
         <SectionHead
           label="Our Expertise"
@@ -33,6 +37,7 @@ export default function Expertise() {
         <div className="exp-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
           {strengths.map((s) => (
             <div key={s.t} style={{ backgroundColor: '#11112b', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '1.5rem', fontFamily: 'var(--font-inter)' }}>
+              <div style={{ marginBottom: '1rem' }}><IconTile name={s.icon} size={42} /></div>
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.05rem', color: '#eceaf5' }}>{s.t}</h3>
               <p style={{ margin: 0, color: '#c4c1d8', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.d}</p>
             </div>

@@ -1,5 +1,17 @@
 import Link from 'next/link'
 import { insights } from '@/lib/insights'
+import { Icon, type IconName } from '@/components/shared/Icon'
+
+const CATEGORY_ICON: Record<string, IconName> = {
+  'Legal Technology':  'shield',
+  'Trade Technology':  'growth',
+  'AI Engineering':    'sparkles',
+  'SaaS Development':  'rocket',
+  'MVP Development':   'rocket',
+  'Event Technology':  'devices',
+  'Engineering':       'code',
+  'CRM & ERP':         'sliders',
+}
 
 const FEATURED = [
   'what-are-ai-workflows',
@@ -47,10 +59,26 @@ export default function FeaturedInsights() {
               }}
             >
               <div style={{
-                fontFamily: 'var(--font-inter)', fontWeight: 600, fontSize: '0.68rem',
-                letterSpacing: '0.08em', textTransform: 'uppercase', color: '#f5c518', marginBottom: '0.75rem',
+                position: 'relative', overflow: 'hidden', height: '92px', margin: '-1.75rem -1.75rem 1.4rem',
+                padding: '0 1.75rem', display: 'flex', alignItems: 'center', gap: '0.8rem', color: '#f5c518',
+                background: 'linear-gradient(135deg, rgba(123,94,167,0.32) 0%, rgba(245,197,24,0.1) 100%)',
+                borderBottom: '1px solid rgba(255,255,255,0.07)',
               }}>
-                {post.category} · {post.readTime}
+                <span aria-hidden="true" style={{ position: 'absolute', right: '-14px', bottom: '-22px', opacity: 0.12 }}>
+                  <Icon name={CATEGORY_ICON[post.category] ?? 'code'} size={120} />
+                </span>
+                <span style={{
+                  width: 40, height: 40, borderRadius: 11, flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  backgroundColor: 'rgba(9,9,26,0.55)', border: '1px solid rgba(245,197,24,0.3)',
+                }}>
+                  <Icon name={CATEGORY_ICON[post.category] ?? 'code'} size={20} />
+                </span>
+                <span style={{
+                  fontFamily: 'var(--font-inter)', fontWeight: 600, fontSize: '0.68rem',
+                  letterSpacing: '0.08em', textTransform: 'uppercase',
+                }}>
+                  {post.category} · {post.readTime}
+                </span>
               </div>
               <h3 style={{
                 fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '1.02rem',

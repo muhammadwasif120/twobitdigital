@@ -34,7 +34,7 @@ export default function CrmsPage() {
               return (
                 <article key={c.name} style={{ backgroundColor: '#11112b', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-inter)' }}>
                   {c.image && (
-                    <Screenshot src={c.image} alt={`${c.name} dashboard screenshot`} sizes="(max-width: 640px) 100vw, 360px" />
+                    <Screenshot src={c.image} alt={`${c.name} dashboard screenshot`} sizes="(max-width: 640px) 100vw, 360px" href={c.demo} badge={c.demo ? '▶ Try live demo' : undefined} track={c.demo ? 'demo_click' : undefined} />
                   )}
                   <span style={{ alignSelf: 'flex-start', fontSize: '0.72rem', color: gold, border: `1px solid ${gold}55`, padding: '2px 10px', borderRadius: '999px' }}>{c.industry}</span>
                   <h2 style={{ margin: 0, fontSize: '1.2rem', color: '#eceaf5' }}>{c.name}</h2>

@@ -116,3 +116,7 @@ body::before {
 :focus:not(:focus-visible) {
   outline: none;
 }
+
+/* Screenshot links: gentle zoom on hover */
+.shot-link img { transition: transform 0.5s ease; }
+.shot-link:hover img { transform: scale(1.04); }

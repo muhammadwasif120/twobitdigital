@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav          from '@/components/Nav'
 import Hero         from '@/components/Hero'
 import TrustStrip   from '@/components/TrustStrip'
+import SiteMarquee  from '@/components/SiteMarquee'
 import WhatWeDo     from '@/components/WhatWeDo'
 import Portfolio    from '@/components/Portfolio'
 import HowItWorks   from '@/components/HowItWorks'
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustStrip />
+        <SiteMarquee />
         <WhatWeDo />
         <Portfolio />
         <HowItWorks />
