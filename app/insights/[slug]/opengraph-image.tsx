@@ -62,14 +62,6 @@ export default async function OGImage({ params }: { params: { slug: string } }) 
           background:   'radial-gradient(circle, rgba(245,197,24,0.12) 0%, transparent 70%)',
           display:      'flex',
         }} />
-        {/* Subtle grid pattern overlay */}
-        <div style={{
-          position:   'absolute',
-          inset:      0,
-          background: 'linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-          display:    'flex',
-        }} />
 
         {/* ── Top bar — wordmark + category badge ─────────────────────── */}
         <div style={{

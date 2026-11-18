@@ -58,7 +58,7 @@ export default function About() {
               marginBottom: '1.75rem',
               letterSpacing:'-0.03em',
             }}>
-              Small team. Senior engineers.amp;{' '}
+              Small team. Senior engineers.{' '}
               <span style={{ color: '#f5c518' }}>Products we run ourselves.</span>
             </h2>
 
