@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 
 const values = [
   {
@@ -132,24 +133,11 @@ export default function AboutContent() {
                 textAlign:       'center',
                 gap:             '1.25rem',
               }}>
-                {/* Avatar monogram */}
                 <div style={{
-                  width:           '88px',
-                  height:          '88px',
-                  borderRadius:    '50%',
-                  backgroundColor: '#16163a',
-                  border:          '2px solid rgba(245,197,24,0.3)',
-                  display:         'flex',
-                  alignItems:      'center',
-                  justifyContent:  'center',
-                  fontFamily:      'var(--font-inter)',
-                  fontWeight:      700,
-                  fontSize:        '1.6rem',
-                  color:           '#f5c518',
-                  letterSpacing:   '-0.02em',
-                  flexShrink:      0,
+                  position: 'relative', width: '100%', aspectRatio: '4 / 5', borderRadius: '14px', overflow: 'hidden',
+                  border: '2px solid rgba(245,197,24,0.3)', backgroundColor: '#16163a',
                 }}>
-                  MW
+                  <Image src="/team/founder.webp" alt="Muhammad Wasif, Founder and CEO of Two Bit Digital" fill priority sizes="(max-width: 900px) 90vw, 300px" style={{ objectFit: 'cover' }} />
                 </div>
 
                 <div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import FounderAvatar from '@/components/shared/FounderAvatar'
 
 const footprint = [
   { stat: 'UK',  desc: 'HQ & Legal' },
@@ -92,23 +93,7 @@ export default function About() {
               alignItems:      'center',
               gap:             '1rem',
             }}>
-              <div style={{
-                width:           '40px',
-                height:          '40px',
-                borderRadius:    '50%',
-                backgroundColor: '#16163a',
-                border:          '1px solid rgba(245,197,24,0.2)',
-                display:         'flex',
-                alignItems:      'center',
-                justifyContent:  'center',
-                fontFamily:      'var(--font-inter)',
-                fontWeight:      700,
-                fontSize:        '0.85rem',
-                color:           '#f5c518',
-                flexShrink:      0,
-              }}>
-                MW
-              </div>
+              <FounderAvatar size={56} />
               <div style={{ flex: 1, minWidth: 0 }}>
                 <p style={{ fontFamily:'var(--font-inter)', fontWeight:600, fontSize:'0.88rem', color:'#eceaf5', margin:'0 0 0.15rem' }}>
                   Muhammad Wasif

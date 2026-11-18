@@ -10,6 +10,7 @@ import { insights, getInsight } from '@/lib/insights'
 import type { InsightPost } from '@/lib/insights'
 import { howtoData }     from '@/lib/howto-steps'
 import { internalLinks } from '@/lib/internal-links'
+import FounderAvatar from '@/components/shared/FounderAvatar'
 
 // ── Static params ────────────────────────────────────────────────────────────
 
@@ -597,28 +598,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               alignItems: 'center',
               gap:        '1.25rem',
             }}>
-              {/* Avatar */}
-              <div style={{
-                width:          '54px',
-                height:         '54px',
-                borderRadius:   '50%',
-                background:     'rgba(245,197,24,0.12)',
-                border:         '2px solid rgba(245,197,24,0.3)',
-                display:        'flex',
-                alignItems:     'center',
-                justifyContent: 'center',
-                flexShrink:     0,
-              }}>
-                <span style={{
-                  fontFamily: 'var(--font-inter)',
-                  fontWeight: 700,
-                  fontSize:   '1rem',
-                  color:      '#f5c518',
-                  letterSpacing: '0.02em',
-                }}>
-                  MW
-                </span>
-              </div>
+              <FounderAvatar size={54} />
 
               {/* Info */}
               <div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Script from 'next/script'
+import FounderAvatar from '@/components/shared/FounderAvatar'
 
 // Cloudflare Turnstile. Inert (no script, no widget) until NEXT_PUBLIC_TURNSTILE_SITE_KEY is set.
 const TURNSTILE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
@@ -224,6 +225,14 @@ export default function Contact() {
         >
           {/* Left — contact info */}
           <div className="reveal">
+            <div style={{ display:'flex', alignItems:'center', gap:'0.9rem', marginBottom:'1.75rem' }}>
+              <FounderAvatar size={56} />
+              <div>
+                <p style={{ fontFamily:'var(--font-inter)', fontWeight:600, fontSize:'0.95rem', color:'#eceaf5', margin:'0 0 0.15rem' }}>Muhammad Wasif</p>
+                <p style={{ fontFamily:'var(--font-inter)', fontSize:'0.78rem', color:'#9d99b8', margin:0 }}>Founder &amp; CEO, Two Bit Digital</p>
+              </div>
+            </div>
+
             <h3 style={{ fontFamily:'var(--font-inter)', fontWeight:700, fontSize:'1rem', color:'#eceaf5', margin:'0 0 1.5rem', letterSpacing:'-0.01em' }}>
               Contact Details
             </h3>

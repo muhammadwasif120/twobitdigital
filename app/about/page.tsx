@@ -59,6 +59,7 @@ const jsonLd = {
       '@id':       'https://www.twobitdigital.com/about#founder',
       name:        'Muhammad Wasif',
       jobTitle:    'Founder & CEO',
+      image:       'https://www.twobitdigital.com/team/founder.webp',
       worksFor:    { '@id': 'https://www.twobitdigital.com/#organization' },
       url:         'https://www.twobitdigital.com/about',
       sameAs:      ['https://www.linkedin.com/in/muhammadwasiftbd/'],
